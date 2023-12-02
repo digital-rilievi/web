@@ -1,0 +1,67 @@
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #131313;
+  color: #fff;
+}
+
+.logo img {
+  width: 50px; /* Adjust the size as needed */
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobileMenuIcon {
+  display: none; /* Hidden by default on larger screens */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+/* Media query for mobile menu */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    right: 0;
+    width: 100%;
+    background-color: #131313;
+    z-index: 1; /* Ensure the mobile menu is above the navbar */
+  }
+
+  .navLinks.showMobileMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navLinks a {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .mobileMenuIcon {
+    display: block;
+  }
+}

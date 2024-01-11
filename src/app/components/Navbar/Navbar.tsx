@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css'; // Create a CSS module for styling
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.logo}>
         <Link href="/">
-          <img src="/img/letter_d.png" alt="Logo" />
+          <Image src="/img/letter_d.png" alt="Logo" />
         </Link>
       </div>
 

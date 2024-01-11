@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import Link from 'node_modules/next/link';
+import Link from 'next/link';
 import styles from './Navbar.module.css'; // Create a CSS module for styling
 
 const Navbar = () => {

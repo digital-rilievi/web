@@ -3,6 +3,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
+import Head from 'next/head';
+import Script from 'next/script';
+import { Main, NextScript } from 'next/document';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,20 +22,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
-        <script type="text/javascript">
-          var _iub = _iub || [];
-          _iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"floatingPreferencesButtonDisplay":"bottom-right","perPurposeConsent":true,"siteId":3452093,"whitelabel":false,"cookiePolicyId":24683312,"lang":"it", "banner":{ "acceptButtonDisplay":true,"closeButtonRejects":true,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-top-center","showTitle":false }};
-        </script>
+        <script type="text/javascript" src="/iubenda.js"></script>
         <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3452093.js"></script>
-        <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+        <script type="text/javascript" src="//cdn.iubenda.com/cs/beta/iubenda_cs.js" charSet="UTF-8" async></script>
       </head>
       <body className={inter.className}>
-        {children}
+        <main>{children}</main>
         <Analytics />
         <SpeedInsights />
-        <a href="https://www.iubenda.com/privacy-policy/24683312" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-        <a href="https://www.iubenda.com/privacy-policy/24683312/cookie-policy" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+        <footer>
+          <a href="https://www.iubenda.com/privacy-policy/24683312" className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript" src="/iubenda-privacy.js"></script>
+          <a href="https://www.iubenda.com/privacy-policy/24683312/cookie-policy" className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a><script type="text/javascript" src="/iubenda-cookies.js"></script>
+        </footer>
       </body>
     </html>
   )

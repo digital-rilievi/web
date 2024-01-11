@@ -1,0 +1,2 @@
+var _iub = _iub || [];
+_iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"floatingPreferencesButtonCaptionColor":"#FFFFFF","floatingPreferencesButtonColor":"#2300FC","floatingPreferencesButtonDisplay":"bottom-right","perPurposeConsent":true,"siteId":3452093,"whitelabel":true,"cookiePolicyId":24683312,"lang":"it", "banner":{ "acceptButtonDisplay":true,"closeButtonRejects":true,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"bottom","showTitle":false }};

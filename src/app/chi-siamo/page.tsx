@@ -9,8 +9,8 @@ const ChiSiamo = () => {
       <Navbar />
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.title1}>{"title1"}</div>
-          <div className={styles.title2}>{"title2"}</div>
+          {/* <div className={styles.title1}>{"title1"}</div>
+          <div className={styles.title2}>{"title2"}</div> */}
         </div>
       </div>
       <Footer />

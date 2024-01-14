@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 import { usePathname } from 'next/navigation';
 
@@ -15,8 +16,8 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Link href="/">
-          <img src="/img/letter_d.png" alt="Logo" />
+      <Link href="/">
+          <Image src="/img/letter_d.svg" alt="Logo" width="1" height="1" />
         </Link>
       </div>
 

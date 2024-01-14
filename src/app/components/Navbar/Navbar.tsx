@@ -1,8 +1,8 @@
 'use client'
 import { useState } from 'react';
-import Link from 'node_modules/next/link';
+import Link from 'next/link';
 import styles from './Navbar.module.css';
-import { usePathname } from 'node_modules/next/navigation';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);

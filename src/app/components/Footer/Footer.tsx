@@ -1,20 +1,21 @@
-import styles from './Footer.module.css';
+import styles from './Footer.module.css'
+import strings from 'localization/it.json'
 
 const Footer = () => {
     return (
         <footer className={`${styles.footer}`}>
             <div className={styles.footerContent}>
                 <div className={styles.companyInfo}>
-                    <h4>Digital Rilievi S.r.l.</h4>
-                    <p>Via Montello 50/A, 33080, Zoppola, Pordenone</p>
-                    <p>P.IVA 01443130933</p>
+                    <h4>{strings.companyName}</h4>
+                    <p>{strings.companyAddress}</p>
+                    <p>{strings.companyVat}</p>
                 </div>
                 <div className={styles.contactInfo}>
-                    <p>PEC: postacertificata@pec.digitalrilievi.it</p>
+                    <p>{strings.companyPec}</p>
                 </div>
             </div>
             <div className={styles.footerBottom}>
-                <p>&copy; 2023 Digital Rilievi Srl. All Rights Reserved.</p>
+                <p>{strings.footerRights}</p>
             </div>
         </footer>
     );

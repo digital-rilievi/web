@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: row; /* Ensure a horizontal layout by default */
+    justify-content: space-between; /* Add space between the content columns */
+    gap: 1rem;
+    margin-top: 2rem; /* Add spacing at the top of each component */
+    margin-bottom: 2rem; /* Add spacing at the bottom of each component */
+    padding: 2rem;
+  }
+  
+  .content {
+    flex: 1; /* Split the available width equally */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align content to the top left */
+    justify-content: space-evenly;
+  }
+  
+  .title1 {
+    align-self: flex-start; /* Align title1 to the top left */
+    text-align: left; /* Align text to the left within the title1 section */
+    padding: 1rem;
+    font-size: 1.5rem; /* Adjust the font size as needed for title1 */
+    margin-bottom: 1rem; /* Add margin between title1 and title2 */
+    margin-top: -1rem; /* Adjust the margin to position title1 higher in desktop */
+  }
+  
+  .title2 {
+    align-self: flex-start; /* Align title2 to the top left */
+    text-align: left; /* Align text to the left within the title2 section */
+    padding: 1rem;
+    font-size: 1rem; /* Adjust the font size as needed for title2 */
+  }
+  
+  /* Media query for mobile layout */
+  @media (max-width: 768px) {
+    .container,
+    .title1,
+    .title2 {
+      flex-direction: column; /* Switch to a vertical layout for smaller screens */
+      align-items: flex-start; /* Align items to the top left in mobile layout */
+    }
+  
+    .container {
+      margin-top: 1rem; /* Add spacing at the top of each component */
+      margin-bottom: 2rem; /* Add spacing at the bottom of each component */
+    }
+  
+    .title1 {
+      margin-top: 0; /* Reset margin for title1 in mobile layout */
+      margin-bottom: 0.5rem; /* Add margin between title1 and title2 in mobile layout */
+    }
+  
+    .title2 {
+      margin-top: -0.5rem; /* Adjust the margin to position title2 above title1 in mobile layout */
+    }
+  }
+  

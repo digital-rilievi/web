@@ -1,5 +1,5 @@
 import styles from './Footer.module.css'
-import strings from 'localization/it.json'
+import strings from './footer.json'
 
 const Footer = () => {
     return (

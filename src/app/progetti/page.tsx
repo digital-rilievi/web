@@ -9,7 +9,7 @@ const Progetti = () => {
             <Navbar />
             <div>
                 <ImageText
-                    image="/img/mose.jpg"
+                    image="/assets/projects/mose.jpg"
                     title="MOSE VENEZIA"
                     text={
                         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -18,7 +18,7 @@ const Progetti = () => {
                     }
                 />
                 <ImageText
-                    image="/img/venezia-lavori.jpg"
+                    image="/assets/projects/venezia-lavori.jpg"
                     title="PIAZZA SAN MARCO VENEZIA"
                     text={
                         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

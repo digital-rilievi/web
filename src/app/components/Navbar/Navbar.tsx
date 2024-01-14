@@ -26,14 +26,14 @@ const Navbar = () => {
           <Link href="/chi-siamo" className={pathname === '/chi-siamo' ? styles.selected : styles.unselected}>
             CHI SIAMO
           </Link>
+          <Link href="/contatti" className={pathname === '/contatti' ? styles.selected : styles.unselected}>
+            CONTATTI
+          </Link>
           <Link href="/progetti" className={pathname === '/progetti' ? styles.selected : styles.unselected}>
             I NOSTRI PROGETTI
           </Link>
-          <Link href="/mission" className={pathname === '/mission' ? styles.selected : styles.unselected}>
-            LA NOSTRA MISSION
-          </Link>
-          <Link href="/contatti" className={pathname === '/contatti' ? styles.selected : styles.unselected}>
-            CONTATTI
+          <Link href="/testimonials" className={pathname === '/testimonials' ? styles.selected : styles.unselected}>
+            CI RACCONTANO COSI
           </Link>
         </div>
 

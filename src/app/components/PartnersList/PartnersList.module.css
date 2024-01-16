@@ -1,0 +1,37 @@
+
+.imageListContainer {
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: relative;
+}
+
+.imageList {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  overflow-x: hidden;
+}
+
+.scrollButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.scrollLeft {
+  left: 10px;
+}
+
+.scrollRight {
+  right: 10px;
+}
+
+.partnerImage {
+  width: 100px;
+  height: auto;
+  margin-right: 20px; /* Adjust the margin as needed for more space between images */
+}

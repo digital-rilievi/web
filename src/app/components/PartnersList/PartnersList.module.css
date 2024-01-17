@@ -1,3 +1,4 @@
+/* styles/PartnersList.module.css */
 
 .imageListContainer {
   overflow: hidden;
@@ -8,8 +9,21 @@
 
 .imageList {
   display: flex;
+  justify-content: space-between;
   transition: transform 0.3s ease-in-out;
   overflow-x: hidden;
+}
+
+.partnerContainer {
+  width: 4rem; /* Set your desired width for each partner container */
+  height: auto;
+  overflow: hidden;
+  margin-right: 10px; /* Adjust the margin as needed for space between partners */
+}
+
+.partnerImage {
+  width: 100%;
+  height: auto;
 }
 
 .scrollButton {
@@ -28,10 +42,4 @@
 
 .scrollRight {
   right: 10px;
-}
-
-.partnerImage {
-  width: 100px;
-  height: auto;
-  margin-right: 20px; /* Adjust the margin as needed for more space between images */
 }

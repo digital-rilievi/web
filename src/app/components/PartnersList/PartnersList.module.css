@@ -1,45 +1,35 @@
-/* styles/PartnersList.module.css */
-
-.imageListContainer {
-  overflow: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
-  position: relative;
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(0px - 50% - 25px));
+  }
 }
 
-.imageList {
-  display: flex;
-  justify-content: space-between;
-  transition: transform 0.3s ease-in-out;
-  overflow-x: hidden;
-}
-
-.partnerContainer {
-  width: 4rem; /* Set your desired width for each partner container */
-  height: auto;
-  overflow: hidden;
-  margin-right: 10px; /* Adjust the margin as needed for space between partners */
-}
-
-.partnerImage {
+.container {
   width: 100%;
-  height: auto;
+  overflow: hidden; /* Update this line to hide both horizontal and vertical scrollbars */
 }
 
-.scrollButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
+.horizontalScrollingItems {
+  margin-top: -1px;
+  display: flex;
+  gap: 100px;
+  -webkit-animation-name: infiniteScroll;
+  animation-name: infiniteScroll;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  padding: 25px 0 !important;
 }
 
-.scrollLeft {
-  left: 10px;
-}
-
-.scrollRight {
-  right: 10px;
+.horizontalScrollingItemsItem {
+  white-space: nowrap;
+  height: 80px;
+  width: auto;
+  background-size: cover;
 }

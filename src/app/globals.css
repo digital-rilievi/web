@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  background-color: #131313;
 }
 
 @media () {
@@ -16,17 +17,33 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  padding: 1rem;
   background-color: #131313;
   color: #fff;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  overflow-x: hidden;
   margin: 0;
+  font-family: 'Dancing Script'
 }
 
 main {
   flex: 1;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;               /* width of the entire scrollbar */
+}
+
+
+body::-webkit-scrollbar-track {
+  background: #131313;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #444444;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px #fff;  /* creates padding around scroll thumb */
 }
 
 .iubenda-tp-btn[data-tp-float][data-tp-float=bottom-right] {

@@ -1,13 +1,24 @@
+'use client'
 import AppBar from "./components/Navbar/Navbar";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 import PartnersList from "./components/PartnersList/PartnersList";
+import styles from "./page.module.css"
+//import Head from "next/head";
 
 export default function Home() {
   return (
     <main>
+      
       <AppBar />
-      {/* <VideoPlayer /> */}
-      <PartnersList partners={[
+      <VideoPlayer />
+      <h1 className={styles.title}>
+      Rilievi digitali, con le<br />
+      tecniche più recenti e<br />
+      all'avanguardia
+      </h1>
+      <PartnersList 
+      className={styles.partnersList}
+      partners={[
         "assets/partners/chioggia.jpeg",
         "assets/partners/logo1.png",
         "assets/partners/mose.png",

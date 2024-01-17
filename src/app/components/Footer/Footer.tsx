@@ -3,7 +3,7 @@ import strings from './footer.json'
 
 const Footer = () => {
     return (
-        <footer className={`${styles.footer}`}>
+        <footer className={styles.footer}>
             <div className={styles.footerContent}>
                 <div className={styles.companyInfo}>
                     <h4>{strings.companyName}</h4>

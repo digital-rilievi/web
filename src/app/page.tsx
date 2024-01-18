@@ -9,7 +9,6 @@ export default function Home() {
   var title = "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia"
   return (
     <main>
-      
       <AppBar />
       <VideoPlayer />
       <h1 className={styles.title}>

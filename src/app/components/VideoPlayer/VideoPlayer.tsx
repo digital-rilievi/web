@@ -6,6 +6,8 @@ const VideoPlayer = () => {
     <div>
       <video
         autoPlay
+        preload="metadata"
+        playsInline
         loop
         muted
         style={{ width: '100%', height: 'auto' }}

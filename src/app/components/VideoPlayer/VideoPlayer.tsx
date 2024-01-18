@@ -1,5 +1,6 @@
 
 'use client'
+
 const VideoPlayer = () => {
   return (
     <div>
@@ -9,7 +10,7 @@ const VideoPlayer = () => {
         muted
         style={{ width: '100%', height: 'auto' }}
       >
-        <source src="\assets\video\intro-sito.mp4" type="video/mp4" />
+        <source src="https://htlnjfaj3apbggng.public.blob.vercel-storage.com/intro-dgs6nH0j6PJ1aP1x9GX5nAnYRRVEwf.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>

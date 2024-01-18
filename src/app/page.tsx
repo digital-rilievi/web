@@ -1,4 +1,3 @@
-'use client'
 import AppBar from "./components/Navbar/Navbar";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 import PartnersList from "./components/PartnersList/PartnersList";
@@ -14,7 +13,7 @@ export default function Home() {
       <h1 className={styles.title}>
       Rilievi digitali, con le<br />
       tecniche più recenti e<br />
-      all'avanguardia
+      {"all'avanguardia"}
       </h1>
       <PartnersList 
       className={styles.partnersList}

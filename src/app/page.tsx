@@ -6,15 +6,14 @@ import styles from "./page.module.css"
 //import Head from "next/head";
 
 export default function Home() {
+  var title = "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia"
   return (
     <main>
       
       <AppBar />
       <VideoPlayer />
       <h1 className={styles.title}>
-      Rilievi digitali, con le<br />
-      tecniche più recenti e<br />
-      all'avanguardia
+      {title}
       </h1>
       <PartnersList 
       className={styles.partnersList}

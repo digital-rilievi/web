@@ -1,5 +1,5 @@
 import styles from './Footer.module.css'
-import content from './../components_content.json'
+import content from 'content.json'
 
 const Footer = () => {
     return (

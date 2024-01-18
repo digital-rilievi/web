@@ -1,7 +1,20 @@
 
 'use client'
+import { useEffect } from "react";
 
 const VideoPlayer = () => {
+
+  useEffect(() => {
+    const startPlayback = () => {
+      const video = document.getElementById('myVideo') as HTMLVideoElement | null;
+      if (video) {
+        video.play();
+      }
+    };
+
+    startPlayback();
+  }, []);
+
   return (
     <div>
       <video

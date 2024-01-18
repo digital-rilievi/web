@@ -6,7 +6,6 @@ const VideoPlayer = () => {
     <div>
       <video
         autoPlay
-        preload="metadata"
         playsInline
         loop
         muted

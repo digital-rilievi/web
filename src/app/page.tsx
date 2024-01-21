@@ -14,14 +14,7 @@ export default function Home() {
       </h1>
       <PartnersList
         className={styles.partnersList}
-        partners={[
-          "assets/partners/chioggia.jpeg",
-          "assets/partners/logo1.png",
-          "assets/partners/mose.png",
-          "assets/partners/seam.png",
-          "assets/partners/sport_salute.png",
-          "assets/partners/venezia.png"
-        ]} />
+        partners={content.home.partners} />
     </main>
   )
 }

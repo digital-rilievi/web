@@ -1,6 +1,4 @@
-'use client'
-import React, { useState, useRef, useEffect } from 'react';
-import styles from './PartnersList.module.css';
+import styles from './PartnersList.module.css'
 
 interface PartnersListProps {
   className: string,
@@ -12,20 +10,32 @@ const PartnersList = (props: PartnersListProps) => {
   var realPartnersList = props.partners.concat(props.partners)
 
   return (
-    <div className={props.className}>
-      <div className={styles.horizontalScrollingItems}>
-        {Array.from({ length: realPartnersList.length }).map((_, index) => {
-          return (
+    <div className={styles.container}>
+      <div className={styles.scrollWrapper}>
 
-            <img
-              src={realPartnersList[index]}
-              alt={`Partner ${index + 1}`}
-              className={`${styles.horizontalScrollingItemsItem}`} key={index}
-            />
+        <div className={styles.imageLists}>
+          {props.partners.map((image, index) => (
+            <div className={styles.imageWrapper}>
+              <img className={styles.horizontalScrollingItemsItem} key={index} src={`${image}`} alt={`Image ${index}`} />
+            </div>
+          ))}
+        </div>
 
-          )
-        })
-        }
+        <div className={styles.imageLists}>
+          {props.partners.map((image, index) => (
+            <div className={styles.imageWrapper}>
+              <img className={styles.horizontalScrollingItemsItem} key={index} src={`${image}`} alt={`Image ${index}`} />
+            </div>
+          ))}
+        </div>
+
+        <div className={styles.imageLists}>
+          {props.partners.map((image, index) => (
+            <div className={styles.imageWrapper}>
+              <img className={styles.horizontalScrollingItemsItem} key={index} src={`${image}`} alt={`Image ${index}`} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

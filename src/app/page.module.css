@@ -4,9 +4,9 @@
     font-style: normal;
     font-weight: 400;
     padding: 2rem;
-    margin-bottom: 400px;
+    white-space: pre-line;
 }
 
 .partnersList {
-    margin-bottom: 400px;
+    margin-bottom: 200px;
 }

@@ -1,35 +1,48 @@
-@keyframes infiniteScroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(0px - 50% - 25px));
-  }
-}
-
 .container {
   width: 100%;
-  overflow: hidden; /* Update this line to hide both horizontal and vertical scrollbars */
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
 
-.horizontalScrollingItems {
-  margin-top: -1px;
+.scrollWrapper {
   display: flex;
-  gap: 100px;
-  -webkit-animation-name: infiniteScroll;
-  animation-name: infiniteScroll;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  padding: 25px 0 !important;
+  flex-direction: row;
+  animation: scrollAnimation 30s linear infinite forwards;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 6080px;
 }
 
-.horizontalScrollingItemsItem {
+.imageLists {
+  justify-content: space-around;
+  width: 33.333333%;
+  display: flex;
+  align-items: center;
+}
+
+.imageWrapper {
+  min-width: 260px;
+  margin: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.scrollWrapper img {
   white-space: nowrap;
   height: 80px;
   width: auto;
+  max-width: 100%;
   background-size: cover;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-66.66%));
+  }
 }

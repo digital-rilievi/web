@@ -1,6 +1,14 @@
 {
-    "home":{
-        "title":"Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia"
+    "home": {
+        "title": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
+        "partners": [
+            "assets/partners/chioggia.jpeg",
+            "assets/partners/logo1.png",
+            "assets/partners/mose.png",
+            "assets/partners/seam.png",
+            "assets/partners/sport_salute.png",
+            "assets/partners/venezia.png"
+        ]
     },
     "chi-siamo": {},
     "contatti": {},

@@ -13,35 +13,45 @@ const Footer = () => {
           <p>{content.footer.addressLine3}</p>
           <br />
           <p>{content.footer.pec}</p>
-          <br />
+        </div>
+        <br />
+        <div className={styles.spacer}></div>
+        <div>
           <p>{content.footer.vat}</p>
           <p>{content.footer.legal1}</p>
           <p>{content.footer.legal2}</p>
         </div>
       </div>
 
+
       <div className={styles.rightColumn}>
         <ul>
-          <li><a href={content.footer.privacyPolicyLink}>{content.footer.cookiesPolicyLabel}</a></li>
-          <li><a href={content.footer.cookiesPolicyLink}>{content.footer.privacyPolicyLabel}</a></li>
-        </ul>
-
-        {/* Spacer to create empty space */}
-        <div className={styles.spacer}></div>
-
-        <ul>
-          {/* Add more list items as needed */}
+          <li><a href={content.footer.privacyPolicyLink} target="_blank">{content.footer.cookiesPolicyLabel}</a></li>
+          <li><a href={content.footer.cookiesPolicyLink} target="_blank">{content.footer.privacyPolicyLabel}</a></li>
         </ul>
 
         <div>
           <div className={styles.socialButtons}>
-            <button><i className="fab fa-facebook"></i></button>
-            <button><i className="fab fa-instagram"></i></button>
-            <button><i className="fab fa-linkedin"></i></button>
-          </div>
-        </div>
-      </div>
-    </footer>
+            <a href={content.footer.facebook} target="_blank">
+              <button>
+                <i className="fab fa-facebook"></i>
+          </button>
+                </a>
+          <a href={content.footer.instagram} target="_blank">
+            <button>
+              <i className="fab fa-instagram"></i>
+        </button>
+              </a>
+        <a href={content.footer.linkedin} target="_blank">
+          <button>
+            <i className="fab fa-linkedin"></i>
+      </button>
+            </a>
+    </div>
+        </div >
+      </div >
+  <div className={styles.spaceColumn} />
+    </footer >
   )
 }
 

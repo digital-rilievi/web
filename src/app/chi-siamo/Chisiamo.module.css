@@ -1,35 +1,35 @@
 .container {
     display: flex;
-    flex-direction: row; /* Ensure a horizontal layout by default */
-    justify-content: space-between; /* Add space between the content columns */
+    flex-direction: row;
+    justify-content: space-between;
     gap: 1rem;
-    margin-top: 2rem; /* Add spacing at the top of each component */
-    margin-bottom: 2rem; /* Add spacing at the bottom of each component */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 2rem;
   }
   
   .content {
-    flex: 1; /* Split the available width equally */
+    flex: 1;
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Align content to the top left */
+    align-items: flex-start;
     justify-content: space-evenly;
   }
   
   .title1 {
-    align-self: flex-start; /* Align title1 to the top left */
-    text-align: left; /* Align text to the left within the title1 section */
+    align-self: flex-start;
+    text-align: left;
     padding: 1rem;
-    font-size: 1.5rem; /* Adjust the font size as needed for title1 */
-    margin-bottom: 1rem; /* Add margin between title1 and title2 */
-    margin-top: -1rem; /* Adjust the margin to position title1 higher in desktop */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
   }
   
   .title2 {
-    align-self: flex-start; /* Align title2 to the top left */
-    text-align: left; /* Align text to the left within the title2 section */
+    align-self: flex-start;
+    text-align: left;
     padding: 1rem;
-    font-size: 1rem; /* Adjust the font size as needed for title2 */
+    font-size: 1rem;
   }
   
   /* Media query for mobile layout */
@@ -37,22 +37,22 @@
     .container,
     .title1,
     .title2 {
-      flex-direction: column; /* Switch to a vertical layout for smaller screens */
-      align-items: flex-start; /* Align items to the top left in mobile layout */
+      flex-direction: column;
+      align-items: flex-start;
     }
   
     .container {
-      margin-top: 1rem; /* Add spacing at the top of each component */
-      margin-bottom: 2rem; /* Add spacing at the bottom of each component */
+      margin-top: 1rem;
+      margin-bottom: 2rem;
     }
   
     .title1 {
-      margin-top: 0; /* Reset margin for title1 in mobile layout */
-      margin-bottom: 0.5rem; /* Add margin between title1 and title2 in mobile layout */
+      margin-top: 0;
+      margin-bottom: 0.5rem;
     }
   
     .title2 {
-      margin-top: -0.5rem; /* Adjust the margin to position title2 above title1 in mobile layout */
+      margin-top: -0.5rem;
     }
   }
   

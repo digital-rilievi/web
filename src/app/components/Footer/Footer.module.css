@@ -1,21 +1,47 @@
+/* Footer.module.css */
 .footer {
   padding: 20px;
+  padding-top: 120px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  background: linear-gradient(180deg, rgba(0, 56, 255, 0.00) 0%, #0038FF 100%);
+  margin-top: 30px;
+  padding-bottom: 15px;
+  height: fit-content;
 }
 
-.leftColumn, .rightColumn {
+.leftColumn,
+.rightColumn {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.rightColumn h3 {
-  margin-top: 0;
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightColumn ul {
+  list-style: none;
+  padding: 0;
+  flex: 1; /* Ensure the ul takes up all available space */
+}
+
+.rightColumn li {
+  margin-bottom: 2px;
+}
+
+/* Spacer to create empty space */
+.spacer {
+  flex-grow: 1;
 }
 
 .socialButtons {
   display: flex;
-  gap: 15px; 
+  gap: 15px;
   margin-top: 10px;
 }
 

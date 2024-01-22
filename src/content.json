@@ -16,11 +16,16 @@
     "testimonials": {},
     "footer": {
         "companyName": "Digital Rilievi S.r.l.",
-        "companyAddress": "Via Montello 50/A, 33080, Zoppola, Pordenone",
-        "companyVat": "P.IVA 01443130933",
-        "companyPec": "PEC: postacertificata@pec.digitalrilievi.it",
-        "footerRights": "© 2023 Digital Rilievi Srl. All Rights Reserved.",
-        "privacyPolicy": "",
-        "cookiesPolicy": ""
+        "addressLine1": "Via Montello 50/A",
+        "addressLine2": "33080 Zoppola",
+        "addressLine3": "Pordenone Italia",
+        "pec": "postacertificata@pec.digitalrilievi.it",
+        "vat": "P.IVA 01443130933",
+        "legal1": "Camera di Commercio di Pordenone",
+        "legal2": "REA: PN-77304",
+        "privacyPolicyLabel": "Informative sulla Privacy",
+        "cookiesPolicyLabel": "Cookie Policy",
+        "privacyPolicyLink": "https://www.iubenda.com/privacy-policy/24683312",
+        "cookiesPolicyLink": "https://www.iubenda.com/privacy-policy/24683312/cookie-policy"
     }
 }

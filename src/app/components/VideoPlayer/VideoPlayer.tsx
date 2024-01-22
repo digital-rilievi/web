@@ -1,19 +1,19 @@
 
 'use client'
-import { useEffect } from "react";
+import { useEffect } from "react"
 
 const VideoPlayer = () => {
 
   useEffect(() => {
     const startPlayback = () => {
-      const video = document.getElementById('myVideo') as HTMLVideoElement | null;
+      const video = document.getElementById('myVideo') as HTMLVideoElement | null
       if (video) {
-        video.play();
+        video.play()
       }
-    };
+    }
 
-    startPlayback();
-  }, []);
+    startPlayback()
+  }, [])
 
   return (
     <div>
@@ -30,7 +30,7 @@ const VideoPlayer = () => {
         Your browser does not support the video tag.
       </video>
     </div>
-  );
-};
+  )
+}
 
-export default VideoPlayer;
+export default VideoPlayer

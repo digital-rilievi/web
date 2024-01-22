@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './ImageText.module.css';
+import React from 'react'
+import styles from './ImageText.module.css'
 
 interface ImageTextProps {
   image: string,
@@ -41,7 +41,7 @@ const ImageText = (props: ImageTextProps) => {
         <img src={props.image} alt="Image" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ImageText;
+export default ImageText

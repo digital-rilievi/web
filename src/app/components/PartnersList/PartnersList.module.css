@@ -30,12 +30,10 @@
   justify-content: center;
 }
 
-.scrollWrapper img {
+.imageItem {
   white-space: nowrap;
   height: 80px;
   width: auto;
-  max-width: 100%;
-  background-size: cover;
 }
 
 @keyframes scrollAnimation {

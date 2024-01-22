@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import styles from './Footer.module.css'
 import content from 'content.json'
 
@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

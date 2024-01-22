@@ -1,4 +1,4 @@
-import styles from './ScrollingText.module.css';
+import styles from './ScrollingText.module.css'
 
 const ScrollingText = () => {
     return (
@@ -13,8 +13,8 @@ const ScrollingText = () => {
                 </div>
             </div>
         </>
-    );
-};
+    )
+}
 
 
-export default ScrollingText;
+export default ScrollingText

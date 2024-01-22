@@ -1,50 +1,49 @@
 .container {
   display: flex;
-  flex-direction: row; /* Ensure a horizontal layout by default */
-  justify-content: space-between; /* Add space between the image and text */
+  flex-direction: row;
+  justify-content: space-between;
   gap: 1rem;
-  margin-top: 2rem; /* Add spacing at the top of each component */
-  margin-bottom: 2rem; /* Add spacing at the bottom of each component */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 2rem;
 }
 
 .inverted {
-  flex-direction: row-reverse; /* Reverse the order of flex items */
+  flex-direction: row-reverse;
 }
 
 .content {
-  flex: 1; /* Split the available width equally */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align content to the top left */
+  align-items: flex-start;
 }
 
 .title {
-  align-self: flex-start; /* Align title to the top left */
-  text-align: left; /* Align text to the left within the title section */
+  align-self: flex-start;
+  text-align: left;
   padding: 1rem;
-  font-size: 1.5rem; /* Adjust the font size as needed */
+  font-size: 1.5rem;
 }
 
 .text {
-  /* Add any additional styling for text */
-  align-self: flex-start; /* Align text to the top left */
-  text-align: left; /* Align text to the left within the text section */
+  align-self: flex-start;
+  text-align: left;
   padding: 1rem;
 }
 
 .image {
-  max-width: 45%; /* Maximum 50% width for non-mobile mode */
-  max-height: 100%; /* Set a maximum height for the images */
-  margin-right: 20px; /* Adjust margin as needed */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  max-width: 45%;
+  max-height: 100%;
+  margin-right: 20px;
+  object-fit: cover;
 }
 
-.img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container width */
-  max-height: 100%; /* Set a maximum height for the images */
+.imageItem {
+  max-width: 100%;
+  max-height: 100%;
   padding: 2rem;
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  object-fit: cover;
 }
 
 /* Media query for mobile layout */
@@ -53,13 +52,13 @@
   .image,
   .text,
   .title {
-    flex-direction: column; /* Switch to a vertical layout for smaller screens */
-    align-items: flex-start; /* Align items to the top left in mobile layout */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .container {
-    margin-top: 1rem; /* Add spacing at the top of each component */
-    margin-bottom: 2rem; /* Add spacing at the bottom of each component */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .title,
@@ -71,8 +70,8 @@
   }
 
   .image {
-    max-width: 100%; /* Allow the image to take the full width in mobile layout */
-    margin-right: 0; /* Remove margin for mobile layout */
+    max-width: 100%;
+    margin-right: 0;
     padding: 2rem;
   }
 }

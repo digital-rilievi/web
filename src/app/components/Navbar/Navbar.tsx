@@ -1,17 +1,17 @@
 'use client'
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from './Navbar.module.css';
-import { usePathname } from 'next/navigation';
+import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import styles from './Navbar.module.css'
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const pathname = usePathname();
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
+    setMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   return (
     <nav className={styles.navbar}>
@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
       </>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

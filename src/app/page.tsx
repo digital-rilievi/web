@@ -4,6 +4,7 @@ import PartnersList from "./components/PartnersList/PartnersList"
 import styles from "./page.module.css"
 import content from 'content.json'
 import ImageText from "./components/ImageText/ImageText"
+import Footer from "./components/Footer/Footer"
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         className={styles.partnersList}
         partners={content.home.partners}
       />
+      <Footer />
     </main>
   );
 }

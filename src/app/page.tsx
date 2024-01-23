@@ -4,7 +4,6 @@ import PartnersList from "./components/PartnersList/PartnersList"
 import styles from "./page.module.css"
 import content from 'content.json'
 import ImageText from "./components/ImageText/ImageText"
-import BlueCircle from "./components/BlueCircle/BlueCircle"
 
 export default function Home() {
   return (

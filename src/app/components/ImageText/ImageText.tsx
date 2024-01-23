@@ -16,6 +16,7 @@ interface ImageTextProps {
 const ImageText = (props: ImageTextProps) => {
   return (
     <div className={`${styles.container} ${props.inverted ? styles.inverted : ''}`}>
+      <div className={styles.containerHelper}></div>
       <div className={`${styles.content} ${props.blueCircle ? styles.contentWithCircle : ''}`}>
         {props.title && (
           <h2 className={styles.title}>
@@ -46,6 +47,7 @@ const ImageText = (props: ImageTextProps) => {
           </h2>
         )} */}
       </div>
+      <div className={styles.containerHelper}></div>
       <div className={styles.image}>
         <img src={props.image} alt="Image" />
       </div>

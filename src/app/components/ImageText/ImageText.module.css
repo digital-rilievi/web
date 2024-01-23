@@ -25,6 +25,10 @@
   z-index: 2; /* Set z-index higher than BlueCircle */
 }
 
+.containerHelper {
+  flex: 0.1;
+}
+
 .title {
   align-self: flex-start;
   text-align: left;
@@ -47,9 +51,66 @@
 
 .blueCircleWrapper {
   position: absolute;
-  top: 0;
+  top: -240px;
   left: 0;
   z-index: 1; /* Set z-index lower than Content */
   height: 720px;
   width: 720px;
+}
+
+  
+  /* Media query for smaller layout */
+  @media (max-width: 1920px) {
+    .containerHelper {
+        flex: 0;
+    }
+  }
+
+    /* Media query for smaller layout */
+  @media (max-width: 1460px) {
+    .blueCircleWrapper {
+    top: -180px;
+    height: 520px;
+    width: 520px;
+}
+  }
+
+  /* Media query for mobile layout */
+  @media (max-width: 1024px) {
+  .container,
+  .image,
+  .text,
+  .title {
+    flex-direction: column; /* Switch to a vertical layout for smaller screens */
+    align-items: flex-start; /* Align items to the top left in mobile layout */
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .container {
+    margin-top: 1rem; /* Add spacing at the top of each component */
+    margin-bottom: 2rem; /* Add spacing at the bottom of each component */
+  }
+
+  .title,
+  .text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .image {
+    max-width: 100%; /* Allow the image to take the full width in mobile layout */
+    margin-right: 0; /* Remove margin for mobile layout */
+    padding: 2rem;
+  }
+
+   .blueCircleWrapper {
+    top: 0px;
+    height: 0px;
+    width: 0px;
+}
 }

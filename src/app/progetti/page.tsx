@@ -4,6 +4,17 @@ import ImageText from '../components/ImageText/ImageText'
 import Navbar from '../components/Navbar/Navbar'
 import content from 'content.json'
 
+interface ImageTextProps {
+    image: string,
+    title?: String,
+    text: string,
+    days?: string,
+    hours?: string,
+    link?: string,
+    inverted?: String | Boolean,
+    blueCircle?: Boolean
+  }
+
 const Progetti = () => {
 
     var projects = content.progetti.projects as []
@@ -11,15 +22,16 @@ const Progetti = () => {
         <>
             <Navbar />
             <div>
-                {projects.map((content, index) => (
+                {projects.map((content: ImageTextProps, index) => (
                     <ImageText
+                        key={index}
                         image={content.image}
                         title={content.title}
                         text={content.text}
-                        invertOrder={`${content.inverted ? content.inverted == "true" : ''}`}
+                        inverted={content.inverted ? content.inverted == "true" : false}
                         days={`${content.days ? content.days : ''}`}
                         hours={`${content.hours ? content.hours : ''}`}
-                        moreInfoLink={`${content.link ? content.link : ''}`}
+                        link={`${content.link ? content.link : ''}`}
                     />
                 ))}
             </div>

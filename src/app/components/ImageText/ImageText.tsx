@@ -8,14 +8,14 @@ interface ImageTextProps {
   text: string,
   days?: string,
   hours?: string,
-  moreInfoLink?: string,
-  invertOrder?: Boolean,
+  link?: string,
+  inverted?: String | Boolean,
   blueCircle?: Boolean
 }
 
 const ImageText = (props: ImageTextProps) => {
   return (
-    <div className={`${styles.container} ${props.invertOrder ? styles.inverted : ''}`}>
+    <div className={`${styles.container} ${props.inverted ? styles.inverted : ''}`}>
       <div className={`${styles.content} ${props.blueCircle ? styles.contentWithCircle : ''}`}>
         {props.title && (
           <h2 className={styles.title}>

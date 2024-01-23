@@ -69,20 +69,27 @@
     /* Media query for smaller layout */
   @media (max-width: 1460px) {
     .blueCircleWrapper {
-    top: -180px;
-    height: 520px;
-    width: 520px;
-}
+      top: -180px;
+      height: 520px;
+      width: 520px;
+    }
+
+    .content {
+      padding: 2rem;
+    }
   }
 
   /* Media query for mobile layout */
   @media (max-width: 1024px) {
   .container,
-  .image,
   .text,
   .title {
     flex-direction: column; /* Switch to a vertical layout for smaller screens */
     align-items: flex-start; /* Align items to the top left in mobile layout */
+  }
+
+  .image {
+    align-self: center;
   }
 
   .content {

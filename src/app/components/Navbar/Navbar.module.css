@@ -24,7 +24,7 @@
 }
 
 .selected {
-  background-color: #0038ff;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 56, 255, 0.5) 0%, rgba(0, 56, 255, 0.0) 100%);
   border-radius: 8px;
   padding: 4px 6px;
   display: flex;
@@ -68,6 +68,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2rem;
   }
 
   .navLinks {

@@ -1,0 +1,6 @@
+.blueCircle {
+    border-radius: 467px;
+    background: radial-gradient(50% 50% at 50% 50%, #0038FF 0%, rgba(0, 56, 255, 0.00) 100%);
+    height: 100%;
+    width: 100%;
+}

@@ -15,18 +15,51 @@
     "progetti": {
         "projects": [
             {
-                "image": "/assets/projects/mose.jpg",
+                "image": "/assets/projects/mose.png",
                 "title": "MOSE VENEZIA",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "duration1":"20 ANNI DI LAVORO",
+                "duration2":"+ 8000 GIORNI DI LAVORO"
+            },
+            {
+                "image": "/assets/projects/off-road.png",
+                "title": "RILIEVO OFF ROAD",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "inverted": "true",
+                "link": ""
+            },
+            {
+                "image": "/assets/projects/basilica-san-marco.png",
+                "title": "PARATIE BASILICA SAN MARCO__VENEZIA",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             },
             {
-                "image": "/assets/projects/venezia-lavori.jpg",
-                "title": "PIAZZA SAN MARCO VENEZIA",
+                "image": "/assets/projects/circuito-automibilistico.png",
+                "title": "CIRCUITO AUTOMOBILISTICO",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "days":"",
-                "hours":"",
-                "inverted": "true",
-                "link": ""
+                "inverted": "true"
+            },
+            {
+                "image": "/assets/projects/stadio-olimpico-foro-italico.png",
+                "title": "STADIO OLIMPICO FORO ITALICO__ROMA",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "image": "/assets/projects/ferrovia.png",
+                "title": "FERROVIA",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "inverted": "true"
+            },
+            {
+                "image": "/assets/projects/ponte-morandi.png",
+                "title": "PONTE_MORANDI__GENOVA",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "image": "/assets/projects/stadio-cortina.png",
+                "title": "STADIO GHIACCIO__CORTINA",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "inverted": "true"
             }
         ]
     },
@@ -45,7 +78,6 @@
         "privacyPolicyLink": "https://www.iubenda.com/privacy-policy/24683312",
         "cookiesPolicyLink": "https://www.iubenda.com/privacy-policy/24683312/cookie-policy",
         "facebook": "https://www.facebook.com/p/DIGITAL-RILIEVI-100054536196902/",
-        "instagram": "N.A.",
         "linkedin": "https://www.linkedin.com/company/digital-rilievi-s-r-l-/"
     }
 }

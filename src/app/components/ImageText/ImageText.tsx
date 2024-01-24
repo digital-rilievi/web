@@ -6,8 +6,8 @@ interface ImageTextProps {
   image: string,
   title?: String,
   text: string,
-  days?: string,
-  hours?: string,
+  duration1?: string,
+  duration2?: string,
   link?: string,
   inverted?: String | Boolean,
   blueCircle?: Boolean
@@ -31,14 +31,14 @@ const ImageText = (props: ImageTextProps) => {
           <BlueCircle />
         </div>
         )}
-        {props.days && (
-          <h2 className={styles.title}>
-            {props.days}
+        {props.duration1 && (
+          <h2 className={styles.duration}>
+            {props.duration1}
           </h2>
         )}
-        {props.hours && (
-          <h2 className={styles.title}>
-            {props.hours}
+        {props.duration2 && (
+          <h2 className={styles.duration}>
+            {props.duration2}
           </h2>
         )}
         {/* {props.moreInfoLink && (
@@ -48,9 +48,9 @@ const ImageText = (props: ImageTextProps) => {
         )} */}
       </div>
       <div className={styles.containerHelper}></div>
-      <div className={styles.image}>
-        <img src={props.image} alt="Image" />
-      </div>
+      
+        <img className={styles.image} src={props.image} alt="Image" />
+      
     </div>
   )
 }

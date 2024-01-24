@@ -1,8 +1,9 @@
 .title {
     color: #F5F5F5;
-    font-size: 110px;
+    font-size: 90px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     padding: 2rem;
     white-space: pre-line;
+    line-height: 118px; /* 107.273% */
   }

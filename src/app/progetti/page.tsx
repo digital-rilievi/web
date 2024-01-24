@@ -8,8 +8,8 @@ interface ImageTextProps {
     image: string,
     title?: String,
     text: string,
-    days?: string,
-    hours?: string,
+    duration1?: string,
+    duration2?: string,
     link?: string,
     inverted?: String | Boolean,
     blueCircle?: Boolean
@@ -29,8 +29,8 @@ const Progetti = () => {
                         title={content.title}
                         text={content.text}
                         inverted={content.inverted ? content.inverted == "true" : false}
-                        days={`${content.days ? content.days : ''}`}
-                        hours={`${content.hours ? content.hours : ''}`}
+                        duration1={`${content.duration1 ? content.duration1 : ''}`}
+                        duration2={`${content.duration2 ? content.duration2 : ''}`}
                         link={`${content.link ? content.link : ''}`}
                     />
                 ))}

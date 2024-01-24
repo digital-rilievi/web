@@ -35,22 +35,17 @@ const Footer = () => {
             <a href={content.footer.facebook} target="_blank">
               <button>
                 <i className="fab fa-facebook"></i>
-          </button>
-                </a>
-          <a href={content.footer.instagram} target="_blank">
-            <button>
-              <i className="fab fa-instagram"></i>
-        </button>
-              </a>
-        <a href={content.footer.linkedin} target="_blank">
-          <button>
-            <i className="fab fa-linkedin"></i>
-      </button>
+              </button>
             </a>
-    </div>
+            <a href={content.footer.linkedin} target="_blank">
+              <button>
+                <i className="fab fa-linkedin"></i>
+              </button>
+            </a>
+          </div>
         </div >
       </div >
-  <div className={styles.spaceColumn} />
+      <div className={styles.spaceColumn} />
     </footer >
   )
 }

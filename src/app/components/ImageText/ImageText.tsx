@@ -1,5 +1,6 @@
 import React from 'react'
 import BlueCircle from '../BlueCircle/BlueCircle'
+import Space from '../Space/Space'
 import styles from './ImageText.module.css'
 
 interface ImageTextProps {
@@ -31,6 +32,7 @@ const ImageText = (props: ImageTextProps) => {
           <BlueCircle />
         </div>
         )}
+        <Space />
         {props.duration1 && (
           <h2 className={styles.duration}>
             {props.duration1}

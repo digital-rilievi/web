@@ -88,9 +88,10 @@
 
     .content {
       padding: 2rem;
+      align-self: center;
     }
   }
-  
+
   /* Media query for mobile layout */
   @media (max-width: 1024px) {
   .container,
@@ -105,6 +106,7 @@
 
   .content {
     padding: 1rem;
+    align-self: center;
   }
 
   .container {

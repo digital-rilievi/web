@@ -68,6 +68,10 @@
   width: 720px;
 }
 
+.circularButtonWrapper {
+  padding-top: 2rem;
+}
+
   
   /* Media query for bigger layout */
   @media (max-width: 1920px) {

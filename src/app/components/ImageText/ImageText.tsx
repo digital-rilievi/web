@@ -30,8 +30,8 @@ const ImageText = (props: ImageTextProps) => {
         </div>
         {props.blueCircle && (
           <div className={styles.blueCircleWrapper}>
-          <BlueCircle />
-        </div>
+            <BlueCircle />
+          </div>
         )}
         <Space />
         {props.duration1 && (
@@ -44,14 +44,16 @@ const ImageText = (props: ImageTextProps) => {
             {props.duration2}
           </h2>
         )}
-        {props.link && (   
-          <CircularButton link={props.link} remainsInPage />
+        {props.link && (
+          <div className={styles.circularButtonWrapper}>
+            <CircularButton link={props.link} remainsInPage />
+          </div>
         )}
       </div>
       <div className={styles.containerHelper}></div>
-      
-        <img className={styles.image} src={props.image} alt="Image" />
-      
+
+      <img className={styles.image} src={props.image} alt="Image" />
+
     </div>
   )
 }

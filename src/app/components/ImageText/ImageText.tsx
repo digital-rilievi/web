@@ -1,5 +1,6 @@
 import React from 'react'
 import BlueCircle from '../BlueCircle/BlueCircle'
+import CircularButton from '../CircularButton/CircularButton'
 import Space from '../Space/Space'
 import styles from './ImageText.module.css'
 
@@ -43,11 +44,9 @@ const ImageText = (props: ImageTextProps) => {
             {props.duration2}
           </h2>
         )}
-        {/* {props.moreInfoLink && (
-          <h2 className={styles.title}>
-            {props.hours}
-          </h2>
-        )} */}
+        {props.link && (   
+          <CircularButton link={props.link} remainsInPage />
+        )}
       </div>
       <div className={styles.containerHelper}></div>
       

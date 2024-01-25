@@ -4,7 +4,7 @@ import ImageText from '../components/ImageText/ImageText'
 import Navbar from '../components/Navbar/Navbar'
 import content from 'content.json'
 
-interface ImageTextProps {
+export interface ProjectProps {
     image: string,
     title?: String,
     text: string,
@@ -22,7 +22,7 @@ const Progetti = () => {
         <>
             <Navbar />
             <div>
-                {projects.map((content: ImageTextProps, index) => (
+                {projects.map((content: ProjectProps, index) => (
                     <ImageText
                         key={index}
                         image={content.image}
@@ -31,7 +31,7 @@ const Progetti = () => {
                         inverted={content.inverted ? content.inverted == "true" : false}
                         duration1={`${content.duration1 ? content.duration1 : ''}`}
                         duration2={`${content.duration2 ? content.duration2 : ''}`}
-                        link={`${content.link ? content.link : ''}`}
+                        link={`${content.link ? '/progetti/' + content.link : ''}`}
                     />
                 ))}
             </div>

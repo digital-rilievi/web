@@ -34,7 +34,6 @@ export default function Home() {
       />
       <Space size={"big"} />
       <Space size={"big"} />
-      <p>AIAIASDDASIAIAIAAIAIA</p>
       <PartnersList
         className={styles.partnersList}
         partners={content.home.partners}

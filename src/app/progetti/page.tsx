@@ -11,6 +11,7 @@ export interface ProjectProps {
     duration1?: string,
     duration2?: string,
     link?: string,
+    linkLabel?: string,
     inverted?: String | Boolean,
     blueCircle?: Boolean
   }
@@ -22,16 +23,17 @@ const Progetti = () => {
         <>
             <Navbar />
             <div>
-                {projects.map((content: ProjectProps, index) => (
+                {projects.map((info: ProjectProps, index) => (
                     <ImageText
                         key={index}
-                        image={content.image}
-                        title={content.title}
-                        text={content.text}
-                        inverted={content.inverted ? content.inverted == "true" : false}
-                        duration1={`${content.duration1 ? content.duration1 : ''}`}
-                        duration2={`${content.duration2 ? content.duration2 : ''}`}
-                        link={`${content.link ? '/progetti/' + content.link : ''}`}
+                        image={info.image}
+                        title={info.title}
+                        text={info.text}
+                        inverted={info.inverted ? info.inverted == "true" : false}
+                        duration1={`${info.duration1 ? info.duration1 : ''}`}
+                        duration2={`${info.duration2 ? info.duration2 : ''}`}
+                        link={`${info.link ? '/progetti/' + info.link : ''}`}
+                        linkLabel={`${content.progetti.linksLabel ? content.progetti.linksLabel : ''}`}
                     />
                 ))}
             </div>

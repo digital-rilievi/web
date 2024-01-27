@@ -11,6 +11,7 @@ interface ImageTextProps {
   duration1?: string,
   duration2?: string,
   link?: string,
+  linkLabel?: string,
   inverted?: String | Boolean,
   blueCircle?: Boolean
 }
@@ -42,7 +43,7 @@ const ImageText = (props: ImageTextProps) => {
         )}
         {props.link && (
           <div className={styles.circularButtonWrapper}>
-            <CircularButton link={props.link} remainsInPage />
+            <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
           </div>
         )}
       </div>

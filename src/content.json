@@ -1,4 +1,5 @@
 {
+    "defaultButtonsValue":"SCOPRI DI PIÙ",
     "home": {
         "title": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
         "firstImage": "/assets/projects/project-home.png",
@@ -19,6 +20,7 @@
     "chi-siamo": {},
     "contatti": {},
     "progetti": {
+        "linksLabel": "SCOPRI DI PIÙ",
         "projects": [
             {
                 "image": "/assets/projects/mose.png",

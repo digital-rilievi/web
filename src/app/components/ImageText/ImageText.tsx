@@ -8,6 +8,7 @@ interface ImageTextProps {
   image: string,
   title?: String,
   text: string,
+  secondaryText?: string,
   duration1?: string,
   duration2?: string,
   link?: string,
@@ -46,14 +47,22 @@ const ImageText = (props: ImageTextProps) => {
             <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
           </div>
         )}
+        <div style={{"flex": "auto"}}>
+        <Space />
+        </div>
+        {props.secondaryText && (
+        <div className={styles.secondaryText}>
+          {props.secondaryText}
+        </div>
+      )}
       </div>
       {props.blueCircle && (
-          <div className={styles.blueCircleContainer}>
-            <div className={styles.blueCircleWrapper}>
-              <BlueCircle />
-            </div>
+        <div className={styles.blueCircleContainer}>
+          <div className={styles.blueCircleWrapper}>
+            <BlueCircle />
           </div>
-        )}
+        </div>
+      )}
       <div className={styles.containerHelper}></div>
     </div>
   )

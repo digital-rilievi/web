@@ -81,6 +81,9 @@
   padding-top: 2rem;
 }
 
+.secondaryText {
+  white-space: pre-line;
+}
   
   /* Media query for bigger layout */
   @media (max-width: 1920px) {

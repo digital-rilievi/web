@@ -21,6 +21,7 @@ export default function Home() {
         </h1>
         <ImageText image={content.home.firstImage}
           text={content.home.firstImageDesc}
+          secondaryText={content.home.firstImageName}
           inverted
           blueCircle
         />

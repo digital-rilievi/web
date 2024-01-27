@@ -4,7 +4,7 @@
   display: flex;
   width: -webkit-fill-available;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem;
   color: #fff;
   filter: blur(0px);
@@ -34,7 +34,7 @@
 .navLinks {
   display: flex;
   gap: 2rem;
-  color: #fff;
+  white-space: nowrap;
   text-decoration: none;
 }
 

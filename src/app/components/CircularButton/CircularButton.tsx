@@ -4,6 +4,7 @@ import styles from './CircularButton.module.css'
 
 interface CircularButtonProps {
     link: string,
+    label: string,
     remainsInPage?: boolean
 }
 const CircularButton = (props: CircularButtonProps) => {
@@ -13,13 +14,13 @@ const CircularButton = (props: CircularButtonProps) => {
                 props.remainsInPage ? (
                     <Link href={props.link}>
                         <button className={styles.circularButton}>
-                            <span>SCOPRI DI PIÙ</span>
+                            <span>{props.label}</span>
                         </button>
                     </Link>
                 ) :
                     <a href={props.link} target="_blank">
                         <button className={styles.circularButton}>
-                            <span>SCOPRI DI PIÙ</span>
+                            <span>{props.label}</span>
                         </button>
                     </a>
             }

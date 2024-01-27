@@ -30,9 +30,9 @@
   flex: 0.1;
 }
 
-.title {
+.text {
   align-self: center;
-  text-align: left;
+  text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
   white-space: pre-wrap;
@@ -43,11 +43,16 @@
   text-transform: uppercase;
 }
 
-.image {
+.imageWrapper {
   max-width: 45%;
   max-height: 100%;
   margin-right: 20px;
   object-fit: cover;
+}
+
+.name {
+  padding-top: 1rem;
+  text-align: end;
 }
 
 .blueCircleWrapper {
@@ -72,7 +77,8 @@
 
   /* Media query for bigger layout */
   @media (min-width: 1820px) {
-    .image {
+    .image,
+    .imageWrapper {
         height: 50rem;
         width: auto;
     }
@@ -95,7 +101,7 @@
   /* Media query for mobile layout */
   @media (max-width: 1024px) {
   .container,
-  .title {
+  .text {
     flex-direction: column; /* Switch to a vertical layout for smaller screens */
     align-items: flex-start; /* Align items to the top left in mobile layout */
   }
@@ -114,7 +120,7 @@
     margin-bottom: 2rem; /* Add spacing at the bottom of each component */
   }
 
-  .title {
+  .text {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
@@ -122,7 +128,7 @@
     white-space: pre-wrap
   }
 
-  .image {
+  .imageWrapper {
     max-width: 100%; /* Allow the image to take the full width in mobile layout */
     margin-right: 0; /* Remove margin for mobile layout */
     padding: 2rem;

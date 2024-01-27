@@ -5,9 +5,10 @@ import styles from './ImageButton.module.css'
 
 interface ImageButtonProps {
   image: string,
-  title: String,
   text?: string,
+  name?: string,
   link?: string,
+  buttonLabel: string,
   remainsInPage?: boolean,
   inverted?: String | Boolean,
   blueCircle?: Boolean
@@ -18,13 +19,13 @@ const ImageButton = (props: ImageButtonProps) => {
     <div className={`${styles.container} ${props.inverted ? styles.inverted : ''}`}>
       <div className={styles.containerHelper}></div>
       <div className={`${styles.content} ${props.blueCircle ? styles.contentWithCircle : ''}`}>
-        {props.title && (
-          <h2 className={styles.title}>
-            {props.title}
+        {props.text && (
+          <h2 className={styles.text}>
+            {props.text}
           </h2>
         )}
         <div className={styles.buttonWrapper} >
-          <CircularButton link={'/progetti'} remainsInPage={props.remainsInPage} />
+          <CircularButton link={'/progetti'} label={props.buttonLabel} remainsInPage={props.remainsInPage} />
         </div>
         {props.blueCircle && (
           <div className={styles.blueCircleWrapper}>
@@ -33,7 +34,13 @@ const ImageButton = (props: ImageButtonProps) => {
         )}
       </div>
       <div className={styles.containerHelper}></div>
+      <div className={styles.imageWrapper}>
       <img className={styles.image} src={props.image} alt="Image" />
+      {props.name && (
+        <div className={styles.name}>{props.name}</div>
+        )}
+      </div>
+      
     </div>
   )
 }

@@ -26,8 +26,10 @@ export default function Home() {
       <Space size={"big"} />
       <Space size={"big"} />
       <ImageButton
-        image={"/assets/projects/mose.png"}
-        title={"LA NOSTRA AZIENDA\nE I NOSTRI PROGETTI"}
+        image={content.home.secondImage}
+        text={content.home.secondImageDesc}
+        name={content.home.secondImageName}
+        buttonLabel={content.home.secondImageButtonLabel}
         remainsInPage={true}
       />
       <Space size={"big"} />

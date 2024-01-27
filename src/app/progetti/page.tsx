@@ -3,6 +3,7 @@ import Footer from '../components/Footer/Footer'
 import ImageText from '../components/ImageText/ImageText'
 import Navbar from '../components/Navbar/Navbar'
 import content from 'content.json'
+import globalStyles from 'app/page.module.css'
 
 export interface ProjectProps {
     image: string,
@@ -14,7 +15,7 @@ export interface ProjectProps {
     linkLabel?: string,
     inverted?: String | Boolean,
     blueCircle?: Boolean
-  }
+}
 
 const Progetti = () => {
 
@@ -22,6 +23,9 @@ const Progetti = () => {
     return (
         <>
             <Navbar />
+            <div className={globalStyles.appBarSpace}>
+                <Navbar invisible />
+            </div>
             <div>
                 {projects.map((info: ProjectProps, index) => (
                     <ImageText

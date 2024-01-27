@@ -5,7 +5,11 @@ import Image from 'next/image'
 import styles from './Navbar.module.css'
 import { usePathname } from 'next/navigation'
 
-const Navbar = () => {
+interface NavBarProps {
+  invisible?: Boolean
+}
+
+const Navbar = (props: NavBarProps) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
 
@@ -14,9 +18,9 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={props.invisible ? styles.spacingNavBar : styles.navbar}>
       <div className={styles.logo}>
-      <Link href="/">
+        <Link href="/">
           <Image src="/assets/logo/letter_d.svg" alt="Logo" width="1" height="1" />
         </Link>
       </div>

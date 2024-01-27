@@ -42,30 +42,39 @@
   padding: 1rem;
 }
 
-  .duration {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 34px; /* 106.25% */
-    text-transform: uppercase;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+.duration {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 106.25% */
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .image {
   max-width: 45%;
   max-height: 100%;
   margin-right: 20px;
   object-fit: cover;
+  position: relative; /* Add position: relative */
+  z-index: 2; /* Set z-index higher than BlueCircle */
+}
+
+.blueCircleContainer {
+  display: flex;
+  flex-direction: row;
+  left: 45%;
+  top: -25%;
+  position: absolute;
+  z-index: 1;
 }
 
 .blueCircleWrapper {
-  position: absolute;
-  top: -240px;
   left: 0;
-  z-index: 1; /* Set z-index lower than Content */
   height: 720px;
   width: 720px;
+  flex: 1;
 }
 
 .circularButtonWrapper {
@@ -90,8 +99,13 @@
 
     /* Media query for smaller layout */
   @media (max-width: 1460px) {
+
+    .blueCircleContainer {
+      left: 45%;
+      top: -15%;
+    }
+
     .blueCircleWrapper {
-      top: -180px;
       height: 520px;
       width: 520px;
     }

@@ -18,10 +18,8 @@ export default function Home() {
       <h1 className={styles.title}>
         {content.home.title}
       </h1>
-      <ImageText image="/assets/projects/project-home.png"
-        text={
-          `La Digital Rilievi s.r.l. è fondata nel 2001, con l’obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.`
-        }
+      <ImageText image={content.home.firstImage}
+        text={content.home.firstImageDesc}
         inverted
         blueCircle
       />

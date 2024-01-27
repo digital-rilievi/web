@@ -17,8 +17,9 @@ interface ImageTextProps {
 
 const ImageText = (props: ImageTextProps) => {
   return (
-    <div className={`${styles.container} ${props.inverted ? styles.inverted : ''}`}>
+    <div className={`${styles.container} ${props.inverted ? '' : styles.inverted}`}>
       <div className={styles.containerHelper}></div>
+      <img className={styles.image} src={props.image} alt="Image" />
       <div className={`${styles.content} ${props.blueCircle ? styles.contentWithCircle : ''}`}>
         {props.title && (
           <h2 className={styles.title}>
@@ -28,11 +29,6 @@ const ImageText = (props: ImageTextProps) => {
         <div className={styles.text}>
           <p>{props.text}</p>
         </div>
-        {props.blueCircle && (
-          <div className={styles.blueCircleWrapper}>
-            <BlueCircle />
-          </div>
-        )}
         <Space />
         {props.duration1 && (
           <h2 className={styles.duration}>
@@ -50,10 +46,14 @@ const ImageText = (props: ImageTextProps) => {
           </div>
         )}
       </div>
+      {props.blueCircle && (
+          <div className={styles.blueCircleContainer}>
+            <div className={styles.blueCircleWrapper}>
+              <BlueCircle />
+            </div>
+          </div>
+        )}
       <div className={styles.containerHelper}></div>
-
-      <img className={styles.image} src={props.image} alt="Image" />
-
     </div>
   )
 }

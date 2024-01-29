@@ -7,6 +7,7 @@ import ImageText from "./components/ImageText/ImageText"
 import Footer from "./components/Footer/Footer"
 import ImageButton from "./components/ImageButton/ImageButton"
 import Space from "./components/Space/Space"
+import BlueTextCta from "./components/BlueTextCta/BlueTextCta"
 
 export default function Home() {
   return (
@@ -34,6 +35,11 @@ export default function Home() {
           buttonLabel={content.home.secondImageButtonLabel}
           remainsInPage={true}
         />
+        <Space size={"big"} />
+        <Space size={"big"} />
+        <Space size={"big"} />
+        <BlueTextCta text={content.home.areYouInterested} label={content.home.areYouInterestedLabel} link={content.home.areYouInterestedLink} />
+        <Space size={"big"} />
         <Space size={"big"} />
         <Space size={"big"} />
         <PartnersList

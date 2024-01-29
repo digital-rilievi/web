@@ -9,6 +9,9 @@
         "secondImageName": "MOSE__VENEZIA",
         "secondImageDesc": "LA NOSTRA AZIENDA\nE I NOSTRI PROGETTI",
         "secondImageButtonLabel": "SCOPRI DI PIÙ",
+        "areYouInterested": "SEI INTERESSATO AI\nNOSTRI SERVIZI?",
+        "areYouInterestedLabel": "CONTATTACI",
+        "areYouInterestedLink": "/contatti",
         "partners": [
             "/assets/partners/chioggia.jpeg",
             "/assets/partners/logo1.png",

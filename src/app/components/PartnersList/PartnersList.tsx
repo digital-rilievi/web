@@ -1,5 +1,6 @@
 import styles from './PartnersList.module.css'
 import Image from 'next/image'
+import Space from '../Space/Space'
 
 interface PartnersListProps {
   className: string,
@@ -8,10 +9,10 @@ interface PartnersListProps {
 
 const PartnersList = (props: PartnersListProps) => {
 
-  var realPartnersList = props.partners.concat(props.partners)
-
   return (
     <div className={styles.container}>
+      <p className={styles.partnersTitle}>I NOSTRI PARTNER</p>
+      <Space size={'big'}/>
       <div className={styles.scrollWrapper}>
 
         <div className={styles.imageLists}>

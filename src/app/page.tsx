@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer"
 import ImageButton from "./components/ImageButton/ImageButton"
 import Space from "./components/Space/Space"
 import BlueTextCta from "./components/BlueTextCta/BlueTextCta"
+import ManualSlider from "./components/ManualSlider/ManualSlider"
+import WeDealWith from "./components/WeDealWith/WeDealWith"
 
 export default function Home() {
   return (
@@ -35,6 +37,14 @@ export default function Home() {
           buttonLabel={content.home.secondImageButtonLabel}
           remainsInPage={true}
         />
+        <Space size={"big"} />
+        <Space size={"big"} />
+        <Space size={"big"} />
+        <ManualSlider slides={[
+        <WeDealWith image1={""} image2={""} text={"aa"} />,
+        <WeDealWith image1={""} image2={""} text={"bb"} />,
+        <WeDealWith image1={""} image2={""} text={"cc"} />
+        ]} />
         <Space size={"big"} />
         <Space size={"big"} />
         <Space size={"big"} />

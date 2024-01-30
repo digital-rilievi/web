@@ -11,6 +11,7 @@
 .appBarSpace {
   visibility: hidden;    /* Make the div invisible */
   pointer-events: none;  /* Make the div non-interactable */
+  padding-bottom: 3rem;
 }
 
 .content {

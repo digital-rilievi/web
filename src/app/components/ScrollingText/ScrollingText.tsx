@@ -1,18 +1,28 @@
 import styles from './ScrollingText.module.css'
 
-const ScrollingText = () => {
-    return (
-        <>
+interface ScrollingtextProps {
+    text: string
+}
 
-            <div className={styles.horizontalScrollingItems}>
-                <div className={styles.horizontalScrollingItemsItem}>
-                    Here is some horizontally scrolling text used for a tutorial. It will loop smoothly.&nbsp
-                </div>
-                <div className={styles.horizontalScrollingItemsItem}>
-                    Here is some horizontally scrolling text used for a tutorial. It will loop smoothly.&nbsp
-                </div>
+const ScrollingText = (props: ScrollingtextProps) => {
+    return (
+        <div className={styles.container}>
+            <div className={styles.scroll} style={{"--t": "20s"}}>
+                <div className={`${''}`}>
+                    <span className={styles.text}>{`${props.text}`}</span>
+                    <span className={styles.text}>{`${props.text}`}</span>
+                    <span className={styles.text}>{`${props.text}`}</span>
+                    <span className={styles.text}>{`${props.text}`}</span>
+                    </div>
+                <div className={''}>&nbsp;</div>
+                <div className={`${''}`}>
+                    <span className={styles.text}>{`${props.text}`}</span>
+                    <span className={styles.text}>{`${props.text}`}</span>
+                    <span className={styles.text}>{`${props.text}`}</span>
+                    <span className={styles.text}>{`${props.text}`}</span>
+                    </div>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -1,7 +1,5 @@
 import React from 'react'
-import BlueCircle from '../BlueCircle/BlueCircle'
 import CircularButton from '../CircularButton/CircularButton'
-import OverlappingImages from '../OverlappingImages/OverlappingImages'
 import Space from '../Space/Space'
 import styles from './WeDealWith.module.css'
 

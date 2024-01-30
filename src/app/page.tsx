@@ -10,11 +10,13 @@ import Space from "./components/Space/Space"
 import BlueTextCta from "./components/BlueTextCta/BlueTextCta"
 import ManualSlider from "./components/ManualSlider/ManualSlider"
 import WeDealWith from "./components/WeDealWith/WeDealWith"
+import WhoWeAre from "./components/WhoWeAre/WhoWeAre"
 
 export default function Home() {
 
   var weDealWithList: React.ReactNode[] = content.home.weDealWith.map((deal, index) => (
     <WeDealWith
+      key={index}
       index={index}
       image1={deal.img1}
       image2={deal.img2}
@@ -64,6 +66,11 @@ export default function Home() {
           className={styles.partnersList}
           partners={content.home.partners}
         />
+        <Space size={"big"} />
+        <Space size={"big"} />
+        <Space size={"big"} />
+        <WhoWeAre items={content.home.whoWeAreList} />
+        <Space size={"big"} />
         <Space size={"big"} />
         <Space size={"big"} />
         <Footer />

@@ -99,19 +99,16 @@
   padding-bottom: 5%;
   padding-left: 1rem;
 }
-  
-  /* Media query for bigger layout */
-  @media (max-width: 1920px) {
-    .containerHelper {
-        flex: 0;
-    }
-  }
 
   /* Media query for bigger layout */
   @media (min-width: 1820px) {
     .image {
         height: 50rem;
         width: auto;
+    }
+    
+    .longTitle {
+      white-space: nowrap;
     }
   }
 

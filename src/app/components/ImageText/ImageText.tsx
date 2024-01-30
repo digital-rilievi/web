@@ -31,7 +31,7 @@ const ImageText = (props: ImageTextProps) => {
         <div className={styles.text}>
           <p>{props.text}</p>
         </div>
-        <Space />
+        <Space size={"small"} />
         {props.duration1 && (
           <h2 className={styles.duration}>
             {props.duration1}
@@ -48,7 +48,7 @@ const ImageText = (props: ImageTextProps) => {
           </div>
         )}
         <div style={{"flex": "auto"}}>
-        <Space />
+        <Space size={"small"} />
         </div>
         {props.secondaryText && (
         <div className={styles.secondaryText}>

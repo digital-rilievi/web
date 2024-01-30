@@ -12,7 +12,7 @@ const PartnersList = (props: PartnersListProps) => {
   return (
     <div className={styles.container}>
       <p className={styles.partnersTitle}>I NOSTRI PARTNER</p>
-      <Space size={'big'}/>
+      <Space />
       <div className={styles.scrollWrapper}>
 
         <div className={styles.imageLists}>

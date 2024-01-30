@@ -1,7 +1,11 @@
 .bigSpace {
-    height: 4rem;
+    height: 8rem;
 }
 
 .space {
+    height: 4rem;
+}
+
+.smallSpace {
     height: 2rem;
 }

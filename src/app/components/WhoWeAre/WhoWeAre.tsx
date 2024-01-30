@@ -19,7 +19,7 @@ const WhoWeAre = (props: WhoWeAreProps) => {
     return (
         <div>
             <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
-            <Space size={'big'}/>
+            <Space />
             {props.items.map((item, index) => (
                 <div key={index} style={{ display: "flex", flexDirection: "column" }}>
                     <div className={styles.item}>

@@ -174,7 +174,10 @@
                 "inverted": "true",
                 "link": ""
             }
-        ]
+        ],
+        "moreInfo": "VUOI VISUALIZZARE\nPIÙ PROGETTI",
+        "moreInfoCta": "CARICA",
+        "moreInfoLink": "/prova"
     },
     "testimonials": {
         "title": "LE OPINIONI DEI NOSTRI CLIENTI ___"

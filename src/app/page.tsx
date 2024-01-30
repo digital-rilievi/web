@@ -31,7 +31,6 @@ export default function Home() {
       <div className={styles.content}>
         <VideoPlayer />
         <Space size={"big"} />
-        <Space size={"big"} />
         <h1 className={styles.title}>
           {content.home.title}
         </h1>
@@ -42,7 +41,6 @@ export default function Home() {
           blueCircle
         />
         <Space size={"big"} />
-        <Space size={"big"} />
         <ImageButton
           image={content.home.secondImage}
           text={content.home.secondImageDesc}
@@ -51,28 +49,22 @@ export default function Home() {
           remainsInPage={true}
         />
         <Space size={"big"} />
-        <Space size={"big"} />
-        <Space size={"big"} />
+        <Space />
         <ManualSlider slides={weDealWithList} />
-        <Space size={"big"} />
-        <Space size={"big"} />
         <Space size={"big"} />
         <Space size={"big"} />
         <BlueTextCta text={content.home.areYouInterested} label={content.home.areYouInterestedLabel} link={content.home.areYouInterestedLink} />
         <Space size={"big"} />
-        <Space size={"big"} />
-        <Space size={"big"} />
+        <Space />
         <PartnersList
           className={styles.partnersList}
           partners={content.home.partners}
         />
         <Space size={"big"} />
-        <Space size={"big"} />
-        <Space size={"big"} />
+        <Space />
         <WhoWeAre items={content.home.whoWeAreList} />
         <Space size={"big"} />
-        <Space size={"big"} />
-        <Space size={"big"} />
+        <Space />
         <Footer />
       </div>
     </main>

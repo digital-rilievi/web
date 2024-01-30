@@ -12,6 +12,17 @@ import ManualSlider from "./components/ManualSlider/ManualSlider"
 import WeDealWith from "./components/WeDealWith/WeDealWith"
 
 export default function Home() {
+
+  var weDealWithList: React.ReactNode[] = content.home.weDealWith.map((deal, index) => (
+    <WeDealWith
+      index={index}
+      image1={deal.img1}
+      image2={deal.img2}
+      title={deal.title}
+      text={deal.text}
+      link={deal.link} />
+  ));
+
   return (
     <main>
       <NavBar />
@@ -40,11 +51,7 @@ export default function Home() {
         <Space size={"big"} />
         <Space size={"big"} />
         <Space size={"big"} />
-        <ManualSlider slides={[
-        <WeDealWith image1={""} image2={""} text={"aa"} />,
-        <WeDealWith image1={""} image2={""} text={"bb"} />,
-        <WeDealWith image1={""} image2={""} text={"cc"} />
-        ]} />
+        <ManualSlider slides={weDealWithList} />
         <Space size={"big"} />
         <Space size={"big"} />
         <Space size={"big"} />

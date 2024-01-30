@@ -5,8 +5,11 @@
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  min-height: 700px;
   padding: 2rem;
-  position: relative; /* Add position: relative to establish stacking context */
+  background: #0038FF;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .inverted {
@@ -18,71 +21,83 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 6rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
   position: relative; /* Add position: relative */
   z-index: 2; /* Set z-index higher than BlueCircle */
 }
 
-.containerHelper {
-  flex: 0.1;
+.preTitle {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 68px; /* 170% */
+  text-transform: lowercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .title {
   align-self: flex-start;
   text-align: left;
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 68px; /* 106.25% */
+  letter-spacing: 2.56px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.longTitle {
+    white-space: pre-line;
 }
 
 .text {
   align-self: flex-start;
   text-align: left;
-  padding: 1rem;
-}
-
-.duration {
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 34px; /* 106.25% */
-  text-transform: uppercase;
   padding-left: 1rem;
   padding-right: 1rem;
+  max-width: 80%;
 }
 
-.image {
-  max-width: 45%;
-  max-height: 100%;
-  margin-right: 20px;
+
+.imagesWrapper {
+    flex: 1;
+}
+
+.image1,
+.image2 {
+  width: 320px;
   object-fit: cover;
   position: relative; /* Add position: relative */
   z-index: 2; /* Set z-index higher than BlueCircle */
 }
 
-.blueCircleContainer {
-  display: flex;
-  flex-direction: row;
-  left: 45%;
-  top: -25%;
-  position: absolute;
-  z-index: 1;
+.image1 {
+    z-index: 10;
+    position: absolute;
+    top: 42.5%;
 }
 
-.blueCircleWrapper {
-  left: 0;
-  height: 720px;
-  width: 720px;
-  flex: 1;
+.image2 {
+    z-index: 5;
+    position: absolute;
+    top: 15%;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .circularButtonWrapper {
-  padding-top: 2rem;
-}
-
-.secondaryText {
-  white-space: pre-line;
+  padding-bottom: 5%;
+  padding-left: 1rem;
 }
   
   /* Media query for bigger layout */
@@ -114,7 +129,6 @@
     }
 
     .content {
-      padding: 2rem;
     }
   }
 

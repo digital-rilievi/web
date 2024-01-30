@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import styles from './ManualSlider.module.css'
+import Image from 'next/image'
 
 interface SliderProps {
     slides: React.ReactNode[];
@@ -41,10 +42,11 @@ const ManualSlider = (props: SliderProps) => {
             </div>
 
             <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={leftArrowStyle}>
-                &larr;
+            <Image src="assets/extra/left-arrow.svg" alt={"&larr;"} width={46} height={46} />
+
             </button>
             <button className={`${styles.arrow} ${styles.right}`} onClick={nextSlide} style={rightArrowStyle}>
-                &rarr;
+            <Image src="assets/extra/right-arrow.svg" alt={"&rarr;"} width={46} height={46} />
             </button>
         </div>
     )

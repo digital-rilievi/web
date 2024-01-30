@@ -14,10 +14,6 @@ const ChiSiamo = () => {
         <Navbar invisible />
       </div>
       <ScrollingText text={content['chi-siamo'].title}/>
-      <div className={styles.container}>
-        <div className={styles.content}>
-        </div>
-      </div>
       <Footer />
     </>
   )

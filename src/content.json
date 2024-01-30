@@ -177,7 +177,10 @@
         ],
         "moreInfo": "VUOI VISUALIZZARE\nPIÙ PROGETTI",
         "moreInfoCta": "CARICA",
-        "moreInfoLink": "/prova"
+        "moreInfoLink": "/prova",
+        "projectsInterested": "SEI INTERSSATO AI\nNOSTRI SERVIZI?",
+        "projectsInterestedCta": "CONTATTACI",
+        "projectsInterestedLink": "/prova"
     },
     "testimonials": {
         "title": "LE OPINIONI DEI NOSTRI CLIENTI ___"

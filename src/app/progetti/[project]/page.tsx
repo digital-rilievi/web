@@ -6,6 +6,8 @@ import Footer from 'app/components/Footer/Footer'
 import Image from 'next/image'
 import style from './Project.module.css'
 import globalStyles from 'app/page.module.css'
+import Space from 'app/components/Space/Space'
+import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
 
 interface ProjectPageProps {
   params: { project: string }
@@ -18,10 +20,12 @@ function Project({ params }: ProjectPageProps) {
   return (
     <>
       <Navbar />
-      <div className={globalStyles.appBarSpace}>
-        <Navbar invisible />
-      </div>
       <Image width={1} height={1} className={style.image} src={`${project?.details?.image}`} alt={`Image`} unoptimized={true} />
+      <Space size={"big"}/>
+      <Space size={"big"}/>
+      <BlueTextCta text={content.progetti.projectsInterested} label={content.progetti.projectsInterestedCta} link={content.progetti.projectsInterestedLink} />
+      <Space size={"big"}/>
+      <Space size={"big"}/>
       <Footer />
     </>
   );

@@ -102,8 +102,12 @@
             }
         ]
     },
-    "chi-siamo": {},
-    "contatti": {},
+    "chi-siamo": {
+        "title": "LA NOSTRA STORIA __ "
+    },
+    "contatti": {
+        "title": "DOVE TROVARCI __ "
+    },
     "progetti": {
         "title": "ALCUNI DEI NOSTRI PROGETTI__ ",
         "linksLabel": "SCOPRI DI PIÙ",
@@ -172,7 +176,9 @@
             }
         ]
     },
-    "testimonials": {},
+    "testimonials": {
+        "title": "LE OPINIONI DEI NOSTRI CLIENTI ___"
+    },
     "footer": {
         "companyName": "Digital Rilievi S.r.l.",
         "addressLine1": "Via Montello 50/A",

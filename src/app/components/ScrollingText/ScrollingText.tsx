@@ -7,7 +7,7 @@ interface ScrollingtextProps {
 const ScrollingText = (props: ScrollingtextProps) => {
     return (
         <div className={styles.container}>
-            <div className={styles.scroll} style={{"--t": "20s"}}>
+            <div className={styles.scroll}>
                 <div className={`${''}`}>
                     <span className={styles.text}>{`${props.text}`}</span>
                     <span className={styles.text}>{`${props.text}`}</span>

@@ -4,10 +4,11 @@ import content from 'content.json'
 import Navbar from 'app/components/Navbar/Navbar'
 import Footer from 'app/components/Footer/Footer'
 import Image from 'next/image'
-import style from './Project.module.css'
+import styles from './Project.module.css'
 import globalStyles from 'app/page.module.css'
 import Space from 'app/components/Space/Space'
 import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
+import BlueCircle from 'app/components/BlueCircle/BlueCircle'
 
 interface ProjectPageProps {
   params: { project: string }
@@ -20,12 +21,19 @@ function Project({ params }: ProjectPageProps) {
   return (
     <>
       <Navbar />
-      <Image width={1} height={1} className={style.image} src={`${project?.details?.image}`} alt={`Image`} unoptimized={true} />
-      <Space size={"big"}/>
-      <Space size={"big"}/>
+      <Image width={1} height={1} className={styles.image} src={`${project?.details?.image}`} alt={`Image`} unoptimized={true} />
+      <div className={styles.blueCircleWrapper}>
+        <BlueCircle />
+        <div className={styles.titleWrapper}>
+          <div className={styles.title}>{project?.details?.title}</div>
+        </div>
+      </div>
+      <Space size={"big"} />
+      <Space size={"big"} />
+
       <BlueTextCta text={content.progetti.projectsInterested} label={content.progetti.projectsInterestedCta} link={content.progetti.projectsInterestedLink} />
-      <Space size={"big"}/>
-      <Space size={"big"}/>
+      <Space size={"big"} />
+      <Space size={"big"} />
       <Footer />
     </>
   );

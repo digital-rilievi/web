@@ -47,15 +47,13 @@ line-height: 24px; /* 133.333% */
   flex-grow: 1;
 }
 
-.socialButtons {
+.socialButtonsWrapper {
   display: flex;
   gap: 15px;
   margin-top: 10px;
 }
 
-.socialButtons button {
-  background-color: #fff;
-  color: #000;
+.socialButtons {
   border: none;
   border-radius: 50%;
   width: 30px;

@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  text-align: center;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  min-width: 46px;
+}
+
+.arrow,
+.positionIndicator {
+    padding: 0.4rem;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.controls {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: end;
+  align-self: self-end;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.positionIndicator {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.carouselImage {
+  height: 1000px;
+  width: 80%;
+  object-fit: cover;
+}

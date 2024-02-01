@@ -120,11 +120,16 @@
                 "duration2": "+ 8000 GIORNI DI LAVORO",
                 "link": "mose",
                 "details": {
-                    "image": "/assets/projects/mose/mose-worksite.jpg",
+                    "coverImage": "/assets/projects/mose/mose-worksite.jpg",
                     "title": "MOSE,\nVenezia,\n2020",
+                    "panelImage": "/assets/projects/mose.png",
+                    "panelImageText": "La Digital Rilievi s.r.l. è fondata nel 2001, con l’obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico.",
+                    "panelImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l’obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.\nUno sguardo sempre attento è rivolto al costante sviluppo tecnologico e all’utilizzo della più moderna strumentazione per la realizzazione dei nostri servizi. Disponiamo di stazioni totali motorizzate e robotizzate, sistemi GNSS per il rilievo satellitare, autolivelli digitali, workstation videografiche, stereorestitutori digitali, laser scanner, localizzatori di sottoservizi, georadar, plotter e scanner a grande formato, ecc.\n\nOperiamo anche nel campo del Mobile Laser Scanner con il sistema G.V.S.M.L.S. per la realizzazione del progetto VIADATA. Tutto questo ci mette in condizione di soddisfare una gamma molto vasta di richieste anche con metodologie integrate fra loro e ci permette di realizzare progetti personalizzati di rilevamento, completati se del caso anche con applicativi software, fino alla realizzazione finita di sistemi informativi territoriali e non solo.",
                     "carousel": [
-                        "iamge1",
-                        "image2"
+                        "/assets/projects/mose/carousel/1.jpeg",
+                        "/assets/projects/mose/carousel/2.jpeg",
+                        "/assets/projects/mose/carousel/3.jpeg",
+                        "/assets/projects/mose/carousel/4.jpeg"
                     ]
                 }
             },

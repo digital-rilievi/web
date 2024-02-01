@@ -5,9 +5,9 @@ import Space from '../Space/Space'
 import styles from './ImageText.module.css'
 
 interface ImageTextProps {
-  image: string,
+  image?: string,
   title?: String,
-  text: string,
+  text?: string,
   secondaryText?: string,
   duration1?: string,
   duration2?: string,
@@ -28,9 +28,11 @@ const ImageText = (props: ImageTextProps) => {
             {props.title}
           </h2>
         )}
-        <div className={styles.text}>
-          <p>{props.text}</p>
-        </div>
+        {props.text && (
+          <div className={styles.text}>
+            <p>{props.text}</p>
+          </div>
+        )}
         <Space size={"small"} />
         {props.duration1 && (
           <h2 className={styles.duration}>
@@ -47,14 +49,14 @@ const ImageText = (props: ImageTextProps) => {
             <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
           </div>
         )}
-        <div style={{"flex": "auto"}}>
-        <Space size={"small"} />
+        <div style={{ "flex": "auto" }}>
+          <Space size={"small"} />
         </div>
         {props.secondaryText && (
-        <div className={styles.secondaryText}>
-          {props.secondaryText}
-        </div>
-      )}
+          <div className={styles.secondaryText}>
+            {props.secondaryText}
+          </div>
+        )}
       </div>
       {props.blueCircle && (
         <div className={styles.blueCircleContainer}>

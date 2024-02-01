@@ -9,6 +9,8 @@ import globalStyles from 'app/page.module.css'
 import Space from 'app/components/Space/Space'
 import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
 import BlueCircle from 'app/components/BlueCircle/BlueCircle'
+import ImageText from 'app/components/ImageText/ImageText'
+import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
 
 interface ProjectPageProps {
   params: { project: string }
@@ -21,7 +23,7 @@ function Project({ params }: ProjectPageProps) {
   return (
     <>
       <Navbar />
-      <Image width={1} height={1} className={styles.image} src={`${project?.details?.image}`} alt={`Image`} unoptimized={true} />
+      <Image width={1} height={1} className={styles.image} src={`${project?.details?.coverImage}`} alt={`Image`} unoptimized={true} />
       <div className={styles.blueCircleWrapper}>
         <BlueCircle />
         <div className={styles.titleWrapper}>
@@ -30,10 +32,14 @@ function Project({ params }: ProjectPageProps) {
       </div>
       <Space size={"big"} />
       <Space size={"big"} />
+      <ImageText inverted image={project?.details?.panelImage} title={project?.details?.panelImageText} secondaryText={project?.details?.panelImageDesc} />
 
+      <Space size={"big"} />
+      <Space size={"big"} />
       <BlueTextCta text={content.progetti.projectsInterested} label={content.progetti.projectsInterestedCta} link={content.progetti.projectsInterestedLink} />
       <Space size={"big"} />
       <Space size={"big"} />
+      <ImagesCarousel slides={project?.details?.carousel} />
       <Footer />
     </>
   );

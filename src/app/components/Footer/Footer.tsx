@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from './Footer.module.css'
 import content from 'content.json'
-import Image from 'next/Image'
+import Image from 'next/image'
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -33,11 +34,10 @@ const Footer = () => {
         <div>
           <div className={styles.socialButtonsWrapper}>
             <a href={content.footer.facebook} target="_blank">
-                <Image className={styles.socialButtons} src="assets/footer/facebook.svg" alt={"&larr;"} width={30} height={30}/>
+              <Image className={styles.socialButtons} src="/assets/footer/facebook.svg" alt={"&larr;"} width={30} height={30} />
             </a>
             <a href={content.footer.linkedin} target="_blank">
-            <Image className={styles.socialButtons} src="assets/footer/linkedin.svg" alt={"&larr;"} width={30} height={30}/>
-            
+              <Image className={styles.socialButtons} src="/assets/footer/linkedin.svg" alt={"&larr;"} width={30} height={30} />
             </a>
           </div>
         </div >

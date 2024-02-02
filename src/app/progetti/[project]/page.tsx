@@ -40,6 +40,8 @@ function Project({ params }: ProjectPageProps) {
       <Space size={"big"} />
       <Space size={"big"} />
       <ImagesCarousel slides={project?.details?.carousel} />
+      <Space size={"big"} />
+      <Space size={"big"} />
       <Footer />
     </>
   );

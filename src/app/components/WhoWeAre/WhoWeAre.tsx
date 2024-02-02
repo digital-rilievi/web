@@ -1,6 +1,9 @@
+'use client'
 import React from 'react'
 import Space from '../Space/Space';
 import styles from './WhoWeAre.module.css'
+import { Tooltip } from 'react-tooltip'
+import CustomTooltip from '../CustomTooltip/CustomTooltip';
 
 interface Item {
     name: string;
@@ -16,6 +19,9 @@ interface WhoWeAreProps {
 }
 
 const WhoWeAre = (props: WhoWeAreProps) => {
+
+
+
     return (
         <div>
             <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
@@ -23,10 +29,16 @@ const WhoWeAre = (props: WhoWeAreProps) => {
             {props.items.map((item, index) => (
                 <div key={index} style={{ display: "flex", flexDirection: "column" }}>
                     <div className={styles.item}>
-                        <div className={styles.column}>
-                            <div className={styles.title}>{item.name}</div>
-                            <div className={styles.desc}>{item.role}</div>
-                        </div>
+                        <div className={styles.namesColumnWrapper}>
+                            <div id="my-anchor-element" className={styles.nameColumn}>
+                                <div className={styles.title}>{item.name}</div>
+                                <div className={styles.desc}>{item.role}</div>
+                                <Tooltip offset={0} place={"right"} arrowColor={"transparent"} className={styles.tooltipContainer} anchorSelect="#my-anchor-element">
+                                    <CustomTooltip />
+                                </Tooltip>
+                            </div>
+                        </div >
+
                         <div className={styles.column}>
                             <h3 className={styles.title}>{item.title1}</h3>
                             <p className={styles.desc}>{item.desc1}</p>
@@ -35,8 +47,8 @@ const WhoWeAre = (props: WhoWeAreProps) => {
                             <h3 className={styles.title}>{item.title2}</h3>
                             <p className={styles.desc}>{item.desc2}</p>
                         </div>
-                    </div>
-                    {index < props.items.length - 1 && <div className={styles.separator}></div>}
+                    </div >
+                    <div className={styles.separator}></div>
                 </div>
             ))}
         </div>

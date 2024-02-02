@@ -1,0 +1,30 @@
+.tooltipContainer {
+    background-color: #F5F5F5;
+    color: #0038FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tooltipImage {
+    width: 240px;
+}
+
+.quoteWrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    max-width: 320px;
+}
+
+.tooltipText {
+}
+
+.tooltipQuote {
+    font-size: 160px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0038FF;
+}

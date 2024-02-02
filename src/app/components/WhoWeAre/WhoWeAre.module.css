@@ -8,10 +8,24 @@
   padding: 20px;
 }
 
-.column {
+.namesColumnWrapper {
+  display: flex;
+  flex-direction: row;
   flex: 1;
+}
+
+.spacer {
+  width: -webkit-fill-available;
+}
+
+.column {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+.nameColumn:hover {
+  color: #0038FF;
 }
 
 .separator {
@@ -47,4 +61,9 @@
     line-height: 24px;
     letter-spacing: 0.64px;
     text-transform: capitalize;
+}
+
+.tooltipContainer {
+  background: transparent !important;
+  padding: 0px;
 }

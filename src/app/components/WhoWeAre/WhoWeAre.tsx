@@ -6,12 +6,14 @@ import { Tooltip } from 'react-tooltip'
 import CustomTooltip from '../CustomTooltip/CustomTooltip';
 
 interface Item {
-    name: string;
-    role: string;
-    title1: string;
-    desc1: string;
-    title2: string;
-    desc2: string;
+    name: string,
+    role: string,
+    title1: string,
+    desc1: string,
+    title2: string,
+    desc2: string,
+    tooltipQuote: string,
+    tooltipImage: string
 }
 
 interface WhoWeAreProps {
@@ -30,12 +32,14 @@ const WhoWeAre = (props: WhoWeAreProps) => {
                 <div key={index} style={{ display: "flex", flexDirection: "column" }}>
                     <div className={styles.item}>
                         <div className={styles.namesColumnWrapper}>
-                            <div id="my-anchor-element" className={styles.nameColumn}>
+                            <div id={`my-anchor-element${index}`} className={styles.nameColumn}>
                                 <div className={styles.title}>{item.name}</div>
                                 <div className={styles.desc}>{item.role}</div>
-                                <Tooltip offset={0} place={"right"} arrowColor={"transparent"} className={styles.tooltipContainer} anchorSelect="#my-anchor-element">
-                                    <CustomTooltip />
-                                </Tooltip>
+                                {(item.tooltipQuote || item.tooltipImage) && (
+                                    <Tooltip offset={0} place={"right"} arrowColor={"transparent"} className={styles.tooltipContainer} anchorSelect={`#my-anchor-element${index}`}>
+                                        <CustomTooltip quote={item.tooltipQuote} img={item.tooltipImage} />
+                                    </Tooltip>
+                                )}
                             </div>
                         </div >
 
@@ -55,4 +59,4 @@ const WhoWeAre = (props: WhoWeAreProps) => {
     );
 };
 
-export default WhoWeAre;
+export default WhoWeAre

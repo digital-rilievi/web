@@ -50,7 +50,9 @@
                 "title1": "LOREM IPSUM SIT",
                 "desc1": "LOREM IPSUM",
                 "title2": "LOREM IPSUM SIT",
-                "desc2": "LOREM IPSUM"
+                "desc2": "LOREM IPSUM",
+                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "FABRIZIO GARDENAL",
@@ -58,7 +60,9 @@
                 "title1": "LOREM IPSUM SIT",
                 "desc1": "LOREM IPSUM",
                 "title2": "LOREM IPSUM SIT",
-                "desc2": "LOREM IPSUM"
+                "desc2": "LOREM IPSUM",
+                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipQuote": ""
             },
             {
                 "name": "SARA SANTIN",

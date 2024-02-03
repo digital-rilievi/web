@@ -62,7 +62,7 @@ export default function Home() {
         />
         <Space size={"big"} />
         <Space />
-        <WhoWeAre items={content.home.whoWeAreList} />
+        <WhoWeAre />
         <Space size={"big"} />
         <Space />
         <Footer />

@@ -11,7 +11,7 @@ const CustomTooltip = (props: TooltipProps) => {
     return (
         <div className={styles.tooltipContainer}>
             {props.img && (
-                <Image className={styles.tooltipImage} src={props.img} width={1} height={1} unoptimized={true} />
+                <Image className={styles.tooltipImage} alt={''} src={props.img} width={1} height={1} unoptimized={true} />
             )}
             {props.quote && (
                 <div className={styles.quoteWrapper}>

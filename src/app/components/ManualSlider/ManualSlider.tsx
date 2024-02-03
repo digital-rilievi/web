@@ -43,10 +43,10 @@ const ManualSlider = (props: SliderProps) => {
                 </div>
 
                 <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={{ visibility: `${leftArrowStyle}` }}>
-                    <Image src="/assets/extra/left-arrow.svg" alt={"&larr;"} width={46} height={46} />
+                    <Image src="/assets/extras/left-arrow.svg" alt={"&larr;"} width={46} height={46} />
                 </button>
                 <button className={`${styles.arrow} ${styles.right}`} onClick={nextSlide} style={{ visibility: `${rightArrowStyle}` }}>
-                    <Image src="/assets/extra/right-arrow.svg" alt={"&rarr;"} width={46} height={46} />
+                    <Image src="/assets/extras/right-arrow.svg" alt={"&rarr;"} width={46} height={46} />
                 </button>
             </div>
         </>

@@ -134,6 +134,16 @@
                         "/assets/projects/mose/carousel/2.jpeg",
                         "/assets/projects/mose/carousel/3.jpeg",
                         "/assets/projects/mose/carousel/4.jpeg"
+                    ],
+                    "clientQuotes": [
+                        {
+                            "name": "GIOVANNI CECCARELLI",
+                            "image": "/assets/testimonials/img/ceccarelli.png",
+                            "description": "Responsabile Topografia di Commessa presso\nPEDELOMBARDA NUOVA S.C.p.A.",
+                            "quote": "Digital Rilievi si avvale di lidar con piattaforma inerziale montato su elicottero che è nettamente più performante per precisione e penetrazione della vegetazione presente sui siti da rilevare.",
+                            "link": "/prova",
+                            "linkLabel": ""
+                        }
                     ]
                 }
             },

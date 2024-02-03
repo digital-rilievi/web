@@ -11,6 +11,7 @@ import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
 import BlueCircle from 'app/components/BlueCircle/BlueCircle'
 import ImageText from 'app/components/ImageText/ImageText'
 import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
+import ClientQuote from 'app/components/ClientQuote/ClientQuote'
 
 interface ProjectPageProps {
   params: { project: string }
@@ -40,6 +41,11 @@ function Project({ params }: ProjectPageProps) {
       <Space size={"big"} />
       <Space size={"big"} />
       <ImagesCarousel slides={project?.details?.carousel} />
+      <Space size={"big"} />
+      <Space size={"big"} />
+      {project?.details?.clientQuotes?.map((quote, index) => (
+            <ClientQuote imageSrc={quote.image} name={quote.name} description={quote.description} quote={quote.quote} link={quote.link} linkLabel={quote.linkLabel} />
+          ))}
       <Space size={"big"} />
       <Space size={"big"} />
       <Footer />

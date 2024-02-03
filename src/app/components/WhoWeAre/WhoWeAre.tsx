@@ -4,6 +4,7 @@ import Space from '../Space/Space';
 import styles from './WhoWeAre.module.css'
 import { Tooltip } from 'react-tooltip'
 import CustomTooltip from '../CustomTooltip/CustomTooltip';
+import content from 'content.json'
 
 interface Item {
     name: string,
@@ -16,11 +17,8 @@ interface Item {
     tooltipImage: string
 }
 
-interface WhoWeAreProps {
-    items: Item[];
-}
 
-const WhoWeAre = (props: WhoWeAreProps) => {
+const WhoWeAre = () => {
 
 
 
@@ -28,7 +26,7 @@ const WhoWeAre = (props: WhoWeAreProps) => {
         <div>
             <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
             <Space />
-            {props.items.map((item, index) => (
+            {content.home.whoWeAreList.map((item, index) => (
                 <div key={index} style={{ display: "flex", flexDirection: "column" }}>
                     <div className={styles.item}>
                         <div className={styles.namesColumnWrapper}>

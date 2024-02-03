@@ -36,13 +36,13 @@ const ImagesCarousel = (props: ImagesCarouselProps) => {
             <Image className={styles.carouselImage} src={images[currentIndex]} alt="Image" width="1" height="1" unoptimized={true} />
             <div className={styles.controls}>
                 <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={{ visibility: `${leftArrowStyle}` }}>
-                    <Image src="/assets/extra/left-arrow.svg" alt={"&larr;"} width={46} height={46} />
+                    <Image src="/assets/extras/left-arrow.svg" alt={"&larr;"} width={46} height={46} />
                 </button>
                 <div className={styles.positionIndicator}>
                     {currentIndex + 1}/{images.length}
                 </div>
                 <button className={`${styles.arrow} ${styles.right}`} onClick={nextSlide} style={{ visibility: `${rightArrowStyle}` }}>
-                    <Image src="/assets/extra/right-arrow.svg" alt={"&rarr;"} width={46} height={46} />
+                    <Image src="/assets/extras/right-arrow.svg" alt={"&rarr;"} width={46} height={46} />
                 </button>
             </div>
         </div>

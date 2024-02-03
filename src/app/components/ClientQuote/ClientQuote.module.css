@@ -6,7 +6,7 @@
 }
 
 .column {
-  flex: 1.5;
+  flex: 1;
   display: flex;
   padding: 1rem;
   flex-direction: column;

@@ -44,7 +44,7 @@ function Project({ params }: ProjectPageProps) {
       <Space size={"big"} />
       <Space size={"big"} />
       {project?.details?.clientQuotes?.map((quote, index) => (
-            <ClientQuote imageSrc={quote.image} name={quote.name} description={quote.description} quote={quote.quote} link={quote.link} linkLabel={quote.linkLabel} />
+            <ClientQuote key={index} imageSrc={quote.image} name={quote.name} description={quote.description} quote={quote.quote} link={quote.link} linkLabel={quote.linkLabel} />
           ))}
       <Space size={"big"} />
       <Space size={"big"} />

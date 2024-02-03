@@ -1,9 +1,9 @@
 'use client'
 import React from 'react'
-import Space from '../Space/Space';
+import Space from '../Space/Space'
 import styles from './WhoWeAre.module.css'
 import { Tooltip } from 'react-tooltip'
-import CustomTooltip from '../CustomTooltip/CustomTooltip';
+import CustomTooltip from '../CustomTooltip/CustomTooltip'
 import content from 'content.json'
 
 interface Item {
@@ -20,13 +20,11 @@ interface Item {
 
 const WhoWeAre = () => {
 
-
-
     return (
         <div>
             <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
             <Space />
-            {content.home.whoWeAreList.map((item, index) => (
+            {content.chiSiamo.whoWeAreList.map((item, index) => (
                 <div key={index} style={{ display: "flex", flexDirection: "column" }}>
                     <div className={styles.item}>
                         <div className={styles.namesColumnWrapper}>

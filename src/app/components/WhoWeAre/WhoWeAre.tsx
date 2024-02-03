@@ -24,7 +24,7 @@ const WhoWeAre = () => {
         <div>
             <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
             <Space />
-            {content.chiSiamo.whoWeAreList.map((item, index) => (
+            {content['chi-siamo'].whoWeAreList.map((item, index) => (
                 <div key={index} style={{ display: "flex", flexDirection: "column" }}>
                     <div className={styles.item}>
                         <div className={styles.namesColumnWrapper}>

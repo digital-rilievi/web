@@ -1,4 +1,4 @@
-// components/ManualSlider.tsx
+'use client'
 import React, { useState } from 'react'
 import styles from './ImagesCarousel.module.css'
 import Image from 'next/image'

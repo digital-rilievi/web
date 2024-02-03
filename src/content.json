@@ -43,7 +43,7 @@
             "/assets/partners/sport_salute.png",
             "/assets/partners/venezia.png"
         ],
-        "chiSiamo": {
+        "chi-siamo": {
             "title": "LA NOSTRA STORIA __ ",
             "whoWeAreList": [
                 {
@@ -106,6 +106,12 @@
                     "title2": "LOREM IPSUM SIT",
                     "desc2": "LOREM IPSUM"
                 }
+            ],
+            "carousel": [
+                "/assets/projects/mose/carousel/1.jpeg",
+                "/assets/projects/mose/carousel/2.jpeg",
+                "/assets/projects/mose/carousel/3.jpeg",
+                "/assets/projects/mose/carousel/4.jpeg"
             ]
         }
     },

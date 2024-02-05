@@ -116,7 +116,14 @@
         ]
     },
     "contatti": {
-        "title": "DOVE TROVARCI __ "
+        "title": "DOVE TROVARCI __ ",
+        "companyName": "Digital Rilievi S.r.l.",
+        "addressLine1": "Via Montello 50/A",
+        "addressLine2": "33080 Zoppola",
+        "addressLine3": "Pordenone Italia",
+        "phone1": "+39 0434 976054",
+        "phone2": "+39 0434 976660",
+        "pec": "info@digitalrilievi.it"
     },
     "progetti": {
         "title": "ALCUNI DEI NOSTRI PROGETTI__ ",

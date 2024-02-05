@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    flex: 4;
+    padding: 2rem;
+}
+
+.map {
+    flex: 6;
+    max-width: 1200px;
+    height: 700px;
+    background: white;
+}

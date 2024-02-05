@@ -24,9 +24,9 @@ const ClientQuote = (props: ClientQuoteProps) => {
             </div>
 
             <div className={styles.row}>
-                <Image src={'/assets/extras/quotes.png'} width={1} height={1} alt={''} className={styles.icon} unoptimized={true} />
+                <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.icon} unoptimized={true} />
                 <div>
-                <Image src={'/assets/extras/quotes.png'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} unoptimized={true} />
+                <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} unoptimized={true} />
                 <span>{props.quote}</span>
                 </div>
             </div>

@@ -9,6 +9,7 @@ import Space from 'app/components/Space/Space'
 import WhoWeAre from 'app/components/WhoWeAre/WhoWeAre'
 import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
 import ValuesList from 'app/components/ValuesList/ValuesList'
+import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
 
 const ChiSiamo = () => {
   return (
@@ -17,7 +18,10 @@ const ChiSiamo = () => {
       <div className={globalStyles.appBarSpace}>
         <Navbar invisible />
       </div>
-      <ScrollingText text={content['chi-siamo'].title}/>
+      <ScrollingText text={content['chi-siamo'].title} />
+      <Space size={"big"} />
+      <Space size={"big"} />
+      <ValuesList items={content['chi-siamo'].values} />
       <Space size={"big"} />
       <Space size={"big"} />
       <ImagesCarousel slides={content['chi-siamo'].carousel} />
@@ -26,7 +30,9 @@ const ChiSiamo = () => {
       <WhoWeAre />
       <Space size={"big"} />
       <Space size={"big"} />
-      <ValuesList items={content['chi-siamo'].values}/>
+      <Space size={"big"} />
+      <BlueTextCta text={content['chi-siamo'].canWeHelp} label={content['chi-siamo'].canWeHelpCta} link={content['chi-siamo'].canWeHelpLink} />
+      <Space size={"big"} />
       <Space size={"big"} />
       <Space size={"big"} />
       <Footer />

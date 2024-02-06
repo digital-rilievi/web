@@ -131,7 +131,11 @@
             "/assets/projects/mose/carousel/2.jpeg",
             "/assets/projects/mose/carousel/3.jpeg",
             "/assets/projects/mose/carousel/4.jpeg"
-        ]
+        ],
+        "canWeHelp": "POSSIAMO ESSERTI\nD'AIUTO?",
+        "canWeHelpCta": "CONTATTACI",
+        "canWeHelpLink": "/prova"
+
     },
     "contatti": {
         "title": "DOVE TROVARCI __ ",

@@ -46,6 +46,24 @@
     },
     "chi-siamo": {
         "title": "LA NOSTRA STORIA __ ",
+        "values": [
+            {
+                "value": "INNOVAZIONE",
+                "description": "La nostra costante ricerca di soluzioni innovative e l'approccio avanguardistico alle sfide del settore, riflettono l'impegno di Digital Rilievi a essere un leader nel campo."
+            },
+            {
+                "value": "TRASPARENZA",
+                "description": "La chiarezza nelle comunicazioni, la correttezza e la veridicità nelle relazioni con colleghi e clienti evidenziano il valore della trasparenza, fondamentale per instaurare rapporti fiduciari."
+            },
+            {
+                "value": "COLLABORAZIONE",
+                "description": "La volontà di crescere insieme, la proattività nel collaborare e la valorizzazione dei rapporti di qualità con colleghi e clienti sottolineano il valore della collaborazione come motore di successo."
+            },
+            {
+                "value": "PROFESSIONALITÁ",
+                "description": "La competenza, la preparazione e la determinazione nel raggiungere gli obiettivi dimostrano l'impegno costante di Digital Rilievi per garantire la massima qualità e professionalità nei servizi offerti."
+            }
+        ],
         "whoWeAreList": [
             {
                 "name": "ADRIANO FACCHIN",

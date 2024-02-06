@@ -8,6 +8,7 @@ import ScrollingText from 'app/components/ScrollingText/ScrollingText'
 import Space from 'app/components/Space/Space'
 import WhoWeAre from 'app/components/WhoWeAre/WhoWeAre'
 import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
+import ValuesList from 'app/components/ValuesList/ValuesList'
 
 const ChiSiamo = () => {
   return (
@@ -23,6 +24,9 @@ const ChiSiamo = () => {
       <Space size={"big"} />
       <Space size={"big"} />
       <WhoWeAre />
+      <Space size={"big"} />
+      <Space size={"big"} />
+      <ValuesList items={content['chi-siamo'].values}/>
       <Space size={"big"} />
       <Space size={"big"} />
       <Footer />

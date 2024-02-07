@@ -39,14 +39,14 @@ const WhoWeAre = () => {
                             </div>
                         </div >
 
-                        <div className={styles.column}>
+                        {/* <div className={styles.column}>
                             <h3 className={styles.title}>{item.title1}</h3>
                             <p className={styles.desc}>{item.desc1}</p>
                         </div>
                         <div className={styles.column}>
                             <h3 className={styles.title}>{item.title2}</h3>
                             <p className={styles.desc}>{item.desc2}</p>
-                        </div>
+                        </div> */}
                     </div >
                     <div className={styles.separator}></div>
                 </div>

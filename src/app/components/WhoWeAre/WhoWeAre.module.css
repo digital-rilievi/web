@@ -39,7 +39,7 @@
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three items per row */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .whoWeAreTitle {

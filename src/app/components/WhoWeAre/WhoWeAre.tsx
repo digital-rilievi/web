@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Space from '../Space/Space'
 import styles from './WhoWeAre.module.css'
 import { Tooltip } from 'react-tooltip'
@@ -17,42 +17,48 @@ interface Item {
     tooltipImage: string
 }
 
-
 const WhoWeAre = () => {
-
+    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
+  
+    const handleMouseMove = (e: React.MouseEvent) => {
+      setCursorPosition({ x: e.clientX, y: e.clientY })
+    }
+  
+    const itemsPerRow = 3
+    const totalItems = content['chi-siamo'].whoWeAreList.length
+    const remainingItems = itemsPerRow - (totalItems % itemsPerRow)
+  
+    // Add invisible placeholder items to fill the last row
+    const filledItems = remainingItems > 0 ? [...content['chi-siamo'].whoWeAreList, ...Array(remainingItems).fill(null)] : content['chi-siamo'].whoWeAreList
+  
     return (
-        <div>
-            <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
-            <Space />
-            {content['chi-siamo'].whoWeAreList.map((item, index) => (
-                <div key={index} style={{ display: "flex", flexDirection: "column" }}>
-                    <div className={styles.item}>
-                        <div className={styles.namesColumnWrapper}>
-                            <div id={`my-anchor-element${index}`} className={styles.nameColumn}>
-                                <div className={styles.title}>{item.name}</div>
-                                <div className={styles.desc}>{item.role}</div>
-                                {(item.tooltipQuote || item.tooltipImage) && (
-                                    <Tooltip offset={0} place={"right"} arrowColor={"transparent"} className={styles.tooltipContainer} anchorSelect={`#my-anchor-element${index}`}>
-                                        <CustomTooltip quote={item.tooltipQuote} img={item.tooltipImage} />
-                                    </Tooltip>
-                                )}
-                            </div>
-                        </div >
-
-                        {/* <div className={styles.column}>
-                            <h3 className={styles.title}>{item.title1}</h3>
-                            <p className={styles.desc}>{item.desc1}</p>
-                        </div>
-                        <div className={styles.column}>
-                            <h3 className={styles.title}>{item.title2}</h3>
-                            <p className={styles.desc}>{item.desc2}</p>
-                        </div> */}
-                    </div >
-                    <div className={styles.separator}></div>
+      <div>
+        <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
+        <Space />
+        <div className={styles.gridContainer}>
+          {filledItems.map((item, index) => (
+            <div className={styles.item} key={index} onMouseMove={handleMouseMove}>
+              {item && ( // Render only if item exists (skip invisible placeholders)
+                <div id={`my-anchor-element${index}`} className={styles.nameColumn}>
+                  <div className={styles.title}>{item.name}</div>
+                  <div className={styles.desc}>{item.role}</div>
+                  {(item.tooltipQuote || item.tooltipImage) && (
+                    <Tooltip
+                      arrowColor={'transparent'}
+                      className={styles.tooltipContainer}
+                      anchorSelect={`#my-anchor-element${index}`}
+                      style={{ top: cursorPosition.y, left: cursorPosition.x }}
+                    >
+                      <CustomTooltip quote={item.tooltipQuote} img={item.tooltipImage} />
+                    </Tooltip>
+                  )}
                 </div>
-            ))}
+              )}
+            </div>
+          ))}
         </div>
-    );
-};
-
-export default WhoWeAre
+      </div>
+    )
+  }
+  
+  export default WhoWeAre

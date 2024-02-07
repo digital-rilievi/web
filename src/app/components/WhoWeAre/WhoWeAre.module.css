@@ -6,6 +6,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  border-bottom: 1px solid #ccc; /* Add a bottom border for every third item */
+  margin-bottom: 10px; /* Adjust the margin between rows as needed */
 }
 
 .namesColumnWrapper {
@@ -33,6 +35,11 @@
     height: 1px;
     margin-left: 1rem;
     background-color: white;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three items per row */
 }
 
 .whoWeAreTitle {

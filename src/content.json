@@ -67,19 +67,19 @@
         "whoWeAreList": [
             {
                 "name": "ADRIANO FACCHIN",
-                "role": "CEO e Socio Fondatore",
+                "role": "CEO & Socio Fondatore",
                 "tooltipImage": "/assets/whoWeAre/adriano.png",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "ANTONIO DE MARCO",
-                "role": "CTO e Socio Fondatore",
+                "role": "CTO & Socio Fondatore",
                 "tooltipImage": "/assets/whoWeAre/antonio.png",
                 "tooltipQuote": ""
             },
             {
                 "name": "FABRIZIO GARDENAL",
-                "role": "Socio e Team Leader, Lidar",
+                "role": "Socio & Team Leader, Lidar",
                 "tooltipImage": "/assets/whoWeAre/fabrizio.png",
                 "tooltipQuote": ""
             },

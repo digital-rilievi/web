@@ -45,23 +45,19 @@
         ]
     },
     "chi-siamo": {
-        "title": "LA NOSTRA STORIA __ ",
+        "title": "I NOSTRI VALORI __ ",
         "values": [
             {
                 "value": "INNOVAZIONE",
-                "description": "La nostra costante ricerca di soluzioni innovative e l'approccio avanguardistico alle sfide del settore, riflettono l'impegno di Digital Rilievi a essere un leader nel campo."
-            },
-            {
-                "value": "TRASPARENZA",
-                "description": "La chiarezza nelle comunicazioni, la correttezza e la veridicità nelle relazioni con colleghi e clienti evidenziano il valore della trasparenza, fondamentale per instaurare rapporti fiduciari."
+                "description": "Alla costante ricerca di innovazioni nel campo della geomatica. Abbiamo plasmato una cultura dell'innovazione, in cui ciascun collaboratore è un pioniere nel suo campo. La nostra formazione continua e l'adozione di nuove tecnologie alimentano un ambiente che trasforma idee in soluzioni innovative."
             },
             {
                 "value": "COLLABORAZIONE",
-                "description": "La volontà di crescere insieme, la proattività nel collaborare e la valorizzazione dei rapporti di qualità con colleghi e clienti sottolineano il valore della collaborazione come motore di successo."
+                "description": "Collaboriamo assieme per il successo comune. Promuoviamo la crescita condivisa e il rispetto reciproco tra colleghi. Nella gestione del cliente, costruiamo rapporti duraturi tramite trasparenza e chiarezza. Con la comunità e i fornitori, coltiviamo relazioni solide attraverso una cultura di scambio continuo di idee."
             },
             {
-                "value": "PROFESSIONALITÁ",
-                "description": "La competenza, la preparazione e la determinazione nel raggiungere gli obiettivi dimostrano l'impegno costante di Digital Rilievi per garantire la massima qualità e professionalità nei servizi offerti."
+                "value": "AFFIDABILITÁ",
+                "description": "Produciamo risultati precisi ed affidabili. Poniamo la qualità al centro delle nostre azioni. La responsabilità gioca un ruolo chiave nella guida dei nostri progetti, assicurando una disponibilità costante nel sostegno del cliente."
             }
         ],
         "whoWeAreList": [
@@ -174,8 +170,8 @@
                     "coverImage": "/assets/projects/mose/mose-worksite.jpg",
                     "title": "MOSE,\nVenezia,\n2020",
                     "panelImage": "/assets/projects/mose.png",
-                    "panelImageText": "La Digital Rilievi s.r.l. è fondata nel 2001, con l’obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico.",
-                    "panelImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l’obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.\nUno sguardo sempre attento è rivolto al costante sviluppo tecnologico e all’utilizzo della più moderna strumentazione per la realizzazione dei nostri servizi. Disponiamo di stazioni totali motorizzate e robotizzate, sistemi GNSS per il rilievo satellitare, autolivelli digitali, workstation videografiche, stereorestitutori digitali, laser scanner, localizzatori di sottoservizi, georadar, plotter e scanner a grande formato, ecc.\n\nOperiamo anche nel campo del Mobile Laser Scanner con il sistema G.V.S.M.L.S. per la realizzazione del progetto VIADATA. Tutto questo ci mette in condizione di soddisfare una gamma molto vasta di richieste anche con metodologie integrate fra loro e ci permette di realizzare progetti personalizzati di rilevamento, completati se del caso anche con applicativi software, fino alla realizzazione finita di sistemi informativi territoriali e non solo.",
+                    "panelImageText": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico.",
+                    "panelImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.\nUno sguardo sempre attento è rivolto al costante sviluppo tecnologico e all’utilizzo della più moderna strumentazione per la realizzazione dei nostri servizi. Disponiamo di stazioni totali motorizzate e robotizzate, sistemi GNSS per il rilievo satellitare, autolivelli digitali, workstation videografiche, stereorestitutori digitali, laser scanner, localizzatori di sottoservizi, georadar, plotter e scanner a grande formato, ecc.\n\nOperiamo anche nel campo del Mobile Laser Scanner con il sistema G.V.S.M.L.S. per la realizzazione del progetto VIADATA. Tutto questo ci mette in condizione di soddisfare una gamma molto vasta di richieste anche con metodologie integrate fra loro e ci permette di realizzare progetti personalizzati di rilevamento, completati se del caso anche con applicativi software, fino alla realizzazione finita di sistemi informativi territoriali e non solo.",
                     "carousel": [
                         "/assets/projects/mose/carousel/1.jpeg",
                         "/assets/projects/mose/carousel/2.jpeg",
@@ -249,7 +245,7 @@
         "projectsInterestedLink": "/prova"
     },
     "testimonials": {
-        "title": "LE OPINIONI DEI NOSTRI CLIENTI ___"
+        "title": "FEEDBACK DEI CLIENTI ___"
     },
     "footer": {
         "companyName": "Digital Rilievi S.r.l.",

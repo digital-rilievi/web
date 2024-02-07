@@ -31,10 +31,17 @@ const Contatti = () => {
           <p>{content.contatti.pec}</p>
         </div>
         <div className={styles.map}>
+        <iframe
+          width="100%"
+          height="100%"
+          loading="lazy"
+          allowFullScreen
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDoMH-gHCCYdzaaNyPdAPAJFhAmRFpecl8
+            &q=digital%20rilievi&maptype=roadmap">
+              {/* TODO: For personalisation, see https://developers.google.com/maps/documentation/javascript/overview */}
+        </iframe>
         </div>
       </div>
-      <Space size="big" />
-      <Space size="big" />
       <Space size="big" />
       <Footer />
     </>

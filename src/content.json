@@ -67,63 +67,75 @@
         "whoWeAreList": [
             {
                 "name": "ADRIANO FACCHIN",
-                "role": "Fondatore",
-                "title1": "LOREM IPSUM SIT",
-                "desc1": "LOREM IPSUM",
-                "title2": "LOREM IPSUM SIT",
-                "desc2": "LOREM IPSUM",
+                "role": "CEO e Socio Fondatore",
                 "tooltipImage": "/assets/whoWeAre/adriano.png",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
+                "name": "ANTONIO DE MARCO",
+                "role": "CTO e Socio Fondatore",
+                "tooltipImage": "/assets/whoWeAre/antonio.png",
+                "tooltipQuote": ""
+            },
+            {
                 "name": "FABRIZIO GARDENAL",
-                "role": "Socio",
-                "title1": "LOREM IPSUM SIT",
-                "desc1": "LOREM IPSUM",
-                "title2": "LOREM IPSUM SIT",
-                "desc2": "LOREM IPSUM",
+                "role": "Socio e Team Leader, Lidar",
                 "tooltipImage": "/assets/whoWeAre/fabrizio.png",
                 "tooltipQuote": ""
             },
             {
-                "name": "SARA SANTIN",
-                "role": "Lorem Ipsum",
-                "title1": "LOREM IPSUM SIT",
-                "desc1": "LOREM IPSUM",
-                "title2": "LOREM IPSUM SIT",
-                "desc2": "LOREM IPSUM"
-            },
-            {
-                "name": "STEFANO CANCIANI",
-                "role": "Lorem Ipsum",
-                "title1": "LOREM IPSUM SIT",
-                "desc1": "LOREM IPSUM",
-                "title2": "LOREM IPSUM SIT",
-                "desc2": "LOREM IPSUM"
-            },
-            {
                 "name": "CRISTINA PAUN",
-                "role": "Lorem Ipsum",
-                "title1": "LOREM IPSUM SIT",
-                "desc1": "LOREM IPSUM",
-                "title2": "LOREM IPSUM SIT",
-                "desc2": "LOREM IPSUM"
+                "role": "Team Leader, Cartografia",
+                "tooltipImage": "/assets/whoWeAre/cristina.png",
+                "tooltipQuote": ""
+            },
+            {
+                "name": "GLORIA FACCHIN",
+                "role": "Team Leader, Mose",
+                "tooltipImage": "/assets/whoWeAre/gloria.png",
+                "tooltipQuote": ""
+            },
+            {
+                "name": "ELISA CARTA",
+                "role": "Team Leader, Project Management",
+                "tooltipImage": "/assets/whoWeAre/elisa.png",
+                "tooltipQuote": ""
             },
             {
                 "name": "ANDREA FABRIS",
-                "role": "Lorem Ipsum",
-                "title1": "LOREM IPSUM SIT",
-                "desc1": "LOREM IPSUM",
-                "title2": "LOREM IPSUM SIT",
-                "desc2": "LOREM IPSUM"
+                "role": "Team Leader, Topografia",
+                "tooltipImage": "/assets/whoWeAre/andrea.png",
+                "tooltipQuote": ""
             },
             {
-                "name": "LOREM IPSUM SIT",
-                "role": "Lorem Ipsum",
-                "title1": "LOREM IPSUM SIT",
-                "desc1": "LOREM IPSUM",
-                "title2": "LOREM IPSUM SIT",
-                "desc2": "LOREM IPSUM"
+                "name": "ALICE MARSON",
+                "role": "Senior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/alice.png",
+                "tooltipQuote": ""
+            },
+            {
+                "name": "SARA SANTIN",
+                "role": "Junior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/sara.png",
+                "tooltipQuote": ""
+            },
+            {
+                "name": "MATTEO VALENTINO",
+                "role": "Junior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/matteo.png",
+                "tooltipQuote": ""
+            },
+            {
+                "name": "FABRIZIO STRAZIUSO",
+                "role": "Junior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipQuote": ""
+            },
+            {
+                "name": "STEFANO CANCIAN",
+                "role": "Junior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/stefano.png",
+                "tooltipQuote": ""
             }
         ],
         "carousel": [

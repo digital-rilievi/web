@@ -70,6 +70,80 @@
             {
                 "name": "ANTONIO DE MARCO",
                 "role": "CTO & Socio Fondatore",
+                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "FABRIZIO GARDENAL",
+                "role": "Socio & Team Leader, Lidar",
+                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "ANDREA FABRIS",
+                "role": "Team Leader, Topografia",
+                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.."
+            },
+            {
+                "name": "CRISTINA PAUN",
+                "role": "Team Leader, Cartografia",
+                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "ELISA CARTA",
+                "role": "Team Leader, Project Management",
+                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "GLORIA FACCHIN",
+                "role": "Team Leader, Mose",
+                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "ALICE MARSON",
+                "role": "Senior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "FABIO STRAZIUSO",
+                "role": "Junior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "MATTEO VALENTINO",
+                "role": "Junior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "SARA SANTIN",
+                "role": "Junior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "STEFANO CANCIAN",
+                "role": "Junior Surveyor",
+                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            }
+        ],
+        "TRUEwhoWeAreList": [
+            {
+                "name": "ADRIANO FACCHIN",
+                "role": "CEO & Socio Fondatore",
+                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "ANTONIO DE MARCO",
+                "role": "CTO & Socio Fondatore",
                 "tooltipImage": "/assets/whoWeAre/antonio.png",
                 "tooltipQuote": ""
             },

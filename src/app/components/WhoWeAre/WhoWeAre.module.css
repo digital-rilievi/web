@@ -38,6 +38,7 @@
 }
 
 .gridContainer {
+  position: relative; /* Ensure the grid container is a positioned element */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -71,7 +72,11 @@
 }
 
 .tooltipContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
   background: transparent !important;
   opacity: 1 !important;
   padding: 0px;
+  z-index: 1000; /* Set a high z-index value */
 }

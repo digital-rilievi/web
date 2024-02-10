@@ -6,8 +6,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #ccc; /* Add a bottom border for every third item */
-  margin-bottom: 10px; /* Adjust the margin between rows as needed */
 }
 
 .namesColumnWrapper {

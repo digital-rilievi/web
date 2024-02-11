@@ -39,46 +39,55 @@ const WhoWeAre = () => {
         const { x, y } = cursorPosition;
         const { top, left } = gridContainerOffset;
         const tooltipElement = document.querySelector(`.${styles.tooltipContainer}`) as HTMLElement;
-    
+
         if (!tooltipElement) {
             return { top: -100000, left: -100000 };
         }
-    
+
         const tooltipRect = tooltipElement.getBoundingClientRect();
-    
+
         // Calculate initial positions
         let tooltipTop = y - top;
         let tooltipLeft = x - left;
-    
+
         // Adjust positions to keep the tooltip within the screen boundaries
         if (tooltipTop + tooltipRect.height > document.body.clientHeight) {
             tooltipTop = document.body.clientHeight - tooltipRect.height;
         } else if (tooltipTop < 0) {
             tooltipTop = 0;
         }
-    
+
         if (tooltipLeft + tooltipRect.width > document.body.clientWidth) {
             tooltipLeft = document.body.clientWidth - tooltipRect.width;
         } else if (tooltipLeft < 0) {
             tooltipLeft = 0;
         }
-    
+
         // Mirror to the opposite side if tooltip is close to the right edge
         if (document.body.clientWidth - (x - left) < tooltipRect.width) {
             tooltipLeft = x - left - tooltipRect.width;
         }
-    
+
         // Mirror to the opposite side if tooltip is close to the bottom edge
-        if (document.body.clientHeight - (y - top) < tooltipRect.height) {
-            tooltipTop = y - top - tooltipRect.height;
+        if (y - top > window.innerHeight - (y - tooltipTop) - tooltipRect.height) {
+            // Calculate the amount of overflow
+            const overflowHeight = (y - top) - (window.innerHeight - (y - tooltipTop) - tooltipRect.height);
+
+            // Adjust tooltipTop to keep it within the screen boundaries
+            tooltipTop = tooltipTop - overflowHeight;
+
+            console.log("another: " + (y - top))
+            console.log("overflow: " + overflowHeight)
+
         }
-    
+        console.log("tooltip top: " + tooltipTop)
+
         return { top: tooltipTop, left: tooltipLeft };
     };
-    
-    
-    
-      
+
+
+
+
     return (
         <>
             <p className={styles.whoWeAreTitle}>CHI SIAMO</p>

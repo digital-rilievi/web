@@ -64,7 +64,7 @@ const WhoWeAre = () => {
         }
 
         // Mirror to the opposite side if tooltip is close to the right edge
-        if (document.body.clientWidth - (x - left) < tooltipRect.width) {
+        if (document.body.clientWidth - (x - left) < (tooltipRect.width + 18)) {
             tooltipLeft = x - left - tooltipRect.width;
         }
 

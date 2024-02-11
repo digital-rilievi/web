@@ -78,5 +78,6 @@
   background: transparent !important;
   opacity: 1 !important;
   padding: 16px;
+  margin: 2px;
   z-index: 1000; /* Set a high z-index value */
 }

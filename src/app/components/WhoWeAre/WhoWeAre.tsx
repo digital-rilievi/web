@@ -101,16 +101,16 @@ const WhoWeAre = () => {
                         onMouseLeave={handleMouseLeave}
                     >
                         {item && (
-                            <div id={`my-anchor-element${index}`} className={styles.nameColumn}>
+                            <div id={`my-anchor-element${index}`} className={`${hoveredItem === item ? styles.nameColumnHovered : styles.nameColumn}`}>
                                 <div className={styles.title}>{item.name}</div>
                                 <div className={styles.desc}>{item.role}</div>
                             </div>
                         )}
                         {hoveredItem === item && (
-                            <div className={styles.tooltipContainer} style={{ ...calculateTooltipPosition(), position: 'absolute' }}>
-                                <CustomTooltip quote={item.tooltipQuote} img={item.tooltipImage} />
-                            </div>
-                        )}
+  <div className={`${styles.tooltipContainer} ${styles.tooltipFadeIn}`} style={{ ...calculateTooltipPosition(), position: 'absolute' }}>
+    <CustomTooltip quote={item.tooltipQuote} img={item.tooltipImage} />
+  </div>
+)}
                     </div>
                 ))}
             </div>

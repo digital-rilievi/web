@@ -26,7 +26,7 @@
   flex: 1;
 }
 
-.nameColumn:hover {
+.nameColumnHovered {
   color: #0038FF;
 }
 

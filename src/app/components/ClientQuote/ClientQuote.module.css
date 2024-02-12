@@ -1,6 +1,14 @@
 .rowContainer {
   display: flex;
-  align-items: flex-start; /* Align items to the start (top) of the container */
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 2rem;
+}
+
+.rowContainerReversed {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
   margin-bottom: 20px;
   padding: 2rem;
 }
@@ -9,6 +17,7 @@
   flex: 1;
   display: flex;
   padding-left: 1rem;
+  padding-right: 1rem;
   flex-direction: column;
   margin-right: 20px;
 }
@@ -34,6 +43,15 @@
   flex-direction: row;
   align-items: center;
   align-self: end;
+  margin-right: 20px;
+}
+
+.rowReversed {
+  flex: 2;
+  display: flex;
+  padding-left: 1rem;
+  flex-direction: row;
+  align-items: center;
   margin-right: 20px;
 }
 
@@ -63,6 +81,13 @@
 .desc {
   display: flex;
   flex-direction: row;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.descReversed {
+  display: flex;
+  flex-direction: row-reverse;
   padding-left: 2rem;
   padding-right: 2rem;
 }

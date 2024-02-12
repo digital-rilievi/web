@@ -8,33 +8,41 @@ interface ClientQuoteProps {
     name: string,
     description: string,
     quote: string,
-    link: string,
-    linkLabel: string
+    link?: string,
+    linkLabel: string,
+    alt?: boolean
 }
 
 
 const ClientQuote = (props: ClientQuoteProps) => {
     return (
         <div className={styles.divContainer}>
-
-            <div className={styles.rowContainer}>
+            <div className={`${props.alt ? styles.rowContainerReversed : styles.rowContainer}`}>
                 <div className={styles.column}>
                     <Image src={props.imageSrc} alt={''} height={1} width={1} className={styles.image} unoptimized={true} />
                 </div>
 
-                <div className={styles.row}>
+                {props.alt &&
+                    <div style={{ "flex": 1 }} />
+                }
+                <div className={`${props.alt ? styles.rowReversed : styles.row}`}>
                     <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.icon} unoptimized={true} />
                     <div>
                         <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} unoptimized={true} />
                         <span className={styles.quote}>{props.quote}</span>
                     </div>
                 </div>
+                {
+                    !props.alt &&
+                    <div className={styles.button}>
+                        {props.link &&
+                            <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
+                        }
+                    </div>
+                }
 
-                <div className={styles.button}>
-                    <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
-                </div>
             </div>
-            <div className={styles.desc}>
+            <div className={`${props.alt ? styles.descReversed : styles.desc}`}>
                 <div className={styles.column}>
 
                     <h3 className={styles.name}>{props.name}</h3>
@@ -42,9 +50,14 @@ const ClientQuote = (props: ClientQuoteProps) => {
                     <p>{props.description}</p>
                 </div>
                 <div style={{ "flex": 2 }} />
-                <div className={styles.invisibleButton}>
-                    <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
-                </div>
+                {
+                    !props.alt &&
+                    <div className={styles.invisibleButton}>
+                        {props.link &&
+                            <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
+                        }
+                    </div>
+                }
             </div>
         </div>
     );

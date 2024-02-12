@@ -81,12 +81,14 @@
     z-index: 10;
     position: absolute;
     top: 42.5%;
+    right: 19%;
 }
 
 .image2 {
     z-index: 5;
     position: absolute;
     top: 15%;
+    right: 8%;
 }
 
 .images {
@@ -182,3 +184,54 @@
     width: 0px;
   }
 }
+
+/* Media query for mobile layout */
+ @media (max-width: 1480px) {
+
+  .imagesWrapper {
+     flex: 1;
+    }
+
+   .image1,
+   .image2 {
+     width: 240px;
+     object-fit: cover;
+     position: relative; /* Add position: relative */
+     z-index: 2; /* Set z-index higher than BlueCircle */
+   }
+
+   .image1 {
+       z-index: 10;
+       position: absolute;
+       top: 40%;
+       right: 25%;
+   }
+
+   .image2 {
+       z-index: 5;
+       position: absolute;
+       top: 15%;
+       right: 15%;
+   }
+
+   .images {
+       display: flex;
+       flex-direction: column;
+       align-items: end;
+   }
+
+   .container {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   gap: 1rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   min-height: 680px;
+   padding: 2rem;
+   background: #0038FF;
+   width: 80%;
+   margin-left: 10%;
+   margin-right: 10%;
+   } 
+ }

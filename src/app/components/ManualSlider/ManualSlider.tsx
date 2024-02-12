@@ -34,12 +34,8 @@ const ManualSlider = (props: SliderProps) => {
     return (
         <>
             <div className={styles.slider}>
-                <div className={styles.slides} style={{ transform: 'translateX(' + translateValue + ')' }}>
-                    {props.slides.map((slide, index) => (
-                        <div key={index} className={styles.slide}>
-                            {slide}
-                        </div>
-                    ))}
+                <div className={styles.slide}>
+                    {props.slides[currentIndex]}
                 </div>
 
                 <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={{ visibility: `${leftArrowStyle}` }}>

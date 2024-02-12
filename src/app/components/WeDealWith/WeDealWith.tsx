@@ -14,8 +14,8 @@ interface WeDealWithProps {
 }
 
 const WeDealWith = (props: WeDealWithProps) => {
-  var img1Padding = (props.index == 0) ? 19 : '-' + (props.index * 100 - 19)
-  var img2Padding = (props.index == 0) ? 8 : '-' + (props.index * 100 - 8)
+  var img1Padding = 19
+  var img2Padding = 8 
 
   var isTitleTooLong = props.title?.length > 18
 
@@ -23,8 +23,8 @@ const WeDealWith = (props: WeDealWithProps) => {
     <div className={`${styles.container} ${styles.inverted}`}>
       <div className={styles.imagesWrapper}>
         <div className={styles.images}>
-          <img className={styles.image1} style={{ right: `${img1Padding}%` }} src={props.image1} alt="Image" />
-          <img className={styles.image2} style={{ right: `${img2Padding}%` }} src={props.image2} alt="Image" />
+          <img className={styles.image1} src={props.image1} alt="Image" />
+          <img className={styles.image2} src={props.image2} alt="Image" />
         </div>
       </div>
 

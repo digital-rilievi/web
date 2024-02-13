@@ -217,7 +217,6 @@
         "canWeHelp": "POSSIAMO ESSERTI\nD'AIUTO?",
         "canWeHelpCta": "CONTATTACI",
         "canWeHelpLink": "/prova"
-
     },
     "contatti": {
         "title": "DOVE TROVARCI __ ",
@@ -252,11 +251,12 @@
                         "/assets/projects/mose/carousel/3.jpeg",
                         "/assets/projects/mose/carousel/4.jpeg"
                     ],
-                    "clientQuotes": [
+                    "testimonialQuotes": [
                         {
                             "name": "GIOVANNI CECCARELLI",
                             "image": "/assets/testimonials/img/ceccarelli.png",
-                            "description": "Responsabile Topografia di Commessa presso\nPEDELOMBARDA NUOVA S.C.p.A.",
+                            "description": "Responsabile Topografia di Commessa presso",
+                            "company": "PEDELOMBARDA NUOVA S.C.p.A.",
                             "quote": "Digital Rilievi si avvale di lidar con piattaforma inerziale montato su elicottero che è nettamente più performante per precisione e penetrazione della vegetazione presente sui siti da rilevare.",
                             "link": "/prova",
                             "linkLabel": ""
@@ -319,7 +319,48 @@
         "projectsInterestedLink": "/prova"
     },
     "testimonials": {
-        "title": "I NOSTRI CLIENTI ___"
+        "title": "I NOSTRI CLIENTI ___",
+        "people": [
+            {
+                "name": "Dott.ssa Elena Viero",
+                "position": "Manager Servizi e sistemi per ambiente, territorio e agricoltura",
+                "company": "Insiel S.p.A.",
+                "image": "viero.png",
+                "text": "Abbiamo affidato lavori che richiedevano precisione, puntualità, impegno. Alcuni rilievi richiedevano particolari competenze anche nella taratura e nella strumentazione utilizzata, e sempre abbiamo ottenuto risultati eccellenti consentendo a noi, e alla Regione FVG, di raggiungere importanti obiettivi. Un fornitore assolutamente da consigliare.",
+                "link": "/prova",
+                "linkLabel": "SCOPRI DI PIÙ"
+            },
+            {
+                "name": "Geom. Giovanni Ceccarelli",
+                "position": "Responsabile Topografia di Commessa",
+                "company": "Webuild S.p.A",
+                "image": "ceccarelli.png",
+                "text": "Ho avuto modo di relazionarmi con lo studio di ingegneria Digital Rilievi, sia nella mia esperienza di Responsabile Topografia di Commessa sulla nuova linea M4 di Milano, ora quasi al termine, che come Responsabile Topografia di Commessa di Pedelombarda Nuova, dove abbiamo commissionato a Digital Rilievi l'esecuzione dei rilievi di dettaglio dell'intera tratta oltre al rifacimento della rete topografica, comprensiva di poligonali, livellazioni e rete GPS. Dagli elaborati di restituzione e dalle operazioni espletate in campo, posso asserire che Digital Rilievi ha eseguito un ottimo lavoro nei tempi prestabiliti, che erano molto stretti. Va inoltre considerata l'ampia gamma di strumentazione, tutta all'avanguardia, in possesso dello studio. Per fare un esempio, per i rilievi di dettaglio, al contrario della maggior parte degli altri studi topografici che fanno uso di droni-lidar, con capacità di carico limitato, Digital Rilievi si avvale di lidar con piattaforma inerziale montato su elicottero che è nettamente più performante per precisione e “penetrazione” della vegetazione presente sui siti da rilevare. Infine, va rimarcata anche la competenza tecnica e la disponibilità mostratami dai componenti dello studio.",
+                "alt": "false"
+            },
+            {
+                "name": "Arch. Renata Ferri",
+                "position": "Project Manager",
+                "company": "Sport e Salute S.p.A.",
+                "image": "ferri.png",
+                "text": "Professionalità e collaborazione sono gli aggettivi che meglio descrivono le caratteristiche peculiari della Digital Rilievi. Sempre disponibili, anche nelle urgenze, e forniti di strumenti di alta qualità."
+            },
+            {
+                "name": "Ing. Massimo Paganelli",
+                "position": "Presidente",
+                "company": "Clodia s.r.l.",
+                "image": "paganelli.png",
+                "text": "Clodia ha realizzato ed è tutt'ora impegnata nel completamento del Progetto MOSE alla Bocca di Porto di Chioggia, opera di ingegneria civile idraulica ed impiantistica di assoluto ed indiscusso rilievo internazionale. La attività svolte dalla Clodia srl, per un valore complessivo ad oggi di oltre 700 milioni di euro, si sono svolte a decorrere dal 2004 con la realizzazione anche delle opere foranee complementari al sistema MOSE (barriere mobili) vero e proprio. La collaborazione con la Digital Rilievi, attivata sin dall'avvio dei lavori, continua tutt'oggi in un rapporto di pluridecennale fidelizzazione, alla luce della totale affidabilità dimostrata nel supportare la Clodia Scarl nelle proprie attività realizzative caratterizzate da requisiti di precisione mai richiesti prima da qualsivoglia Committenza nel settore delle opere civili. In tal senso la Digital Rilievi si è sempre dimostrata all'avanguardia nelle dotazioni strumentali utilizzate, investendo costantemente nel rinnovamento delle proprie attrezzature e nell'aggiornamento delle competenze professionali dei propri collaboratori.",
+                "alt": "false"
+            },
+            {
+                "name": "Marco Massarutto",
+                "position": "Kunos Simulazioni s.r.l.",
+                "company": "Co-Founder & Executive Manager",
+                "image": "massarutto.png",
+                "text": "Digital Rilievi si è rivelato un partner importante e affidabile che ha dimostrato flessibilità e la capacità di reagire tempestivamente ad imprevisti dovuti a condizioni meteorologiche avverse, e difficoltà logistiche. La qualità dei dati consegnati con tempistiche sempre certe ha consentito alla nostra azienda di offrire servizi competitivi e di alto livello."
+            }
+        ]
     },
     "footer": {
         "companyName": "Digital Rilievi S.r.l.",

@@ -1,12 +1,13 @@
 import React from 'react'
 import CircularButton from '../CircularButton/CircularButton'
-import styles from './ClientQuote.module.css'
+import styles from './TestimonialQuote.module.css'
 import Image from 'next/image'
 
-interface ClientQuoteProps {
+interface TestimonialQuoteProps {
     imageSrc: string,
     name: string,
     description: string,
+    company: string,
     quote: string,
     link?: string,
     linkLabel: string,
@@ -14,7 +15,7 @@ interface ClientQuoteProps {
 }
 
 
-const ClientQuote = (props: ClientQuoteProps) => {
+const TestimonialQuote = (props: TestimonialQuoteProps) => {
     return (
         <div className={styles.divContainer}>
             <div className={`${props.alt ? styles.rowContainerReversed : styles.rowContainer}`}>
@@ -48,6 +49,7 @@ const ClientQuote = (props: ClientQuoteProps) => {
                     <h3 className={styles.name}>{props.name}</h3>
                     <br />
                     <p>{props.description}</p>
+                    <p>{props.company}</p>
                 </div>
                 <div style={{ "flex": 2 }} />
                 {
@@ -63,4 +65,4 @@ const ClientQuote = (props: ClientQuoteProps) => {
     );
 };
 
-export default ClientQuote
+export default TestimonialQuote

@@ -75,7 +75,13 @@
             },
             {
                 "name": "FABRIZIO GARDENAL",
-                "role": "Socio & Team Leader, Lidar",
+                "role": "Team Leader, Lidar",
+                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+            },
+            {
+                "name": "SONIA MARTINA",
+                "role": "Team Leader, Admin",
                 "tooltipImage": "/assets/whoWeAre/adriano.png",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },

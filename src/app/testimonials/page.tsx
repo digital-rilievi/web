@@ -16,7 +16,14 @@ const Testimonials = () => {
       </div>
       <ScrollingText text={content.testimonials.title} />
       {content.testimonials.people.map((person, index) => (
-        <TestimonialQuote key={index} imageSrc={person.image} name={person.name} description={person.position} quote={person.text} link={person.link} linkLabel={person.linkLabel} company={person.company} alt={person.alt}/>
+        <TestimonialQuote key={index}
+        imageSrc={person.image}
+        name={person.name}
+        description={person.position}
+        quote={person.text} link={person.link}
+        linkLabel={person.linkLabel}
+        company={person.company}
+        alt={person.alt}/>
       ))}
       <Space size='big' />
       <Space size='big' />

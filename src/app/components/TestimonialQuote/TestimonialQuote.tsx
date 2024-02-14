@@ -10,8 +10,8 @@ interface TestimonialQuoteProps {
     company: string,
     quote: string,
     link?: string,
-    linkLabel: string,
-    alt?: boolean
+    linkLabel?: string,
+    alt?: string
 }
 
 

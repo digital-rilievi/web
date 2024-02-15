@@ -13,7 +13,9 @@ const Footer = () => {
           <p>{content.footer.addressLine2}</p>
           <p>{content.footer.addressLine3}</p>
           <br />
-          <p>{content.footer.pec}</p>
+          <p>
+            <a href={`mailto:${content.footer.pec}`} style={{ textDecoration: 'underline' }}>{content.footer.pec}</a>
+          </p>
         </div>
         <br />
         <div className={styles.spacer}></div>

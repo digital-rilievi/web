@@ -24,22 +24,33 @@ const Contatti = () => {
           <p>{content.contatti.addressLine2}</p>
           <p>{content.contatti.addressLine3}</p>
           <br />
-          <p>{content.contatti.phone1}</p>
-          <p>{content.contatti.phone2}</p>
+          <p>
+            <a href={`tel:${content.contatti.phone1}`} style={{ textDecoration: 'underline' }}>
+              {content.contatti.phone1}
+            </a>
+          </p>
+          <p>
+            <a href={`tel:${content.contatti.phone2}`} style={{ textDecoration: 'underline' }}>
+              {content.contatti.phone2}
+            </a>
+          </p>
+
           <br />
           <p>PEC</p>
-          <p>{content.contatti.pec}</p>
+          <p>
+            <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a>
+          </p>
         </div>
         <div className={styles.map}>
-        <iframe
-          width="100%"
-          height="100%"
-          loading="lazy"
-          allowFullScreen
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDoMH-gHCCYdzaaNyPdAPAJFhAmRFpecl8
+          <iframe
+            width="100%"
+            height="100%"
+            loading="lazy"
+            allowFullScreen
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDoMH-gHCCYdzaaNyPdAPAJFhAmRFpecl8
             &q=digital%20rilievi&maptype=roadmap">
-              {/* TODO: For personalisation, see https://developers.google.com/maps/documentation/javascript/overview */}
-        </iframe>
+            {/* TODO: For personalisation, see https://developers.google.com/maps/documentation/javascript/overview */}
+          </iframe>
         </div>
       </div>
       <Space size="big" />

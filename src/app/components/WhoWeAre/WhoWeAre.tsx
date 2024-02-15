@@ -64,24 +64,37 @@ const WhoWeAre = () => {
         }
 
         // Mirror to the opposite side if tooltip is close to the right edge
-        if (document.body.clientWidth - (x - left) < (tooltipRect.width + 18)) {
-            tooltipLeft = x - left - tooltipRect.width;
+        if (document.body.clientWidth - (x - left) < tooltipRect.width + 32) {
+            tooltipLeft = x - left - tooltipRect.width
         }
 
         // Mirror to the opposite side if tooltip is close to the bottom edge
         if (y - top > window.innerHeight - (y - tooltipTop) - tooltipRect.height) {
             // Calculate the amount of overflow
-            const overflowHeight = (y - top) - (window.innerHeight - (y - tooltipTop) - tooltipRect.height);
+            const overflowHeight = Math.abs((y - top)) - Math.abs(window.innerHeight - Math.abs(y - tooltipTop) - tooltipRect.height);
 
             // Adjust tooltipTop to keep it within the screen boundaries
             tooltipTop = tooltipTop - overflowHeight;
 
-            console.log("another: " + (y - top))
-            console.log("overflow: " + overflowHeight)
-
+            // console.log("y - top: " + (y - top))
+            // console.log("(y - tooltipTop): " + (y - tooltipTop))
+            // console.log("(tooltipRect.height): " + (tooltipRect.height))
+            // console.log("((window.innerHeight - (y - tooltipTop) - tooltipRect.height)): " + ((window.innerHeight - (y - tooltipTop) - tooltipRect.height)))
+            // console.log("overflowHeight: " + overflowHeight)
+            
+            //console.log("height- y diff: " + (window.innerHeight - y))
+            //console.log("A: " + (y - top))
+            //console.log("iH-B-tH: " + (window.innerHeight - (y - tooltipTop) - tooltipRect.height))
+            //console.log("height- y diff: " + (window.innerHeight - y))
         }
-        console.log("tooltip top: " + tooltipTop)
-
+        
+        //console.log("window.innerHeight: " + window.innerHeight)
+        //console.log("y: " + y)
+        
+        console.log("y: " + (y))
+        console.log("top: " + (top))
+        console.log("tooltipTop: " + (tooltipTop))
+        
         return { top: tooltipTop, left: tooltipLeft };
     };
 

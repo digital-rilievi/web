@@ -86,6 +86,12 @@ const WhoWeAre = () => {
     };
 
 
+    const itemsPerRow = 3
+    const totalItems = content['chi-siamo'].whoWeAreList.length
+    const remainingItems = itemsPerRow - (totalItems % itemsPerRow)
+  
+    // Add invisible placeholder items to fill the last row
+    const filledItems = remainingItems > 0 ? [...content['chi-siamo'].whoWeAreList, ...Array(remainingItems).fill(null)] : content['chi-siamo'].whoWeAreList
 
 
     return (
@@ -93,7 +99,7 @@ const WhoWeAre = () => {
             <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
             <Space />
             <div className={styles.gridContainer} onMouseMove={handleMouseMove}>
-                {content['chi-siamo'].whoWeAreList.map((item, index) => (
+                {filledItems.map((item, index) => (
                     <div
                         className={styles.item}
                         key={index}
@@ -106,11 +112,11 @@ const WhoWeAre = () => {
                                 <div className={styles.desc}>{item.role}</div>
                             </div>
                         )}
-                        {hoveredItem === item && (
-  <div className={`${styles.tooltipContainer} ${styles.tooltipFadeIn}`} style={{ ...calculateTooltipPosition(), position: 'absolute' }}>
-    <CustomTooltip quote={item.tooltipQuote} img={item.tooltipImage} />
-  </div>
-)}
+                        {(item && hoveredItem === item) && (
+                            <div className={`${styles.tooltipContainer} ${styles.tooltipFadeIn}`} style={{ ...calculateTooltipPosition(), position: 'absolute' }}>
+                                <CustomTooltip quote={item.tooltipQuote} img={item.tooltipImage} />
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>

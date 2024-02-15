@@ -39,6 +39,9 @@ const Footer = () => {
             <a href={content.footer.linkedin} target="_blank">
               <Image className={styles.socialButtons} src="/assets/footer/linkedin.svg" alt={"&larr;"} width={30} height={30} />
             </a>
+            <a href={content.footer.g_business} target="_blank">
+              <Image className={styles.socialButtons} src="/assets/footer/g_business.svg" alt={"&larr;"} width={30} height={30} />
+            </a>
           </div>
         </div >
       </div >

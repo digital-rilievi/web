@@ -156,9 +156,14 @@
         "addressLine1": "Via Montello 50/A",
         "addressLine2": "33080 Zoppola",
         "addressLine3": "Pordenone Italia",
-        "phone1": "+39 0434 976054",
-        "phone2": "+39 0434 976660",
-        "pec": "info@digitalrilievi.it"
+        "phone": "+39 0434 976054",
+        "fax": "+39 0434 976660",
+        "email": "info@digitalrilievi.it",
+        "pec": "postacertificata@pec.digitalrilievi.it",
+        "vat": "01443130933",
+        "legal": "Camera di Commercio di Pordenone",
+        "rea": "PN-77304",
+        "fatturazione": "W7YVJK9"
     },
     "progetti": {
         "title": "I NOSTRI PROGETTI__ ",
@@ -185,7 +190,6 @@
                     ],
                     "testimonialQuotes": [
                         {
-
                             "name": "Ing. Massimo Paganelli",
                             "image": "/assets/testimonials/paganelli.png",
                             "description": "Presidente",
@@ -294,14 +298,6 @@
         ]
     },
     "footer": {
-        "companyName": "Digital Rilievi S.r.l.",
-        "addressLine1": "Via Montello 50/A",
-        "addressLine2": "33080 Zoppola",
-        "addressLine3": "Pordenone Italia",
-        "pec": "postacertificata@pec.digitalrilievi.it",
-        "vat": "P.IVA 01443130933",
-        "legal1": "Camera di Commercio di Pordenone",
-        "legal2": "REA: PN-77304",
         "privacyPolicyLabel": "Informative sulla Privacy",
         "cookiesPolicyLabel": "Cookie Policy",
         "privacyPolicyLink": "https://www.iubenda.com/privacy-policy/24683312",

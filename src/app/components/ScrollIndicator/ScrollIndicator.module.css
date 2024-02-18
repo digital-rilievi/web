@@ -4,8 +4,8 @@
     right: 45%;
     left: 45%;
     opacity: 1;
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
     z-index: 10000;
     color: #ffffff;
     transition: opacity 0.5s ease-in-out;

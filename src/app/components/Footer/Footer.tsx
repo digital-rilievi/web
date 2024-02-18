@@ -8,21 +8,22 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.leftColumn}>
         <div>
-          <h3>{content.footer.companyName}</h3>
-          <p>{content.footer.addressLine1}</p>
-          <p>{content.footer.addressLine2}</p>
-          <p>{content.footer.addressLine3}</p>
+          <h3>{content.contatti.companyName}</h3>
+          <p>{content.contatti.addressLine1}</p>
+          <p>{content.contatti.addressLine2}</p>
+          <p>{content.contatti.addressLine3}</p>
           <br />
           <p>
-            <a href={`mailto:${content.footer.pec}`} style={{ textDecoration: 'underline' }}>{content.footer.pec}</a>
+            <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a>
           </p>
         </div>
         <br />
         <div className={styles.spacer}></div>
         <div>
-          <p>{content.footer.vat}</p>
-          <p>{content.footer.legal1}</p>
-          <p>{content.footer.legal2}</p>
+          <p>P.IVA {content.contatti.vat}</p>
+          <p>{content.contatti.legal}</p>
+          <p>REA: {content.contatti.rea}</p>
+          <p>Cod. univoco: {content.contatti.fatturazione}</p>
         </div>
       </div>
 

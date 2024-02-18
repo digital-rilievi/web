@@ -17,6 +17,16 @@ interface ProjectPageProps {
   params: { project: string }
 }
 
+interface TestimonialQuotesType {
+  name: string
+  image: string
+  description: string
+  company: string
+  quote: string
+  link?: string
+  linkLabel?: string
+}
+
 function Project({ params }: ProjectPageProps) {
 
   var project = content.progetti.projects.find((p) => p.link === params.project)
@@ -43,9 +53,9 @@ function Project({ params }: ProjectPageProps) {
       <ImagesCarousel slides={project?.details?.carousel} />
       <Space size={"big"} />
       <Space size={"big"} />
-      {project?.details?.testimonialQuotes?.map((quote, index) => (
-            <TestimonialQuote key={index} imageSrc={quote.image} name={quote.name} description={quote.description} quote={quote.quote} link={quote.link} linkLabel={quote.linkLabel} company={quote.company} />
-          ))}
+      {project?.details?.testimonialQuotes?.map((quote: TestimonialQuotesType, index) => (
+        <TestimonialQuote key={index} imageSrc={quote.image} name={quote.name} description={quote.description} quote={quote.quote} link={quote.link} linkLabel={quote.linkLabel} company={quote.company} />
+      ))}
       <Space size={"big"} />
       <Space size={"big"} />
       <Footer />

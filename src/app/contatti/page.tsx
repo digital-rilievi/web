@@ -25,21 +25,31 @@ const Contatti = () => {
           <p>{content.contatti.addressLine3}</p>
           <br />
           <p>
-            <a href={`tel:${content.contatti.phone1}`} style={{ textDecoration: 'underline' }}>
-              {content.contatti.phone1}
+            Tel: <a href={`tel:${content.contatti.phone}`} style={{ textDecoration: 'underline' }}>
+              {content.contatti.phone}
             </a>
           </p>
+          <br />
           <p>
-            <a href={`tel:${content.contatti.phone2}`} style={{ textDecoration: 'underline' }}>
-              {content.contatti.phone2}
+            Fax: <a href={`tel:${content.contatti.fax}`} style={{ textDecoration: 'underline' }}>
+              {content.contatti.fax}
             </a>
           </p>
-
+          <br />
+          <p>email</p>
+          <p>
+            <a href={`mailto:${content.contatti.email}`} style={{ textDecoration: 'underline' }}>{content.contatti.email}</a>
+          </p>
           <br />
           <p>PEC</p>
           <p>
             <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a>
           </p>
+<br />
+          <p>P.IVA {content.contatti.vat}</p>
+          <p>{content.contatti.legal}</p>
+          <p>REA: {content.contatti.rea}</p>
+          <p>Cod. univoco: {content.contatti.fatturazione}</p>
         </div>
         <div className={styles.map}>
           <iframe
@@ -53,6 +63,7 @@ const Contatti = () => {
           </iframe>
         </div>
       </div>
+      <Space size="big" />
       <Space size="big" />
       <Footer />
     </>

@@ -185,13 +185,12 @@
                     ],
                     "testimonialQuotes": [
                         {
-                            "name": "GIOVANNI CECCARELLI",
-                            "image": "/assets/testimonials/img/ceccarelli.png",
-                            "description": "Responsabile Topografia di Commessa presso",
-                            "company": "PEDELOMBARDA NUOVA S.C.p.A.",
-                            "quote": "Digital Rilievi si avvale di lidar con piattaforma inerziale montato su elicottero che è nettamente più performante per precisione e penetrazione della vegetazione presente sui siti da rilevare.",
-                            "link": "/prova",
-                            "linkLabel": ""
+
+                            "name": "Ing. Massimo Paganelli",
+                            "image": "/assets/testimonials/paganelli.png",
+                            "description": "Presidente",
+                            "company": "Clodia s.r.l.",
+                            "quote": "Collaboriamo con Digital Rilievi dal 2004, anno di inizio lavori per il Progetto MOSE, opera di ingegneria civile idraulica ed impiantistica di assoluto ed indiscusso rilievo internazionale. La totale affidabilità dimostrata nel supportare Clodia e i suoi requisiti di precisione senza precedenti nel settore ha portato ad un rapporto pluriennale di forte fidelizzazione. All'avanguardia nelle dotazioni strumentali utilizzate, Digital Rilievi investe costantemente nel rinnovamento delle proprie attrezzature e delle competenze professionali."
                         }
                     ]
                 }
@@ -258,7 +257,9 @@
                 "position": "Presidente",
                 "company": "Clodia s.r.l.",
                 "image": "/assets/testimonials/paganelli.png",
-                "text": "Collaboriamo con Digital Rilievi dal 2004, anno di inizio lavori per il Progetto MOSE, opera di ingegneria civile idraulica ed impiantistica di assoluto ed indiscusso rilievo internazionale. La totale affidabilità dimostrata nel supportare Clodia e i suoi requisiti di precisione senza precedenti nel settore ha portato ad un rapporto pluriennale di forte fidelizzazione. All'avanguardia nelle dotazioni strumentali utilizzate, Digital Rilievi investe costantemente nel rinnovamento delle proprie attrezzature e delle competenze professionali."
+                "text": "Collaboriamo con Digital Rilievi dal 2004, anno di inizio lavori per il Progetto MOSE, opera di ingegneria civile idraulica ed impiantistica di assoluto ed indiscusso rilievo internazionale. La totale affidabilità dimostrata nel supportare Clodia e i suoi requisiti di precisione senza precedenti nel settore ha portato ad un rapporto pluriennale di forte fidelizzazione. All'avanguardia nelle dotazioni strumentali utilizzate, Digital Rilievi investe costantemente nel rinnovamento delle proprie attrezzature e delle competenze professionali.",
+                "link": "/progetti/mose",
+                "linkLabel": "SCOPRI DI PIÙ"
             },
             {
                 "name": "Marco Massarutto",
@@ -288,9 +289,7 @@
                 "position": "Manager Servizi e sistemi per ambiente, territorio e agricoltura",
                 "company": "Insiel S.p.A.",
                 "image": "/assets/testimonials/viero.png",
-                "text": "Abbiamo affidato lavori che richiedevano precisione, puntualità, impegno. Alcuni rilievi richiedevano particolari competenze anche nella taratura e nella strumentazione utilizzata, e sempre abbiamo ottenuto risultati eccellenti consentendo a noi, e alla Regione FVG, di raggiungere importanti obiettivi. Un fornitore assolutamente da consigliare.",
-                "link": "/prova",
-                "linkLabel": "SCOPRI DI PIÙ"
+                "text": "Abbiamo affidato lavori che richiedevano precisione, puntualità, impegno. Alcuni rilievi richiedevano particolari competenze anche nella taratura e nella strumentazione utilizzata, e sempre abbiamo ottenuto risultati eccellenti consentendo a noi, e alla Regione FVG, di raggiungere importanti obiettivi. Un fornitore assolutamente da consigliare."
             }
         ]
     },

@@ -3,7 +3,7 @@
     "home": {
         "title": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
         "firstImage": "/assets/projects/project-home.png",
-        "firstImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l’obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.",
+        "firstImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.",
         "firstImageName": "LOREM IPSUM\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "secondImage": "/assets/projects/mose.png",
         "secondImageName": "MOSE__VENEZIA",
@@ -64,154 +64,80 @@
             {
                 "name": "ADRIANO FACCHIN",
                 "role": "CEO & Socio Fondatore",
-                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipImage": "/assets/whoWeAre/adriano.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "ANTONIO DE MARCO",
                 "role": "CTO & Socio Fondatore",
-                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipImage": "/assets/whoWeAre/unknown.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "FABRIZIO GARDENAL",
                 "role": "Team Leader, Lidar",
-                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipImage": "/assets/whoWeAre/fabrizio.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "SONIA MARTINA",
                 "role": "Team Leader, Admin",
-                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipImage": "/assets/whoWeAre/unknown.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "ANDREA FABRIS",
                 "role": "Team Leader, Topografia",
-                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipImage": "/assets/whoWeAre/andrea.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.."
             },
             {
                 "name": "CRISTINA PAUN",
                 "role": "Team Leader, Cartografia",
-                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipImage": "/assets/whoWeAre/cristina.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "ELISA CARTA",
                 "role": "Team Leader, Project Management",
-                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipImage": "/assets/whoWeAre/unknown.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "GLORIA FACCHIN",
                 "role": "Team Leader, Mose",
-                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipImage": "/assets/whoWeAre/unknown.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "ALICE MARSON",
                 "role": "Senior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipImage": "/assets/whoWeAre/unknown.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "FABIO STRAZIUSO",
                 "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipImage": "/assets/whoWeAre/unknown.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "MATTEO VALENTINO",
                 "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipImage": "/assets/whoWeAre/unknown.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "SARA SANTIN",
                 "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/adriano.png",
+                "tooltipImage": "/assets/whoWeAre/sara.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "STEFANO CANCIAN",
                 "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
+                "tooltipImage": "/assets/whoWeAre/stefano.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
-            }
-        ],
-        "TRUE-whoWeAreList": [
-            {
-                "name": "ADRIANO FACCHIN",
-                "role": "CEO & Socio Fondatore",
-                "tooltipImage": "/assets/whoWeAre/adriano.png",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
-            },
-            {
-                "name": "ANTONIO DE MARCO",
-                "role": "CTO & Socio Fondatore",
-                "tooltipImage": "/assets/whoWeAre/antonio.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "FABRIZIO GARDENAL",
-                "role": "Socio & Team Leader, Lidar",
-                "tooltipImage": "/assets/whoWeAre/fabrizio.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "ANDREA FABRIS",
-                "role": "Team Leader, Topografia",
-                "tooltipImage": "/assets/whoWeAre/andrea.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "CRISTINA PAUN",
-                "role": "Team Leader, Cartografia",
-                "tooltipImage": "/assets/whoWeAre/cristina.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "ELISA CARTA",
-                "role": "Team Leader, Project Management",
-                "tooltipImage": "/assets/whoWeAre/elisa.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "GLORIA FACCHIN",
-                "role": "Team Leader, Mose",
-                "tooltipImage": "/assets/whoWeAre/gloria.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "ALICE MARSON",
-                "role": "Senior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/alice.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "FABIO STRAZIUSO",
-                "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/fabio.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "MATTEO VALENTINO",
-                "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/matteo.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "SARA SANTIN",
-                "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/sara.png",
-                "tooltipQuote": ""
-            },
-            {
-                "name": "STEFANO CANCIAN",
-                "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/stefano.png",
-                "tooltipQuote": ""
             }
         ],
         "carousel": [
@@ -250,7 +176,7 @@
                     "title": "MOSE,\nVenezia,\n2020",
                     "panelImage": "/assets/projects/mose.png",
                     "panelImageText": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico.",
-                    "panelImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.\nUno sguardo sempre attento è rivolto al costante sviluppo tecnologico e all’utilizzo della più moderna strumentazione per la realizzazione dei nostri servizi. Disponiamo di stazioni totali motorizzate e robotizzate, sistemi GNSS per il rilievo satellitare, autolivelli digitali, workstation videografiche, stereorestitutori digitali, laser scanner, localizzatori di sottoservizi, georadar, plotter e scanner a grande formato, ecc.\n\nOperiamo anche nel campo del Mobile Laser Scanner con il sistema G.V.S.M.L.S. per la realizzazione del progetto VIADATA. Tutto questo ci mette in condizione di soddisfare una gamma molto vasta di richieste anche con metodologie integrate fra loro e ci permette di realizzare progetti personalizzati di rilevamento, completati se del caso anche con applicativi software, fino alla realizzazione finita di sistemi informativi territoriali e non solo.",
+                    "panelImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.\nUno sguardo sempre attento è rivolto al costante sviluppo tecnologico e all'utilizzo della più moderna strumentazione per la realizzazione dei nostri servizi. Disponiamo di stazioni totali motorizzate e robotizzate, sistemi GNSS per il rilievo satellitare, autolivelli digitali, workstation videografiche, stereorestitutori digitali, laser scanner, localizzatori di sottoservizi, georadar, plotter e scanner a grande formato, ecc.\n\nOperiamo anche nel campo del Mobile Laser Scanner con il sistema G.V.S.M.L.S. per la realizzazione del progetto VIADATA. Tutto questo ci mette in condizione di soddisfare una gamma molto vasta di richieste anche con metodologie integrate fra loro e ci permette di realizzare progetti personalizzati di rilevamento, completati se del caso anche con applicativi software, fino alla realizzazione finita di sistemi informativi territoriali e non solo.",
                     "carousel": [
                         "/assets/projects/mose/carousel/1.jpeg",
                         "/assets/projects/mose/carousel/2.jpeg",
@@ -317,7 +243,7 @@
                 "link": ""
             }
         ],
-        "moreInfo": "VUOI VISUALIZZARE\nPIÙ PROGETTI",
+        "moreInfo": "VUOI VISUALIZZARE\nPIÙ PROGETTI?",
         "moreInfoCta": "CARICA",
         "moreInfoLink": "/prova",
         "projectsInterested": "SEI INTERSSATO AI\nNOSTRI SERVIZI?",
@@ -325,23 +251,21 @@
         "projectsInterestedLink": "/prova"
     },
     "testimonials": {
-        "title": "I NOSTRI CLIENTI ___",
+        "title": "DICONO DI NOI ___",
         "people": [
             {
-                "name": "Dott.ssa Elena Viero",
-                "position": "Manager Servizi e sistemi per ambiente, territorio e agricoltura",
-                "company": "Insiel S.p.A.",
-                "image": "/assets/testimonials/viero.png",
-                "text": "Abbiamo affidato lavori che richiedevano precisione, puntualità, impegno. Alcuni rilievi richiedevano particolari competenze anche nella taratura e nella strumentazione utilizzata, e sempre abbiamo ottenuto risultati eccellenti consentendo a noi, e alla Regione FVG, di raggiungere importanti obiettivi. Un fornitore assolutamente da consigliare.",
-                "link": "/prova",
-                "linkLabel": "SCOPRI DI PIÙ"
+                "name": "Ing. Massimo Paganelli",
+                "position": "Presidente",
+                "company": "Clodia s.r.l.",
+                "image": "/assets/testimonials/paganelli.png",
+                "text": "Collaboriamo con Digital Rilievi dal 2004, anno di inizio lavori per il Progetto MOSE, opera di ingegneria civile idraulica ed impiantistica di assoluto ed indiscusso rilievo internazionale. La totale affidabilità dimostrata nel supportare Clodia e i suoi requisiti di precisione senza precedenti nel settore ha portato ad un rapporto pluriennale di forte fidelizzazione. All'avanguardia nelle dotazioni strumentali utilizzate, Digital Rilievi investe costantemente nel rinnovamento delle proprie attrezzature e delle competenze professionali."
             },
             {
-                "name": "Geom. Giovanni Ceccarelli",
-                "position": "Responsabile Topografia di Commessa",
-                "company": "Webuild S.p.A",
-                "image": "/assets/testimonials/ceccarelli.png",
-                "text": "Ho avuto modo di relazionarmi con lo studio di ingegneria Digital Rilievi, sia nella mia esperienza di Responsabile Topografia di Commessa sulla nuova linea M4 di Milano, ora quasi al termine, che come Responsabile Topografia di Commessa di Pedelombarda Nuova, dove abbiamo commissionato a Digital Rilievi l'esecuzione dei rilievi di dettaglio dell'intera tratta oltre al rifacimento della rete topografica, comprensiva di poligonali, livellazioni e rete GPS. Dagli elaborati di restituzione e dalle operazioni espletate in campo, posso asserire che Digital Rilievi ha eseguito un ottimo lavoro nei tempi prestabiliti, che erano molto stretti. Va inoltre considerata l'ampia gamma di strumentazione, tutta all'avanguardia, in possesso dello studio. Per fare un esempio, per i rilievi di dettaglio, al contrario della maggior parte degli altri studi topografici che fanno uso di droni-lidar, con capacità di carico limitato, Digital Rilievi si avvale di lidar con piattaforma inerziale montato su elicottero che è nettamente più performante per precisione e “penetrazione” della vegetazione presente sui siti da rilevare. Infine, va rimarcata anche la competenza tecnica e la disponibilità mostratami dai componenti dello studio.",
+                "name": "Marco Massarutto",
+                "position": "Kunos Simulazioni s.r.l.",
+                "company": "Co-Founder & Executive Manager",
+                "image": "/assets/testimonials/massarutto.jpg",
+                "text": "Digital Rilievi si è rivelato un partner importante e affidabile che ha dimostrato flessibilità e la capacità di reagire tempestivamente ad imprevisti dovuti a condizioni meteorologiche avverse, e difficoltà logistiche. La qualità dei dati consegnati con tempistiche sempre certe ha consentito alla nostra azienda di offrire servizi competitivi e di alto livello.",
                 "alt": "false"
             },
             {
@@ -352,19 +276,21 @@
                 "text": "Professionalità e collaborazione sono gli aggettivi che meglio descrivono le caratteristiche peculiari della Digital Rilievi. Sempre disponibili, anche nelle urgenze, e forniti di strumenti di alta qualità."
             },
             {
-                "name": "Ing. Massimo Paganelli",
-                "position": "Presidente",
-                "company": "Clodia s.r.l.",
-                "image": "/assets/testimonials/paganelli.png",
-                "text": "Clodia ha realizzato ed è tutt'ora impegnata nel completamento del Progetto MOSE alla Bocca di Porto di Chioggia, opera di ingegneria civile idraulica ed impiantistica di assoluto ed indiscusso rilievo internazionale. La attività svolte dalla Clodia srl, per un valore complessivo ad oggi di oltre 700 milioni di euro, si sono svolte a decorrere dal 2004 con la realizzazione anche delle opere foranee complementari al sistema MOSE (barriere mobili) vero e proprio. La collaborazione con la Digital Rilievi, attivata sin dall'avvio dei lavori, continua tutt'oggi in un rapporto di pluridecennale fidelizzazione, alla luce della totale affidabilità dimostrata nel supportare la Clodia Scarl nelle proprie attività realizzative caratterizzate da requisiti di precisione mai richiesti prima da qualsivoglia Committenza nel settore delle opere civili. In tal senso la Digital Rilievi si è sempre dimostrata all'avanguardia nelle dotazioni strumentali utilizzate, investendo costantemente nel rinnovamento delle proprie attrezzature e nell'aggiornamento delle competenze professionali dei propri collaboratori.",
+                "name": "Geom. Giovanni Ceccarelli",
+                "position": "Responsabile Topografia di Commessa",
+                "company": "Webuild S.p.A",
+                "image": "/assets/testimonials/ceccarelli.png",
+                "text": "Ho collaborato con lo studio di ingegneria Digital Rilievi sia per la nuova linea M4 di Milano che per Pedelombarda Nuova. Digital Rilievi ha eseguito un ottimo lavoro nei tempi prestabiliti, che erano molto stretti. Digital Rilievi é dotato di un'ampia gamma di strumentazione all'avanguardia, come i lidar con piattaforma inerziale montati su elicottero per garantire la massima precisione e penetrazione della vegetazione presente sui siti da rilevare, anziché dei tipici droni-lidar usati dalla concorrenza. Va rimarcata inoltre la competenza tecnica e la disponibilità mostratami dai componenti dello studio.",
                 "alt": "false"
             },
             {
-                "name": "Marco Massarutto",
-                "position": "Kunos Simulazioni s.r.l.",
-                "company": "Co-Founder & Executive Manager",
-                "image": "/assets/testimonials/massarutto.jpg",
-                "text": "Digital Rilievi si è rivelato un partner importante e affidabile che ha dimostrato flessibilità e la capacità di reagire tempestivamente ad imprevisti dovuti a condizioni meteorologiche avverse, e difficoltà logistiche. La qualità dei dati consegnati con tempistiche sempre certe ha consentito alla nostra azienda di offrire servizi competitivi e di alto livello."
+                "name": "Dott.ssa Elena Viero",
+                "position": "Manager Servizi e sistemi per ambiente, territorio e agricoltura",
+                "company": "Insiel S.p.A.",
+                "image": "/assets/testimonials/viero.png",
+                "text": "Abbiamo affidato lavori che richiedevano precisione, puntualità, impegno. Alcuni rilievi richiedevano particolari competenze anche nella taratura e nella strumentazione utilizzata, e sempre abbiamo ottenuto risultati eccellenti consentendo a noi, e alla Regione FVG, di raggiungere importanti obiettivi. Un fornitore assolutamente da consigliare.",
+                "link": "/prova",
+                "linkLabel": "SCOPRI DI PIÙ"
             }
         ]
     },

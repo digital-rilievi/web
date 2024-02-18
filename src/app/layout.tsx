@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Digital Rilievi',
-  description: 'Digital Rilievi srl',
+  description: 'Rilievi digitali, con le tecniche più recenti e all\'avanguardia',
 }
 
 export default function RootLayout({

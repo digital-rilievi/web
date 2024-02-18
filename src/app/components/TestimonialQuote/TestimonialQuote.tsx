@@ -21,10 +21,10 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
             <div className={`${props.alt ? styles.rowContainerReversed : styles.rowContainer}`}>
                 <div className={styles.imageColumn}>
                     <Image src={props.imageSrc} alt={''} height={1} width={1} className={styles.image} unoptimized={true} />
-                    <h3 className={styles.name}>{props.name}</h3>
+                    <h3 className={`${styles.name} ${props.alt && styles.altAlign}`}>{props.name}</h3>
                     <br />
-                    <p>{props.description}</p>
-                    <p>{props.company}</p>
+                    <p className={props.alt && styles.altAlign}>{props.description}</p>
+                    <p className={props.alt && styles.altAlign}>{props.company}</p>
                 </div>
 
                 {props.alt &&
@@ -39,15 +39,14 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                         </div>
                     </div>
                     <div style={{ "visibility": "hidden" }}>
-                        <h3 className={styles.name}>{props.name}</h3>
+                        <h3 >{props.name}</h3>
                         <br />
                         <p>{props.description}</p>
                         <p>{props.company}</p>
                     </div>
                 </div>
 
-                {
-                    !props.alt &&
+                {!props.alt &&
                     <div className={styles.buttonColumn}>
                         <div className={styles.button}>
                             {props.link &&
@@ -64,7 +63,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                 }
 
             </div>
-            
+
         </div>
     );
 };

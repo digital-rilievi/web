@@ -1,0 +1,16 @@
+.scrollIndicator {
+    position: absolute;
+    bottom: 1%;
+    right: 45%;
+    left: 45%;
+    opacity: 1;
+    height: 120px;
+    width: 120px;
+    z-index: 10000;
+    color: #ffffff;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.scrollIndicator.hidden {
+    opacity: 0;
+}

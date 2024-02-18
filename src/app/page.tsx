@@ -11,6 +11,7 @@ import BlueTextCta from "./components/BlueTextCta/BlueTextCta"
 import ManualSlider from "./components/ManualSlider/ManualSlider"
 import WeDealWith from "./components/WeDealWith/WeDealWith"
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre"
+import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
 
 export default function Home() {
 
@@ -28,6 +29,7 @@ export default function Home() {
   return (
     <main>
       <NavBar />
+      <ScrollIndicator />
       <div className={styles.content}>
         <VideoPlayer />
         <Space size={"big"} />

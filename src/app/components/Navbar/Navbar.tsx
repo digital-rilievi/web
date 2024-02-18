@@ -37,7 +37,7 @@ const Navbar = (props: NavBarProps) => {
             I NOSTRI PROGETTI
           </Link>
           <Link href="/testimonials" className={pathname === '/testimonials' ? styles.selected : styles.unselected}>
-            CI RACCONTANO COSÌ
+            DICONO DI NOI
           </Link>
         </div>
 

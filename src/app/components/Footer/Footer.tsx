@@ -8,7 +8,8 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.leftColumn}>
         <div>
-          <h3>{content.contatti.companyName}</h3>
+          <h1 style={{"font-weight": "bold", "font-size": "20px"}}>{content.contatti.companyName}</h1>
+          <br />
           <p>{content.contatti.addressLine1}</p>
           <p>{content.contatti.addressLine2}</p>
           <p>{content.contatti.addressLine3}</p>

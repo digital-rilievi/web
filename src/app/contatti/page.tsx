@@ -18,7 +18,7 @@ const Contatti = () => {
       <Space size="big" />
       <div className={styles.container}>
         <div className={styles.text}>
-          <p>{content.contatti.companyName}</p>
+          <h1 style={{"font-weight": "bold", "font-size": "26px"}}>{content.contatti.companyName}</h1>
           <br />
           <p>{content.contatti.addressLine1}</p>
           <p>{content.contatti.addressLine2}</p>

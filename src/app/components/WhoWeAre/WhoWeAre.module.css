@@ -81,3 +81,7 @@
   padding-right: 16px;
   z-index: 1000; /* Set a high z-index value */
 }
+
+.invisible {
+  visibility: hidden;
+}

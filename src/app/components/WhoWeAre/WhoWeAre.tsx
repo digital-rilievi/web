@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Space from '../Space/Space'
 import styles from './WhoWeAre.module.css'
 import CustomTooltip from '../CustomTooltip/CustomTooltip'
@@ -19,15 +19,23 @@ const WhoWeAre = () => {
     const [hoveredItem, setHoveredItem] = useState<Item | null>(null)
 
     const handleMouseEnter = (item: Item) => {
+        console.log("Ay: " + (cursorPosition.y))
+        const gridContainer = document.querySelector(`.${styles.gridContainer}`)
+        if (gridContainer) {
+            const rect = gridContainer.getBoundingClientRect()
+            setGridContainerOffset({ top: rect.top, left: rect.left })
+        }
         setHoveredItem(item)
     };
 
     const handleMouseLeave = () => {
+        console.log("By: " + (cursorPosition.y))
         setHoveredItem(null)
     };
 
     const handleMouseMove = (e: React.MouseEvent) => {
         setCursorPosition({ x: e.clientX, y: e.clientY });
+        console.log("Cy: " + (cursorPosition.y))
         const gridContainer = document.querySelector(`.${styles.gridContainer}`)
         if (gridContainer) {
             const rect = gridContainer.getBoundingClientRect()
@@ -35,20 +43,48 @@ const WhoWeAre = () => {
         }
     };
 
+    const handleWheel = (e: WheelEvent) => {
+        setCursorPosition({ x: e.clientX, y: e.clientY });
+        console.log("Ey: " + (cursorPosition.y))
+        const gridContainer = document.querySelector(`.${styles.gridContainer}`)
+        if (gridContainer) {
+            const rect = gridContainer.getBoundingClientRect()
+            setGridContainerOffset({ top: rect.top, left: rect.left })
+        }
+
+    };
+
+    useEffect(() => {
+        //window.addEventListener('mousemove', handleMouseMove as unknown as EventListener);
+        window.addEventListener('wheel', handleWheel);
+
+
+        return () => {
+            //window.removeEventListener('mousemove', handleMouseMove as unknown as EventListener);
+            window.removeEventListener('wheel', handleWheel);
+        };
+    }, []);
+
     const calculateTooltipPosition = () => {
         const { x, y } = cursorPosition;
         const { top, left } = gridContainerOffset;
         const tooltipElement = document.querySelector(`.${styles.tooltipContainer}`) as HTMLElement;
 
-        if (!tooltipElement) {
-            return { top: -100000, left: -100000 };
-        }
-
-        const tooltipRect = tooltipElement.getBoundingClientRect();
+        console.log("Dy: " + (cursorPosition.y))
 
         // Calculate initial positions
         let tooltipTop = y - top;
         let tooltipLeft = x - left;
+
+        if (!tooltipElement) {
+            console.log("AAA")
+            if (x != tooltipLeft && y != tooltipTop)
+                setCursorPosition({ x: tooltipLeft, y: tooltipTop });
+            return { top: tooltipTop, left: tooltipLeft };
+        }
+        console.log("AAA222")
+
+        const tooltipRect = tooltipElement.getBoundingClientRect();
 
         // Adjust positions to keep the tooltip within the screen boundaries
         if (tooltipTop + tooltipRect.height > document.body.clientHeight) {
@@ -71,7 +107,7 @@ const WhoWeAre = () => {
         // Mirror to the opposite side if tooltip is close to the bottom edge
         if (y - top > window.innerHeight - (y - tooltipTop) - tooltipRect.height) {
             // Calculate the amount of overflow
-            const overflowHeight = Math.abs((y - top)) - Math.abs(window.innerHeight - Math.abs(y - tooltipTop) - tooltipRect.height);
+            const overflowHeight = (y - top) - (window.innerHeight - (y - tooltipTop) - tooltipRect.height);
 
             // Adjust tooltipTop to keep it within the screen boundaries
             tooltipTop = tooltipTop - overflowHeight;
@@ -81,20 +117,20 @@ const WhoWeAre = () => {
             // console.log("(tooltipRect.height): " + (tooltipRect.height))
             // console.log("((window.innerHeight - (y - tooltipTop) - tooltipRect.height)): " + ((window.innerHeight - (y - tooltipTop) - tooltipRect.height)))
             // console.log("overflowHeight: " + overflowHeight)
-            
+
             //console.log("height- y diff: " + (window.innerHeight - y))
             //console.log("A: " + (y - top))
             //console.log("iH-B-tH: " + (window.innerHeight - (y - tooltipTop) - tooltipRect.height))
             //console.log("height- y diff: " + (window.innerHeight - y))
         }
-        
+
         //console.log("window.innerHeight: " + window.innerHeight)
         //console.log("y: " + y)
-        
+
         console.log("y: " + (y))
         console.log("top: " + (top))
         console.log("tooltipTop: " + (tooltipTop))
-        
+
         return { top: tooltipTop, left: tooltipLeft };
     };
 
@@ -102,16 +138,16 @@ const WhoWeAre = () => {
     const itemsPerRow = 3
     const totalItems = content['chi-siamo'].whoWeAreList.length
     const remainingItems = itemsPerRow - (totalItems % itemsPerRow)
-  
+
     // Add invisible placeholder items to fill the last row
     const filledItems = remainingItems > 0 ? [...content['chi-siamo'].whoWeAreList, ...Array(remainingItems).fill(null)] : content['chi-siamo'].whoWeAreList
 
 
     return (
-        <>
+        <div onMouseMove={handleMouseMove} onMouseEnter={handleMouseMove}>
             <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
             <Space />
-            <div className={styles.gridContainer} onMouseMove={handleMouseMove}>
+            <div className={styles.gridContainer}>
                 {filledItems.map((item, index) => (
                     <div
                         className={styles.item}
@@ -133,7 +169,7 @@ const WhoWeAre = () => {
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 

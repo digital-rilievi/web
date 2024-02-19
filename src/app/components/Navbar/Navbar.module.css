@@ -39,22 +39,23 @@
 
 .navLinks {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   white-space: nowrap;
   text-decoration: none;
 }
 
 .selected {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 56, 255, 0.5) 0%, rgba(0, 56, 255, 0.0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 56, 255, 0.75) 0%, rgba(0, 56, 255, 0.0) 100%);
   border-radius: 8px;
-  padding: 4px 6px;
+  padding: 12px 18px;
   display: flex;
   align-items: center;
 }
 
 .unselected {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.75) 0%, rgba(0, 56, 255, 0.0) 100%);
   border-radius: 5px;
-  padding: 8px 12px;
+  padding: 12px 18px;
   display: flex;
   align-items: center;
 }

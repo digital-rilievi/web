@@ -33,7 +33,7 @@ const Navbar = (props: NavBarProps) => {
           <Link href="/contatti" className={pathname === '/contatti' ? styles.selected : styles.unselected}>
             CONTATTI
           </Link>
-          <Link href="/progetti" className={pathname === '/progetti' ? styles.selected : styles.unselected}>
+          <Link href="/progetti" className={pathname.includes('/progetti') ? styles.selected : styles.unselected}>
             I NOSTRI PROGETTI
           </Link>
           <Link href="/testimonials" className={pathname === '/testimonials' ? styles.selected : styles.unselected}>

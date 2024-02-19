@@ -15,7 +15,7 @@ const ScrollIndicator = () => {
       console.log(shouldShowIndicator)
 
       setShowIndicator(shouldShowIndicator)
-    };
+    }
 
     window.addEventListener('scroll', handleScroll)
 

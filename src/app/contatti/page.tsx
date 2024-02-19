@@ -18,7 +18,7 @@ const Contatti = () => {
       <Space size="big" />
       <div className={styles.container}>
         <div className={styles.text}>
-          <h1 style={{"font-weight": "bold", "font-size": "26px"}}>{content.contatti.companyName}</h1>
+          <h1 style={{ "font-weight": "bold", "font-size": "26px" }}>{content.contatti.companyName}</h1>
           <br />
           <p>{content.contatti.addressLine1}</p>
           <p>{content.contatti.addressLine2}</p>
@@ -45,7 +45,7 @@ const Contatti = () => {
           <p>
             <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a>
           </p>
-<br />
+          <br />
           <p>P.IVA {content.contatti.vat}</p>
           <p>{content.contatti.legal}</p>
           <p>REA: {content.contatti.rea}</p>

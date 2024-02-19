@@ -24,7 +24,7 @@ export default function Home() {
       title={deal.title}
       text={deal.text}
       link={deal.link} />
-  ));
+  ))
 
   return (
     <main>
@@ -70,5 +70,5 @@ export default function Home() {
         <Footer />
       </div>
     </main>
-  );
+  )
 }

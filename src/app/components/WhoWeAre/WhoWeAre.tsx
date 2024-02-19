@@ -26,77 +26,76 @@ const WhoWeAre = () => {
             setGridContainerOffset({ top: rect.top, left: rect.left })
         }
         setHoveredItem(item)
-    };
+    }
 
     const handleMouseLeave = () => {
         console.log("By: " + (cursorPosition.y))
         setHoveredItem(null)
-    };
+    }
 
     const handleMouseMove = (e: React.MouseEvent) => {
-        setCursorPosition({ x: e.clientX, y: e.clientY });
+        setCursorPosition({ x: e.clientX, y: e.clientY })
         console.log("Cy: " + (cursorPosition.y))
         const gridContainer = document.querySelector(`.${styles.gridContainer}`)
         if (gridContainer) {
             const rect = gridContainer.getBoundingClientRect()
             setGridContainerOffset({ top: rect.top, left: rect.left })
         }
-    };
+    }
 
     const handleWheel = (e: WheelEvent) => {
-        setCursorPosition({ x: e.clientX, y: e.clientY });
+        setCursorPosition({ x: e.clientX, y: e.clientY })
         console.log("Ey: " + (cursorPosition.y))
         const gridContainer = document.querySelector(`.${styles.gridContainer}`)
         if (gridContainer) {
             const rect = gridContainer.getBoundingClientRect()
             setGridContainerOffset({ top: rect.top, left: rect.left })
         }
-
-    };
+    }
 
     useEffect(() => {
-        //window.addEventListener('mousemove', handleMouseMove as unknown as EventListener);
-        window.addEventListener('wheel', handleWheel);
+        //window.addEventListener('mousemove', handleMouseMove as unknown as EventListener)
+        window.addEventListener('wheel', handleWheel)
 
 
         return () => {
-            //window.removeEventListener('mousemove', handleMouseMove as unknown as EventListener);
-            window.removeEventListener('wheel', handleWheel);
-        };
-    }, []);
+            //window.removeEventListener('mousemove', handleMouseMove as unknown as EventListener)
+            window.removeEventListener('wheel', handleWheel)
+        }
+    }, [])
 
     const calculateTooltipPosition = () => {
-        const { x, y } = cursorPosition;
-        const { top, left } = gridContainerOffset;
-        const tooltipElement = document.querySelector(`.${styles.tooltipContainer}`) as HTMLElement;
+        const { x, y } = cursorPosition
+        const { top, left } = gridContainerOffset
+        const tooltipElement = document.querySelector(`.${styles.tooltipContainer}`) as HTMLElement
 
         console.log("Dy: " + (cursorPosition.y))
 
         // Calculate initial positions
-        let tooltipTop = y - top;
-        let tooltipLeft = x - left;
+        let tooltipTop = y - top
+        let tooltipLeft = x - left
 
         if (!tooltipElement) {
             console.log("AAA")
             if (x != tooltipLeft && y != tooltipTop)
-                setCursorPosition({ x: tooltipLeft, y: tooltipTop });
-            return { top: tooltipTop, left: tooltipLeft };
+                setCursorPosition({ x: tooltipLeft, y: tooltipTop })
+            return { top: tooltipTop, left: tooltipLeft }
         }
         console.log("AAA222")
 
-        const tooltipRect = tooltipElement.getBoundingClientRect();
+        const tooltipRect = tooltipElement.getBoundingClientRect()
 
         // Adjust positions to keep the tooltip within the screen boundaries
         if (tooltipTop + tooltipRect.height > document.body.clientHeight) {
-            tooltipTop = document.body.clientHeight - tooltipRect.height;
+            tooltipTop = document.body.clientHeight - tooltipRect.height
         } else if (tooltipTop < 0) {
-            tooltipTop = 0;
+            tooltipTop = 0
         }
 
         if (tooltipLeft + tooltipRect.width > document.body.clientWidth) {
-            tooltipLeft = document.body.clientWidth - tooltipRect.width;
+            tooltipLeft = document.body.clientWidth - tooltipRect.width
         } else if (tooltipLeft < 0) {
-            tooltipLeft = 0;
+            tooltipLeft = 0
         }
 
         // Mirror to the opposite side if tooltip is close to the right edge
@@ -107,10 +106,10 @@ const WhoWeAre = () => {
         // Mirror to the opposite side if tooltip is close to the bottom edge
         if (y - top > window.innerHeight - (y - tooltipTop) - tooltipRect.height) {
             // Calculate the amount of overflow
-            const overflowHeight = (y - top) - (window.innerHeight - (y - tooltipTop) - tooltipRect.height);
+            const overflowHeight = (y - top) - (window.innerHeight - (y - tooltipTop) - tooltipRect.height)
 
             // Adjust tooltipTop to keep it within the screen boundaries
-            tooltipTop = tooltipTop - overflowHeight;
+            tooltipTop = tooltipTop - overflowHeight
 
             // console.log("y - top: " + (y - top))
             // console.log("(y - tooltipTop): " + (y - tooltipTop))
@@ -131,8 +130,8 @@ const WhoWeAre = () => {
         console.log("top: " + (top))
         console.log("tooltipTop: " + (tooltipTop))
 
-        return { top: tooltipTop, left: tooltipLeft };
-    };
+        return { top: tooltipTop, left: tooltipLeft }
+    }
 
 
     const itemsPerRow = 3

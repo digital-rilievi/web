@@ -65,7 +65,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
             </div>
 
         </div>
-    );
-};
+    )
+}
 
 export default TestimonialQuote

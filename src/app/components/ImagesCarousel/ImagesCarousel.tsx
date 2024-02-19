@@ -4,29 +4,29 @@ import styles from './ImagesCarousel.module.css'
 import Image from 'next/image'
 
 interface ImagesCarouselProps {
-    slides?: string[];
+    slides?: string[]
 }
 
 const ImagesCarousel = (props: ImagesCarouselProps) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0)
 
     var images = props.slides ?? []
 
     const nextSlide = () => {
         if (currentIndex < images.length - 1) {
-            setCurrentIndex(currentIndex + 1);
+            setCurrentIndex(currentIndex + 1)
         } else {
-            setCurrentIndex(0);
+            setCurrentIndex(0)
         }
-    };
+    }
 
     const prevSlide = () => {
         if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1);
+            setCurrentIndex(currentIndex - 1)
         } else {
-            setCurrentIndex(images.length - 1);
+            setCurrentIndex(images.length - 1)
         }
-    };
+    }
 
     const leftArrowStyle = currentIndex === 0 ? 'hidden' : 'visible'
     const rightArrowStyle = currentIndex === images.length - 1 ? 'hidden' : 'visible'

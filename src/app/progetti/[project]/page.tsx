@@ -60,7 +60,7 @@ function Project({ params }: ProjectPageProps) {
       <Space size={"big"} />
       <Footer />
     </>
-  );
+  )
 }
 
-export default Project;
+export default Project

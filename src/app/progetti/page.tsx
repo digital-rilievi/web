@@ -51,9 +51,18 @@ const Progetti = () => {
             </div>
             <Space size={"big"} />
             <Space size={"big"} />
+            {/*
+            can be restored setting:
+            
+            "moreInfo": "VUOI VISUALIZZARE\nPIÙ PROGETTI?",
+            "moreInfoCta": "CARICA",
+            "moreInfoLink": "/prova",
+            
+            under "progetti" object in content.json
+        
             <BlueTextCta text={content.progetti.moreInfo} label={content.progetti.moreInfoCta} link={content.progetti.moreInfoLink} />
             <Space size={"big"} />
-            <Space size={"big"} />
+            <Space size={"big"} /> */}
             <Space size={"big"} />
             <Footer />
         </>

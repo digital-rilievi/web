@@ -23,6 +23,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   overflow-x: hidden;
+  overflow-y: hidden;
   margin: 0;
   max-width: 150rem;
   margin-left: auto;

@@ -19,7 +19,6 @@ const WhoWeAre = () => {
     const [hoveredItem, setHoveredItem] = useState<Item | null>(null)
 
     const handleMouseEnter = (item: Item) => {
-        console.log("Ay: " + (cursorPosition.y))
         const gridContainer = document.querySelector(`.${styles.gridContainer}`)
         if (gridContainer) {
             const rect = gridContainer.getBoundingClientRect()
@@ -29,13 +28,11 @@ const WhoWeAre = () => {
     }
 
     const handleMouseLeave = () => {
-        console.log("By: " + (cursorPosition.y))
         setHoveredItem(null)
     }
 
     const handleMouseMove = (e: React.MouseEvent) => {
         setCursorPosition({ x: e.clientX, y: e.clientY })
-        console.log("Cy: " + (cursorPosition.y))
         const gridContainer = document.querySelector(`.${styles.gridContainer}`)
         if (gridContainer) {
             const rect = gridContainer.getBoundingClientRect()
@@ -45,7 +42,6 @@ const WhoWeAre = () => {
 
     const handleWheel = (e: WheelEvent) => {
         setCursorPosition({ x: e.clientX, y: e.clientY })
-        console.log("Ey: " + (cursorPosition.y))
         const gridContainer = document.querySelector(`.${styles.gridContainer}`)
         if (gridContainer) {
             const rect = gridContainer.getBoundingClientRect()
@@ -69,19 +65,13 @@ const WhoWeAre = () => {
         const { top, left } = gridContainerOffset
         const tooltipElement = document.querySelector(`.${styles.tooltipContainer}`) as HTMLElement
 
-        console.log("Dy: " + (cursorPosition.y))
-
         // Calculate initial positions
         let tooltipTop = y - top
         let tooltipLeft = x - left
 
         if (!tooltipElement) {
-            console.log("AAA")
-            if (x != tooltipLeft && y != tooltipTop)
-                setCursorPosition({ x: tooltipLeft, y: tooltipTop })
-            return { top: tooltipTop, left: tooltipLeft }
+                return { top: tooltipTop, left: tooltipLeft }
         }
-        console.log("AAA222")
 
         const tooltipRect = tooltipElement.getBoundingClientRect()
 
@@ -111,28 +101,11 @@ const WhoWeAre = () => {
             // Adjust tooltipTop to keep it within the screen boundaries
             tooltipTop = tooltipTop - overflowHeight
 
-            // console.log("y - top: " + (y - top))
-            // console.log("(y - tooltipTop): " + (y - tooltipTop))
-            // console.log("(tooltipRect.height): " + (tooltipRect.height))
-            // console.log("((window.innerHeight - (y - tooltipTop) - tooltipRect.height)): " + ((window.innerHeight - (y - tooltipTop) - tooltipRect.height)))
-            // console.log("overflowHeight: " + overflowHeight)
-
-            //console.log("height- y diff: " + (window.innerHeight - y))
-            //console.log("A: " + (y - top))
-            //console.log("iH-B-tH: " + (window.innerHeight - (y - tooltipTop) - tooltipRect.height))
-            //console.log("height- y diff: " + (window.innerHeight - y))
+            return { top: tooltipTop, left: tooltipLeft }
         }
-
-        //console.log("window.innerHeight: " + window.innerHeight)
-        //console.log("y: " + y)
-
-        console.log("y: " + (y))
-        console.log("top: " + (top))
-        console.log("tooltipTop: " + (tooltipTop))
 
         return { top: tooltipTop, left: tooltipLeft }
     }
-
 
     const itemsPerRow = 3
     const totalItems = content['chi-siamo'].whoWeAreList.length
@@ -140,7 +113,6 @@ const WhoWeAre = () => {
 
     // Add invisible placeholder items to fill the last row
     const filledItems = remainingItems > 0 ? [...content['chi-siamo'].whoWeAreList, ...Array(remainingItems).fill(null)] : content['chi-siamo'].whoWeAreList
-
 
     return (
         <div onMouseMove={handleMouseMove} onMouseEnter={handleMouseMove}>

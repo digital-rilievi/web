@@ -3,7 +3,7 @@
   top: 0;
   display: flex;
   width: -webkit-fill-available;
-  justify-content: space-between;
+  justify-content: end;
   align-items: flex-start;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -21,7 +21,7 @@
 .spacingNavbar {
   display: flex;
   width: -webkit-fill-available;
-  justify-content: space-between;
+  justify-content: end;
   align-items: flex-start;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -34,8 +34,13 @@
   mask: linear-gradient(to top, transparent, black 45%);
 }
 
-.logo img {
-  width: 60px; 
+.logo {
+  width: 90px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1002;
+  padding: 1rem;
 }
 
 .navLinks {
@@ -102,5 +107,27 @@
   .mobileMenuIcon {
     padding: 0.5rem;
     display: block;
+  }
+}
+
+.logoAnimated {
+  animation: logoAnimation 3s ease, hide 0.1s linear 3s 1 forwards; /* Add a transition for a smooth effect */
+}
+
+/* Animation for the logo */
+@keyframes logoAnimation {
+  0% {
+    width: 100vh; /* Initial size, full width */
+    max-width: 150rem;
+
+  }
+  100% {
+    width: 90px; /* Final size, adjust as needed */
+  }
+}
+
+@keyframes hide {
+  to {
+    opacity: 0;
   }
 }

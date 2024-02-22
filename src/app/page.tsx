@@ -1,3 +1,4 @@
+'use client'
 import NavBar from "./components/Navbar/Navbar"
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer"
 import PartnersList from "./components/PartnersList/PartnersList"
@@ -12,6 +13,7 @@ import ManualSlider from "./components/ManualSlider/ManualSlider"
 import WeDealWith from "./components/WeDealWith/WeDealWith"
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre"
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
+import { OnceProvider } from "./providers/OnceProvider"
 
 export default function Home() {
 
@@ -28,7 +30,7 @@ export default function Home() {
 
   return (
     <main>
-      <NavBar />
+      <NavBar animateLogo />
       <ScrollIndicator />
       <div className={styles.content}>
         <VideoPlayer />

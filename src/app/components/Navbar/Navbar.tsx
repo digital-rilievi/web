@@ -4,14 +4,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './Navbar.module.css'
 import { usePathname } from 'next/navigation'
+import { useOnce } from 'app/providers/OnceProvider'
+
 
 interface NavBarProps {
-  invisible?: Boolean
+  invisible?: boolean,
+  animateLogo?: boolean
 }
 
 const Navbar = (props: NavBarProps) => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
+  //const [animatedLogoNeeded, setAnimatedLogoNeeded] = useState(false)
 
   const pathname = usePathname()
 
@@ -22,18 +25,27 @@ const Navbar = (props: NavBarProps) => {
   useEffect(() => {
     // Allow scrolling after 3 seconds
     const enableScroll = () => {
-      document.body.style.overflowY = 'auto';
-    };
+      document.body.style.overflowY = 'auto'
+    }
 
-    const scrollTimeout = setTimeout(enableScroll, 3000);
+    document.body.style.overflowY = 'hidden'
+
+    // with this logic wrapping the prop.animateLogo, it will do it only animate on first page load
+    //const isFirstCall = once()
+    //var animationNeeded = isFirstCall && (props.animateLogo ? props.animateLogo : false)
+    //setAnimatedLogoNeeded(animationNeeded)
+
+    var time = props.animateLogo ? 3000 : 0
+
+    const scrollTimeout = setTimeout(enableScroll, time)
 
     // Clear the timeout to prevent enabling scrolling if the component unmounts before the timeout
-    return () => clearTimeout(scrollTimeout);
-  }, []);
+    return () => clearTimeout(scrollTimeout)
+  }, [])
 
   return (
     <div style={{ position: "relative" }}>
-      {!props.invisible &&
+      {!props.invisible && props.animateLogo &&
         <div>
           <Link href="/">
             <Image className={`${styles.logo} ${styles.logoAnimated}`} src="/assets/logo/letter_d.svg" alt="Logo" width="1" height="1" />

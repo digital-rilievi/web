@@ -110,8 +110,16 @@
   }
 }
 
+.bigLogo {
+position: fixed;
+  z-index: 1002;
+  padding: 1rem;
+  width: 100vh; /* Initial size, full width */
+  max-width: 150rem;
+}
+
 .logoAnimated {
-  animation: logoAnimation 3s ease, hide 0.1s linear 3s 1 forwards; /* Add a transition for a smooth effect */
+  animation: logoAnimation 3s ease, hide 0.001s linear 3s 1 forwards; /* Add a transition for a smooth effect */
 }
 
 /* Animation for the logo */

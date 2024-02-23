@@ -119,7 +119,7 @@ position: fixed;
 }
 
 .logoAnimated {
-  animation: logoAnimation 3s ease, hide 0.001s linear 3s 1 forwards; /* Add a transition for a smooth effect */
+  animation: logoAnimation 1s ease, hide 0.001s linear 1s 1 forwards; /* Add a transition for a smooth effect */
 }
 
 /* Animation for the logo */

@@ -1,9 +1,9 @@
 'use client'
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from './Navbar.module.css';
-import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import styles from './Navbar.module.css'
+import { usePathname } from 'next/navigation'
 
 interface NavBarProps {
   invisible?: boolean,
@@ -12,7 +12,7 @@ interface NavBarProps {
 
 const Navbar = (props: NavBarProps) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [animatedLogoNeeded, setAnimatedLogoNeeded] = useState(false)
+  //const [animatedLogoNeeded, setAnimatedLogoNeeded] = useState(false)
 
   const pathname = usePathname()
 
@@ -20,6 +20,7 @@ const Navbar = (props: NavBarProps) => {
     setMobileMenuOpen(!isMobileMenuOpen)
   }
 
+  /*
   useEffect(() => {
     // Function to handle user interaction
     const handleUserInteraction = () => {
@@ -37,6 +38,7 @@ const Navbar = (props: NavBarProps) => {
       window.removeEventListener('click', handleUserInteraction)
     }
   }, [])
+  */
 
 
   return (
@@ -44,7 +46,8 @@ const Navbar = (props: NavBarProps) => {
       {!props.invisible && props.animateLogo &&
         <div>
           <Link href="/">
-            <Image className={`${styles.bigLogo} ${animatedLogoNeeded ? styles.logoAnimated : ''}`} src="/assets/logo/letter_d.svg" alt="Logo" width="1" height="1" />
+            {/* <Image className={`${styles.bigLogo} ${animatedLogoNeeded ? styles.logoAnimated : ''}`} src="/assets/logo/letter_d.svg" alt="Logo" width="1" height="1" /> */}
+            <Image className={`${styles.bigLogo} ${styles.logoAnimated}`} src="/assets/logo/letter_d.svg" alt="Logo" width="1" height="1" />
           </Link>
         </div>
       }

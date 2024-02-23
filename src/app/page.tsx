@@ -13,7 +13,6 @@ import ManualSlider from "./components/ManualSlider/ManualSlider"
 import WeDealWith from "./components/WeDealWith/WeDealWith"
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre"
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
-import { OnceProvider } from "./providers/OnceProvider"
 
 export default function Home() {
 
@@ -33,11 +32,14 @@ export default function Home() {
       <NavBar animateLogo />
       <ScrollIndicator />
       <div className={styles.content}>
-        <VideoPlayer />
-        <Space size={"big"} />
+      <div className={styles.appBarSpace}>
+        <NavBar invisible />
+      </div>
         <h1 className={styles.title}>
           {content.home.title}
         </h1>
+        <VideoPlayer />
+        <Space size={"big"} />
         <ImageText image={content.home.firstImage}
           text={content.home.firstImageDesc}
           secondaryText={content.home.firstImageName}

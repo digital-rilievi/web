@@ -18,7 +18,7 @@
 }
 
 .imageColumn {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;

@@ -116,6 +116,7 @@ position: fixed;
   padding: 1rem;
   width: 100vh; /* Initial size, full width */
   max-width: 150rem;
+  visibility: hidden;
 }
 
 .logoAnimated {
@@ -131,11 +132,13 @@ position: fixed;
   }
   100% {
     width: 90px; /* Final size, adjust as needed */
+    visibility: visible;
   }
 }
 
 @keyframes hide {
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }

@@ -61,19 +61,21 @@
 }
 
 .carouselImage {
-  padding-left: 5%;
+  margin-left: 5%;
   height: 720px;
   width: 78%;
-  object-fit: cover;
 }
 
 
 /* Media query for bigger layout */
 @media (min-width: 1920px) {
   .carouselImage {
-    padding-left: 6%;
+    margin-left: 6%;
     height: 820px;
     width: 85%;
-    object-fit: cover;
   }
+}
+
+.imageStyle {
+  object-fit: cover;
 }

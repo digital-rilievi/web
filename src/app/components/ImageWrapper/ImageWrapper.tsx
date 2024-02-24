@@ -1,46 +1,48 @@
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import styles from './ImageWrapper.module.css';
+'use client'
+import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
+import styles from './ImageWrapper.module.css'
 
 interface ImageWrapperProps {
     src: string;
     alt: string;
-    backgroundNotNeeded?: boolean;
-    width?: string | number;
-    height?: string | number;
-    className?: React.CSSProperties;
-    optimized?: boolean;
+    backgroundNotNeeded?: boolean
+    width?: string | number
+    height?: string | number
+    className?: React.CSSProperties
+    imagestyle?: React.CSSProperties
+    optimized?: boolean
 }
 
 const ImageWrapper = (props: ImageWrapperProps) => {
-    const [blurDataURL, setBlurDataURL] = useState<string | null>(null);
+    const [blurDataURL, setBlurDataURL] = useState<string | null>(null)
 
     useEffect(() => {
         const fetchBase64Image = async () => {
-            const base64Encoded = await encodeImageToBase64();
-            setBlurDataURL(base64Encoded);
+            const base64Encoded = await encodeImageToBase64()
+            setBlurDataURL(base64Encoded)
         };
 
-        fetchBase64Image();
-    }, []);
+        fetchBase64Image()
+    }, [])
 
     const encodeImageToBase64 = async () => {
         try {
-            const response = await fetch("/assets/extras/placeholder.png");
+            const response = await fetch("/assets/extras/placeholder.png")
             const blob = await response.blob();
-            const buffer = await new Response(blob).arrayBuffer();
-            const base64Encoded = btoa(new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), ''));
-            return `data:image/png;base64,${base64Encoded}`;
+            const buffer = await new Response(blob).arrayBuffer()
+            const base64Encoded = btoa(new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), ''))
+            return `data:image/png;base64,${base64Encoded}`
         } catch (error) {
-            console.error('Error encoding image to base64:', error);
-            return null;
+            console.error('Error encoding image to base64:', error)
+            return null
         }
     };
 
     return (
-        <div className={`${props.backgroundNotNeeded ? '' : styles.background} ${props.className}`}>
+        <div className={`${props.className} ${props.backgroundNotNeeded ? '' : styles.background}`}>
             <Image
-                className={`${props.className}`}
+                className={`${styles.image} ${props.imagestyle}`}
                 src={props.src}
                 alt={props.alt}
                 placeholder="empty"
@@ -50,7 +52,7 @@ const ImageWrapper = (props: ImageWrapperProps) => {
                 unoptimized={!props.optimized}
             />
         </div>
-    );
-};
+    )
+}
 
-export default ImageWrapper;
+export default ImageWrapper

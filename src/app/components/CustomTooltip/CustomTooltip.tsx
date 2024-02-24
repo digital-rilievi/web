@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './CustomTooltip.module.css'
 import Image from 'next/image'
+import ImageWrapper from '../ImageWrapper/ImageWrapper'
 
 interface TooltipProps {
     img?: string,
@@ -11,7 +12,7 @@ const CustomTooltip = (props: TooltipProps) => {
     return (
         <div className={styles.tooltipContainer}>
             {props.img && (
-                <Image className={styles.tooltipImage} alt={''} src={props.img} width={1} height={1} unoptimized={true} />
+                <ImageWrapper className={styles.tooltipImage} alt={''} src={props.img} width={1} height={1} backgroundNotNeeded />
             )}
             {props.quote && (
                 <div className={styles.quoteWrapper}>

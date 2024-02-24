@@ -1,6 +1,7 @@
 import React from 'react'
 import BlueCircle from '../BlueCircle/BlueCircle'
 import CircularButton from '../CircularButton/CircularButton'
+import ImageWrapper from '../ImageWrapper/ImageWrapper'
 import styles from './ImageButton.module.css'
 
 interface ImageButtonProps {
@@ -35,7 +36,7 @@ const ImageButton = (props: ImageButtonProps) => {
       </div>
       <div className={styles.containerHelper}></div>
       <div className={styles.imageWrapper}>
-      <img className={styles.image} src={props.image} alt="Image" />
+      <ImageWrapper className={styles.image} src={props.image} alt="Image" />
       {props.name && (
         <div className={styles.name}>{props.name}</div>
         )}

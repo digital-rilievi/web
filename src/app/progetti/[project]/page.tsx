@@ -5,7 +5,6 @@ import Navbar from 'app/components/Navbar/Navbar'
 import Footer from 'app/components/Footer/Footer'
 import Image from 'next/image'
 import styles from './Project.module.css'
-import globalStyles from 'app/page.module.css'
 import Space from 'app/components/Space/Space'
 import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
 import BlueCircle from 'app/components/BlueCircle/BlueCircle'
@@ -43,7 +42,9 @@ function Project({ params }: ProjectPageProps) {
       </div>
       <Space size={"big"} />
       <Space size={"big"} />
-      <ImageText inverted image={project?.details?.panelImage} title={project?.details?.panelImageText} secondaryText={project?.details?.panelImageDesc} />
+      {project?.details?.panelImage &&
+        <ImageText inverted image={project?.details?.panelImage} title={project?.details?.panelImageText} secondaryText={project?.details?.panelImageDesc} />
+      }
 
       <Space size={"big"} />
       <Space size={"big"} />

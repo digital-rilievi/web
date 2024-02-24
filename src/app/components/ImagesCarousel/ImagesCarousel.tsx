@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react'
-import styles from './ImagesCarousel.module.css'
 import Image from 'next/image'
+import ImageWrapper from '../ImageWrapper/ImageWrapper'
+import styles from './ImagesCarousel.module.css'
 
 interface ImagesCarouselProps {
     slides?: string[]
@@ -33,7 +34,7 @@ const ImagesCarousel = (props: ImagesCarouselProps) => {
 
     return (
         <div className={styles.container}>
-            <Image className={styles.carouselImage} src={images[currentIndex]} alt="Image" width="1" height="1" unoptimized={true} />
+            <ImageWrapper className={styles.carouselImage} src={images[currentIndex]} alt="Image" width="1" height="1" />
             <div className={styles.controls}>
                 <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={{ visibility: `${leftArrowStyle}` }}>
                     <Image src="/assets/extras/left-arrow.svg" alt={"&larr;"} width={46} height={46} />

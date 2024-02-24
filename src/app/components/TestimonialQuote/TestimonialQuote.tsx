@@ -2,6 +2,7 @@ import React from 'react'
 import CircularButton from '../CircularButton/CircularButton'
 import styles from './TestimonialQuote.module.css'
 import Image from 'next/image'
+import ImageWrapper from '../ImageWrapper/ImageWrapper'
 
 interface TestimonialQuoteProps {
     imageSrc: string,
@@ -20,7 +21,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
         <div className={styles.divContainer}>
             <div className={`${props.alt ? styles.rowContainerReversed : styles.rowContainer}`}>
                 <div className={styles.imageColumn}>
-                    <Image src={props.imageSrc} alt={''} height={1} width={1} className={styles.image} unoptimized={true} />
+                    <ImageWrapper src={props.imageSrc} alt={''} height={1} width={1} className={styles.image} />
                     <h3 className={`${styles.name} ${props.alt && styles.altAlign}`}>{props.name}</h3>
                     <br />
                     <p className={props.alt && styles.altAlign}>{props.description}</p>
@@ -32,9 +33,9 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                 }
                 <div className={styles.quoteColumn}>
                     <div className={`${props.alt ? styles.rowReversed : styles.row}`}>
-                        <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.icon} unoptimized={true} />
+                        <ImageWrapper src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.icon} />
                         <div>
-                            <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} unoptimized={true} />
+                            <ImageWrapper src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} />
                             <span className={styles.quote}>{props.quote}</span>
                         </div>
                     </div>

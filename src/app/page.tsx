@@ -13,6 +13,7 @@ import ManualSlider from "./components/ManualSlider/ManualSlider"
 import WeDealWith from "./components/WeDealWith/WeDealWith"
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre"
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
+import ImageWrapper from "./components/ImageWrapper/ImageWrapper"
 
 export default function Home() {
 

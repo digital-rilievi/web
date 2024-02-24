@@ -1,8 +1,9 @@
 .image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .background {
-    background: #fff;
+    background: #3a3a3a;
 }

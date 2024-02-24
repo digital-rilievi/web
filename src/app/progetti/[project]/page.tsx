@@ -11,6 +11,7 @@ import BlueCircle from 'app/components/BlueCircle/BlueCircle'
 import ImageText from 'app/components/ImageText/ImageText'
 import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
 import TestimonialQuote from 'app/components/TestimonialQuote/TestimonialQuote'
+import ImageWrapper from 'app/components/ImageWrapper/ImageWrapper'
 
 interface ProjectPageProps {
   params: { project: string }
@@ -33,7 +34,7 @@ function Project({ params }: ProjectPageProps) {
   return (
     <>
       <Navbar />
-      <Image width={1} height={1} className={styles.image} src={`${project?.details?.coverImage}`} alt={`Image`} unoptimized={true} />
+      <ImageWrapper width={1} height={1} className={styles.image} src={`${project?.details?.coverImage}`} alt={`Image`} unoptimized={true} />
       <div className={styles.blueCircleWrapper}>
         <BlueCircle />
         <div className={styles.titleWrapper}>

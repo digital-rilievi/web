@@ -29,7 +29,7 @@ const Progetti = () => {
             <div className={globalStyles.appBarSpace}>
                 <Navbar invisible />
             </div>
-            <ScrollingText text={content.progetti.title} />
+            {/* <ScrollingText text={content.progetti.title} /> */}
             <Space />
             <div>
                 {projects.map((info: ProjectProps, index) => (

@@ -12,7 +12,7 @@ const CustomTooltip = (props: TooltipProps) => {
     return (
         <div className={styles.tooltipContainer}>
             {props.img && (
-                <ImageWrapper className={styles.tooltipImage} alt={''} src={props.img} width={1} height={1} backgroundNotNeeded />
+                <ImageWrapper className={styles.tooltipImage} alt={''} src={props.img} width={1} height={1} backgroundNotNeeded={true} />
             )}
             {props.quote && (
                 <div className={styles.quoteWrapper}>

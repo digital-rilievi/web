@@ -4,13 +4,13 @@ import Image from 'next/image'
 import styles from './ImageWrapper.module.css'
 
 interface ImageWrapperProps {
-    src: string;
-    alt: string;
-    backgroundNotNeeded?: boolean
-    width?: string | number
-    height?: string | number
-    className?: React.CSSProperties
-    imagestyle?: React.CSSProperties
+    src: string,
+    alt: string,
+    backgroundNotNeeded?: boolean,
+    width?: `${number}` | number,
+    height?: `${number}` | number,
+    className?: string,
+    imagestyle?: string,
     optimized?: boolean
 }
 

@@ -33,9 +33,9 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                 }
                 <div className={styles.quoteColumn}>
                     <div className={`${props.alt ? styles.rowReversed : styles.row}`}>
-                        <ImageWrapper src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.icon} />
+                        <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.icon} />
                         <div>
-                            <ImageWrapper src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} />
+                            <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} />
                             <span className={styles.quote}>{props.quote}</span>
                         </div>
                     </div>

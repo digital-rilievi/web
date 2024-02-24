@@ -73,8 +73,8 @@ const ImageWrapper = (props: ImageWrapperProps) => {
                 loading={`${props.loading ? props.loading : "lazy"}`}
                 placeholder="blur"
                 blurDataURL={`/_next/image?url=${props.src}&w=16&q=1`}
-        width={imageProps?.width ?? 1}
-        height={imageProps?.height ?? 1}
+        width={imageProps?.width ?? props.width ?? 1}
+        height={imageProps?.height ?? props.height ?? 1}
                 unoptimized={!props.optimized}
             />
         </div>

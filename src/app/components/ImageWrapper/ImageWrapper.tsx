@@ -14,7 +14,7 @@ interface ImageWrapperProps {
     className?: string,
     imagestyle?: string,
     optimized?: boolean,
-    loading?: string
+    loading?: "lazy" | "eager" | undefined
 }
 
 const ImageWrapper = (props: ImageWrapperProps) => {

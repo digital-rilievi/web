@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import NextImage from 'next/image'
 import styles from './ImageWrapper.module.css'
-
+import Jimp from 'jimp'
 
 interface ImageWrapperProps {
     src: string,
@@ -26,7 +26,7 @@ const ImageWrapper = (props: ImageWrapperProps) => {
         img = new Image()
 
         if (img != null) {
-            
+
             img.src = props.src
 
             img.onload = function () {
@@ -40,10 +40,20 @@ const ImageWrapper = (props: ImageWrapperProps) => {
 
         const fetchBase64Image = async () => {
             try {
-                const response = await fetch(props.src)
+                // Load the image with jimp
+                const image = await Jimp.read(props.src);
+
+                // Resize the image (80% reduction)
+                const resizedImage = image.resize(image.getWidth() * 0.2, image.getHeight() * 0.2);
+
+                // Convert the resized image to a base64-encoded string
+                const base64Encoded = await resizedImage.getBase64Async(Jimp.MIME_PNG);
+
+                /*const response = await fetch(props.src)
                 const blob = await response.blob();
                 const buffer = await new Response(blob).arrayBuffer()
-                const base64Encoded = btoa(new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), ''))
+                const resizedBuffer = await sharp(buffer).resize({ width: 80, height: 80 }).toBuffer();
+                const base64Encoded = btoa(new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), ''))*/
                 setBlurDataURL(`data:image/png;base64,${base64Encoded}`)
             } catch (error) {
                 console.error('Error encoding image to base64:', error)

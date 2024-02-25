@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import NextImage from 'next/image'
 import styles from './ImageWrapper.module.css'
-import { stringify } from 'querystring'
 
 
 interface ImageWrapperProps {
@@ -21,18 +20,19 @@ const ImageWrapper = (props: ImageWrapperProps) => {
     const [blurDataURL, setBlurDataURL] = useState<string | null>(null)
     const [imageProps, setImageProps] = useState<{width: `${number}` | number, height: `${number}` | number} | undefined>(undefined)
 
-    const img = new Image()
-
-    img.onload = function() {
-      const width = img.width
-      const height = img.height
-
-      // Now you can use width and height to set the size of your placeholder
-      setImageProps({width: width, height: height})
-    };
+    var img: HTMLImageElement | undefined
 
     useEffect(() => {
+        img = new Image()
         img.src = props.src
+
+        img.onload = function() {
+            const width = img?.width
+            const height = img?.height
+      
+            // Now you can use width and height to set the size of your placeholder
+            setImageProps({width: width ?? 1, height: height ?? 1})
+          };
 
         const fetchBase64Image = async () => {
             try {

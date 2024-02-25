@@ -17,7 +17,6 @@ interface ImageWrapperProps {
 }
 
 const ImageWrapper = (props: ImageWrapperProps) => {
-    const [blurDataURL, setBlurDataURL] = useState<string | null>(null)
     const [imageProps, setImageProps] = useState<{ width: `${number}` | number, height: `${number}` | number } | undefined>(undefined)
 
     var img: HTMLImageElement | undefined
@@ -37,31 +36,6 @@ const ImageWrapper = (props: ImageWrapperProps) => {
                 setImageProps({ width: width ?? 1, height: height ?? 1 })
             };
         }
-
-        const fetchBase64Image = async () => {
-            try {
-                // Load the image with jimp
-                const image = await Jimp.read(props.src);
-
-                // Resize the image (80% reduction)
-                const resizedImage = image.resize(image.getWidth() * 0.2, image.getHeight() * 0.2);
-
-                // Convert the resized image to a base64-encoded string
-                const base64Encoded = await resizedImage.getBase64Async(Jimp.MIME_PNG);
-
-                /*const response = await fetch(props.src)
-                const blob = await response.blob();
-                const buffer = await new Response(blob).arrayBuffer()
-                const resizedBuffer = await sharp(buffer).resize({ width: 80, height: 80 }).toBuffer();
-                const base64Encoded = btoa(new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), ''))*/
-                setBlurDataURL(`data:image/png;base64,${base64Encoded}`)
-            } catch (error) {
-                console.error('Error encoding image to base64:', error)
-                setBlurDataURL(null)
-            }
-        };
-
-        fetchBase64Image();
     }, []);
 
     return (
@@ -73,7 +47,7 @@ const ImageWrapper = (props: ImageWrapperProps) => {
                 alt={props.alt}
                 loading={`${props.loading ? props.loading : "lazy"}`}
                 placeholder="blur"
-                blurDataURL={`${blurDataURL}`}
+                blurDataURL={`/_next/image?url=${props.src}&w=16&q=1`}
                 width={imageProps?.width ?? props.width ?? 1}
                 height={imageProps?.height ?? props.height ?? 1}
                 unoptimized={!props.optimized}

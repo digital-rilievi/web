@@ -17,15 +17,16 @@ interface ImageWrapperProps {
 }
 
 const ImageWrapper = (props: ImageWrapperProps) => {
+    const [blurDataURL, setBlurDataURL] = useState<string | null>(null)
     const [imageProps, setImageProps] = useState<{ width: `${number}` | number, height: `${number}` | number } | undefined>(undefined)
 
     var img: HTMLImageElement | undefined
 
     useEffect(() => {
         img = new Image()
-        
-        if (img != null) {
 
+        if (img != null) {
+            
             img.src = props.src
 
             img.onload = function () {
@@ -36,6 +37,21 @@ const ImageWrapper = (props: ImageWrapperProps) => {
                 setImageProps({ width: width ?? 1, height: height ?? 1 })
             };
         }
+
+        const fetchBase64Image = async () => {
+            try {
+                const response = await fetch(props.src)
+                const blob = await response.blob();
+                const buffer = await new Response(blob).arrayBuffer()
+                const base64Encoded = btoa(new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), ''))
+                setBlurDataURL(`data:image/png;base64,${base64Encoded}`)
+            } catch (error) {
+                console.error('Error encoding image to base64:', error)
+                setBlurDataURL(null)
+            }
+        };
+
+        fetchBase64Image();
     }, []);
 
     return (
@@ -47,7 +63,7 @@ const ImageWrapper = (props: ImageWrapperProps) => {
                 alt={props.alt}
                 loading={`${props.loading ? props.loading : "lazy"}`}
                 placeholder="blur"
-                blurDataURL={`/_next/image?url=${props.src}&w=16&q=1`}
+                blurDataURL={`${blurDataURL}`}
                 width={imageProps?.width ?? props.width ?? 1}
                 height={imageProps?.height ?? props.height ?? 1}
                 unoptimized={!props.optimized}

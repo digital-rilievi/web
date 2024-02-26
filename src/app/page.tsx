@@ -36,10 +36,7 @@ export default function Home() {
       <div className={styles.appBarSpace}>
         <NavBar invisible />
       </div>
-        <h1 className={styles.title}>
-          {content.home.title}
-        </h1>
-        <VideoPlayer />
+        <VideoPlayer title={content.home.title} />
         <Space size={"big"} />
         <Space size={"big"} />
         <ImageText image={content.home.firstImage}

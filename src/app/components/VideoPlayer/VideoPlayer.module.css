@@ -1,0 +1,11 @@
+.title {
+    position: absolute;
+    z-index: 100;
+    color: #F5F5F5;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 2rem;
+    white-space: pre-line;
+    line-height: 118px; /* 107.273% */
+  }

@@ -51,7 +51,7 @@ const Navbar = (props: NavBarProps) => {
           </Link>
         </div>
       }
-      <nav className={props.invisible ? styles.spacingNavBar : styles.navbar}>
+      <nav className={`${props.invisible ? styles.spacingNavBar : styles.navbar} ${isMobileMenuOpen ? styles.mobileMenuMaskDeactivated : ''}`}>
         <div>
           <Link href="/">
             <Image className={styles.logo} src="/assets/logo/letter_d.svg" alt="Logo" width="1" height="1" />

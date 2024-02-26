@@ -21,7 +21,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
         <div className={styles.divContainer}>
             <div className={`${props.alt ? styles.rowContainerReversed : styles.rowContainer}`}>
                 <div className={styles.imageColumn}>
-                    <ImageWrapper src={props.imageSrc} alt={''} height={1} width={1} className={styles.image} />
+                    <ImageWrapper src={props.imageSrc} className={styles.image} backgroundColor={"#3a3a3a"} />
                     <h3 className={`${styles.name} ${props.alt && styles.altAlign}`}>{props.name}</h3>
                     <br />
                     <p className={props.alt && styles.altAlign}>{props.description}</p>

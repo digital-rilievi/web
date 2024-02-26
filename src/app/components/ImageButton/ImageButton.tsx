@@ -36,7 +36,7 @@ const ImageButton = (props: ImageButtonProps) => {
       </div>
       <div className={styles.containerHelper}></div>
       <div className={styles.imageWrapper}>
-      <ImageWrapper className={styles.image} src={props.image} alt="Image" />
+      <ImageWrapper className={styles.image} src={props.image} backgroundColor={"#505050"}/>
       {props.name && (
         <div className={styles.name}>{props.name}</div>
         )}

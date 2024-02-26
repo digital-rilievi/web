@@ -34,7 +34,7 @@ function Project({ params }: ProjectPageProps) {
   return (
     <>
       <Navbar />
-      <ImageWrapper width={1} height={1} className={styles.image} src={`${project?.details?.coverImage}`} alt={`Image`} />
+      <ImageWrapper width={1} height={1} className={styles.image} src={`${project?.details?.coverImage}`} backgroundColor={"#4e4e4e"} />
       <div className={styles.blueCircleWrapper}>
         <BlueCircle />
         <div className={styles.titleWrapper}>

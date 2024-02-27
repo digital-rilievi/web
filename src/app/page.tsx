@@ -33,6 +33,9 @@ export default function Home() {
       <NavBar animateLogo />
       <ScrollIndicator />
       <div className={styles.content}>
+      <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>
+        <NavBar invisible />
+      </div>
         <VideoPlayer title={content.home.title} />
         <Space size={"big"} />
         <Space size={"big"} />

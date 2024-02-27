@@ -16,32 +16,68 @@
             {
                 "img1": "/assets/projects/circuito-automibilistico.png",
                 "img2": "/assets/projects/mose.png",
-                "title": "__ SETTORE PRIVATO",
+                "title": "_SETTORE PRIVATO",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "link": "prova"
+                "link": "/testimonials"
             },
             {
                 "img1": "/assets/projects/circuito-automibilistico.png",
                 "img2": "/assets/projects/mose.png",
-                "title": "__ OPERE PUBBLICHE",
+                "title": "_OPERE PUBBLICHE",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "link": "prova"
+                "link": "/progetti/mose"
             },
             {
                 "img1": "/assets/projects/circuito-automibilistico.png",
                 "img2": "/assets/projects/mose.png",
-                "title": "__ AMMINISTRAZIONI\nLOCALI",
+                "title": "_ENTI LOCALI",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "link": "prova"
+                "link": "/testimonials"
             }
         ],
         "partners": [
-            "/assets/partners/chioggia.jpeg",
-            "/assets/partners/logo1.png",
-            "/assets/partners/mose.png",
-            "/assets/partners/seam.png",
-            "/assets/partners/sport_salute.png",
-            "/assets/partners/venezia.png"
+            "/assets/partners/cimolai.png",
+            "/assets/partners/kunos.png",
+            "/assets/partners/fincantieri.png",
+            "/assets/partners/insiel.png",
+            "/assets/partners/aspi.png",
+            "/assets/partners/comune_pn.png",
+            "/assets/partners/sport e salute.png",
+            "/assets/partners/milano_cortina.png",
+            "/assets/partners/webuild.png",
+            "/assets/partners/anas.png",
+            "/assets/partners/acegasapshera.jpg",
+            "/assets/partners/arcadis.png",
+            "/assets/partners/carpenterie ferrari.png",
+            "/assets/partners/fvg_strade.png",
+            "/assets/partners/citta metropolitana bologna.png",
+            "/assets/partners/cmb.png",
+            "/assets/partners/comune bolzano.png",
+            "/assets/partners/comune latisana.png",
+            "/assets/partners/cooprogetti.jpg",
+            "/assets/partners/errevia.jpg",
+            "/assets/partners/icmgroup.jpg",
+            "/assets/partners/insula.png",
+            "/assets/partners/LTA.png",
+            "/assets/partners/maeg.png",
+            "/assets/partners/milanoserravalle.png",
+            "/assets/partners/pedelombarda.png",
+            "/assets/partners/pizzarotti.jpg",
+            "/assets/partners/politecnica.jpg",
+            "/assets/partners/proger.jpg",
+            "/assets/partners/proiter.png",
+            "/assets/partners/provincia_pn.png",
+            "/assets/partners/regione fvg.png",
+            "/assets/partners/regione veneto.png",
+            "/assets/partners/Rizzani & de.png",
+            "/assets/partners/rossirenzo.png",
+            "/assets/partners/spea.png",
+            "/assets/partners/strabag.jpg",
+            "/assets/partners/systrasws.jpg",
+            "/assets/partners/tecne.png",
+            "/assets/partners/veneto strade.png",
+            "/assets/partners/veritas.png",
+            "/assets/partners/viaingegneria.jpg"
         ]
     },
     "chi-siamo": {
@@ -248,7 +284,7 @@
         ],
         "projectsInterested": "SEI INTERSSATO AI\nNOSTRI SERVIZI?",
         "projectsInterestedCta": "CONTATTACI",
-        "projectsInterestedLink": "/prova"
+        "projectsInterestedLink": "/contatti"
     },
     "testimonials": {
         "title": "DICONO DI NOI ___",

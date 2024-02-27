@@ -13,12 +13,7 @@ const Footer = () => {
           <p>{content.contatti.addressLine1}</p>
           <p>{content.contatti.addressLine2}</p>
           <p>{content.contatti.addressLine3}</p>
-          <br />
-          <p>
-            <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a>
-          </p>
         </div>
-        <br />
         <div className={styles.spacer}></div>
         <div>
           <p>P.IVA {content.contatti.vat}</p>

@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './Space.module.css'
 
 interface SpaceProps {
-  size?: String
+  size?: String,
+  maintainInMobile?: boolean
 }
 
 const Size = {
@@ -14,7 +15,7 @@ const Size = {
 export default function Space(props: SpaceProps) {
   return (
     <div className={
-      `${props.size === Size.big ? styles.bigSpace : (props.size === Size.small ? styles.smallSpace : styles.space)}`
+      `${props.size === Size.big ? styles.bigSpace : (props.size === Size.small ? styles.smallSpace : styles.space)} ${props.maintainInMobile ? '' : styles.noSpaceForMobile}`
     }></div>
   )
 }

@@ -9,3 +9,9 @@
 .smallSpace {
     height: 2rem;
 }
+
+@media (max-width: 1000px) {
+    .noSpaceForMobile {
+        height: 0rem;
+    }
+}

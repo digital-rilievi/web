@@ -38,6 +38,9 @@ body::-webkit-scrollbar {
   width: 4px;               /* width of the entire scrollbar */
 }
 
+button, a, div, p, h1, h2, h3 {
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight */
+}
 
 body::-webkit-scrollbar-track {
   background: #131313;        /* color of the tracking area */

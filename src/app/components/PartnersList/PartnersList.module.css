@@ -8,10 +8,10 @@
 .scrollWrapper {
   display: flex;
   flex-direction: row;
-  animation: scrollAnimation 30s linear infinite forwards;
+  animation: scrollAnimation 150s linear infinite forwards;
   justify-content: space-between;
   align-items: center;
-  width: 7080px;
+  width: 50000px;
 }
 
 .imageLists {

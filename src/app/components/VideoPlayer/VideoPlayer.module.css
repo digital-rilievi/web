@@ -1,6 +1,7 @@
 .title {
     position: absolute;
     z-index: 100;
+    top: 15%;
     color: #F5F5F5;
     font-size: 90px;
     font-style: normal;

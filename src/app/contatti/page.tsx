@@ -25,28 +25,20 @@ const Contatti = () => {
           <p>{content.contatti.addressLine3}</p>
           <br />
           <p>
-            Tel: <a href={`tel:${content.contatti.phone}`} style={{ textDecoration: 'underline' }}>
+            _tel <a href={`tel:${content.contatti.phone}`} style={{ textDecoration: 'underline' }}>
               {content.contatti.phone}
             </a>
           </p>
-          <br />
           <p>
-            Fax: <a href={`tel:${content.contatti.fax}`} style={{ textDecoration: 'underline' }}>
+            _fax <a href={`tel:${content.contatti.fax}`} style={{ textDecoration: 'underline' }}>
               {content.contatti.fax}
             </a>
           </p>
           <br />
-          <p>email</p>
-          <p>
-            <a href={`mailto:${content.contatti.email}`} style={{ textDecoration: 'underline' }}>{content.contatti.email}</a>
-          </p>
+          <p>_email <a href={`mailto:${content.contatti.email}`} style={{ textDecoration: 'underline' }}>{content.contatti.email}</a></p>
+          <p>_pec <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a></p>
           <br />
-          <p>PEC</p>
-          <p>
-            <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a>
-          </p>
-          <br />
-          <p>P.IVA {content.contatti.vat}</p>
+          <p>P.IVA: {content.contatti.vat}</p>
           <p>{content.contatti.legal}</p>
           <p>REA: {content.contatti.rea}</p>
           <p>Cod. univoco: {content.contatti.fatturazione}</p>

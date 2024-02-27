@@ -44,7 +44,7 @@ line-height: 24px; /* 133.333% */
 
 /* Spacer to create empty space */
 .spacer {
-  flex-grow: 1;
+  flex-grow: 0.5;
 }
 
 .socialButtonsWrapper {

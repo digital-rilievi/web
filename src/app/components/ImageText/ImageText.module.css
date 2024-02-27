@@ -137,8 +137,9 @@
   }
 
   .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    flex-direction: column-reverse;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 
   .container {
@@ -148,10 +149,13 @@
 
   .title,
   .text {
-    margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
     padding: 0;
+  }
+
+  .secondaryText {
+    padding-bottom: 2rem;
   }
 
   .duration {

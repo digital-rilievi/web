@@ -110,7 +110,7 @@ position: fixed;
   }
 }
 
-/* Media query for mobile menu */
+/* Media query for mobile big screen */
 @media (max-width: 1000px) {
 
   .navbar {
@@ -153,7 +153,33 @@ position: fixed;
   }
 
   .mobileMenuIcon {
-    padding: 0.5rem;
     display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+  /* Media query for mobile small screen */
+@media (max-width: 800px) {
+  .navbar{
+    padding: 0.5rem;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .bigLogo {
+    width: 70px;
+  }
+
+  .mobileMenuIcon {
+    width: 50px;
+    height: 50px;
+    padding-top: -0.5rem;
+    padding-bottom: 0rem;
   }
 }

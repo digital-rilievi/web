@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <main>
       <NavBar animateLogo />
-      <ScrollIndicator />
+      <ScrollIndicator/>
       <div className={styles.content}>
       <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>
         <NavBar invisible />

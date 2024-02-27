@@ -73,10 +73,8 @@ const Navbar = (props: NavBarProps) => {
             </Link>
           </div>
 
-          <div className={styles.mobileMenuIcon} onClick={toggleMobileMenu}>
-            <div className={styles.bar}></div>
-            <div className={styles.bar}></div>
-            <div className={styles.bar}></div>
+          <div onClick={toggleMobileMenu}>
+          <Image className={styles.mobileMenuIcon} src={'/assets/extras/menu.svg'} alt={''} height={1} width={1} />
           </div>
         </>
       </nav>

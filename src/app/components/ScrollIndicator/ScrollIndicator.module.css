@@ -1,4 +1,5 @@
 .scrollIndicator {
+    display: block;
     position: absolute;
     bottom: 1%;
     right: 45%;
@@ -13,4 +14,10 @@
 
 .scrollIndicator.hidden {
     opacity: 0;
+}
+
+@media (max-width: 1000px) {
+    .scrollIndicator {
+        display: none;
+    }
 }

@@ -12,13 +12,25 @@
   }
 
   /* Media query for mobile big screen */
-@media (max-width: 1000px) {
+@media (min-width: 800px) and (max-width: 1000px) {
     .title {
         position: relative;
         z-index: 0;
         top: 0;
         font-size: 48px;
         line-height: 52px; /* 107.273% */
-        top: 40%;
+        padding: 0.5rem;
+    }
+}
+
+  /* Media query for mobile small screen */
+@media (max-width: 800px) {
+    .title {
+        position: relative;
+        z-index: 0;
+        top: 0;
+        font-size: 32px;
+        line-height: 36px; /* 107.273% */
+        padding: 0.5rem;
     }
 }

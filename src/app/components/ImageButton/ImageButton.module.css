@@ -135,6 +135,7 @@
     max-width: 100%; /* Allow the image to take the full width in mobile layout */
     margin-right: 0; /* Remove margin for mobile layout */
     padding: 2rem;
+    align-self: center;
   }
 
   .blueCircleWrapper {

@@ -126,9 +126,11 @@
   .text {
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     padding: 0;
-    white-space: pre-wrap
+    white-space: pre-wrap;
+    font-size: 34px;
+    line-height: 36px; /* 106.25% */
   }
 
   .imageWrapper {

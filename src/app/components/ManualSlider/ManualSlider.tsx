@@ -1,52 +1,45 @@
 'use client'
-import React, { useState } from 'react'
-import styles from './ManualSlider.module.css'
-import Image from 'next/image'
+import React, { useState } from 'react';
+import styles from './ManualSlider.module.css';
+import Image from 'next/image';
 
 interface SliderProps {
-    slides: React.ReactNode[]
+  slides: React.ReactNode[];
 }
 
 const ManualSlider = (props: SliderProps) => {
-    const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextSlide = () => {
-        if (currentIndex < props.slides.length - 1) {
-            setCurrentIndex(currentIndex + 1)
-        } else {
-            setCurrentIndex(0)
-        }
-    }
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % props.slides.length);
+  };
 
-    const prevSlide = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1)
-        } else {
-            setCurrentIndex(props.slides.length - 1)
-        }
-    }
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + props.slides.length) % props.slides.length);
+  };
 
-    const leftArrowStyle = currentIndex === 0 ? 'hidden' : 'visible'
-    const rightArrowStyle = currentIndex === props.slides.length - 1 ? 'hidden' : 'visible'
+  const translateValue = -currentIndex * 100 + '%';
 
-    const translateValue = -currentIndex * 100 + '%'
+  return (
+    <div className={styles.slider}>
+      <div className={styles.slides} style={{ transform: `translateX(${translateValue})` }}>
+        {props.slides.map((slide, index) => (
+          <div key={index} className={styles.slide}>
+            {slide}
+          </div>
+        ))}
+      </div>
 
-    return (
-        <>
-            <div className={styles.slider}>
-                <div className={styles.slide}>
-                    {props.slides[currentIndex]}
-                </div>
+      <div className={styles.arrows}>
+        <button className={styles.arrow} onClick={prevSlide}>
+          <Image src="/assets/extras/left-arrow.svg" alt="&larr;" width={46} height={46} />
+        </button>
+        <button className={styles.arrow} onClick={nextSlide}>
+          <Image src="/assets/extras/right-arrow.svg" alt="&rarr;" width={46} height={46} />
+        </button>
+      </div>
+    </div>
+  );
+};
 
-                <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={{ visibility: `${leftArrowStyle}` }}>
-                    <Image src="/assets/extras/left-arrow.svg" alt={"&larr;"} width={46} height={46} />
-                </button>
-                <button className={`${styles.arrow} ${styles.right}`} onClick={nextSlide} style={{ visibility: `${rightArrowStyle}` }}>
-                    <Image src="/assets/extras/right-arrow.svg" alt={"&rarr;"} width={46} height={46} />
-                </button>
-            </div>
-        </>
-    )
-}
-
-export default ManualSlider
+export default ManualSlider;

@@ -25,7 +25,7 @@ const ImageButton = (props: ImageButtonProps) => {
             {props.text}
           </h2>
         )}
-        <div className={styles.buttonWrapper} >
+        <div className={styles.buttonWrapper}>
           <CircularButton link={'/progetti'} label={props.buttonLabel} remainsInPage={props.remainsInPage} />
         </div>
         {props.blueCircle && (
@@ -36,12 +36,12 @@ const ImageButton = (props: ImageButtonProps) => {
       </div>
       <div className={styles.containerHelper}></div>
       <div className={styles.imageWrapper}>
-      <ImageWrapper className={styles.image} src={props.image} backgroundColor={"#505050"}/>
-      {props.name && (
-        <div className={styles.name}>{props.name}</div>
+        <ImageWrapper className={styles.image} src={props.image} backgroundColor={"#505050"} />
+        {props.name && (
+          <div className={styles.name}>{props.name}</div>
         )}
       </div>
-      
+
     </div>
   )
 }

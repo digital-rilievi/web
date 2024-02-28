@@ -5,15 +5,6 @@
   position: relative;
 }
 
-.scrollWrapper {
-  display: flex;
-  flex-direction: row;
-  animation: scrollAnimation 150s linear infinite forwards;
-  justify-content: space-between;
-  align-items: center;
-  width: 50000px;
-}
-
 .imageLists {
   justify-content: space-around;
   width: 33.333333%;
@@ -23,10 +14,11 @@
 
 .imageWrapper {
   min-width: 260px;
-  margin: 0.5rem;
-  box-sizing: border-box;
-  display: flex;
+  
   justify-content: center;
+  display: inline-flex;
+  padding: 10px;
+  transition: 0.5s;
 }
 
 .imageItem {
@@ -50,5 +42,82 @@
   }
   100% {
     transform: translateX(calc(-66.66%));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.text {
+  white-space: nowrap;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128px;
+  text-transform: uppercase;
+}
+
+
+.scroll{
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll div {
+  white-space: nowrap;
+  animation: animate 40s linear infinite;
+      animation-delay: calc(var(40s) * -1);
+}
+
+.scroll div:nth-child(2) {
+    animation: animate2 40s linear infinite;
+    animation-delay: calc(40s / -2);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0%)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0%)
+  }
+  100% {
+    transform: translateX(-200%)
   }
 }

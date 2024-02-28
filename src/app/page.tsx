@@ -14,6 +14,7 @@ import WeDealWith from "./components/WeDealWith/WeDealWith"
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre"
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
 import ImageWrapper from "./components/ImageWrapper/ImageWrapper"
+import NewPartnersList from "./NewPartnersList/NewPartnersList"
 
 export default function Home() {
 
@@ -58,7 +59,7 @@ export default function Home() {
         <BlueTextCta text={content.home.areYouInterested} label={content.home.areYouInterestedLabel} link={content.home.areYouInterestedLink} />
         <Space size={"big"} />
         <Space />
-        <PartnersList
+        <NewPartnersList
           className={styles.partnersList}
           partners={content.home.partners}
         />

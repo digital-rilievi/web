@@ -1,12 +1,13 @@
 .scrollIndicator {
+    pointer-events: none;  /* Make the div non-interactable */
     position: absolute;
     bottom: 1%;
-    right: 45%;
-    left: 45%;
-    opacity: 1;
+    right: 0%;
+    left: 0%;
     height: 80px;
-    width: 80px;
+    width: 100%;
     z-index: 10000;
+    opacity: 1;
     color: #ffffff;
     transition: opacity 0.5s ease-in-out;
 }

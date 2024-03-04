@@ -20,6 +20,7 @@
         font-size: 48px;
         line-height: 52px; /* 107.273% */
         padding: 0.5rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -32,5 +33,6 @@
         font-size: 32px;
         line-height: 36px; /* 107.273% */
         padding: 0.5rem;
+        margin-bottom: 1rem;
     }
 }

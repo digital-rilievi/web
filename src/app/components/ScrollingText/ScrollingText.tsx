@@ -13,14 +13,14 @@ const ScrollingText = (props: ScrollingtextProps) => {
                     <span className={styles.text}>{`${props.text}`}</span>
                     <span className={styles.text}>{`${props.text}`}</span>
                     <span className={styles.text}>{`${props.text}`}</span>
-                    </div>
+                </div>
                 <div className={''}>&nbsp;</div>
                 <div className={`${''}`}>
                     <span className={styles.text}>{`${props.text}`}</span>
                     <span className={styles.text}>{`${props.text}`}</span>
                     <span className={styles.text}>{`${props.text}`}</span>
                     <span className={styles.text}>{`${props.text}`}</span>
-                    </div>
+                </div>
             </div>
         </div>
     )

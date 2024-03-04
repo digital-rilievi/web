@@ -13,11 +13,18 @@ line-height: 24px; /* 133.333% */
   padding-top: 120px;
   padding-bottom: 80px;
   display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(0, 56, 255, 0.00) 0%, #0038FF 100%);
+  height: 500px;
+}
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 1rem;
   align-items: flex-start;
-  background: linear-gradient(180deg, rgba(0, 56, 255, 0.00) 0%, #0038FF 100%);
-  height: 500px;
+  height: 100%;
 }
 
 .leftColumn,
@@ -25,11 +32,14 @@ line-height: 24px; /* 133.333% */
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: -webkit-fill-available;
-}
+  }
+  
+  .leftColumn {
+    height: 100%;
+  }
 
 .spaceColumn {
-  flex: 0.7;
+  flex: 2;
 }
 
 .rightColumn ul {

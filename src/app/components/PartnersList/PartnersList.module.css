@@ -1,38 +1,62 @@
 .container {
   width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scroll{
   position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
 }
 
-.scrollWrapper {
-  display: flex;
-  flex-direction: row;
-  animation: scrollAnimation 150s linear infinite forwards;
-  justify-content: space-between;
-  align-items: center;
-  width: 50000px;
+.scroll div {
+  white-space: nowrap;
+  animation: animate 40s linear infinite;
+  animation-delay: calc(var(40s) * -1);
 }
 
-.imageLists {
-  justify-content: space-around;
-  width: 33.333333%;
-  display: flex;
-  align-items: center;
+.scroll div:nth-child(2) {
+    animation: animate2 40s linear infinite;
+    animation-delay: calc(40s / -2);
 }
 
-.imageWrapper {
-  min-width: 260px;
-  margin: 0.5rem;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
+@keyframes animate {
+  0% {
+    transform: translateX(0%)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(100%)
+  }
+  100% {
+    transform: translateX(-200%)
+  }
+}
+
+.scroll div img {
+  display: inline-flex;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  transition: 0.5s;
 }
 
 .imageItem {
-  white-space: nowrap;
-  height: 80px;
+  height: 200px;
   width: auto;
+  max-width: 20vw;
+  object-fit: contain;
 }
 
 .partnersTitle {
@@ -42,13 +66,4 @@
   font-weight: 400;
   line-height: 66px; /* 103.125% */
   text-transform: uppercase;
-}
-
-@keyframes scrollAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-66.66%));
-  }
 }

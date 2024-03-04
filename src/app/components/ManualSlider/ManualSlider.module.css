@@ -13,19 +13,22 @@
   text-align: center;
 }
 
-.arrows {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
 .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: transparent;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   outline: none;
   padding: 1rem;
+}
+
+.left {
+  left: 0px;
+}
+
+.right {
+  right: 0px;
 }

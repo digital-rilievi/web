@@ -38,12 +38,15 @@ const ManualSlider = (props: SliderProps) => {
                     {props.slides[currentIndex]}
                 </div>
 
-                <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={{ visibility: `${leftArrowStyle}` }}>
-                    <Image src="/assets/extras/left-arrow.svg" alt={"&larr;"} width={46} height={46} />
-                </button>
-                <button className={`${styles.arrow} ${styles.right}`} onClick={nextSlide} style={{ visibility: `${rightArrowStyle}` }}>
-                    <Image src="/assets/extras/right-arrow.svg" alt={"&rarr;"} width={46} height={46} />
-                </button>
+                <div className={styles.arrowsWrapper}>
+                    <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={{ visibility: `${leftArrowStyle}` }}>
+                        <Image className={styles.arrowImage} src="/assets/extras/left-arrow.svg" alt={"&larr;"} width={46} height={46} />
+                    </button>
+                    <div style={{width: "2rem"}}/>
+                    <button className={`${styles.arrow} ${styles.right}`} onClick={nextSlide} style={{ visibility: `${rightArrowStyle}` }}>
+                        <Image className={styles.arrowImage} src="/assets/extras/right-arrow.svg" alt={"&rarr;"} width={46} height={46} />
+                    </button>
+                </div>
             </div>
         </>
     )

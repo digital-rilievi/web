@@ -55,8 +55,8 @@ export default function Home() {
         <Space size={"big"} />
         <Space />
         <ManualSlider slides={weDealWithList} />
-        <Space size={"big"} />
-        <Space size={"big"} />
+        <Space size={"big"} maintainInMobile />
+        <Space size={"big"} maintainInMobile />
         <BlueTextCta text={content.home.areYouInterested} label={content.home.areYouInterestedLabel} link={content.home.areYouInterestedLink} />
         <Space size={"big"} />
         <Space />

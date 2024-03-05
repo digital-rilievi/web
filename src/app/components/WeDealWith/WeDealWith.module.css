@@ -33,6 +33,7 @@
   font-weight: 400;
   line-height: 68px; /* 170% */
   text-transform: lowercase;
+  white-space: nowrap;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -102,6 +103,13 @@
   padding-left: 1rem;
 }
 
+.invisibleImage {
+  visibility: hidden;
+  position: relative !important;
+  padding: 2rem;
+  width: 240px;
+}
+
   /* Media query for bigger layout */
   @media (min-width: 1820px) {
     .image {
@@ -132,7 +140,7 @@
   }
 
   /* Media query for mobile layout */
-  @media (max-width: 1024px) {
+  @media (max-width: 1240px) {
   .container,
   .text,
   .title {
@@ -183,10 +191,6 @@
     height: 0px;
     width: 0px;
   }
-}
-
-/* Media query for mobile layout */
- @media (max-width: 1480px) {
 
   .imagesWrapper {
      flex: 1;
@@ -203,35 +207,83 @@
    .image1 {
        z-index: 10;
        position: absolute;
-       top: 40%;
-       right: 25%;
    }
 
    .image2 {
        z-index: 5;
        position: absolute;
-       top: 15%;
-       right: 15%;
-   }
-
-   .images {
-       display: flex;
-       flex-direction: column;
-       align-items: end;
    }
 
    .container {
-   display: flex;
-   flex-direction: row-reverse;
-   justify-content: space-between;
-   gap: 1rem;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
-   min-height: 680px;
-   padding: 2rem;
-   background: #0038FF;
-   width: 80%;
-   margin-left: 10%;
-   margin-right: 10%;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 680px;
+    padding: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background: #0038FF;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
    } 
+   
+  .preTitle {
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 0.5rem;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    white-space: normal;
+    padding-bottom: 1rem;
+  }
+
+  .longTitle {
+
+  }
+
+  .text {
+    padding-bottom: 2rem;
+  }
+
+  .imagesWrapper {
+    position: relative;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    position-items: center;
+    width: 100%;
+  }
+
+  .images {
+    align-items: center;
+    width: 100%;
+    padding-top: 4rem;
+    position: relative;
+         display: flex;
+       flex-direction: column;
+  }
+
+.image1 {
+      top: auto;
+    right: auto;
+    margin-right: 8rem;
+}
+
+  .image2 {
+    top: auto;
+    right: auto;
+    transform: translateY(-6rem) translateX(4rem);
+  }
+
+  .invisibleImage {
+    padding-bottom: 8rem;
+  }
  }

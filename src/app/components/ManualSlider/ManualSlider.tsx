@@ -9,6 +9,30 @@ interface SliderProps {
 
 const ManualSlider = (props: SliderProps) => {
     const [currentIndex, setCurrentIndex] = useState(0)
+    const [startX, setStartX] = useState<number | null>(null)
+
+    const handleTouchStart = (e: React.TouchEvent) => {
+      setStartX(e.touches[0].clientX);
+    };
+  
+    const handleTouchEnd = (e: React.TouchEvent) => {
+      if (startX === null) {
+        return;
+      }
+  
+      const endX = e.changedTouches[0].clientX;
+      const deltaX = startX - endX;
+  
+      if (deltaX > 50) {
+        // Swipe right, go to the next slide
+        nextSlide();
+      } else if (deltaX < -50) {
+        // Swipe left, go to the previous slide
+        prevSlide();
+      }
+  
+      setStartX(null);
+    };
 
     const nextSlide = () => {
         if (currentIndex < props.slides.length - 1) {
@@ -33,7 +57,10 @@ const ManualSlider = (props: SliderProps) => {
 
     return (
         <>
-            <div className={styles.slider}>
+            <div className={styles.slider}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            >
                 <div className={styles.slide}>
                     {props.slides[currentIndex]}
                 </div>

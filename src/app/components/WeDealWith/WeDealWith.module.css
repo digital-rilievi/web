@@ -152,20 +152,15 @@
     align-self: center;
   }
 
-  .content {
-    padding: 1rem;
-  }
-
-  .container {
-    margin-top: 1rem; /* Add spacing at the top of each component */
-    margin-bottom: 2rem; /* Add spacing at the bottom of each component */
-  }
+.content {
+      display: flex;
+    flex-direction: column;
+    place-items: center;
+}
 
   .title,
   .text {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    margin: 0;
     padding: 0;
   }
 
@@ -199,6 +194,7 @@
    .image1,
    .image2 {
      width: 240px;
+     max-width: 33vw;
      object-fit: cover;
      position: relative; /* Add position: relative */
      z-index: 2; /* Set z-index higher than BlueCircle */
@@ -214,6 +210,10 @@
        position: absolute;
    }
 
+   .circularButtonWrapper {
+      place-self: center;
+   }
+
    .container {
     display: flex;
     flex-direction:column-reverse;
@@ -222,8 +222,8 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     min-height: 680px;
-    padding: 2rem;
-    padding-bottom: 0;
+    padding: 0;
+    padding-top: 1rem;
     margin-bottom: 0;
     background: #0038FF;
     width: 80%;
@@ -232,17 +232,20 @@
    } 
    
   .preTitle {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22px;
-    padding-bottom: 0.5rem;
+    padding: 0;
+    padding-bottom: 1rem;
   }
 
   .title {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 26px;
+    line-height: 28px;
     letter-spacing: 0px;
     white-space: normal;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    align-self: center;
   }
 
   .longTitle {
@@ -251,6 +254,8 @@
 
   .text {
     padding-bottom: 2rem;
+    text-align: justify;
+    align-self: center;
   }
 
   .imagesWrapper {
@@ -272,18 +277,21 @@
   }
 
 .image1 {
-      top: auto;
     right: auto;
-    margin-right: 8rem;
+    margin-right: 2rem;
 }
 
   .image2 {
     top: auto;
     right: auto;
-    transform: translateY(-6rem) translateX(4rem);
+    transform: translateY(-2rem) translateX(2rem);
   }
 
   .invisibleImage {
-    padding-bottom: 8rem;
+        max-width: 33vw;
+  }
+
+  .invisibleImage {
+    padding-bottom: 6rem;
   }
  }

@@ -64,8 +64,8 @@ export default function Home() {
           className={styles.partnersList}
           partners={content.home.partners}
         />
-        <Space size={"big"} />
-        <Space />
+        <Space size={"big"} maintainInMobile />
+        <Space maintainInMobile />
         <WhoWeAre />
         <Space size={"big"} />
         <Space />

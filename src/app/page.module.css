@@ -19,7 +19,11 @@
 }
 
 @media (max-width: 1000px) {
-    .mobileAppbarSpacer {
-        display: block !important;
-    }
+  .appBarSpace {
+    padding-bottom: 0;
+  }
+
+  .mobileAppbarSpacer {
+    display: block !important;
+  }
 }

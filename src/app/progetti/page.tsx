@@ -4,9 +4,7 @@ import ImageText from '../components/ImageText/ImageText'
 import Navbar from '../components/Navbar/Navbar'
 import content from 'content.json'
 import globalStyles from 'app/page.module.css'
-import ScrollingText from 'app/components/ScrollingText/ScrollingText'
 import Space from 'app/components/Space/Space'
-import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
 
 export interface ProjectProps {
     image: string,

@@ -166,7 +166,7 @@ position: fixed;
 
   /* Media query for mobile small screen */
 @media (max-width: 800px) {
-  .navbar{
+  .navbar {
     padding: 0.5rem;
   }
 

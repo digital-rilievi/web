@@ -58,5 +58,13 @@
 .scroll div span {
   display: inline-flex;
   padding: 10px;
-  transition: 0.5s
+  transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .text {
+    font-size: 70px;
+    line-height: unset;
+    padding-bottom: 1rem;
+  }
 }

@@ -15,7 +15,7 @@ const Testimonials = () => {
         <Navbar invisible />
       </div>
       <ScrollingText text={content.testimonials.title} />
-      <Space size='big' />
+      <Space size='big' maintainInMobile />
       {content.testimonials.people.map((person, index) => (
         <>
           <Space size='normal' />

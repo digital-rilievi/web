@@ -292,6 +292,12 @@
   }
 
   .invisibleImage {
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
   }
  }
+
+  @media (max-width: 700px) {
+    .invisibleImage {
+      padding-bottom: 6rem;
+    }
+  }

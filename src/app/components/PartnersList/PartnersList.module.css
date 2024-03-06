@@ -67,3 +67,27 @@
   line-height: 66px; /* 103.125% */
   text-transform: uppercase;
 }
+
+@media (max-width: 1000px) {
+
+.partnersTitle {
+  padding: 0.5rem;
+  font-size: 20px;
+  line-height: unset;
+}
+
+  .scroll div img {
+    display: inline-flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 0.5s;
+  }
+ 
+  .imageItem {
+    height: 100px;
+    width: auto;
+    max-width: 40vw;
+    object-fit: contain;
+  }
+
+}

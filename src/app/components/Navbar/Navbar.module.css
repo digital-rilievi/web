@@ -10,7 +10,7 @@
   padding-bottom: 4rem;
   color: #fff;
   backdrop-filter: blur(8px);
-  background-color: rgba(19, 19, 19, 0.3);
+  background-color: unset;
   z-index: 1000;
   max-width: 150rem;
   margin-left: auto;

@@ -15,33 +15,33 @@ const Contatti = () => {
         <Navbar invisible />
       </div>
       <ScrollingText text={content.contatti.title} />
-      <Space size="big" />
+      <Space size="big" maintainInMobile />
       <div className={styles.container}>
         <div className={styles.text}>
           <h1 className={styles.name}>{content.contatti.companyName}</h1>
           <br />
-          <p>{content.contatti.addressLine1}</p>
-          <p>{content.contatti.addressLine2}</p>
-          <p>{content.contatti.addressLine3}</p>
+          <p className={styles.smallText}>{content.contatti.addressLine1}</p>
+          <p className={styles.smallText}>{content.contatti.addressLine2}</p>
+          <p className={styles.smallText}>{content.contatti.addressLine3}</p>
           <br />
-          <p>
+          <p className={styles.smallText}>
             _tel <a href={`tel:${content.contatti.phone}`} style={{ textDecoration: 'underline' }}>
               {content.contatti.phone}
             </a>
           </p>
-          <p>
+          <p className={styles.smallText}>
             _fax <a href={`tel:${content.contatti.fax}`} style={{ textDecoration: 'underline' }}>
               {content.contatti.fax}
             </a>
           </p>
           <br />
-          <p>_email <a href={`mailto:${content.contatti.email}`} style={{ textDecoration: 'underline' }}>{content.contatti.email}</a></p>
-          <p>_pec <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a></p>
+          <p className={styles.smallText}>_email <a href={`mailto:${content.contatti.email}`} style={{ textDecoration: 'underline' }}>{content.contatti.email}</a></p>
+          <p className={styles.smallText}>_pec <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a></p>
           <br />
-          <p>P.IVA: {content.contatti.vat}</p>
-          <p>{content.contatti.legal}</p>
-          <p>REA: {content.contatti.rea}</p>
-          <p>Cod. univoco: {content.contatti.fatturazione}</p>
+          <p className={styles.smallText}>P.IVA: {content.contatti.vat}</p>
+          <p className={styles.smallText}>{content.contatti.legal}</p>
+          <p className={styles.smallText}>REA: {content.contatti.rea}</p>
+          <p className={styles.smallText}>Cod. univoco: {content.contatti.fatturazione}</p>
         </div>
         <div className={styles.map}>
           <iframe

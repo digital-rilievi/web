@@ -14,4 +14,16 @@
     .noSpaceForMobile {
         height: 0rem;
     }
+
+    .bigSpace {
+        height: 4rem;
+    }
+
+    .space {
+        height: 2rem;
+    }
+
+    .smallSpace {
+        height: 1rem;
+    }
 }

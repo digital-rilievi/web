@@ -22,3 +22,26 @@
   font-weight: bold;
   font-size: 26px;
 }
+
+.smallText {
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .smallText {
+        font-size: 12px;
+    }
+
+    .map {
+        margin-top: 2rem;
+        flex: unset;
+        max-width: unset;
+        width: 100vw;
+        height: 40vh;
+        margin-right: unset;
+    }
+}

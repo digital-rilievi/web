@@ -66,6 +66,7 @@ export default function Home() {
         />
         <Space size={"big"} />
         <Space />
+        <WhoWeAre />
         <Space size={"big"} />
         <Space />
         <Footer />

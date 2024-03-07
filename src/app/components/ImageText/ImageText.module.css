@@ -137,7 +137,7 @@
   }
 
   .content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-left: 0rem;
     padding-right: 0rem;
   }
@@ -146,10 +146,15 @@
     margin-top: 1rem;
   }
 
-  .title,
-  .text {
-    margin-right: 2rem;
+  .title {
+    margin-right: 0;
     margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .text {
+    margin-right: 0;
+    margin-bottom: 3rem;
     padding: 0;
   }
 
@@ -163,9 +168,10 @@
     font-weight: 400;
     line-height: 34px; /* 106.25% */
     text-transform: uppercase;
-    margin-left: 2rem;
-    margin-right: 2rem;
     padding: 0;
+    padding-bottom: 2rem;
+    text-align: center;
+    align-self: center;
   }
 
   .image {
@@ -178,5 +184,9 @@
     top: 0px;
     height: 0px;
     width: 0px;
+  }
+
+  .circularButtonWrapper {
+    align-self: center;
   }
 }

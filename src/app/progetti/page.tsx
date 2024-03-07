@@ -47,7 +47,7 @@ const Progetti = () => {
                     </>
                 ))}
             </div>
-            <Space size={"big"} />
+            <Space size={"big"} maintainInMobile />
             <Space size={"big"} />
             {/*
             can be restored setting:

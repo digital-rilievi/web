@@ -1,18 +1,21 @@
 .bigSpace {
+    dispay: block;
     height: 8rem;
 }
 
 .space {
+    dispay: block;
     height: 4rem;
 }
 
 .smallSpace {
+    dispay: block;
     height: 2rem;
 }
 
 @media (max-width: 1000px) {
     .noSpaceForMobile {
-        height: 0rem;
+        display: none;
     }
 
     .bigSpace {

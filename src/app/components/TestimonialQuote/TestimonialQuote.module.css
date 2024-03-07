@@ -134,24 +134,28 @@
 
 @media (max-width: 1024px) {
 
-  .rowContainer {
+  .rowContainer,
+  .rowContainerReversed {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
   }
 
-.row {
-  flex-direction: column;
-}
+  .row,
+  .rowReversed {
+    flex-direction: column;
+  }
 
 .imageColumn {
   padding-bottom: 2rem;
+  margin-right: 0;
 }
 
   .image {
     width: 50vw;
     height: 100%;
+    align-self: center;
   }
 
   .icon {
@@ -167,5 +171,13 @@
 
   .quoteInvisibleIcon {
     display: none;
+  }
+
+  .buttonColumn {
+    align-self: center;
+  }
+
+  .altAlign {
+    text-align: start;
   }
 }

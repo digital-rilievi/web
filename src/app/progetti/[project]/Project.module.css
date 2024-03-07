@@ -29,3 +29,34 @@
     height: 720px;
     width: 720px;
 }
+
+@media (max-width: 1024px) {
+    .blueCircleWrapper {
+        padding-top: 5rem;
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .blueCricle {
+       width: 50vw;
+        height: 100%;
+        position: absolute;
+        padding-top: 5rem;
+        z-index: 2;
+        top: 0;
+    }
+
+    .titleWrapper {
+        padding-top: 5rem;
+    }
+
+    .title {
+        align-self: center;
+        justify-self: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: unset;
+        white-space: pre-line;
+    }
+}

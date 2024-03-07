@@ -47,14 +47,14 @@ function Project({ params }: ProjectPageProps) {
         <ImageText inverted image={project?.details?.panelImage} title={project?.details?.panelImageText} secondaryText={project?.details?.panelImageDesc} />
       }
 
-      <Space size={"big"} />
-      <Space size={"big"} />
+      <Space size={"big"} maintainInMobile />
+      <Space size={"big"} maintainInMobile />
       <BlueTextCta text={content.progetti.projectsInterested} label={content.progetti.projectsInterestedCta} link={content.progetti.projectsInterestedLink} />
-      <Space size={"big"} />
-      <Space size={"big"} />
+      <Space size={"big"} maintainInMobile />
+      <Space size={"big"} maintainInMobile />
       <ImagesCarousel slides={project?.details?.carousel} />
-      <Space size={"big"} />
-      <Space size={"big"} />
+      <Space size={"big"} maintainInMobile />
+      <Space size={"big"} maintainInMobile />
       {project?.details?.testimonialQuotes?.map((quote: TestimonialQuotesType, index) => (
         <TestimonialQuote key={index} imageSrc={quote.image} name={quote.name} description={quote.description} quote={quote.quote} link={quote.link} linkLabel={quote.linkLabel} company={quote.company} />
       ))}

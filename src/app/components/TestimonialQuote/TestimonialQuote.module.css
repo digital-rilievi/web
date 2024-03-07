@@ -93,6 +93,7 @@
     width: 60px;
     height: 30px;
     margin-bottom: 10px; /* Add margin to the bottom to separate the image and text */
+    display: block;
     visibility: hidden;
 }
 
@@ -129,4 +130,42 @@
 
 .altAlign {
   text-align: end;
+}
+
+@media (max-width: 1024px) {
+
+  .rowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+.row {
+  flex-direction: column;
+}
+
+.imageColumn {
+  padding-bottom: 2rem;
+}
+
+  .image {
+    width: 50vw;
+    height: 100%;
+  }
+
+  .icon {
+    width: 40px;
+    height: auto;
+  }
+
+  .quote {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: unset;
+  }
+
+  .quoteInvisibleIcon {
+    display: none;
+  }
 }

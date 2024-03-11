@@ -47,11 +47,8 @@ const Contatti = () => {
           <iframe
             width="100%"
             height="100%"
-            loading="lazy"
             allowFullScreen
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDoMH-gHCCYdzaaNyPdAPAJFhAmRFpecl8
-            &q=digital%20rilievi&maptype=roadmap">
-            {/* TODO: For personalisation, see https://developers.google.com/maps/documentation/javascript/overview */}
+            src="https://snazzymaps.com/embed/585095">
           </iframe>
         </div>
       </div>
@@ -62,4 +59,4 @@ const Contatti = () => {
   )
 }
 
-export default Contatti
+export default Contatti;

@@ -1,7 +1,6 @@
 'use client'
 import NavBar from "./components/Navbar/Navbar"
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer"
-import PartnersList from "./components/PartnersList/PartnersList"
 import styles from "./page.module.css"
 import content from 'content.json'
 import ImageText from "./components/ImageText/ImageText"
@@ -13,7 +12,7 @@ import ManualSlider from "./components/ManualSlider/ManualSlider"
 import WeDealWith from "./components/WeDealWith/WeDealWith"
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre"
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
-import ImageWrapper from "./components/ImageWrapper/ImageWrapper"
+import PartnersList from "./components/PartnersList/PartnersList"
 
 export default function Home() {
 

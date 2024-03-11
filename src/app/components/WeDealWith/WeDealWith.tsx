@@ -1,5 +1,6 @@
 import React from 'react'
 import CircularButton from '../CircularButton/CircularButton'
+import ImageWrapper from '../ImageWrapper/ImageWrapper'
 import Space from '../Space/Space'
 import styles from './WeDealWith.module.css'
 
@@ -23,8 +24,8 @@ const WeDealWith = (props: WeDealWithProps) => {
     <div className={`${styles.container} ${styles.inverted}`}>
       <div className={styles.imagesWrapper}>
         <div className={styles.images}>
-          <img className={styles.image1} src={props.image1} alt="Image" />
-          <img className={styles.image2} src={props.image2} alt="Image" />
+        <ImageWrapper className={styles.image1} src={props.image1} backgroundColor={"#001662"} />
+        <ImageWrapper className={styles.image2} src={props.image2} backgroundColor={"#001662"} />
         </div>
       </div>
 

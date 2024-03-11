@@ -37,6 +37,7 @@ const ChiSiamo = () => {
       ))} />
       <Space size={"big"} />
       <Space size={"big"} />
+      <WhoWeAre />
       <Space size={"big"} />
       <Space size={"big"} />
       <Space size={"big"} />

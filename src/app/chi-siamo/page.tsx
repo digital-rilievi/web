@@ -26,7 +26,7 @@ const ChiSiamo = () => {
         <Navbar invisible />
       </div>
       <ScrollingText text={content['chi-siamo'].title} />
-      <Space size={"big"} maintainInMobile />
+      <Space size={"big"} />
       <Space size={"big"} maintainInMobile />
       <ValuesList items={content['chi-siamo'].values} />
       <Space size={"big"} />
@@ -38,9 +38,9 @@ const ChiSiamo = () => {
       <Space size={"big"} />
       <Space size={"big"} />
       <WhoWeAre />
-      <Space size={"big"} />
-      <Space size={"big"} />
-      <Space size={"big"} />
+      <Space size={"big"} maintainInMobile />
+      <Space size={"big"} maintainInMobile />
+      <Space size={"big"} maintainInMobile />
       <BlueTextCta text={content['chi-siamo'].canWeHelp} label={content['chi-siamo'].canWeHelpCta} link={content['chi-siamo'].canWeHelpLink} />
       <Space size={"big"} />
       <Space size={"big"} />

@@ -10,8 +10,15 @@ import WhoWeAre from 'app/components/WhoWeAre/WhoWeAre'
 import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
 import ValuesList from 'app/components/ValuesList/ValuesList'
 import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
+import ManualSlider from 'app/components/ManualSlider/ManualSlider'
+import ImageWrapper from 'app/components/ImageWrapper/ImageWrapper'
 
 const ChiSiamo = () => {
+
+  var slides = content['chi-siamo'].carousel.map((image, index) => (
+    <ImageWrapper className={styles.carouselImage} src={image[index]} backgroundColor={"#373737"} />
+  ))
+
   return (
     <>
       <Navbar />
@@ -24,10 +31,12 @@ const ChiSiamo = () => {
       <ValuesList items={content['chi-siamo'].values} />
       <Space size={"big"} />
       <Space size={"big"} />
-      <ImagesCarousel slides={content['chi-siamo'].carousel} />
+      <ImagesCarousel className={styles.invisibleInMobile} slides={content['chi-siamo'].carousel} />
+      <ManualSlider className={styles.visibleInMobile} slides={content['chi-siamo'].carousel.map((image, index) => (
+        <ImageWrapper imagestyle={styles.carouselImage} src={image} backgroundColor={"#373737"} />
+      ))} />
       <Space size={"big"} />
       <Space size={"big"} />
-      <WhoWeAre />
       <Space size={"big"} />
       <Space size={"big"} />
       <Space size={"big"} />

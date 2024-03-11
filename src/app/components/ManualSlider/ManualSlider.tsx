@@ -4,6 +4,7 @@ import styles from './ManualSlider.module.css'
 import Image from 'next/image'
 
 interface SliderProps {
+    className?: string,
     slides: React.ReactNode[]
 }
 
@@ -56,7 +57,7 @@ const ManualSlider = (props: SliderProps) => {
     const translateValue = -currentIndex * 100 + '%'
 
     return (
-        <>
+        <div className={props.className}>
             <div className={styles.slider}
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
@@ -75,7 +76,7 @@ const ManualSlider = (props: SliderProps) => {
                     </button>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

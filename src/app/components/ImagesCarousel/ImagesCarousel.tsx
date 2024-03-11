@@ -5,6 +5,7 @@ import ImageWrapper from '../ImageWrapper/ImageWrapper'
 import styles from './ImagesCarousel.module.css'
 
 interface ImagesCarouselProps {
+    className?: string,
     slides?: string[]
 }
 
@@ -33,7 +34,7 @@ const ImagesCarousel = (props: ImagesCarouselProps) => {
     const rightArrowStyle = currentIndex === images.length - 1 ? 'hidden' : 'visible'
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${props.className}`}>
             <ImageWrapper className={styles.carouselImage} src={images[currentIndex]} backgroundColor={"#373737"} />
             <div className={styles.controls}>
                 <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={{ visibility: `${leftArrowStyle}` }}>

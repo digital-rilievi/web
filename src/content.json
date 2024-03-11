@@ -95,7 +95,7 @@
             {
                 "name": "ANTONIO DE MARCO",
                 "role": "CTO & Socio Fondatore",
-                "tooltipImage": "/assets/whoWeAre/unknown.svg",
+                "tooltipImage": "/assets/whoWeAre/antonio.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
@@ -107,7 +107,7 @@
             {
                 "name": "SONIA MARTINA",
                 "role": "Team Leader, Admin",
-                "tooltipImage": "/assets/whoWeAre/unknown.svg",
+                "tooltipImage": "/assets/whoWeAre/sonia.png",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
@@ -125,31 +125,31 @@
             {
                 "name": "ELISA CARTA",
                 "role": "Team Leader, Project Management",
-                "tooltipImage": "/assets/whoWeAre/unknown.svg",
+                "tooltipImage": "/assets/whoWeAre/elisa.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "GLORIA FACCHIN",
                 "role": "Team Leader, Mose",
-                "tooltipImage": "/assets/whoWeAre/unknown.svg",
+                "tooltipImage": "/assets/whoWeAre/gloria.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "ALICE MARSON",
                 "role": "Senior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/unknown.svg",
+                "tooltipImage": "/assets/whoWeAre/alice.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "FABIO STRAZIUSO",
                 "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/unknown.svg",
+                "tooltipImage": "/assets/whoWeAre/fabio.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {
                 "name": "MATTEO VALENTINO",
                 "role": "Junior Surveyor",
-                "tooltipImage": "/assets/whoWeAre/unknown.svg",
+                "tooltipImage": "/assets/whoWeAre/matteo.svg",
                 "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
             },
             {

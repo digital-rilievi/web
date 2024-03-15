@@ -6,7 +6,7 @@ import globalStyles from 'app/page.module.css'
 import content from 'content.json'
 import ScrollingText from 'app/components/ScrollingText/ScrollingText'
 import Space from 'app/components/Space/Space'
-import WhoWeAre from 'app/components/WhoWeAre/WhoWeAre'
+import WhoWeAreWrapper from 'app/components/WhoWeAreWrapper/WhoWeAreWrapper'
 import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
 import ValuesList from 'app/components/ValuesList/ValuesList'
 import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
@@ -16,7 +16,7 @@ import ImageWrapper from 'app/components/ImageWrapper/ImageWrapper'
 const ChiSiamo = () => {
 
   var slides = content['chi-siamo'].carousel.map((image, index) => (
-    <ImageWrapper className={styles.carouselImage} src={image[index]} backgroundColor={"#373737"} />
+    <ImageWrapper key={index} className={styles.carouselImage} src={image[index]} backgroundColor={"#373737"} />
   ))
 
   return (
@@ -33,11 +33,11 @@ const ChiSiamo = () => {
       <Space size={"big"} />
       <ImagesCarousel className={styles.invisibleInMobile} slides={content['chi-siamo'].carousel} />
       <ManualSlider className={styles.visibleInMobile} slides={content['chi-siamo'].carousel.map((image, index) => (
-        <ImageWrapper imagestyle={styles.carouselImage} src={image} backgroundColor={"#373737"} />
+        <ImageWrapper key={index} imagestyle={styles.carouselImage} src={image} backgroundColor={"#373737"} />
       ))} />
       <Space size={"big"} />
       <Space size={"big"} />
-      <WhoWeAre />
+      <WhoWeAreWrapper />
       <Space size={"big"} maintainInMobile />
       <Space size={"big"} maintainInMobile />
       <Space size={"big"} maintainInMobile />

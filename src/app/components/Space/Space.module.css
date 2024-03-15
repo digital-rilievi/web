@@ -13,9 +13,17 @@
     height: 2rem;
 }
 
+.noSpaceForWeb {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     .noSpaceForMobile {
         display: none;
+    }
+
+    .noSpaceForWeb {
+        display: block;
     }
 
     .bigSpace {

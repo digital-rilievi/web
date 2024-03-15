@@ -3,7 +3,8 @@ import styles from './Space.module.css'
 
 interface SpaceProps {
   size?: String,
-  maintainInMobile?: boolean
+  maintainInMobile?: boolean,
+  hideInWeb?: boolean
 }
 
 const Size = {
@@ -15,7 +16,7 @@ const Size = {
 export default function Space(props: SpaceProps) {
   return (
     <div className={
-      `${props.size === Size.big ? styles.bigSpace : (props.size === Size.small ? styles.smallSpace : styles.space)} ${props.maintainInMobile ? '' : styles.noSpaceForMobile}`
+      `${props.size === Size.big ? styles.bigSpace : (props.size === Size.small ? styles.smallSpace : styles.space)} ${(props.maintainInMobile || props.hideInWeb) ? '' : styles.noSpaceForMobile} ${props.hideInWeb ? styles.noSpaceForWeb : ''}`
     }></div>
   )
 }

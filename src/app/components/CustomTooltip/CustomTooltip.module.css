@@ -44,3 +44,28 @@
     margin-right: 2rem;
     color: #0038FF;
 }
+
+.tooltipQuoteInvisible  {
+  display: block;
+  visibility: hidden;
+}
+
+@media(max-width: 1280px) {
+  .quoteWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  .tooltipQuoteInvisible {
+    display: none;
+  }
+
+  .image {
+    aspect-ratio: 1 / 1;
+    height: auto !important;
+  }
+}

@@ -50,7 +50,7 @@
   visibility: hidden;
 }
 
-@media(max-width: 1280px) {
+@media(max-width: 1024px) {
   .quoteWrapper {
     display: flex;
     flex-direction: column;
@@ -67,5 +67,15 @@
   .image {
     aspect-ratio: 1 / 1;
     height: auto !important;
+  }
+}
+
+@media(max-width: 300px) {
+  .tooltipImage {
+    width: 100%;
+  }
+
+  .tooltipQuote {
+    width: 30px;
   }
 }

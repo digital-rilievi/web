@@ -13,7 +13,7 @@ const WhoWeAreMobile = () => {
 
     // Your image array here
     const images = content['chi-siamo'].whoWeAreList.map((member, index) => (
-        <CustomTooltip key={index} img={member.tooltipImage} quote={member.tooltipQuote} />
+        <CustomTooltip key={index} img={member.tooltipImage} quote={member.tooltipQuote} name={member.name} role={member.role} />
     ))
 
     const nextSlide = () => {
@@ -33,7 +33,7 @@ const WhoWeAreMobile = () => {
             clearInterval(autoIntervalId) // Clear previous interval
         const intervalId = setInterval(() => {
             nextSlide()
-        }, 20000); // 20 seconds interval
+        }, 10000); // 10 seconds interval
 
         setAutoIntervalId(intervalId) // Save the new interval ID
         return () => clearInterval(intervalId) // Clear interval on unmount
@@ -45,7 +45,7 @@ const WhoWeAreMobile = () => {
                 const newProgress = prevProgress + 0.5 // Increase the increment for smoother animation
                 return newProgress >= 100 ? 100 : newProgress
             })
-        }, 100)
+        }, 50)
         return () => clearInterval(timerId)
     }, [currentIndex, lastManualTransition])
 

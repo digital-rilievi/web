@@ -50,6 +50,23 @@
   visibility: hidden;
 }
 
+.imageRowContainer {
+  display: flex;
+    flex-direction: row;
+    color: black;
+    align-items: center;
+}
+
+.nameColumnContainer {
+  display: flex;
+    flex-direction: column;
+}
+
+.nameForMobile {
+  font-size: 25px;
+  padding-bottom: 8px;
+}
+
 @media(max-width: 1024px) {
   .quoteWrapper {
     display: flex;

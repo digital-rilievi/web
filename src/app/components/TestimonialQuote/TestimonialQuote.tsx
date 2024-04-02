@@ -28,7 +28,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                     <p className={props.alt && styles.altAlign}>{props.company}</p>
                 </div>
 
-                {props.alt &&
+                {props.alt && props.link &&
                     <div style={{ "flex": 1 }} />
                 }
                 <div className={styles.quoteColumn}>
@@ -47,12 +47,10 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                     </div>
                 </div>
 
-                {!props.alt &&
+                {!props.alt && props.link &&
                     <div className={styles.buttonColumn}>
                         <div className={styles.button}>
-                            {props.link &&
                                 <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
-                            }
                         </div>
                         <div style={{ "visibility": "hidden" }}>
                             <h3 className={styles.name}>{props.name}</h3>

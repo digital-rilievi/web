@@ -52,13 +52,13 @@ const WhoWeAreMobile = () => {
     return (
         <div className={styles.container}>
             <div className={styles.row}>
-                <div className={styles.arrow} onClick={prevSlide}>
+                <div className={`${styles.arrow} ${styles.leftArrow}`} onClick={prevSlide}>
                     <Image src="/assets/extras/left-arrow-black.svg" alt={"&larr;"} width={46} height={46} />
                 </div>
                 <div className={styles.imageContainer}>
                     {images[currentIndex]}
                 </div>
-                <div className={styles.arrow} onClick={nextSlide}>
+                <div className={`${styles.arrow} ${styles.rightArrow}`} onClick={nextSlide}>
                     <Image src="/assets/extras/right-arrow-black.svg" alt={"&rarr;"} width={46} height={46} />
                 </div>
             </div>

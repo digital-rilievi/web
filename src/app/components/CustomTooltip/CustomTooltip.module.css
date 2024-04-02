@@ -55,6 +55,7 @@
     flex-direction: row;
     color: black;
     align-items: center;
+    white-space: pre-line;
 }
 
 .nameColumnContainer {
@@ -63,7 +64,7 @@
 }
 
 .nameForMobile {
-  font-size: 25px;
+  font-size: 22px;
   padding-bottom: 8px;
 }
 

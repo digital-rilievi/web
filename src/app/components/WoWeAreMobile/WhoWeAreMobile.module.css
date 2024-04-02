@@ -17,14 +17,24 @@
 .arrow {
   cursor: pointer;
   font-size: 24px;
-  margin: 0 10px;
+  margin: 0px;
   color: black;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  flex: 5;
+}
+
+.leftArrow {
+  margin-left: 8px;
+}
+
+.rightArrow {
+  margin-right: 8px;
 }
 
 .imageContainer {
   position: relative;
+  flex: 90;
 }
 
 .timeBarContainer {

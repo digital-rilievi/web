@@ -89,7 +89,7 @@ position: fixed;
 }
 
 .logoAnimated {
-  animation: logoAnimation 1s ease, hide 0.001s linear 1s 1 forwards; /* Add a transition for a smooth effect */
+  animation: logoAnimation 1.3s ease, hide 0.001s linear 1.3s 1 forwards; /* Add a transition for a smooth effect */
 }
 
 /* Animation for the logo */
@@ -162,6 +162,19 @@ position: fixed;
     width: 60px;
     height: 60px;
   }
+
+  /* Animation for the logo */
+@keyframes logoAnimation {
+  0% {
+    width: 100vh; /* Initial size, full width */
+    max-width: 150rem;
+
+  }
+  100% {
+    width: 75px; /* Final size, adjust as needed */
+    visibility: visible;
+  }
+}
 }
 
   /* Media query for mobile small screen */
@@ -171,11 +184,11 @@ position: fixed;
   }
 
   .logo {
-    width: 70px;
+    width: 75px;
   }
 
   .bigLogo {
-    width: 70px;
+    width: 75px;
   }
 
   .mobileMenuIcon {

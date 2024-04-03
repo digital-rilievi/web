@@ -39,17 +39,19 @@
     display: none !important;
   }
 
-  @media (max-width: 1024px) {
-    .carouselImage {
-      width: 100%;
-    }
-
-    .invisibleInMobile {
+ @media (max-width: 1240px) {
+        .invisibleInMobile {
       display: none !important;
     }
 
     .visibleInMobile {
       display: block !important;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .carouselImage {
+      width: 100%;
     }
   }
   

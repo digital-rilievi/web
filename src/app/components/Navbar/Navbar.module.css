@@ -118,6 +118,7 @@ position: fixed;
   .navbar {
     background-color: rgba(19, 19, 19, 0.3);
     width: 100vw;
+    padding: 1rem;
     }
 
   .navbarMenuOpened {
@@ -163,6 +164,14 @@ position: fixed;
     height: 60px;
   }
 
+    .logo {
+    width: 90px;
+  }
+
+  .bigLogo {
+    width: 90px;
+  }
+
   /* Animation for the logo */
 @keyframes logoAnimation {
   0% {
@@ -171,7 +180,7 @@ position: fixed;
 
   }
   100% {
-    width: 75px; /* Final size, adjust as needed */
+    width: 90px; /* Final size, adjust as needed */
     visibility: visible;
   }
 }
@@ -195,4 +204,17 @@ position: fixed;
     width: 50px;
     height: 50px;
   }
+
+    /* Animation for the logo */
+@keyframes logoAnimation {
+  0% {
+    width: 100vh; /* Initial size, full width */
+    max-width: 150rem;
+
+  }
+  100% {
+    width: 75px; /* Final size, adjust as needed */
+    visibility: visible;
+  }
+}
 }

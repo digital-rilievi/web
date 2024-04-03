@@ -12,6 +12,7 @@ import ImageText from 'app/components/ImageText/ImageText'
 import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
 import TestimonialQuote from 'app/components/TestimonialQuote/TestimonialQuote'
 import ImageWrapper from 'app/components/ImageWrapper/ImageWrapper'
+import ProjectImageText from 'app/components/ProjectImageText/ProjectImageText'
 
 interface ProjectPageProps {
   params: { project: string }
@@ -44,7 +45,7 @@ function Project({ params }: ProjectPageProps) {
       <Space size={"big"} />
       <Space size={"big"} />
       {project?.details?.panelImage &&
-        <ImageText inverted image={project?.details?.panelImage} title={project?.details?.panelImageText} secondaryText={project?.details?.panelImageDesc} />
+        <ProjectImageText inverted image={project?.details?.panelImage} title={project?.details?.panelImageText} secondaryText={project?.details?.panelImageDesc} />
       }
 
       <Space size={"big"} maintainInMobile />

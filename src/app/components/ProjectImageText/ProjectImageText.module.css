@@ -1,0 +1,209 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  position: relative; /* Add position: relative to establish stacking context */
+}
+
+.inverted {
+  flex-direction: row-reverse;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  position: relative; /* Add position: relative */
+  z-index: 2; /* Set z-index higher than BlueCircle */
+}
+
+.containerHelper {
+  flex: 0.1;
+}
+
+.title {
+  align-self: flex-start;
+  text-align: left;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.text {
+  align-self: flex-start;
+  text-align: left;
+  padding: 1rem;
+}
+
+.duration {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 106.25% */
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.image {
+  max-width: 45%;
+  height: fit-content;
+  max-height: 100%;
+  margin-right: 20px;
+  object-fit: cover;
+  position: relative; /* Add position: relative */
+  z-index: 2; /* Set z-index higher than BlueCircle */
+}
+
+.blueCircleContainer {
+  display: flex;
+  flex-direction: row;
+  left: 45%;
+  top: -25%;
+  position: absolute;
+  z-index: 1;
+}
+
+.blueCircleWrapper {
+  left: 0;
+  height: 720px;
+  width: 720px;
+  flex: 1;
+}
+
+.circularButtonWrapper {
+  padding-top: 2rem;
+}
+
+.secondaryText {
+  white-space: pre-line;
+}
+  
+  /* Media query for bigger layout */
+  @media (max-width: 1920px) {
+    .containerHelper {
+        flex: 0;
+    }
+  }
+
+  /* Media query for bigger layout */
+  @media (min-width: 1820px) {
+    .image {
+        height: 50rem;
+        width: auto;
+    }
+  }
+
+    /* Media query for smaller layout */
+  @media (max-width: 1460px) {
+
+    .blueCircleContainer {
+      left: 45%;
+      top: -15%;
+    }
+
+    .blueCircleWrapper {
+      height: 520px;
+      width: 520px;
+    }
+
+    .content {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Media query for mobile layout */
+  @media (max-width: 1024px) {
+  .container,
+  .text,
+  .title {
+    flex-direction: column; /* Switch to a vertical layout for smaller screens */
+    align-items: flex-start; /* Align items to the top left in mobile layout */
+  }
+
+  .image {
+    align-self: center;
+  }
+
+  .content {
+    flex-direction: column;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .container {
+    margin-top: 1rem;
+  }
+
+  .title {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .text {
+    margin-right: 0;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  .secondaryText {
+    padding-bottom: 2rem;
+  }
+
+  .duration {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 106.25% */
+    text-transform: uppercase;
+    padding: 0;
+    padding-bottom: 2rem;
+    text-align: center;
+    align-self: center;
+  }
+
+  .image {
+    max-width: 100%; /* Allow the image to take the full width in mobile layout */
+    margin-right: 0; /* Remove margin for mobile layout */
+    margin: 2rem;
+  }
+
+   .blueCircleWrapper {
+    top: 0px;
+    height: 0px;
+    width: 0px;
+  }
+
+  .circularButtonWrapper {
+    align-self: center;
+  }
+}
+
+ .invisibleInMobile {
+  }
+
+  .visibleInMobile {
+    display: none !important;
+  }
+
+ @media (max-width: 1024px) {
+        .invisibleInMobile {
+      display: none !important;
+    }
+
+    .visibleInMobile {
+      display: block !important;
+    }
+  }

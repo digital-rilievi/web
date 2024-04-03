@@ -1,6 +1,9 @@
 .image {
     width: 100%;
     height: auto;
+    position: relative;
+    top: constant(safe-area-inset-top);
+    top: env(safe-area-inset-top);
 }
 
 .titleWrapper {

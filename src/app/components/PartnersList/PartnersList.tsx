@@ -15,13 +15,13 @@ const PartnersList = (props: PartnersListProps) => {
             <div className={styles.scroll}>
                 <div className={`${''}`}>
                     {props.partners.map((image, index) => (
-                        <img key={index} width={1} height={1} className={styles.imageItem} src={`${image}`} alt={`Image ${index}`} unoptimized={true} loading={"eager"} />
+                        <img key={index} width={1} height={1} className={styles.imageItem} src={`${image}`} alt={`Image ${index}`} loading={"eager"} />
                     ))}
                 </div>
                 <div className={''}>&nbsp;</div>
                 <div className={`${''}`}>
                     {props.partners.map((image, index) => (
-                        <img key={index} width={1} height={1} className={styles.imageItem} src={`${image}`} alt={`Image ${index}`} unoptimized={true} loading={"eager"} />
+                        <img key={index} width={1} height={1} className={styles.imageItem} src={`${image}`} alt={`Image ${index}`} loading={"eager"} />
                     ))}
                 </div>
             </div>

@@ -13,6 +13,7 @@ import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
 import TestimonialQuote from 'app/components/TestimonialQuote/TestimonialQuote'
 import ImageWrapper from 'app/components/ImageWrapper/ImageWrapper'
 import ProjectImageText from 'app/components/ProjectImageText/ProjectImageText'
+import ManualSliderWrapper from 'app/components/manualSliderComponents/ManualSliderWrapper/ManualSliderWrapper'
 
 interface ProjectPageProps {
   params: { project: string }
@@ -53,7 +54,10 @@ function Project({ params }: ProjectPageProps) {
       <BlueTextCta text={content.progetti.projectsInterested} label={content.progetti.projectsInterestedCta} link={content.progetti.projectsInterestedLink} />
       <Space size={"big"} maintainInMobile />
       <Space size={"big"} maintainInMobile />
-      <ImagesCarousel slides={project?.details?.carousel} />
+      <ImagesCarousel className={styles.invisibleInMobile} slides={project?.details?.carousel} />
+      <ManualSliderWrapper className={styles.visibleInMobile} slides={project?.details?.carousel.map((image, index) => (
+        <ImageWrapper key={index} imagestyle={styles.carouselImage} src={image} backgroundColor={"#373737"} />
+      )) ?? []} />
       <Space size={"big"} maintainInMobile />
       <Space size={"big"} maintainInMobile />
       {project?.details?.testimonialQuotes?.map((quote: TestimonialQuotesType, index) => (

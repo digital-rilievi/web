@@ -1,8 +1,8 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Space from '../Space/Space'
+import Space from '../../Space/Space'
 import styles from './WhoWeAre.module.css'
-import CustomTooltip from '../CustomTooltip/CustomTooltip'
+import CustomTooltip from '../../CustomTooltip/CustomTooltip'
 import content from 'content.json'
 
 interface Item {

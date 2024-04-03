@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  place-content: space-between;
+  min-height: 80vh;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0px;
+  color: black;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  flex: 5;
+}
+
+.leftArrow {
+  margin-left: 8px;
+}
+
+.rightArrow {
+  margin-right: 8px;
+}
+
+.imageContainer {
+  position: relative;
+  flex: 90;
+  width: 80%;
+}
+
+.timeBarContainer {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+}
+
+.timeBar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: blue;
+}

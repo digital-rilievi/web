@@ -8,11 +8,11 @@ import Footer from "./components/Footer/Footer"
 import ImageButton from "./components/ImageButton/ImageButton"
 import Space from "./components/Space/Space"
 import BlueTextCta from "./components/BlueTextCta/BlueTextCta"
-import ManualSlider from "./components/ManualSlider/ManualSlider"
 import WeDealWith from "./components/WeDealWith/WeDealWith"
 import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
 import PartnersList from "./components/PartnersList/PartnersList"
-import WhoWeAreWrapper from "./components/WhoWeAreWrapper/WhoWeAreWrapper"
+import WhoWeAreWrapper from "./components/whoWeAreComponents/WhoWeAreWrapper/WhoWeAreWrapper"
+import ManualSliderWrapper from "./components/manualSliderComponents/ManualSliderWrapper/ManualSliderWrapper"
 
 export default function Home() {
 
@@ -54,7 +54,7 @@ export default function Home() {
         />
         <Space size={"big"} maintainInMobile/>
         <Space maintainInMobile/>
-        <ManualSlider slides={weDealWithList} />
+        <ManualSliderWrapper slides={weDealWithList} />
         <Space size={"big"} maintainInMobile />
         <Space size={"big"} maintainInMobile />
         <Space size={"big"} hideInWeb />

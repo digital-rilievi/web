@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from './WhoWeAreMobile.module.css'
 import content from 'content.json'
-import CustomTooltip from '../CustomTooltip/CustomTooltip'
+import CustomTooltip from '../../CustomTooltip/CustomTooltip'
 
 const WhoWeAreMobile = () => {
     const [currentIndex, setCurrentIndex] = useState(0)

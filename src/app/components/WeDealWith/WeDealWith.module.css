@@ -142,6 +142,24 @@
 
   /* Media query for mobile layout */
   @media (max-width: 1240px) {
+
+  .container {
+    display: flex;
+    flex-direction:column-reverse !important;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 680px;
+    padding: 0;
+    padding-top: 1rem;
+    margin-bottom: 0;
+    background: #0038FF;
+    width: 96%;
+    margin-left: 0;
+    margin-right: 0;
+  } 
+
   .container,
   .text,
   .title {
@@ -153,11 +171,11 @@
     align-self: center;
   }
 
-.content {
-      display: flex;
+  .content {
+    display: flex;
     flex-direction: column;
     place-items: center;
-}
+  }
 
   .title,
   .text {
@@ -182,55 +200,38 @@
     padding: 2rem;
   }
 
-   .blueCircleWrapper {
+  .blueCircleWrapper {
     top: 0px;
     height: 0px;
     width: 0px;
   }
 
   .imagesWrapper {
-     flex: 1;
-    }
+    flex: 1;
+  }
 
-   .image1,
-   .image2 {
-     width: 240px;
-     max-width: 33vw;
-     object-fit: cover;
-     position: relative; /* Add position: relative */
-     z-index: 2; /* Set z-index higher than BlueCircle */
-   }
+ .image1,
+ .image2 {
+   width: 240px;
+   max-width: 33vw;
+   object-fit: cover;
+   position: relative; /* Add position: relative */
+   z-index: 2; /* Set z-index higher than BlueCircle */
+ }
 
-   .image1 {
-       z-index: 10;
-       position: absolute;
-   }
+ .image1 {
+     z-index: 10;
+     position: absolute;
+ }
 
-   .image2 {
-       z-index: 5;
-       position: absolute;
-   }
+ .image2 {
+     z-index: 5;
+     position: absolute;
+ }
 
-   .circularButtonWrapper {
-      place-self: center;
-   }
-
-   .container {
-    display: flex;
-    flex-direction:column-reverse;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    min-height: 680px;
-    padding: 0;
-    padding-top: 1rem;
-    margin-bottom: 0;
-    background: #0038FF;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-   } 
+ .circularButtonWrapper {
+    place-self: center;
+ }
    
   .preTitle {
     font-size: 16px;

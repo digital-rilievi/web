@@ -1,6 +1,6 @@
-    .invisibleInMobile {
-      display: block;
-    }
+  .invisibleInMobile {
+    display: block;
+  }
 
   .visibleInMobile {
     display: none !important;

@@ -21,10 +21,10 @@ const VideoPlayer = (props: VideoPlayerProps) => {
   }, [])
 
   return (
-    <div style={{position: "relative"}}>
-    <h1 className={styles.title}>
-          {props.title}
-        </h1>
+    <div style={{ position: "relative" }}>
+      <h1 className={`${styles.title} ${styles.invisibleInMobile}`}>
+        {props.title}
+      </h1>
       <video
         className="intro-video"
         id="myVideo"

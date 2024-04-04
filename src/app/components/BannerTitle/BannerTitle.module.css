@@ -1,0 +1,74 @@
+  .appBarSpace {
+    padding-bottom: 0;
+  }
+
+  .mobileAppbarSpacer {
+    display: block !important;
+  }
+
+.bannerImage {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: constant(safe-area-inset-top);
+    top: env(safe-area-inset-top);
+}
+
+.titleWrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+
+.blueCircleWrapper {
+    position: absolute;
+    z-index: 0;
+    top: 20vh;
+    left: 10vw;
+}
+
+.postBannerQuote {
+    position: relative;
+    color: #F5F5F5;
+    line-height: 52px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    white-space: pre-line;
+  }
+
+.homeTitle {
+    align-self: center;
+    justify-self: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: unset;
+    white-space: pre-line;
+}
+
+  /* Media query for mobile small screen */
+@media (max-width: 1200px) {
+    .homeTitle {
+        font-size: 24px;
+    }
+
+    .postBannerQuote {
+        font-size: 48px;
+        line-height: 52px;
+    }
+}
+
+  /* Media query for mobile small screen */
+@media (max-width: 800px) {
+    .postBannerQuote {
+        font-size: 32px;
+        line-height: 36px;
+        padding-top: 3rem;
+    }
+}

@@ -11,6 +11,24 @@
     line-height: 118px; /* 107.273% */
   }
 
+  .invisibleInMobile {
+  }
+
+  .visibleInMobile {
+    display: none !important;
+  }
+
+ @media (max-width: 1000px) {
+        .invisibleInMobile {
+      display: none !important;
+    }
+
+    .visibleInMobile {
+      display: block !important;
+    }
+  }
+
+
   /* Media query for mobile big screen */
 @media (max-width: 1000px) {
     .title {

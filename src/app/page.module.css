@@ -1,11 +1,9 @@
-.appBarSpace {
-  visibility: hidden;    /* Make the div invisible */
-  pointer-events: none;  /* Make the div non-interactable */
-  padding-bottom: 3rem;
-}
-
-.mobileAppbarSpacer {
-  display: none;
+.bannerImage {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: constant(safe-area-inset-top);
+    top: env(safe-area-inset-top);
 }
 
 .content {
@@ -18,12 +16,19 @@
   margin-right: auto;
 }
 
+.invisibleInMobile {
+}
+
+.visibleInMobile {
+  display: none !important;
+}
+
 @media (max-width: 1000px) {
-  .appBarSpace {
-    padding-bottom: 0;
+  .invisibleInMobile {
+    display: none !important;
   }
 
-  .mobileAppbarSpacer {
+  .visibleInMobile {
     display: block !important;
   }
 }

@@ -13,6 +13,8 @@ import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
 import PartnersList from "./components/PartnersList/PartnersList"
 import WhoWeAreWrapper from "./components/whoWeAreComponents/WhoWeAreWrapper/WhoWeAreWrapper"
 import ManualSliderWrapper from "./components/manualSliderComponents/ManualSliderWrapper/ManualSliderWrapper"
+import ImageWrapper from "./components/ImageWrapper/ImageWrapper"
+import BannerTitle from "./components/BannerTitle/BannerTitle"
 
 export default function Home() {
 
@@ -30,11 +32,16 @@ export default function Home() {
   return (
     <main>
       <NavBar animateLogo />
-      <ScrollIndicator/>
+      <ScrollIndicator />
       <div className={styles.content}>
-      <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>
-        <NavBar invisible />
-      </div>
+        <div className={styles.visibleInMobile}>
+          <BannerTitle />
+        </div>
+        {/*
+        <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>
+          <NavBar invisible />
+        </div>
+      */}
         <VideoPlayer title={content.home.title} />
         <Space size={"big"} maintainInMobile />
         <Space size={"big"} maintainInMobile />
@@ -52,27 +59,27 @@ export default function Home() {
           buttonLabel={content.home.secondImageButtonLabel}
           remainsInPage={true}
         />
-        <Space size={"big"} maintainInMobile/>
-        <Space maintainInMobile/>
+        <Space size={"big"} maintainInMobile />
+        <Space maintainInMobile />
         <ManualSliderWrapper slides={weDealWithList} />
         <Space size={"big"} maintainInMobile />
         <Space size={"big"} maintainInMobile />
         <Space size={"big"} hideInWeb />
         <BlueTextCta text={content.home.areYouInterested} label={content.home.areYouInterestedLabel} link={content.home.areYouInterestedLink} />
-        <Space size={"big"} maintainInMobile/>
+        <Space size={"big"} maintainInMobile />
         <Space maintainInMobile />
-        <Space size={"big"}hideInWeb />
+        <Space size={"big"} hideInWeb />
         <PartnersList
           className={styles.partnersList}
           partners={content.home.partners}
         />
         <Space size={"big"} maintainInMobile />
         <Space size={"big"} maintainInMobile />
-        <Space size={"big"}hideInWeb />
+        <Space size={"big"} hideInWeb />
         <WhoWeAreWrapper />
         <Space size={"big"} maintainInMobile />
         <Space maintainInMobile />
-        <Space size={"big"}hideInWeb />
+        <Space size={"big"} hideInWeb />
         <Footer />
       </div>
     </main>

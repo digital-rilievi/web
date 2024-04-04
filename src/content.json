@@ -2,6 +2,8 @@
     "defaultButtonsValue": "SCOPRI DI PIÙ",
     "home": {
         "title": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
+        "bannerImage":"/assets/projects/mose.png",
+        "bannerQuote": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
         "firstImage": "/assets/projects/project-home.png",
         "firstImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.",
         "firstImageName": "LOREM IPSUM\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",

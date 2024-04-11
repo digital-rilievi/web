@@ -11,24 +11,24 @@ const Footer = () => {
       <div className={styles.rowContainer}>
         <div className={styles.leftColumn}>
           <div>
-            <p>{content.contatti.addressLine1}</p>
-            <p>{content.contatti.addressLine2}</p>
-            <p>{content.contatti.addressLine3}</p>
+            <p className={styles.footerAddress}>{content.contatti.addressLine1}</p>
+            <p className={styles.footerAddress}>{content.contatti.addressLine2}</p>
+            <p className={styles.footerAddress}>{content.contatti.addressLine3}</p>
           </div>
-          <div className={styles.spacer}></div>
+          <br />
           <div>
-            <p>P.IVA {content.contatti.vat}</p>
-            <p>{content.contatti.legal}</p>
-            <p>REA: {content.contatti.rea}</p>
-            <p>Cod. univoco: {content.contatti.fatturazione}</p>
+            <p className={styles.footerAddress}>P.IVA {content.contatti.vat}</p>
+            <p className={styles.footerAddress}>{content.contatti.legal}</p>
+            <p className={styles.footerAddress}>REA: {content.contatti.rea}</p>
+            <p className={styles.footerAddress}>Cod. univoco: {content.contatti.fatturazione}</p>
           </div>
         </div>
 
 
         <div className={styles.rightColumn}>
           <ul>
-            <li><a href={content.footer.privacyPolicyLink} target="_blank">{content.footer.cookiesPolicyLabel}</a></li>
-            <li><a href={content.footer.cookiesPolicyLink} target="_blank">{content.footer.privacyPolicyLabel}</a></li>
+            <li><a className={styles.footerAddress} href={content.footer.privacyPolicyLink} target="_blank">{content.footer.cookiesPolicyLabel}</a></li>
+            <li><a className={styles.footerAddress} href={content.footer.cookiesPolicyLink} target="_blank">{content.footer.privacyPolicyLabel}</a></li>
           </ul>
 
           <div>

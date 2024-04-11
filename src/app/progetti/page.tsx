@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar/Navbar'
 import content from 'content.json'
 import globalStyles from 'app/page.module.css'
 import Space from 'app/components/Space/Space'
+import ScrollingText from 'app/components/ScrollingText/ScrollingText'
 
 export interface ProjectProps {
     image: string,
@@ -27,7 +28,7 @@ const Progetti = () => {
             <div className={globalStyles.appBarSpace}>
                 <Navbar invisible />
             </div>
-            {/* <ScrollingText text={content.progetti.title} /> */}
+            <ScrollingText text={content.progetti.title} />
             <Space />
             <div>
                 {projects.map((info: ProjectProps, index) => (

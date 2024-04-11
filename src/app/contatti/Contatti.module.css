@@ -20,12 +20,14 @@
 }
 
 .name {
-  font-weight: bold;
+  font-weight: medium;
   font-size: 26px;
+  font-family: "Helvetica Neue";
 }
 
 .smallText {
-    font-size: 20px;
+    font-size: 16px;
+    font-family: "Helvetica Neue";
 }
 
 @media (max-width: 800px) {
@@ -34,7 +36,7 @@
     }
 
     .smallText {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .map {

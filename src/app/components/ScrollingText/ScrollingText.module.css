@@ -63,7 +63,7 @@
 
 @media (max-width: 1000px) {
   .text {
-    font-size: 70px;
+    font-size: 40px;
     line-height: unset;
     padding-bottom: 1rem;
   }

@@ -18,13 +18,13 @@
 
 .scroll div {
   white-space: nowrap;
-  animation: animate 40s linear infinite;
-  animation-delay: calc(var(40s) * -1);
+  animation: animate 80s linear infinite;
+  animation-delay: calc(var(80s) * -1);
 }
 
 .scroll div:nth-child(2) {
-    animation: animate2 40s linear infinite;
-    animation-delay: calc(40s / -2);
+    animation: animate2 80s linear infinite;
+    animation-delay: calc(80s / -2);
 }
 
 @keyframes animate {

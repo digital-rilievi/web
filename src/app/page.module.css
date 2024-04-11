@@ -23,6 +23,15 @@
   display: none !important;
 }
 
+  .appBarSpace {
+    padding-bottom: 0;
+  }
+
+  .mobileAppbarSpacer {
+    display: none !important;
+  }
+
+
 @media (max-width: 1000px) {
   .invisibleInMobile {
     display: none !important;
@@ -31,4 +40,14 @@
   .visibleInMobile {
     display: block !important;
   }
+  
+    .appBarSpace {
+    padding-bottom: 0;
+  }
+
+  .mobileAppbarSpacer {
+    visibility: hidden;
+    display: block !important;
+  }
+
 }

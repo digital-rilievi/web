@@ -231,6 +231,7 @@
 
  .circularButtonWrapper {
     place-self: center;
+    padding-left: 0;
  }
    
   .preTitle {

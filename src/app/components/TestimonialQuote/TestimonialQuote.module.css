@@ -139,12 +139,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .row,
   .rowReversed {
     flex-direction: column;
+    padding-left: 0;
+    margin-right: 0;
   }
 
 .imageColumn {

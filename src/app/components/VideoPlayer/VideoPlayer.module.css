@@ -18,23 +18,10 @@
     display: none !important;
   }
 
- @media (max-width: 1000px) {
-        .invisibleInMobile {
-      display: none !important;
-    }
-
-    .visibleInMobile {
-      display: block !important;
-    }
-  }
-
 
   /* Media query for mobile big screen */
 @media (max-width: 1000px) {
     .title {
-        position: relative;
-        z-index: 0;
-        top: 0;
         font-size: 48px;
         line-height: 52px;
         padding: 1rem;

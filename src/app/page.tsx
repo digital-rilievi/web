@@ -34,14 +34,10 @@ export default function Home() {
       <NavBar animateLogo />
       <ScrollIndicator />
       <div className={styles.content}>
-        <div className={styles.visibleInMobile}>
-          <BannerTitle />
-        </div>
-        {/*
         <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>
           <NavBar invisible />
         </div>
-      */}
+      
         <VideoPlayer title={content.home.title} />
         <Space size={"big"} maintainInMobile />
         <Space size={"big"} maintainInMobile />
@@ -68,14 +64,12 @@ export default function Home() {
         <BlueTextCta text={content.home.areYouInterested} label={content.home.areYouInterestedLabel} link={content.home.areYouInterestedLink} />
         <Space size={"big"} maintainInMobile />
         <Space maintainInMobile />
-        <Space size={"big"} hideInWeb />
         <PartnersList
           className={styles.partnersList}
           partners={content.home.partners}
         />
         <Space size={"big"} maintainInMobile />
-        <Space size={"big"} maintainInMobile />
-        <Space size={"big"} hideInWeb />
+        <Space size={"big"} />
         <WhoWeAreWrapper />
         <Space size={"big"} maintainInMobile />
         <Space maintainInMobile />

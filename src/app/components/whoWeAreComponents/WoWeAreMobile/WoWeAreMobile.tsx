@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from './WhoWeAreMobile.module.css'
 import content from 'content.json'
 import CustomTooltip from '../../CustomTooltip/CustomTooltip'
+import Space from 'app/components/Space/Space'
 
 const WhoWeAreMobile = () => {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -13,7 +14,9 @@ const WhoWeAreMobile = () => {
 
     // Your image array here
     const images = content['chi-siamo'].whoWeAreList.map((member, index) => (
-        <CustomTooltip key={index} img={member.tooltipImage} quote={member.tooltipQuote} name={member.name} role={member.role} />
+        <div className={styles.tooltipWrapper}>
+            <CustomTooltip key={index} img={member.tooltipImage} quote={member.tooltipQuote} name={member.name} role={member.role} />
+        </div>
     ))
 
     const nextSlide = () => {
@@ -50,24 +53,30 @@ const WhoWeAreMobile = () => {
     }, [currentIndex, lastManualTransition])
 
     return (
-        <div className={styles.container}>
-            <div className={styles.row}>
-                <div className={`${styles.arrow} ${styles.leftArrow}`} onClick={prevSlide}>
-                    <Image src="/assets/extras/left-arrow-black.svg" alt={"&larr;"} width={46} height={46} />
-                </div>
-                <div className={styles.imageContainer}>
-                    {images[currentIndex]}
-                </div>
-                <div className={`${styles.arrow} ${styles.rightArrow}`} onClick={nextSlide}>
-                    <Image src="/assets/extras/right-arrow-black.svg" alt={"&rarr;"} width={46} height={46} />
+        <>
+            <p className={styles.whoWeAreTitle}>CHI SIAMO</p>
+            <Space size={"small"} maintainInMobile />
+            <div className={styles.container}>
+                <div className={styles.row}>
+                    <div className={`${styles.arrow} ${styles.leftArrow}`} onClick={prevSlide}>
+                        <Image src="/assets/extras/left-arrow-white.svg" alt={"&larr;"} width={46} height={46} />
+                    </div>
+                    <div className={styles.column}>
+                        <div className={styles.imageContainer}>
+                            {images[currentIndex]}
+                        </div>
+                        <div className={styles.timeBarContainer}>
+                            <div className={styles.timeBar}>
+                                <div className={styles.progressBar} style={{ width: `${progress}%` }}></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={`${styles.arrow} ${styles.rightArrow}`} onClick={nextSlide}>
+                        <Image src="/assets/extras/right-arrow-white.svg" alt={"&rarr;"} width={46} height={46} />
+                    </div>
                 </div>
             </div>
-            <div className={styles.timeBarContainer}>
-                <div className={styles.timeBar}>
-                    <div className={styles.progressBar} style={{ width: `${progress}%` }}></div>
-                </div>
-            </div>
-        </div>
+        </>
     )
 }
 

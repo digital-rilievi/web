@@ -14,8 +14,8 @@ const WhoWeAreMobile = () => {
 
     // Your image array here
     const images = content['chi-siamo'].whoWeAreList.map((member, index) => (
-        <div className={styles.tooltipWrapper}>
-            <CustomTooltip key={index} img={member.tooltipImage} quote={member.tooltipQuote} name={member.name} role={member.role} />
+        <div key={index} className={styles.tooltipWrapper}>
+            <CustomTooltip img={member.tooltipImage} quote={member.tooltipQuote} name={member.name} role={member.role} />
         </div>
     ))
 

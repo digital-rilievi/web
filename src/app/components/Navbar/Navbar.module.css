@@ -20,6 +20,8 @@
 
 
 .spacingNavbar {
+  position: fixed;
+  top: 0;
   display: flex;
   width: -webkit-fill-available;
   width: 100%;

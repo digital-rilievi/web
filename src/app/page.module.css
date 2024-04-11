@@ -24,7 +24,9 @@
 }
 
   .appBarSpace {
-    padding-bottom: 0;
+    padding-bottom: 3.5rem;
+    display: block;
+    visibility: hidden;
   }
 
   .mobileAppbarSpacer {
@@ -43,10 +45,10 @@
   
     .appBarSpace {
     padding-bottom: 0;
+    visibility: hidden;
   }
 
   .mobileAppbarSpacer {
-    visibility: hidden;
     display: block !important;
   }
 

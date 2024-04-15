@@ -14,3 +14,8 @@
   font-size: 14px; /* Adjust font size as needed */
   transition: background-color 0.3s ease;
 }
+
+.smallCircle {
+    height: 100%;
+    width: 100%;
+}

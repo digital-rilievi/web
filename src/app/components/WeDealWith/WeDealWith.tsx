@@ -33,9 +33,21 @@ const WeDealWith = (props: WeDealWithProps) => {
         <div className={`${styles.invisibleInMobile} ${styles.preTitle}`}>
           ci occupiamo di progetti per
         </div>
-        <h2 className={`${styles.title} ${isTitleTooLong ? styles.longTitle : ''}`}>
+        <h2 className={`${styles.title} ${isTitleTooLong ? styles.longTitle : ''} ${styles.invisibleInMobile}`}>
           {props.title}
         </h2>
+        <div className={`${styles.visibleInMobile} ${styles.rowWrapper}`}>
+          <div className={styles.titleRow}>
+            <h2 className={`${styles.title} ${isTitleTooLong ? styles.longTitle : ''} ${styles.titleForMobile}`}>
+              {props.title}
+            </h2>
+            {props.link && (
+              <div className={`${styles.circularButtonWrapper} ${styles.mobileCircular}`}>
+                <CircularButton link={props.link} label={props.linkLabel} remainsInPage isWeDealWith />
+              </div>
+            )}
+          </div>
+        </div>
         <div className={styles.text}>
           <p>{props.text}</p>
         </div>
@@ -44,7 +56,7 @@ const WeDealWith = (props: WeDealWithProps) => {
           <Space />
         </div>
         {props.link && (
-          <div className={styles.circularButtonWrapper}>
+          <div className={`${styles.invisibleInMobile} ${styles.circularButtonWrapper}`}>
             <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
           </div>
         )}

@@ -152,7 +152,7 @@
     margin-bottom: 2rem;
     min-height: 680px;
     padding: 0;
-    padding-top: 1rem;
+    padding-top: 2rem;
     margin-bottom: 0;
     background: #0038FF;
     width: 96%;
@@ -212,16 +212,15 @@
 
  .image1,
  .image2 {
-   width: 240px;
-   max-width: 33vw;
+   width: 60%;
+   max-width: auto;
    object-fit: cover;
-   position: relative; /* Add position: relative */
-   z-index: 2; /* Set z-index higher than BlueCircle */
  }
 
  .image1 {
-     z-index: 10;
-     position: absolute;
+     z-index: 0;
+     position: relative;
+     top: auto;
  }
 
  .image2 {
@@ -273,7 +272,7 @@
   .images {
     align-items: center;
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 1rem;
     position: relative;
          display: flex;
        flex-direction: column;
@@ -281,7 +280,7 @@
 
 .image1 {
     right: auto;
-    margin-right: 2rem;
+    margin-right: 0;
 }
 
   .image2 {
@@ -302,5 +301,22 @@
   @media (max-width: 700px) {
     .invisibleImage {
       padding-bottom: 6rem;
+    }
+  }
+
+  .invisibleInMobile {
+  }
+
+  .visibleInMobile {
+    display: none !important;
+  }
+
+ @media (max-width: 1240px) {
+    .invisibleInMobile {
+      display: none !important;
+    }
+
+    .visibleInMobile {
+      display: block !important;
     }
   }

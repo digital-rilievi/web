@@ -24,14 +24,13 @@ const WeDealWith = (props: WeDealWithProps) => {
     <div className={`${styles.container} ${styles.inverted}`}>
       <div className={styles.imagesWrapper}>
         <div className={styles.images}>
-          <ImageWrapper className={`${styles.invisibleImage}`} src={props.image1} backgroundColor={"#001662"} />
           <ImageWrapper className={styles.image1} src={props.image1} backgroundColor={"#001662"} />
-          <ImageWrapper className={styles.image2} src={props.image2} backgroundColor={"#001662"} />
+          <ImageWrapper className={`${styles.invisibleInMobile} ${styles.image2}`} src={props.image2} backgroundColor={"#001662"} />
         </div>
       </div>
 
       <div className={`${styles.content}`}>
-        <div className={styles.preTitle}>
+        <div className={`${styles.invisibleInMobile} ${styles.preTitle}`}>
           ci occupiamo di progetti per
         </div>
         <h2 className={`${styles.title} ${isTitleTooLong ? styles.longTitle : ''}`}>

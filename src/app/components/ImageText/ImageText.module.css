@@ -146,6 +146,8 @@
     margin-top: 1rem;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .title {
@@ -158,6 +160,7 @@
     margin-right: 0;
     margin-bottom: 3rem;
     padding: 0;
+    margin-top: 1rem;
   }
 
   .secondaryText {

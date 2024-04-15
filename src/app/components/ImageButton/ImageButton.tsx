@@ -2,6 +2,7 @@ import React from 'react'
 import BlueCircle from '../BlueCircle/BlueCircle'
 import CircularButton from '../CircularButton/CircularButton'
 import ImageWrapper from '../ImageWrapper/ImageWrapper'
+import Space from '../Space/Space'
 import styles from './ImageButton.module.css'
 
 interface ImageButtonProps {
@@ -34,6 +35,7 @@ const ImageButton = (props: ImageButtonProps) => {
           </div>
         )}
       </div>
+      <Space size={"small"} hideInWeb />
       <div className={styles.containerHelper}></div>
       <div className={styles.imageWrapper}>
         <ImageWrapper className={styles.image} src={props.image} backgroundColor={"#505050"} />

@@ -40,7 +40,7 @@ export default function Home() {
       
         <VideoPlayer title={content.home.title} />
         <Space size={"big"} maintainInMobile />
-        <Space size={"big"} maintainInMobile />
+        <Space size={"big"} />
         <ImageText image={content.home.firstImage}
           text={content.home.firstImageDesc}
           secondaryText={content.home.firstImageName}

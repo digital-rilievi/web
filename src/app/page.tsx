@@ -13,8 +13,6 @@ import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
 import PartnersList from "./components/PartnersList/PartnersList"
 import WhoWeAreWrapper from "./components/whoWeAreComponents/WhoWeAreWrapper/WhoWeAreWrapper"
 import ManualSliderWrapper from "./components/manualSliderComponents/ManualSliderWrapper/ManualSliderWrapper"
-import ImageWrapper from "./components/ImageWrapper/ImageWrapper"
-import BannerTitle from "./components/BannerTitle/BannerTitle"
 
 export default function Home() {
 

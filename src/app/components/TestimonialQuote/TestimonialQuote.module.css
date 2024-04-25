@@ -23,7 +23,16 @@
   padding-left: 1rem;
   padding-right: 1rem;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 2rem;
+}
+
+.imageColumnReversed {
+  flex: 0.8;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex-direction: column;
+  margin-left: 2rem;
 }
 
 .image {
@@ -121,11 +130,11 @@
 }
 
 .quote {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 200;
   line-height: 38px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: justify;
 }
 
 .altAlign {

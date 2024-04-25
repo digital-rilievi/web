@@ -20,7 +20,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
     return (
         <div className={styles.divContainer}>
             <div className={`${props.alt ? styles.rowContainerReversed : styles.rowContainer}`}>
-                <div className={styles.imageColumn}>
+                <div className={`${props.alt ? styles.imageColumnReversed : styles.imageColumn}`}>
                     <ImageWrapper src={props.imageSrc} className={styles.image} backgroundColor={"#3a3a3a"} />
                     <h3 className={`${styles.name} ${props.alt && styles.altAlign}`}>{props.name}</h3>
                     <br />
@@ -36,7 +36,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                         <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.icon} />
                         <div>
                             <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} />
-                            <span className={styles.quote}>{props.quote}</span>
+                            <div className={styles.quote}>{props.quote}</div>
                         </div>
                     </div>
                     <div style={{ "visibility": "hidden" }}>

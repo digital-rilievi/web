@@ -37,8 +37,13 @@ export default function Home() {
         <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>
           <NavBar invisible />
         </div>
-      
-        <VideoPlayer title={content.home.title} />
+
+        <div className={styles.visibleInMobile}>
+          <VideoPlayer title={content.home.title} videoStyle={{ width: '100%', height: '133.33vw', objectFit: "cover" }} />
+        </div>
+        <div className={styles.invisibleInMobile}>
+          <VideoPlayer title={content.home.title} videoStyle={{ width: '100%', height: 'auto' }} />
+        </div>
         <Space size={"big"} maintainInMobile />
         <Space size={"big"} />
         <ImageText image={content.home.firstImage}

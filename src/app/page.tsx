@@ -32,9 +32,9 @@ export default function Home() {
       <NavBar animateLogo />
       <ScrollIndicator />
       <div className={styles.content}>
-        <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>
+        {/* <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>
           <NavBar invisible />
-        </div>
+        </div> */}
 
         <div className={styles.visibleInMobile}>
           <VideoPlayer title={content.home.title} videoStyle={{ width: '100%', height: '133.33vw', objectFit: "cover" }} />

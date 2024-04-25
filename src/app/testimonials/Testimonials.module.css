@@ -1,0 +1,9 @@
+.invisibleInWeb {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .invisibleInWeb {
+        display: block;
+    }
+}

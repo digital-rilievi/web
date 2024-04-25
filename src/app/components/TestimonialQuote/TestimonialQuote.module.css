@@ -86,8 +86,9 @@
 .buttonColumn {
   flex: 0.5;
   display: flex;
+  padding-top: 2rem;
   flex-direction: column;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .button {
@@ -141,7 +142,16 @@
   text-align: end;
 }
 
+.invisible {
+  display: block;
+  visibility: hidden;
+}
+
 @media (max-width: 1024px) {
+
+.invisible {
+  display: none;
+}
 
   .rowContainer,
   .rowContainerReversed {
@@ -161,6 +171,11 @@
   }
 
 .imageColumn {
+  padding-bottom: 2rem;
+  margin-right: 0;
+}
+
+.imageColumnReversed {
   padding-bottom: 2rem;
   margin-right: 0;
 }

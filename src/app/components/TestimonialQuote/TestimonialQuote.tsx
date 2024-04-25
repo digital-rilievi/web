@@ -39,7 +39,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                             <div className={styles.quote}>{props.quote}</div>
                         </div>
                     </div>
-                    <div style={{ "visibility": "hidden" }}>
+                    <div className={styles.invisible}>
                         <h3 >{props.name}</h3>
                         <br />
                         <p>{props.description}</p>
@@ -50,9 +50,9 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                 {!props.alt && props.link &&
                     <div className={styles.buttonColumn}>
                         <div className={styles.button}>
-                                <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
+                                <CircularButton link={props.link} label={props.linkLabel} remainsInPage isSmallCircle />
                         </div>
-                        <div style={{ "visibility": "hidden" }}>
+                        <div className={styles.invisible}>
                             <h3 className={styles.name}>{props.name}</h3>
                             <br />
                             <p>{props.description}</p>

@@ -6,6 +6,7 @@ import content from 'content.json'
 import ScrollingText from 'app/components/ScrollingText/ScrollingText'
 import TestimonialQuote from 'app/components/TestimonialQuote/TestimonialQuote'
 import Space from 'app/components/Space/Space'
+import styles from './Testimonials.module.css'
 
 const Testimonials = () => {
   return (
@@ -27,7 +28,11 @@ const Testimonials = () => {
             linkLabel={person.linkLabel}
             company={person.company}
             alt={person.alt} />
-          <Space size='normal' />
+          <Space size='big' maintainInMobile />
+          <div className={styles.invisibleInWeb}>
+          <Space size='big' maintainInMobile />
+          <Space size='normal' maintainInMobile />
+          </div>
         </>
       ))}
       <Space size='big' />

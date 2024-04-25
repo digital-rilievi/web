@@ -24,7 +24,6 @@ const Navbar = (props: NavBarProps) => {
   useEffect(() => {
     // Function to handle user interaction
     const handleUserInteraction = () => {
-      console.log('User performed an interaction (scroll or click)')
       setAnimatedLogoNeeded(true)
     }
 

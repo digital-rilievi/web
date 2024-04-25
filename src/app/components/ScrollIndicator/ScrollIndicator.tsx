@@ -11,9 +11,6 @@ const ScrollIndicator = () => {
       const scrollPosition = window.scrollY
       const shouldShowIndicator = scrollPosition < 100 // Adjust this value based on your layout
 
-      console.log(scrollPosition)
-      console.log(shouldShowIndicator)
-
       setShowIndicator(shouldShowIndicator)
     }
 

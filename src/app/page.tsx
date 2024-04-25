@@ -43,7 +43,7 @@ export default function Home() {
           <VideoPlayer title={content.home.title} videoStyle={{ width: '100%', height: 'auto' }} />
         </div>
         <Space size={"big"} maintainInMobile />
-        <Space size={"big"} />
+        <Space size={"normal"} />
         <div style={{ marginLeft: '6%', marginRight: '6%' }}>
           <ImageText image={content.home.firstImage}
             text={content.home.firstImageDesc}
@@ -52,7 +52,7 @@ export default function Home() {
             blueCircle
           />
         </div>
-        <Space size={"big"} maintainInMobile />
+        <Space size={"big"} />
         <div style={{ marginLeft: '6%', marginRight: '6%' }}>
           <ImageButton
             image={content.home.secondImage}
@@ -62,7 +62,7 @@ export default function Home() {
             remainsInPage={true}
           />
         </div>
-        <Space size={"big"} maintainInMobile />
+        <Space size={"big"} />
         <Space maintainInMobile />
         <ManualSliderWrapper slides={weDealWithList} />
         <Space size={"big"} maintainInMobile />

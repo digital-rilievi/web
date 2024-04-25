@@ -22,7 +22,7 @@ const ImageText = (props: ImageTextProps) => {
   return (
     <div className={`${styles.container} ${props.inverted ? '' : styles.inverted}`}>
       <div className={styles.containerHelper}></div>
-      <ImageWrapper className={styles.image} src={props.image} backgroundColor={"#767676"} />
+      <ImageWrapper className={`${styles.image} ${props.secondaryText && styles.invisibleInMobile}`} src={props.image} backgroundColor={"#767676"} />
       <div className={`${styles.content} ${props.blueCircle ? styles.contentWithCircle : ''}`}>
         {props.title && (
           <h2 className={styles.title}>
@@ -34,6 +34,7 @@ const ImageText = (props: ImageTextProps) => {
             <p>{props.text}</p>
           </div>
         )}
+        <ImageWrapper className={`${styles.image} ${props.secondaryText ? styles.visibleInMobile : styles.invisible}`} src={props.image} backgroundColor={"#767676"} />
         <Space size={"small"} />
         {props.duration1 && (
           <h2 className={styles.duration}>

@@ -35,7 +35,6 @@ const ImageButton = (props: ImageButtonProps) => {
           </div>
         )}
       </div>
-      <Space size={"small"} hideInWeb />
       <div className={styles.containerHelper}></div>
       <div className={styles.imageWrapper}>
         <ImageWrapper className={styles.image} src={props.image} backgroundColor={"#505050"} />

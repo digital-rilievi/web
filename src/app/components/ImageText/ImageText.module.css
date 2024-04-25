@@ -62,6 +62,7 @@
   object-fit: cover;
   position: relative; /* Add position: relative */
   z-index: 2; /* Set z-index higher than BlueCircle */
+  padding-bottom: 1rem;
 }
 
 .blueCircleContainer {
@@ -87,7 +88,18 @@
 .secondaryText {
   white-space: pre-line;
 }
-  
+
+.invisibleInMobile {
+}
+
+.invisible {
+  display: none !important;
+}
+
+.visibleInMobile {
+  display: none !important;
+}
+
   /* Media query for bigger layout */
   @media (max-width: 1920px) {
     .containerHelper {
@@ -124,6 +136,15 @@
 
   /* Media query for mobile layout */
   @media (max-width: 1024px) {
+
+  .invisibleInMobile {
+    display: none !important;
+  }
+
+  .visibleInMobile {
+    display: block !important;
+  }
+
   .container,
   .text,
   .title {
@@ -163,6 +184,7 @@
   }
 
   .secondaryText {
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 

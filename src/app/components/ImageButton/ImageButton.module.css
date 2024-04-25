@@ -5,7 +5,6 @@
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 2rem;
   position: relative; /* Add position: relative to establish stacking context */
 }
 
@@ -46,7 +45,7 @@
 .imageWrapper {
   max-width: 45%;
   max-height: 100%;
-  margin-right: 20px;
+  margin-right: 0px;
   object-fit: cover;
 }
 
@@ -107,6 +106,10 @@
   .text {
     flex-direction: column; /* Switch to a vertical layout for smaller screens */
     align-items: flex-start; /* Align items to the top left in mobile layout */
+  }
+
+  .container {
+    padding: 5%;
   }
 
   .image {

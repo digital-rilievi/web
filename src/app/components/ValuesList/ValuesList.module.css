@@ -12,9 +12,10 @@
     padding: 3rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    margin-left: 2rem;
     margin-right: 4rem;
     margin-bottom: 2rem;
+    margin-left: 5%;
+    padding-left: 0;
 }
 
 .title {

@@ -256,6 +256,8 @@
     place-self: center;
     padding-left: 0;
     aspect-ratio: 1 / 1;
+    max-height: 140px;
+    max-width: 140px;
   }
 
   .preTitle {
@@ -319,6 +321,19 @@
 
   .invisibleImage {
     padding-bottom: 10rem;
+  }
+}
+
+@media ((min-width: 1240px) and (max-width: 1260px)) {
+  .preTitle {
+    padding-right: 0px;
+  }
+}
+
+@media ((min-width: 1000px) and (max-width: 1240px)) {
+
+  .title {
+    font-size: 38px;
   }
 }
 

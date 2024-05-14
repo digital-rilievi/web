@@ -91,6 +91,7 @@ export default function Home() {
         <Space size={"big"} hideInWeb />
         <BlueTextCta text={content.home.areYouInterested} label={content.home.areYouInterestedLabel} link={content.home.areYouInterestedLink} />
         <Space size={"big"} maintainInMobile />
+        <Space size={"big"} hideInWeb />
         <Space maintainInMobile />
         <PartnersList
           className={styles.partnersList}

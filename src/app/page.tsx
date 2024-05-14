@@ -1,4 +1,5 @@
 'use client'
+import { useState, useEffect } from "react"
 import NavBar from "./components/Navbar/Navbar"
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer"
 import styles from "./page.module.css"
@@ -15,8 +16,10 @@ import WhoWeAreWrapper from "./components/whoWeAreComponents/WhoWeAreWrapper/Who
 import ManualSliderWrapper from "./components/manualSliderComponents/ManualSliderWrapper/ManualSliderWrapper"
 
 export default function Home() {
+  const [isVertical, setIsVertical] = useState(true)
 
-  var weDealWithList: React.ReactNode[] = content.home.weDealWith.map((deal, index) => (
+  // Your image array here
+  const weDealWithList: React.ReactNode[] = content.home.weDealWith.map((deal, index) => (
     <WeDealWith
       key={index}
       index={index}
@@ -26,6 +29,21 @@ export default function Home() {
       text={deal.text}
       link={deal.link} />
   ))
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isVerticalOrientation = window.innerHeight > window.innerWidth * 0.75 // height is > 3/4 width
+      // if is not vertical it sets video to full screen height
+      setIsVertical(isVerticalOrientation)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    // Set initial state
+    handleResize()
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   return (
     <main>
@@ -40,7 +58,10 @@ export default function Home() {
           <VideoPlayer title={content.home.title} videoStyle={{ width: '100%', height: '133.33vw', objectFit: "cover" }} />
         </div>
         <div className={styles.invisibleInMobile}>
-          <VideoPlayer title={content.home.title} videoStyle={{ width: '100%', height: 'auto' }} />
+          <VideoPlayer
+            title={content.home.title}
+            videoStyle={isVertical ? { width: '100%', height: 'auto' } : { width: '100%', height: '100vh', objectFit: 'cover' }}
+          />
         </div>
         <Space size={"big"} maintainInMobile />
         <Space size={"normal"} />

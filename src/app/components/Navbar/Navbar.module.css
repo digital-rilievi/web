@@ -39,7 +39,7 @@
 }
 
 .logo {
-  width: 90px;
+  width: 100px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -59,6 +59,7 @@
   border-radius: 8px;
   padding: 12px 18px;
   display: flex;
+  font-size: 18px;
   align-items: center;
 }
 
@@ -66,6 +67,7 @@
   border-radius: 5px;
   padding: 12px 18px;
   display: flex;
+  font-size: 18px;
   align-items: center;
 }
 
@@ -102,7 +104,7 @@ position: fixed;
 
   }
   100% {
-    width: 90px; /* Final size, adjust as needed */
+    width: 100px; /* Final size, adjust as needed */
     visibility: visible;
   }
 }
@@ -111,6 +113,13 @@ position: fixed;
   to {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@media (min-width: 1580px) {
+  .selected,
+  .unselected {
+      font-size: 22px;
   }
 }
 
@@ -167,11 +176,11 @@ position: fixed;
   }
 
     .logo {
-    width: 90px;
+    width: 100px;
   }
 
   .bigLogo {
-    width: 90px;
+    width: 100px;
   }
 
   /* Animation for the logo */
@@ -182,7 +191,7 @@ position: fixed;
 
   }
   100% {
-    width: 90px; /* Final size, adjust as needed */
+    width: 100px; /* Final size, adjust as needed */
     visibility: visible;
   }
 }
@@ -192,14 +201,15 @@ position: fixed;
 @media (max-width: 800px) {
   .navbar {
     padding: 0.5rem;
+    padding-bottom: 1rem;
   }
 
   .logo {
-    width: 75px;
+    width: 80px;
   }
 
   .bigLogo {
-    width: 75px;
+    width: 80px;
   }
 
   .mobileMenuIcon {
@@ -215,7 +225,7 @@ position: fixed;
 
   }
   100% {
-    width: 75px; /* Final size, adjust as needed */
+    width: 80px; /* Final size, adjust as needed */
     visibility: visible;
   }
 }

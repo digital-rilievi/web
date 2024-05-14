@@ -5,7 +5,8 @@
     bottom: 1%;
     right: 0%;
     left: 0%;
-    height: 80px;
+    height: 60px;
+    padding-bottom: 1rem;
     width: 100%;
     z-index: 10000;
     opacity: 1;

@@ -47,8 +47,8 @@
 
 .scroll div img {
   display: inline-flex;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   transition: 0.5s;
 }
 
@@ -73,7 +73,7 @@
 
 .partnersTitle {
   padding: 0.5rem;
-  padding-left: 10%;
+  padding-left: 4%;
   font-size: 20px;
   line-height: unset;
 }

@@ -11,7 +11,6 @@ import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
 import ValuesList from 'app/components/ValuesList/ValuesList'
 import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
 import ImageWrapper from 'app/components/ImageWrapper/ImageWrapper'
-import ManualSliderWrapper from 'app/components/manualSliderComponents/ManualSliderWrapper/ManualSliderWrapper'
 
 const ChiSiamo = () => {
 

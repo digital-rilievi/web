@@ -87,12 +87,19 @@
   align-self: center;
 }
 
-.button {
+.buttonWrapper {
   flex: 0.5;
   display: flex;
   justify-content: center;
-      align-self: center;
+  padding-top: 2rem;
+  align-self: start;
   align-items: flex-start; /* Align items to the start (top) of the container */
+}
+
+.button {
+  font-size: 22px;
+  color: #0038FF;
+  font-weight: bold;
 }
 
 .quoteInvisibleIcon {
@@ -184,6 +191,12 @@
   .icon {
     width: 40px;
     height: auto;
+  }
+
+  .button {
+    font-size: 18px;
+    color: #0038FF;
+    font-weight: bold;
   }
 
   .quote {

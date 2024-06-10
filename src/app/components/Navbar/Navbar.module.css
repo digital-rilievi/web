@@ -88,6 +88,8 @@
 position: fixed;
   z-index: 1002;
   padding: 1rem;
+  padding-left: 0;
+  margin-left: 2rem;
   width: 100vh; /* Initial size, full width */
   max-width: 150rem;
   visibility: hidden;
@@ -189,8 +191,7 @@ position: fixed;
   0% {
     width: 100vh; /* Initial size, full width */
     max-width: 150rem;
-
-  }
+    }
   100% {
     width: 100px; /* Final size, adjust as needed */
     visibility: visible;

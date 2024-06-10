@@ -65,24 +65,20 @@ export default function Home() {
         </div>
         <Space size={"big"} maintainInMobile />
         <Space size={"normal"} />
-        <div style={{ marginLeft: '6%', marginRight: '6%' }}>
-          <ImageText image={content.home.firstImage}
-            text={content.home.firstImageDesc}
-            secondaryText={content.home.firstImageName}
-            inverted
-            blueCircle
-          />
-        </div>
+        <ImageText image={content.home.firstImage}
+          text={content.home.firstImageDesc}
+          secondaryText={content.home.firstImageName}
+          inverted
+          blueCircle
+        />
         <Space size={"big"} />
-        <div style={{ marginLeft: '6%', marginRight: '6%' }}>
-          <ImageButton
-            image={content.home.secondImage}
-            text={content.home.secondImageDesc}
-            name={content.home.secondImageName}
-            buttonLabel={content.home.secondImageButtonLabel}
-            remainsInPage={true}
-          />
-        </div>
+        <ImageButton
+          image={content.home.secondImage}
+          text={content.home.secondImageDesc}
+          name={content.home.secondImageName}
+          buttonLabel={content.home.secondImageButtonLabel}
+          remainsInPage={true}
+        />
         <Space size={"big"} />
         <Space maintainInMobile />
         <ManualSliderWrapper slides={weDealWithList} />

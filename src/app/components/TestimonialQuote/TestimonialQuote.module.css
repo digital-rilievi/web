@@ -16,8 +16,6 @@
 .imageColumn {
   flex: 0.8;
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
   flex-direction: column;
   margin-right: 2rem;
 }
@@ -25,8 +23,6 @@
 .imageColumnReversed {
   flex: 0.8;
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
   flex-direction: column;
   margin-left: 2rem;
 }
@@ -65,7 +61,6 @@
 .rowReversed {
   flex: 2;
   display: flex;
-  padding-left: 1rem;
   flex-direction: row;
   align-items: center;
   margin-right: 20px;

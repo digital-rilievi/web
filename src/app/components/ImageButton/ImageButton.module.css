@@ -24,10 +24,6 @@
   justify-content: center;
 }
 
-.containerHelper {
-  flex: 0.1;
-}
-
 .text {
   align-self: center;
   text-align: center;

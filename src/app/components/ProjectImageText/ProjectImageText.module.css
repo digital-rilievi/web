@@ -6,7 +6,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 2rem;
-  padding-left: 1rem;
   position: relative; /* Add position: relative to establish stacking context */
 }
 
@@ -25,10 +24,6 @@
   padding-bottom: 0rem;
   position: relative; /* Add position: relative */
   z-index: 2; /* Set z-index higher than BlueCircle */
-}
-
-.containerHelper {
-  flex: 0.1;
 }
 
 .title {

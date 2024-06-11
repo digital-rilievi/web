@@ -21,7 +21,6 @@ interface ProjectImageText {
 const ProjectImageText = (props: ProjectImageText) => {
   return (
     <div className={`${styles.container} ${props.inverted ? '' : styles.inverted}`}>
-      <div className={styles.containerHelper}></div>
       {props.title && (
           <h2 className={`${styles.title} ${styles.visibleInMobile}`}>
             {props.title}
@@ -71,7 +70,6 @@ const ProjectImageText = (props: ProjectImageText) => {
           </div>
         </div>
       )}
-      <div className={styles.containerHelper}></div>
     </div>
   )
 }

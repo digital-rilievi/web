@@ -64,6 +64,7 @@ export default function Home() {
           />
         </div>
         <Space size={"big"} maintainInMobile />
+        <Space maintainInMobile />
         <Space size={"normal"} />
         <ImageText image={content.home.firstImage}
           text={content.home.firstImageDesc}

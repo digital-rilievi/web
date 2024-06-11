@@ -77,7 +77,7 @@
 /* Media query for bigger layout */
 @media (min-width: 1920px) {
   .carouselImage {
-    margin-left: 6%;
+    margin-left: 2rem;
     height: 820px;
     width: 85%;
   }

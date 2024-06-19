@@ -87,12 +87,11 @@
 .bigLogo {
 position: fixed;
   z-index: 1002;
-  padding: 1rem;
-  padding-left: 0;
-  margin-left: 2rem;
+  padding-top: 1rem;
   width: 100vh; /* Initial size, full width */
   max-width: 150rem;
   visibility: hidden;
+  padding-left: 2rem;
 }
 
 .logoAnimated {
@@ -129,74 +128,74 @@ position: fixed;
 /* Media query for mobile big screen */
 @media (max-width: 1000px) {
 
-  .navbar {
-    background-color: rgba(19, 19, 19, 0.3);
-    width: 100vw;
-    padding: 1rem;
+    .navbar {
+      background-color: rgba(19, 19, 19, 0.3);
+      width: 100vw;
+      padding: 1rem;
+      }
+
+    .navbarMenuOpened {
+      background-color: #131313;
     }
 
-  .navbarMenuOpened {
-    background-color: #131313;
-  }
-
-  .mobileMenuMaskDeactivated {
-    mask: none;
-    background-color: #131313;
-  }
-
-  .navLinks {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Position below the sticky navigation bar */
-    right: 0;
-    width: 100%;
-    background-color: #131313;
-    z-index: 1;
-  }
-
-  .navLinks.showMobileMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 2rem;
-  }
-
-  .navLinks {
-    width: 100%;
-    text-align: center;
-    padding: 0.2rem;
-  }
-
-  .mobileMenuIcon {
-    display: block;
-    padding-top: 0.5rem;
-    margin-bottom: 2rem;
-    padding-right: 1rem;
-    width: 60px;
-    height: 60px;
-  }
-
-    .logo {
-    width: 100px;
-  }
-
-  .bigLogo {
-    width: 100px;
-  }
-
-  /* Animation for the logo */
-@keyframes logoAnimation {
-  0% {
-    width: 100vh; /* Initial size, full width */
-    max-width: 150rem;
+    .mobileMenuMaskDeactivated {
+      mask: none;
+      background-color: #131313;
     }
-  100% {
-    width: 100px; /* Final size, adjust as needed */
-    visibility: visible;
+
+    .navLinks {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Position below the sticky navigation bar */
+      right: 0;
+      width: 100%;
+      background-color: #131313;
+      z-index: 1;
+    }
+
+    .navLinks.showMobileMenu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+
+    .navLinks {
+      width: 100%;
+      text-align: center;
+      padding: 0.2rem;
+    }
+
+    .mobileMenuIcon {
+      display: block;
+      padding-top: 0.5rem;
+      margin-bottom: 2rem;
+      padding-right: 1rem;
+      width: 60px;
+      height: 60px;
+    }
+
+      .logo {
+      width: 100px;
+    }
+
+    .bigLogo {
+      width: 100px;
+    }
+
+    /* Animation for the logo */
+  @keyframes logoAnimation {
+    0% {
+      width: 100vh; /* Initial size, full width */
+      max-width: 150rem;
+      }
+    100% {
+      width: 100px; /* Final size, adjust as needed */
+      visibility: visible;
+    }
   }
-}
 }
 
   /* Media query for mobile small screen */

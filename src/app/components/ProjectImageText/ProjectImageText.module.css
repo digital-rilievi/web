@@ -129,10 +129,6 @@
     align-items: flex-start; /* Align items to the top left in mobile layout */
   }
 
-  .image {
-    align-self: center;
-  }
-
   .content {
     flex-direction: column;
     padding-left: 0rem;
@@ -147,6 +143,7 @@
     margin-right: 0;
     margin-bottom: 1rem;
     padding: 0;
+    margin-left: 0;
   }
 
   .text {
@@ -173,8 +170,8 @@
 
   .image {
     max-width: 100%; /* Allow the image to take the full width in mobile layout */
-    margin-right: 0; /* Remove margin for mobile layout */
-    margin: 2rem;
+    align-self: center;
+    margin: 2rem 0;
   }
 
    .blueCircleWrapper {

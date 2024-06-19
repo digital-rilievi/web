@@ -9,12 +9,9 @@
     display: flex;
     min-height: 220px;
     align-items: center;
-    padding: 3rem;
+    margin: 2rem !important;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
     padding-left: 0;
 }
 

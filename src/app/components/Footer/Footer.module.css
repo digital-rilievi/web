@@ -91,7 +91,7 @@ line-height: 24px; /* 133.333% */
   .footer {
     min-height: 500px;
     height: auto;
-    padding-left: 4%;
+    padding-left: 2rem;
   }
 
   .spaceColumn {

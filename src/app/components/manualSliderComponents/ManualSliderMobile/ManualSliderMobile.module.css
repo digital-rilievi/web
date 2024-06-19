@@ -18,19 +18,11 @@
 .arrow {
   cursor: pointer;
   font-size: 24px;
-  margin: 4px;
   color: black;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  flex: 5;
-}
-
-.leftArrow {
-  margin: 4px;
-}
-
-.rightArrow {
-  margin: 4px;
+  margin: 0 !important;
+  width: 2rem;
 }
 
 .imageContainer {

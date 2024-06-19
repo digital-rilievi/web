@@ -103,10 +103,6 @@
     align-items: flex-start; /* Align items to the top left in mobile layout */
   }
 
-  .container {
-    padding: 5%;
-  }
-
   .image {
     align-self: center;
   }

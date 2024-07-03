@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  padding-left: 4rem;
+  padding-left: 2rem;
   padding-bottom: 30px;
   border-bottom: 1px solid #ccc; /* Add a bottom border for every third item */
 }
@@ -47,7 +47,7 @@
 
 .whoWeAreTitle {
   padding: 2rem;
-  padding-left: 4rem;
+  padding-left: 2rem;
   font-size: 64px;
   font-style: normal;
   font-weight: 400;

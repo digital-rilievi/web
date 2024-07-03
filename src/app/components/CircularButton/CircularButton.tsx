@@ -7,7 +7,7 @@ interface CircularButtonProps {
     link: string,
     label?: string,
     remainsInPage?: boolean,
-    isWeDealWith?: boolean
+    isSmallCircle?: boolean
 }
 const CircularButton = (props: CircularButtonProps) => {
     return (
@@ -15,13 +15,13 @@ const CircularButton = (props: CircularButtonProps) => {
             {
                 props.remainsInPage ? (
                     <Link href={props.link}>
-                        <button className={`${styles.circularButton} ${props.isWeDealWith ? styles.smallCircle : ''}`}>
+                        <button className={`${styles.circularButton} ${props.isSmallCircle ? styles.smallCircle : ''}`}>
                             <span>{props.label ? props.label : content.defaultButtonsValue}</span>
                         </button>
                     </Link>
                 ) :
                     <a href={props.link} target="_blank">
-                        <button className={`${styles.circularButton} ${props.isWeDealWith ? styles.smallCircle : ''}`}>
+                        <button className={`${styles.circularButton} ${props.isSmallCircle ? styles.smallCircle : ''}`}>
                             <span>{props.label ? props.label : content.defaultButtonsValue}</span>
                         </button>
                     </a>

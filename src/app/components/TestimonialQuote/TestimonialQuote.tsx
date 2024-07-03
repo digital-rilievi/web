@@ -1,8 +1,8 @@
 import React from 'react'
-import CircularButton from '../CircularButton/CircularButton'
 import styles from './TestimonialQuote.module.css'
 import Image from 'next/image'
 import ImageWrapper from '../ImageWrapper/ImageWrapper'
+import Link from '../../../../node_modules/next/link'
 
 interface TestimonialQuoteProps {
     imageSrc: string,
@@ -20,7 +20,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
     return (
         <div className={styles.divContainer}>
             <div className={`${props.alt ? styles.rowContainerReversed : styles.rowContainer}`}>
-                <div className={styles.imageColumn}>
+                <div className={`${props.alt ? styles.imageColumnReversed : styles.imageColumn}`}>
                     <ImageWrapper src={props.imageSrc} className={styles.image} backgroundColor={"#3a3a3a"} />
                     <h3 className={`${styles.name} ${props.alt && styles.altAlign}`}>{props.name}</h3>
                     <br />
@@ -36,31 +36,28 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                         <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.icon} />
                         <div>
                             <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} />
-                            <span className={styles.quote}>{props.quote}</span>
+
+                            <div className={styles.buttonColumn}>
+                                <div className={styles.quote}>{props.quote}</div>
+                                {props.link &&
+                                    <>
+                                        <div className={styles.buttonWrapper}>
+                                            <Link href={props.link}>
+                                                <div className={styles.button}>{props.linkLabel}</div>
+                                            </Link>
+                                        </div>
+                                        <div className={styles.invisible}>
+                                            <h3 className={styles.name}>{props.name}</h3>
+                                            <br />
+                                            <p>{props.description}</p>
+                                            <p>{props.company}</p>
+                                        </div>
+                                    </>
+                                }
+                            </div>
                         </div>
-                    </div>
-                    <div style={{ "visibility": "hidden" }}>
-                        <h3 >{props.name}</h3>
-                        <br />
-                        <p>{props.description}</p>
-                        <p>{props.company}</p>
                     </div>
                 </div>
-
-                {!props.alt && props.link &&
-                    <div className={styles.buttonColumn}>
-                        <div className={styles.button}>
-                                <CircularButton link={props.link} label={props.linkLabel} remainsInPage />
-                        </div>
-                        <div style={{ "visibility": "hidden" }}>
-                            <h3 className={styles.name}>{props.name}</h3>
-                            <br />
-                            <p>{props.description}</p>
-                            <p>{props.company}</p>
-                        </div>
-                    </div>
-                }
-
             </div>
 
         </div>

@@ -3,9 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 2rem;
+  margin: 2rem;
   position: relative; /* Add position: relative to establish stacking context */
 }
 
@@ -26,10 +24,6 @@
   justify-content: center;
 }
 
-.containerHelper {
-  flex: 0.1;
-}
-
 .text {
   align-self: center;
   text-align: center;
@@ -46,7 +40,7 @@
 .imageWrapper {
   max-width: 45%;
   max-height: 100%;
-  margin-right: 20px;
+  margin-right: 0px;
   object-fit: cover;
 }
 

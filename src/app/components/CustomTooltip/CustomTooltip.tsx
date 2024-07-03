@@ -27,7 +27,7 @@ const CustomTooltip = (props: TooltipProps) => {
                             <h1 className={styles.nameForMobile}>{toPascalCase(props.name)}</h1>
                         )}
                         {props.role && (
-                            <h1>{props.role}</h1>
+                            <h1 className={styles.role}>{props.role}</h1>
                         )}
                     </div>
                 </div>

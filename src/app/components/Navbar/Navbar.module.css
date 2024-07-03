@@ -7,7 +7,6 @@
   justify-content: end;
   align-items: flex-start;
   padding: 1rem;
-  padding-bottom: 4rem;
   color: #fff;
   backdrop-filter: blur(8px);
   background-color: unset;
@@ -15,7 +14,6 @@
   max-width: 150rem;
   margin-left: auto;
   margin-right: auto;
-  mask: linear-gradient(to top, transparent, black 45%);
 }
 
 
@@ -28,21 +26,19 @@
   justify-content: end;
   align-items: flex-start;
   padding: 1rem;
-  padding-bottom: 4rem;
   color: #fff;
   backdrop-filter: blur(8px);
   z-index: 1000;
   max-width: 150rem;
   margin-left: auto;
   margin-right: auto;
-  mask: linear-gradient(to top, transparent, black 45%);
 }
 
 .logo {
-  width: 90px;
+  width: 100px;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 1rem;
   z-index: 1002;
   padding: 1rem;
 }
@@ -58,14 +54,21 @@
   background: radial-gradient(50% 50% at 50% 50%, rgba(0, 56, 255, 0.75) 0%, rgba(0, 56, 255, 0.0) 100%);
   border-radius: 8px;
   padding: 12px 18px;
+  height: 60px;
+  background-size: 70px 70px;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
+  font-size: 18px;
   align-items: center;
 }
 
 .unselected {
   border-radius: 5px;
   padding: 12px 18px;
+  height: 60px;
   display: flex;
+  font-size: 18px;
   align-items: center;
 }
 
@@ -84,10 +87,11 @@
 .bigLogo {
 position: fixed;
   z-index: 1002;
-  padding: 1rem;
+  padding-top: 1rem;
   width: 100vh; /* Initial size, full width */
   max-width: 150rem;
   visibility: hidden;
+  padding-left: 2rem;
 }
 
 .logoAnimated {
@@ -102,7 +106,7 @@ position: fixed;
 
   }
   100% {
-    width: 90px; /* Final size, adjust as needed */
+    width: 100px; /* Final size, adjust as needed */
     visibility: visible;
   }
 }
@@ -114,92 +118,99 @@ position: fixed;
   }
 }
 
+@media (min-width: 1580px) {
+  .selected,
+  .unselected {
+      font-size: 22px;
+  }
+}
+
 /* Media query for mobile big screen */
 @media (max-width: 1000px) {
 
-  .navbar {
-    background-color: rgba(19, 19, 19, 0.3);
-    width: 100vw;
-    padding: 1rem;
+    .navbar {
+      background-color: rgba(19, 19, 19, 0.3);
+      width: 100vw;
+      padding: 1rem;
+      }
+
+    .navbarMenuOpened {
+      background-color: #131313;
     }
 
-  .navbarMenuOpened {
-    background-color: #131313;
-  }
+    .mobileMenuMaskDeactivated {
+      mask: none;
+      background-color: #131313;
+    }
 
-  .mobileMenuMaskDeactivated {
-    mask: none;
-    background-color: #131313;
-  }
+    .navLinks {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Position below the sticky navigation bar */
+      right: 0;
+      width: 100%;
+      background-color: #131313;
+      z-index: 1;
+    }
 
-  .navLinks {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Position below the sticky navigation bar */
-    right: 0;
-    width: 100%;
-    background-color: #131313;
-    z-index: 1;
-  }
+    .navLinks.showMobileMenu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
 
-  .navLinks.showMobileMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 2rem;
-  }
+    .navLinks {
+      width: 100%;
+      text-align: center;
+      padding: 0.2rem;
+    }
 
-  .navLinks {
-    width: 100%;
-    text-align: center;
-    padding: 0.2rem;
-  }
+    .mobileMenuIcon {
+      display: block;
+      padding-top: 0.5rem;
+      margin-bottom: 2rem;
+      padding-right: 1rem;
+      width: 60px;
+      height: 60px;
+    }
 
-  .mobileMenuIcon {
-    display: block;
-    padding-top: 0.5rem;
-    margin-bottom: 2rem;
-    padding-right: 1rem;
-    width: 60px;
-    height: 60px;
-  }
+      .logo {
+      width: 100px;
+    }
 
-    .logo {
-    width: 90px;
-  }
+    .bigLogo {
+      width: 100px;
+    }
 
-  .bigLogo {
-    width: 90px;
+    /* Animation for the logo */
+  @keyframes logoAnimation {
+    0% {
+      width: 100vh; /* Initial size, full width */
+      max-width: 150rem;
+      }
+    100% {
+      width: 100px; /* Final size, adjust as needed */
+      visibility: visible;
+    }
   }
-
-  /* Animation for the logo */
-@keyframes logoAnimation {
-  0% {
-    width: 100vh; /* Initial size, full width */
-    max-width: 150rem;
-
-  }
-  100% {
-    width: 90px; /* Final size, adjust as needed */
-    visibility: visible;
-  }
-}
 }
 
   /* Media query for mobile small screen */
 @media (max-width: 800px) {
   .navbar {
     padding: 0.5rem;
+    padding-bottom: 0;
   }
 
   .logo {
-    width: 75px;
+    width: 80px;
   }
 
   .bigLogo {
-    width: 75px;
+    width: 80px;
   }
 
   .mobileMenuIcon {
@@ -215,7 +226,7 @@ position: fixed;
 
   }
   100% {
-    width: 75px; /* Final size, adjust as needed */
+    width: 80px; /* Final size, adjust as needed */
     visibility: visible;
   }
 }

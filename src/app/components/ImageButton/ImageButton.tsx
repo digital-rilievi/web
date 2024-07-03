@@ -19,7 +19,6 @@ interface ImageButtonProps {
 const ImageButton = (props: ImageButtonProps) => {
   return (
     <div className={`${styles.container} ${props.inverted ? styles.inverted : ''}`}>
-      <div className={styles.containerHelper}></div>
       <div className={`${styles.content} ${props.blueCircle ? styles.contentWithCircle : ''}`}>
         {props.text && (
           <h2 className={styles.text}>
@@ -35,8 +34,6 @@ const ImageButton = (props: ImageButtonProps) => {
           </div>
         )}
       </div>
-      <Space size={"small"} hideInWeb />
-      <div className={styles.containerHelper}></div>
       <div className={styles.imageWrapper}>
         <ImageWrapper className={styles.image} src={props.image} backgroundColor={"#505050"} />
         {props.name && (

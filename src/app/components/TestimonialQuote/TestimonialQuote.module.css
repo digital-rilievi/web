@@ -2,9 +2,7 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
-  padding: 6rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .rowContainerReversed {
@@ -12,18 +10,21 @@
   flex-direction: row-reverse;
   align-items: flex-start;
   margin-bottom: 20px;
-  padding: 6rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .imageColumn {
   flex: 0.8;
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 2rem;
+}
+
+.imageColumnReversed {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
 }
 
 .image {
@@ -60,7 +61,6 @@
 .rowReversed {
   flex: 2;
   display: flex;
-  padding-left: 1rem;
   flex-direction: row;
   align-items: center;
   margin-right: 20px;
@@ -77,16 +77,24 @@
 .buttonColumn {
   flex: 0.5;
   display: flex;
+  padding-top: 2rem;
   flex-direction: column;
-  align-self: flex-end;
+  align-self: center;
 }
 
-.button {
+.buttonWrapper {
   flex: 0.5;
   display: flex;
   justify-content: center;
-      align-self: center;
+  padding-top: 2rem;
+  align-self: start;
   align-items: flex-start; /* Align items to the start (top) of the container */
+}
+
+.button {
+  font-size: 22px;
+  color: #0038FF;
+  font-weight: bold;
 }
 
 .quoteInvisibleIcon {
@@ -100,16 +108,16 @@
 .desc {
   display: flex;
   flex-direction: row;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   visibility: hidden;
 }
 
 .descReversed {
   display: flex;
   flex-direction: row-reverse;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .invisibleButton {
@@ -121,18 +129,26 @@
 }
 
 .quote {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 200;
   line-height: 38px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 .altAlign {
   text-align: end;
 }
 
+.invisible {
+  display: block;
+  visibility: hidden;
+}
+
 @media (max-width: 1024px) {
+
+.invisible {
+  display: none;
+}
 
   .rowContainer,
   .rowContainerReversed {
@@ -140,8 +156,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .row,
@@ -156,6 +172,11 @@
   margin-right: 0;
 }
 
+.imageColumnReversed {
+  padding-bottom: 2rem;
+  margin-right: 0;
+}
+
   .image {
     width: 50vw;
     height: 100%;
@@ -165,6 +186,12 @@
   .icon {
     width: 40px;
     height: auto;
+  }
+
+  .button {
+    font-size: 18px;
+    color: #0038FF;
+    font-weight: bold;
   }
 
   .quote {

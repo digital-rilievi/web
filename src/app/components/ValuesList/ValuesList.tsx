@@ -37,8 +37,6 @@ const ValuesList = (props: ValuesListProps) => {
           // Find the index of the item that enters the area
           const newItemIndex = props.items.findIndex((_, index) => {
             const itemOffsetTop = document.getElementById(`blurredBall-${index}`)?.offsetTop || 0;
-            console.log("offset: " + itemOffsetTop)
-            console.log("is in it: " + (scrollPosition + startArea < itemOffsetTop && itemOffsetTop < scrollPosition + endArea))
             return scrollPosition + startArea < itemOffsetTop && itemOffsetTop < scrollPosition + endArea;
           });
     

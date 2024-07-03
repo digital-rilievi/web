@@ -11,7 +11,6 @@ import ImagesCarousel from 'app/components/ImagesCarousel/ImagesCarousel'
 import ValuesList from 'app/components/ValuesList/ValuesList'
 import BlueTextCta from 'app/components/BlueTextCta/BlueTextCta'
 import ImageWrapper from 'app/components/ImageWrapper/ImageWrapper'
-import ManualSliderWrapper from 'app/components/manualSliderComponents/ManualSliderWrapper/ManualSliderWrapper'
 
 const ChiSiamo = () => {
 
@@ -29,14 +28,18 @@ const ChiSiamo = () => {
       <Space size={"big"} />
       <Space size={"big"} maintainInMobile />
       <ValuesList items={content['chi-siamo'].values} />
-      <Space size={"big"} />
+      <div className={styles.invisibleInMobile}>
+        <Space size={"big"} />
+      </div>
       <Space size={"big"} maintainInMobile />
       <ImagesCarousel className={styles.invisibleInMobile} slides={content['chi-siamo'].carousel} />
       {/* <ManualSliderWrapper className={styles.visibleInMobile} slides={content['chi-siamo'].carousel.map((image, index) => (
         <ImageWrapper key={index} imagestyle={styles.carouselImage} src={image} backgroundColor={"#373737"} />
       ))} />*/}
-      <Space size={"big"} />
-      <Space size={"big"} />
+      <div className={styles.invisibleInMobile}>
+        <Space size={"big"} />
+        <Space size={"big"} />
+      </div>
       <WhoWeAreWrapper />
       <Space size={"big"} maintainInMobile />
       <Space size={"big"} />

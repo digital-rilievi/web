@@ -17,6 +17,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  // to hide console logs in production (remove this two lines to restore logs)
+
+  console.warn = () => {}
+  console.error = () => {}
+
   return (
     <html lang="en">
       <head>

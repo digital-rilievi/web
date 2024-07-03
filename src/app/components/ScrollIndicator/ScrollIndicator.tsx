@@ -11,9 +11,6 @@ const ScrollIndicator = () => {
       const scrollPosition = window.scrollY
       const shouldShowIndicator = scrollPosition < 100 // Adjust this value based on your layout
 
-      console.log(scrollPosition)
-      console.log(shouldShowIndicator)
-
       setShowIndicator(shouldShowIndicator)
     }
 
@@ -26,7 +23,7 @@ const ScrollIndicator = () => {
 
   return (
       <>
-      <Image className={`${styles.scrollIndicator} ${showIndicator ? '' : styles.hidden}`} src={'assets/extras/expand_more.svg'} alt="Image" width="1" height="1" unoptimized={true} />
+      <Image className={`${styles.scrollIndicator} ${showIndicator ? '' : styles.hidden}`} src={'assets/extras/old-expand-more.svg'} alt="Image" width="1" height="1" unoptimized={true} />
       </>
   )
 }

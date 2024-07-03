@@ -66,6 +66,13 @@
 .nameForMobile {
   font-size: 22px;
   padding-bottom: 8px;
+  padding-left: 8px;
+  white-space: pre-wrap;
+}
+
+.role {
+  white-space: pre-wrap;
+  padding-left: 8px;
 }
 
 @media(max-width: 1024px) {

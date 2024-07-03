@@ -43,7 +43,7 @@ const WeDealWith = (props: WeDealWithProps) => {
             </h2>
             {props.link && (
               <div className={`${styles.circularButtonWrapper} ${styles.mobileCircular}`}>
-                <CircularButton link={props.link} label={props.linkLabel} remainsInPage isWeDealWith />
+                <CircularButton link={props.link} label={props.linkLabel} remainsInPage isSmallCircle />
               </div>
             )}
           </div>

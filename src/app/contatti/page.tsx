@@ -25,18 +25,18 @@ const Contatti = () => {
           <p className={styles.smallText}>{content.contatti.addressLine3}</p>
           <br />
           <p className={styles.smallText}>
-            _tel <a href={`tel:${content.contatti.phone}`} style={{ textDecoration: 'underline' }}>
+            Telefono <a href={`tel:${content.contatti.phone}`} style={{ textDecoration: 'underline' }}>
               {content.contatti.phone}
             </a>
           </p>
           <p className={styles.smallText}>
-            _fax <a href={`tel:${content.contatti.fax}`} style={{ textDecoration: 'underline' }}>
+            Fax <a href={`tel:${content.contatti.fax}`} style={{ textDecoration: 'underline' }}>
               {content.contatti.fax}
             </a>
           </p>
           <br />
-          <p className={styles.smallText}>_email <a href={`mailto:${content.contatti.email}`} style={{ textDecoration: 'underline' }}>{content.contatti.email}</a></p>
-          <p className={styles.smallText}>_pec <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a></p>
+          <p className={styles.smallText}>Email <a href={`mailto:${content.contatti.email}`} style={{ textDecoration: 'underline' }}>{content.contatti.email}</a></p>
+          <p className={styles.smallText}>PEC <a href={`mailto:${content.contatti.pec}`} style={{ textDecoration: 'underline' }}>{content.contatti.pec}</a></p>
           <br />
           <p className={styles.smallText}>P.IVA: {content.contatti.vat}</p>
           <p className={styles.smallText}>{content.contatti.legal}</p>

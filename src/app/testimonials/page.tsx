@@ -19,7 +19,6 @@ const Testimonials = () => {
       <Space size='big' maintainInMobile />
       {content.testimonials.people.map((person, index) => (
         <>
-          <Space size='normal' />
           <TestimonialQuote key={index}
             imageSrc={person.image}
             name={person.name}

@@ -15,7 +15,7 @@ const Contatti = () => {
         <Navbar invisible />
       </div>
       <ScrollingText text={content.contatti.title} />
-      <Space size="big" maintainInMobile />
+      <Space size='big' maintainInMobile />
       <div className={styles.container}>
         <div className={styles.text}>
           <h1 className={styles.name}>{content.contatti.companyName}</h1>

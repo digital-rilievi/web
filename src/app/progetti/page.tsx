@@ -29,7 +29,7 @@ const Progetti = () => {
                 <Navbar invisible />
             </div>
             <ScrollingText text={content.progetti.title} />
-            <Space />
+            <Space size='big' maintainInMobile />
             <div>
                 {projects.map((info: ProjectProps, index) => (
                     <>

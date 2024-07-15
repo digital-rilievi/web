@@ -25,7 +25,6 @@ const ChiSiamo = () => {
         <Navbar invisible />
       </div>
       <ScrollingText text={content['chi-siamo'].title} />
-      <Space size={"big"} />
       <Space size={"big"} maintainInMobile />
       <ValuesList items={content['chi-siamo'].values} />
       <div className={styles.invisibleInMobile}>

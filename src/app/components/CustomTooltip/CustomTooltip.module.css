@@ -60,7 +60,7 @@
 
 .nameColumnContainer {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .nameForMobile {
@@ -85,6 +85,22 @@
     padding-bottom: 2rem;
   }
 
+  .tooltipImage {
+    width: 100%;
+    padding: 0;
+    flex: 5;
+  }
+
+  .nameColumnContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  
+  .imageRowContainer {
+    padding: 20px;
+  }
+
   .tooltipQuoteInvisible {
     display: none;
   }
@@ -92,6 +108,7 @@
   .image {
     aspect-ratio: 1 / 1;
     height: auto !important;
+    padding: 8px;
   }
 }
 
@@ -99,6 +116,7 @@
   .tooltipImage {
     width: 100%;
   }
+
 
   .tooltipQuote {
     width: 30px;

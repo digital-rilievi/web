@@ -36,7 +36,7 @@ const WhoWeAreMobile = () => {
             clearInterval(autoIntervalId) // Clear previous interval
         const intervalId = setInterval(() => {
             nextSlide()
-        }, 7000); // 5 seconds interval
+        }, 70000000); // 5 seconds interval
 
         setAutoIntervalId(intervalId) // Save the new interval ID
         return () => clearInterval(intervalId) // Clear interval on unmount

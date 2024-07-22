@@ -17,19 +17,30 @@ interface ProjectPageProps {
   params: { project: string }
 }
 
-interface TestimonialQuotesType {
-  name: string
-  image: string
-  description: string
-  company: string
-  quote: string
+interface TestimonialQuote {
+  name?: string
+  image?: string
+  description?: string
+  company?: string
+  quote?: string
   link?: string
-  linkLabel?: string
+  linkLabel?: string,
+  details?: DetailsQuote
+}
+
+interface DetailsQuote {
+  coverImage?: string;
+  title?: string;
+  panelImage?: string;
+  panelImageText?: string;
+  panelImageDesc?: string;
+  carousel?: string[];
+  testimonialQuotes?: TestimonialQuote[];
 }
 
 function Project({ params }: ProjectPageProps) {
 
-  var project = content.progetti.projects.find((p) => p.link === params.project)
+  var project: TestimonialQuote | undefined = content.progetti.projects.find((p) => p.link === params.project)
 
   return (
     <>
@@ -53,12 +64,12 @@ function Project({ params }: ProjectPageProps) {
       <Space size={"big"} maintainInMobile />
       <Space size={"big"} maintainInMobile />
       <ImagesCarousel className={styles.invisibleInMobile} slides={project?.details?.carousel} />
-      <ManualSliderWrapper className={styles.visibleInMobile} slides={project?.details?.carousel.map((image, index) => (
+      <ManualSliderWrapper className={styles.visibleInMobile} slides={project?.details?.carousel?.map((image, index) => (
         <ImageWrapper key={index} imagestyle={styles.carouselImage} src={image} backgroundColor={"#373737"} />
       )) ?? []} />
       <Space size={"big"} maintainInMobile />
       <Space size={"big"} maintainInMobile />
-      {project?.details?.testimonialQuotes?.map((quote: TestimonialQuotesType, index) => (
+      {project?.details?.testimonialQuotes?.map((quote: TestimonialQuote, index) => (
         <TestimonialQuote key={index} imageSrc={quote.image} name={quote.name} description={quote.description} quote={quote.quote} link={quote.link} linkLabel={quote.linkLabel} company={quote.company} />
       ))}
       <Space size={"big"} />

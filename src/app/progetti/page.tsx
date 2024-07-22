@@ -16,6 +16,7 @@ export interface ProjectProps {
     link?: string,
     linkLabel?: string,
     inverted?: String | Boolean,
+    details?: Object,
     blueCircle?: Boolean
 }
 
@@ -41,7 +42,7 @@ const Progetti = () => {
                             inverted={info.inverted ? info.inverted == "true" : false}
                             duration1={`${info.duration1 ? info.duration1 : ''}`}
                             duration2={`${info.duration2 ? info.duration2 : ''}`}
-                            link={`${info.link ? '/progetti/' + info.link : ''}`}
+                            link={`${(info.link || info.details) ? '/progetti/' + info.link : ''}`}
                             linkLabel={`${content.progetti.linksLabel ? content.progetti.linksLabel : ''}`}
                         />
                         <Space />

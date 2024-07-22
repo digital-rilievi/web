@@ -202,29 +202,7 @@
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 "duration1": "20 ANNI DI LAVORO",
                 "duration2": "+ 8000 GIORNI DI LAVORO",
-                "link": "mose",
-                "details": {
-                    "coverImage": "/assets/projects/mose/mose-worksite.jpg",
-                    "title": "MOSE,\nVenezia,\n2020",
-                    "panelImage": "/assets/projects/mose.png",
-                    "panelImageText": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico.",
-                    "panelImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.\nUno sguardo sempre attento è rivolto al costante sviluppo tecnologico e all'utilizzo della più moderna strumentazione per la realizzazione dei nostri servizi. Disponiamo di stazioni totali motorizzate e robotizzate, sistemi GNSS per il rilievo satellitare, autolivelli digitali, workstation videografiche, stereorestitutori digitali, laser scanner, localizzatori di sottoservizi, georadar, plotter e scanner a grande formato, ecc.\n\nOperiamo anche nel campo del Mobile Laser Scanner con il sistema G.V.S.M.L.S. per la realizzazione del progetto VIADATA. Tutto questo ci mette in condizione di soddisfare una gamma molto vasta di richieste anche con metodologie integrate fra loro e ci permette di realizzare progetti personalizzati di rilevamento, completati se del caso anche con applicativi software, fino alla realizzazione finita di sistemi informativi territoriali e non solo.",
-                    "carousel": [
-                        "/assets/projects/mose/carousel/1.jpeg",
-                        "/assets/projects/mose/carousel/2.jpeg",
-                        "/assets/projects/mose/carousel/3.jpeg",
-                        "/assets/projects/mose/carousel/4.jpeg"
-                    ],
-                    "testimonialQuotes": [
-                        {
-                            "name": "Ing. Massimo Paganelli",
-                            "image": "/assets/testimonials/paganelli.jpeg",
-                            "description": "Presidente",
-                            "company": "Clodia s.r.l.",
-                            "quote": "Collaboriamo con Digital Rilievi dal 2004, anno di inizio lavori per il Progetto MOSE, opera di ingegneria civile idraulica ed impiantistica di assoluto ed indiscusso rilievo internazionale. La totale affidabilità dimostrata nel supportare Clodia e i suoi requisiti di precisione senza precedenti nel settore ha portato ad un rapporto pluriennale di forte fidelizzazione. All'avanguardia nelle dotazioni strumentali utilizzate, Digital Rilievi investe costantemente nel rinnovamento delle proprie attrezzature e delle competenze professionali."
-                        }
-                    ]
-                }
+                "link": "mose"
             },
             {
                 "image": "/assets/projects/off-road.png",

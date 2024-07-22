@@ -91,6 +91,10 @@
   align-items: flex-start; /* Align items to the start (top) of the container */
 }
 
+.invisible {
+  visibility: invisible;
+}
+
 .button {
   font-size: 22px;
   color: #0038FF;

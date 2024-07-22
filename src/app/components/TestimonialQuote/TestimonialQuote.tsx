@@ -39,10 +39,9 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
 
                             <div className={styles.buttonColumn}>
                                 <div className={styles.quote}>{props.quote}</div>
-                                {props.link &&
                                     <>
-                                        <div className={styles.buttonWrapper}>
-                                            <Link href={props.link}>
+                                        <div className={`${styles.buttonWrapper} ${!props.link && styles.invisible}` }>
+                                            <Link href={`${props.link ? props.link : ''}`}>
                                                 <div className={styles.button}>{props.linkLabel}</div>
                                             </Link>
                                         </div>
@@ -53,7 +52,6 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                                             <p>{props.company}</p>
                                         </div>
                                     </>
-                                }
                             </div>
                         </div>
                     </div>

@@ -8,6 +8,17 @@ import TestimonialQuote from 'app/components/TestimonialQuote/TestimonialQuote'
 import Space from 'app/components/Space/Space'
 import styles from './Testimonials.module.css'
 
+interface Person {
+  name?: string,
+  position?: string,
+  company?: string,
+  image?: string,
+  text?: string,
+  link?: string,
+  linkLabel?: string,
+  alt?: string
+}
+
 const Testimonials = () => {
   return (
     <>
@@ -17,7 +28,7 @@ const Testimonials = () => {
       </div>
       <ScrollingText text={content.testimonials.title} />
       <Space size='big' maintainInMobile />
-      {content.testimonials.people.map((person, index) => (
+      {content.testimonials.people.map((person: Person, index) => (
         <>
           <TestimonialQuote key={index}
             imageSrc={person.image}

@@ -104,7 +104,7 @@
                 "name": "FABRIZIO GARDENAL",
                 "role": "Team Leader, Lidar",
                 "tooltipImage": "/assets/whoWeAre/fabrizio.svg",
-                "tooltipQuote": ""
+                "tooltipQuote": "Guidato dalla precisione, spinto dall’innovazione"
             },
             {
                 "name": "SONIA MARTINA",
@@ -164,7 +164,7 @@
                 "name": "STEFANO CANCIAN",
                 "role": "Junior Surveyor",
                 "tooltipImage": "/assets/whoWeAre/stefano.svg",
-                "tooltipQuote": ""
+                "tooltipQuote": "Con un pizzico di buon senso"
             }
         ],
         "carousel": [
@@ -199,17 +199,17 @@
             {
                 "image": "/assets/projects/mose.png",
                 "title": "MOSE VENEZIA",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "duration1": "20 ANNI DI LAVORO",
-                "duration2": "+ 8000 GIORNI DI LAVORO",
-                "link": "mose"
+                "text": "Il progetto più innovativo e più discusso dell'Italia nella storia Contemporanea. Un insieme di sperimentazioni e soluzioni innovative, che ci vede impegnati alla Bocca di Chioggia da oltre 20 anni, portando donne, uomini, tecnologie, ma soprattutto competenze. Abbiamo seguito tutte le fasi costruttive dell’opera, dalla rete topografica iniziale, al tracciamento delle scogliere, alla realizzazione dei cassoni, l’inghisaggio delle cerniere, l’affondamento dei cassoni e la realizzazione delle gallerie subaquee.\n\nSiamo parte della squadra di lavoratori che ha contribuito alla salvezza di Venezia dalla forza dell’acqua, motivo di orgoglio ed emozione, come azienda e come persone. Il 22 Novembre 2022, quando il MOSE ha bloccato una marea che sarebbe stata catastrofica, abbiamo visto il compimento di tutto il nostro lavoro ed i nostri sforzi.",
+                "duration1": "+20 ANNI DI LAVORO",
+                "duration2": "78 PARATIE CHE PROTEGGONO VENEZIA"
             },
             {
-                "image": "/assets/projects/off-road.png",
-                "title": "RILIEVO OFF ROAD",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "inverted": "true",
-                "link": ""
+                "image": "/assets/projects/off-road.jpeg",
+                "title": "MOBILE MAPPING OVUNQUE",
+                "text": "Sfuggendo allo stereotipo del rilievo mobile solo ed esclusivamente su strada, da piú di 10 anni equipaggiamo quads con strumentazione di mobile laser scanning per rilevare le aree meno raggiungibili. Combinando un ingombro ed molto inferiore ai veicoli stradali, un peso ridotto all'osso e le quattro ruote motrici, il nostro sistema di rilievi off-road ci permette di rilevare agevolmente greti dei fiumi, argini, pendii montuosi, centri storici e aree di campagna. Efficace fino a pendenze del 30%, il rilievo mobile off-road viene talvolta integrato da attività di rilievo con droni e batimetria.",
+                "inverted": "true",                
+                "duration1": "+X000KM DI RILIEVI",
+                "duration2": "4x4 SU TUTTI I TERRENI"
             },
             {
                 "image": "/assets/projects/basilica-san-marco.png",

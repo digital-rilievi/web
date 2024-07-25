@@ -5,8 +5,8 @@
         "bannerImage":"/assets/projects/mose.png",
         "bannerQuote": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
         "firstImage": "/assets/projects/project-home.png",
-        "firstImageDesc": "La Digital Rilievi s.r.l. è fondata nel 2001, con l'obiettivo di proporsi sul mercato nazionale e internazionale quale consulente tecnico scientifico per la realizzazione di servizi di rilevamento topografico generale, aerofotogrammetrie, ortofotocarte digitali, rilievo architettonico, monumentale, ricerca e mappatura di sottoservizi aerei e interrati, cartografia numerica e Data Base Topografici, monitoraggi di strutture, frane e gallerie, assistenza topografica ai cantieri, ecc.",
-        "firstImageName": "LOREM IPSUM\nelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "firstImageDesc": "Digital Rilievi s.r.l. nasce nel maggio del 2001 da un'idea di Adriano Facchin, Antonio De Marco e Addo Galasso.\n\nForti della loro passione e competenza, danno all’azienda fin da subito un’impronta innovativa e all’avanguardia, sfidando la topografia degli anni 2000. Grazie ai primi successi lavorativi e all’esperienza maturata sul campo, Digital Rilevi diventa una solida realtà in grado di ripondere alla clientela più esigente, offrendo soluzioni studiate e customizzate.\n\nDal 2003 parte il progetto più ambizioso e sperimentale: un primo sistema autocostruito di Mobile Laser Scanning, con cui viene rilevata la Città di Firenze. Dopo 10 anni, il primo prototipo fotografico verrá rimpiazzato da un nuovo sistema che acquisisce contemporaneamente immagini e dati laser scanner – primo prototipo di una tecnologia che ancora oggi copre gran parte delle attività di acquisizione dell’azienda.\n\nA supporto di queste tecnologie, Digital Rilievi ha deciso di investire in sistemi di visione tridimensionale e stereoscopica di terza generazione, che permettono una restituzione grafica 3D di fotogrammetria e nuvole di punti lidar.",
+        "firstImageName": "GUARDANDO AL FUTURO\nVogliamo far crescere Digital Rilievi nel campo del mobile mapping e della geomatica, aprendo a soluzioni che sfruttino l'enorme potenziale dell'Intelligenza Artificiale.",
         "secondImage": "/assets/projects/mose.png",
         "secondImageName": "MOSE__VENEZIA",
         "secondImageDesc": "LA NOSTRA AZIENDA\nE I NOSTRI PROGETTI",
@@ -18,22 +18,22 @@
             {
                 "img1": "/assets/projects/circuito-automibilistico.png",
                 "img2": "/assets/projects/mose.png",
-                "title": "_SETTORE PRIVATO",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "title": "_ENTI LOCALI",
+                "text": "Siamo un punto di riferimento per Comuni, Provincie e Regioni su tutto il territorio italiano, in particolare nel Nord Italia. Enti locali di varie dimensioni ci contattano regolarmente per l'acquisizione e l'elaborazione di dati geo-topografici, fotogrammetrici, cartografici, architettonici, infrastrutturali ed ambientali. Sistemi Informativi Geografici (GIS) complementano i nostri servizi, permettendo una gestione efficiente e accurata dei dati territoriali.",
                 "link": "/testimonials"
             },
             {
                 "img1": "/assets/projects/circuito-automibilistico.png",
                 "img2": "/assets/projects/mose.png",
-                "title": "_OPERE PUBBLICHE",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "title": "_GRANDI OPERE",
+                "text": "I buyer delle maggiori società di progettazione ed ingegneria ci scelgono da oltre 20 anni per la nostra competenza e professionalitá. Ci occupiamo di collaudi, consulenza, assistenza tecnica in cantiere e assistenza alla progettazione. I nostri servizi sono richiesti per la realizzazione di infrastrutture stradali, ferroviarie, portuali, aeroportuali, idrauliche, di difesa del suolo e di opere di urbanizzazione.",
                 "link": "/progetti/mose"
             },
             {
                 "img1": "/assets/projects/circuito-automibilistico.png",
                 "img2": "/assets/projects/mose.png",
-                "title": "_ENTI LOCALI",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "title": "_GAMING & TECH",
+                "text": "Negli ultimi anni abbiamo sviluppato numerosi servizi di reality captures per aziende di videogiochi e software di simulazione, per le quali realizziamo modelli 3D di alta qualità e precisione. I nostri servizi sono richiesti per la realizzazione di ambienti virtuali, simulazioni iper-realistiche, effetti speciali e realtà virtuale. La nostra esperienza e affidabilità nel campo della fotogrammetria e del laser scanning ci permettono di proporci come player di rilievo anche in questo settore in rapida espansione.",
                 "link": "/testimonials"
             }
         ],
@@ -92,79 +92,79 @@
                 "name": "ADRIANO FACCHIN",
                 "role": "CEO & Socio Fondatore",
                 "tooltipImage": "/assets/whoWeAre/adriano.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": "Pronto a correre"
             },
             {
                 "name": "ANTONIO DE MARCO",
                 "role": "CTO & Socio Fondatore",
                 "tooltipImage": "/assets/whoWeAre/antonio.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": "Il valore di un risultato sta nel raggiungerlo"
             },
             {
                 "name": "FABRIZIO GARDENAL",
                 "role": "Team Leader, Lidar",
                 "tooltipImage": "/assets/whoWeAre/fabrizio.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": "Guidato dalla precisione, spinto dall’innovazione"
             },
             {
                 "name": "SONIA MARTINA",
                 "role": "Team Leader, Admin",
                 "tooltipImage": "/assets/whoWeAre/sonia.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": ""
             },
             {
                 "name": "ANDREA FABRIS",
                 "role": "Team Leader, Topografia",
                 "tooltipImage": "/assets/whoWeAre/andrea.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.."
+                "tooltipQuote": "Guardando sempre al futuro"
             },
             {
                 "name": "CRISTINA PAUN",
                 "role": "Team Leader, Cartografia",
                 "tooltipImage": "/assets/whoWeAre/cristina.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": "Agisci come se le tue azioni potessero fare la differenza"
             },
             {
                 "name": "ELISA CARTA",
                 "role": "Team Leader, Project Management",
                 "tooltipImage": "/assets/whoWeAre/elisa.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": "Non esiste \"non sono capace\", esiste \"non lo so ancora fare\""
             },
             {
                 "name": "GLORIA FACCHIN",
                 "role": "Team Leader, Mose",
                 "tooltipImage": "/assets/whoWeAre/gloria.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": ""
             },
             {
                 "name": "ALICE MARSON",
                 "role": "Senior Surveyor",
                 "tooltipImage": "/assets/whoWeAre/alice.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": "Impara, cresci, raggiungi"
             },
             {
                 "name": "FABIO STRAZIUSO",
                 "role": "Junior Surveyor",
                 "tooltipImage": "/assets/whoWeAre/fabio.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": ""
             },
             {
                 "name": "MATTEO VALENTINO",
                 "role": "Junior Surveyor",
                 "tooltipImage": "/assets/whoWeAre/matteo.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": " Sono i sogni a fare vivere l’uomo"
             },
             {
                 "name": "SARA SANTIN",
                 "role": "Junior Surveyor",
                 "tooltipImage": "/assets/whoWeAre/sara.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": "Changes in altitude, changes in attitude!"
             },
             {
                 "name": "STEFANO CANCIAN",
                 "role": "Junior Surveyor",
                 "tooltipImage": "/assets/whoWeAre/stefano.svg",
-                "tooltipQuote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+                "tooltipQuote": "Con un pizzico di buon senso"
             }
         ],
         "carousel": [
@@ -199,17 +199,17 @@
             {
                 "image": "/assets/projects/mose.png",
                 "title": "MOSE VENEZIA",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "duration1": "20 ANNI DI LAVORO",
-                "duration2": "+ 8000 GIORNI DI LAVORO",
-                "link": "mose"
+                "text": "Il progetto più innovativo e più discusso dell'Italia nella storia Contemporanea. Un insieme di sperimentazioni e soluzioni innovative, che ci vede impegnati alla Bocca di Chioggia da oltre 20 anni, portando donne, uomini, tecnologie, ma soprattutto competenze. Abbiamo seguito tutte le fasi costruttive dell’opera, dalla rete topografica iniziale, al tracciamento delle scogliere, alla realizzazione dei cassoni, l’inghisaggio delle cerniere, l’affondamento dei cassoni e la realizzazione delle gallerie subaquee.\n\nSiamo parte della squadra di lavoratori che ha contribuito alla salvezza di Venezia dalla forza dell’acqua, motivo di orgoglio ed emozione, come azienda e come persone. Il 22 Novembre 2022, quando il MOSE ha bloccato una marea che sarebbe stata catastrofica, abbiamo visto il compimento di tutto il nostro lavoro ed i nostri sforzi.",
+                "duration1": "+20 ANNI DI LAVORO",
+                "duration2": "78 PARATIE CHE PROTEGGONO VENEZIA"
             },
             {
-                "image": "/assets/projects/off-road.png",
-                "title": "RILIEVO OFF ROAD",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "inverted": "true",
-                "link": ""
+                "image": "/assets/projects/off-road.jpeg",
+                "title": "MOBILE MAPPING OVUNQUE",
+                "text": "Sfuggendo allo stereotipo del rilievo mobile solo ed esclusivamente su strada, da piú di 10 anni equipaggiamo quads con strumentazione di mobile laser scanning per rilevare le aree meno raggiungibili. Combinando un ingombro ed molto inferiore ai veicoli stradali, un peso ridotto all'osso e le quattro ruote motrici, il nostro sistema di rilievi off-road ci permette di rilevare agevolmente greti dei fiumi, argini, pendii montuosi, centri storici e aree di campagna. Efficace fino a pendenze del 30%, il rilievo mobile off-road viene talvolta integrato da attività di rilievo con droni e batimetria.",
+                "inverted": "true",                
+                "duration1": "+X000KM DI RILIEVI",
+                "duration2": "4x4 SU TUTTI I TERRENI"
             },
             {
                 "image": "/assets/projects/basilica-san-marco.png",
@@ -227,19 +227,6 @@
             {
                 "image": "/assets/projects/stadio-olimpico-foro-italico.png",
                 "title": "STADIO OLIMPICO FORO ITALICO__ROMA",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "link": ""
-            },
-            {
-                "image": "/assets/projects/ferrovia.png",
-                "title": "FERROVIA",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "inverted": "true",
-                "link": ""
-            },
-            {
-                "image": "/assets/projects/ponte-morandi.png",
-                "title": "PONTE MORANDI__GENOVA",
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 "link": ""
             },
@@ -264,7 +251,8 @@
                 "company": "Clodia s.r.l.",
                 "image": "/assets/testimonials/paganelli.jpeg",
                 "text": "Collaboriamo con Digital Rilievi dal 2004, anno di inizio lavori per il Progetto MOSE, opera di ingegneria civile idraulica ed impiantistica di assoluto ed indiscusso rilievo internazionale. La totale affidabilità dimostrata nel supportare Clodia e i suoi requisiti di precisione senza precedenti nel settore ha portato ad un rapporto pluriennale di forte fidelizzazione. All'avanguardia nelle dotazioni strumentali utilizzate, Digital Rilievi investe costantemente nel rinnovamento delle proprie attrezzature e delle competenze professionali.",
-                "link": "/progetti/mose"
+                "link": "/progetti/mose",
+                "linkLabel": "SCOPRI DI PIÙ"
             },
             {
                 "name": "Marco Massarutto",

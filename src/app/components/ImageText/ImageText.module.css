@@ -45,6 +45,7 @@
   text-align: left;
   padding: 1rem;
   padding-left: 0;
+  white-space: pre-line;
 }
 
 .duration {

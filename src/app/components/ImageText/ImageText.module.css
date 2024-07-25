@@ -5,8 +5,8 @@
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   position: relative; /* Add position: relative to establish stacking context */
 }
 
@@ -43,7 +43,7 @@
 .text {
   align-self: flex-start;
   text-align: left;
-  padding: 1rem;
+  padding: 0;
   padding-left: 0;
   white-space: pre-line;
 }
@@ -62,12 +62,10 @@
   max-width: 45%;
   height: fit-content;
   max-height: 100%;
-  margin-right: 20px;
-  margin-left: 20px;
   object-fit: cover;
   position: relative; /* Add position: relative */
   z-index: 2; /* Set z-index higher than BlueCircle */
-  padding-bottom: 1rem;
+  padding-bottom: 0;
 }
 
 .blueCircleContainer {

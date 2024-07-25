@@ -34,7 +34,6 @@ const ImageText = (props: ImageTextProps) => {
           </div>
         )}
         <ImageWrapper className={`${styles.image} ${props.secondaryText ? styles.visibleInMobile : styles.invisible}`} src={props.image} backgroundColor={"#767676"} />
-        <Space size={"small"} />
         {props.duration1 && (
           <h2 className={styles.duration}>
             {props.duration1}

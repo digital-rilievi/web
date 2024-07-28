@@ -198,44 +198,52 @@
         "projects": [
             {
                 "image": "/assets/projects/mose.png",
-                "title": "MOSE VENEZIA",
+                "title": "MOSE__VENEZIA",
                 "text": "Il progetto più innovativo e più discusso dell'Italia nella storia Contemporanea. Un insieme di sperimentazioni e soluzioni innovative, che ci vede impegnati alla Bocca di Chioggia da oltre 20 anni, portando donne, uomini, tecnologie, ma soprattutto competenze. Abbiamo seguito tutte le fasi costruttive dell’opera, dalla rete topografica iniziale, al tracciamento delle scogliere, alla realizzazione dei cassoni, l’inghisaggio delle cerniere, l’affondamento dei cassoni e la realizzazione delle gallerie subaquee.\n\nSiamo parte della squadra di lavoratori che ha contribuito alla salvezza di Venezia dalla forza dell’acqua, motivo di orgoglio ed emozione, come azienda e come persone. Il 22 Novembre 2022, quando il MOSE ha bloccato una marea che sarebbe stata catastrofica, abbiamo visto il compimento di tutto il nostro lavoro ed i nostri sforzi.",
                 "duration1": "+20 ANNI DI LAVORO",
                 "duration2": "78 PARATIE CHE PROTEGGONO VENEZIA"
             },
             {
-                "image": "/assets/projects/off-road.jpeg",
-                "title": "MOBILE MAPPING OVUNQUE",
+                "image": "/assets/projects/off-road.jpg",
+                "title": "MOBILE MAPPING OFFROAD__OVUNQUE",
                 "text": "Sfuggendo allo stereotipo del rilievo mobile solo ed esclusivamente su strada, da piú di 10 anni equipaggiamo quads con strumentazione di mobile laser scanning per rilevare le aree meno raggiungibili. Combinando un ingombro ed molto inferiore ai veicoli stradali, un peso ridotto all'osso e le quattro ruote motrici, il nostro sistema di rilievi off-road ci permette di rilevare agevolmente greti dei fiumi, argini, pendii montuosi, centri storici e aree di campagna. Efficace fino a pendenze del 30%, il rilievo mobile off-road viene talvolta integrato da attività di rilievo con droni e batimetria.",
-                "inverted": "true",                
-                "duration1": "+15000KM DI RILIEVI",
+                "inverted": "true",
+                "duration1": "15'000KM DI RILIEVI",
                 "duration2": "4x4 SU TUTTI I TERRENI"
             },
             {
-                "image": "/assets/projects/basilica-san-marco.png",
-                "title": "PARATIE BASILICA SAN MARCO__VENEZIA",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "link": ""
+                "image": "/assets/projects/circuito-automibilistico.png",
+                "title": "CIRCUITO AUTOMOBILISTICO DI KYALAMI__SUD AFRICA",
+                "text": "REVIEW_TODO: L'ultimo di N(?) circuiti rilevati, in sole 2h... 7giorni per la consegna della nuvola di punti colorate. Massima flessibilitá sullo slot per i rilievi, data la difficoltá di ottenere tempo disponibile sul circuito. 3 passate, una centrale, una sul cordolo dx, una sul cordolo sx, poi allineate. Ridondanza di copertura e accuratezza. La nuvola di punti viene utilizzata da Kunos Simulazioni, azienda leader di mercato per gaming e simulazioni automobilistiche col brand Assetto Corsa, per creare un tracciato di gioco il piú fedele possibile all'originale.",
+                "link": "",
+                "duration1": "2 ORE PER RILEVARE UN CIRCUITO",
+                "duration2": "1CM DI RISOLUZIONE MEDIA"
             },
             {
-                "image": "/assets/projects/circuito-automibilistico.png",
-                "title": "CIRCUITO AUTOMOBILISTICO",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "image": "/assets/projects/basilica-san-marco.png",
+                "title": "PARATIE DELLA BASILICA DI SAN MARCO__VENEZIA",
+                "text": "REVIEW_TODO: Monitoraggio della Basilica e dei Pilastri Acritani durante la realizzazione delle paratoie in cristallo. Lavoro di precisione e per il fissaggio dei sensori di molto sperimentale, vincolo della sovrintendenza che non voleva venisse incollato nulla né bucato. Minimizzazione dell'impatto, rispetto del patrimonio archietettonico. Quattro punti di monitoragio in tempo reale, sulle due colonne laterali della Basilica e sui due pilastri. Ogni punto aveva due sensori: un inclinometro digitale ed un accelerometro digitali. Dati inviati in tempo reale su un portale, con anomaly detection e policy di allarme attiva 24/7. Due anni di monitoraggio, con alcune anomalie registrate, poi sempre confermate con la topografia a terra tramite mire fotografiche poste in coincidenza dei sensori. In alcuni casi da imputarsi a fenomeni esogeni, come cambiamento delle stagioni, prosciugamento del sottosuolo, dilatazione termica, etc. In un caso, i due Pilastri Acritani hanno subito una leggera inclinazione dovuta ai lavori e ciò ha richiesto la messa in sicurezza tramite una cintura di supporto prima di procedere col lavoro. Nessun falso allarme.",
+                "link": "",
                 "inverted": "true",
-                "link": ""
+                "duration1": "2 ANNI DI MONITORAGGIO CONTINUO",
+                "duration2": "100% DI ACCURATEZZA DELLE ANOMALIE REGISTRATE"
             },
             {
                 "image": "/assets/projects/stadio-olimpico-foro-italico.png",
-                "title": "STADIO OLIMPICO FORO ITALICO__ROMA",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "link": ""
+                "title": "STADIO OLIMPICO E FORO ITALICO__ROMA",
+                "text": "REVIEW_TODO: Rilievo dello Stadio Olimpico e del Foro Italico di Roma, inclusi [...campi famosi], tutti gli impanti di allenamento, gli uffici di supporto e le infrastrutture di supporto. Il rilievo é stato effettuato tramite un misto di mobile laser scanning interno ed esterno alle strutture, geoslam per i rilievi degli spazi interni non raggiungibili da mobile laser scanning e topografia per le misure più delicate, come le dimensioni del campo di gioco dello Stadio Olimpico, che servivano all'omologazione FIFA.(?)",
+                "link": "",
+                "duration1": "(?) IMPIANTI RILEVATI",
+                "duration2": "(?)METRI x (?)METRI LE DIMENSIONI DEL CAMPO"
             },
             {
                 "image": "/assets/projects/stadio-cortina.png",
-                "title": "STADIO GHIACCIO__CORTINA",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "title": "STADIO DEL GHIACCIO__CORTINA",
+                "text": "REVIEW_TODO: Incaricati da Infrastrutture Milano Cortina, societá incaricata da CONI della preparazione delle Olimpiadi Invernali di Milano-Cortina 2026. Lo stadio é stato rilevato tramite laser scanning statico ad alta precisione, garantendo una densitá di punti media di circa 15 punti a cm2. In aggiunta, sono stati prodotti i modelli BIM con stratificazione per piani, per materiali e per tipo di infrastruttura (elettrica, strutturale, condizionamento, etc.). Lo stadio fu originariamente costruito per le Olimpiadi Invernali di Cortina '56 e presenta storiche tribune in legno di abete, larice e cirmolo, di rilevanza architettonica. La successiva copertura con travi rivestite in rame si é aggiunta come tratto caratteristico. I leggeri lavori di adattamento per ospitare la specialitá di curling di Milano Cortina 2026 puntano a mantenere il fascino dello stadio.",
                 "inverted": "true",
-                "link": ""
+                "link": "",
+                "duration1": "7000 SPETTATORI",
+                "duration2": "1956-2026 SETTANT'ANNI DI OLIMPIADI"
             }
         ],
         "projectsInterested": "SEI INTERSSATO AI\nNOSTRI SERVIZI?",

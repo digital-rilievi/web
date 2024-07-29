@@ -34,7 +34,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
         loop
         muted
         style={props.videoStyle}
-        poster="https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro.jpeg?alt=media&token=51e96239-7ea5-4e22-af47-911b8fa40c24"
+        poster="https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro_lowres.jpeg?alt=media&token=cbf28c19-b5d6-42d1-a2f3-39fbfc9dee5f"
       >
         <source src="https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro_noaudio.webm?alt=media&token=5660bb0c-c389-4227-aad0-61e825abe9bf" type="video/webm" />
         <source src="https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro.mp4?alt=media&token=1ea9086c-61b9-444e-b8c0-df2f8d518062" type="video/mp4" />

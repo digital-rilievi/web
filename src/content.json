@@ -214,7 +214,7 @@
             {
                 "image": "/assets/projects/circuito-automibilistico.png",
                 "title": "CIRCUITO AUTOMOBILISTICO DI KYALAMI__SUD AFRICA",
-                "text": "REVIEW_TODO: L'ultimo di N(?) circuiti rilevati, in sole 2h... 7giorni per la consegna della nuvola di punti colorate. Massima flessibilitá sullo slot per i rilievi, data la difficoltá di ottenere tempo disponibile sul circuito. 3 passate, una centrale, una sul cordolo dx, una sul cordolo sx, poi allineate. Ridondanza di copertura e accuratezza. La nuvola di punti viene utilizzata da Kunos Simulazioni, azienda leader di mercato per gaming e simulazioni automobilistiche col brand Assetto Corsa, per creare un tracciato di gioco il piú fedele possibile all'originale.",
+                "text": "Forti dell'esperienza di oltre 13 circuiti rilevati, in sole 2h... 7giorni per la consegna della nuvola di punti colorate. Massima flessibilitá sullo slot per i rilievi, data la difficoltá di ottenere tempo disponibile sul circuito. 3 passate, una centrale, una sul cordolo dx, una sul cordolo sx, poi allineate. Ridondanza di copertura e accuratezza. La nuvola di punti viene utilizzata da Kunos Simulazioni, azienda leader di mercato per gaming e simulazioni automobilistiche col brand Assetto Corsa, per creare un tracciato di gioco il piú fedele possibile all'originale.",
                 "link": "",
                 "duration1": "2 ORE PER RILEVARE UN CIRCUITO",
                 "duration2": "1CM DI RISOLUZIONE MEDIA"
@@ -231,10 +231,10 @@
             {
                 "image": "/assets/projects/stadio-olimpico-foro-italico.png",
                 "title": "STADIO OLIMPICO E FORO ITALICO__ROMA",
-                "text": "REVIEW_TODO: Rilievo dello Stadio Olimpico e del Foro Italico di Roma, inclusi [...campi famosi], tutti gli impanti di allenamento, gli uffici di supporto e le infrastrutture di supporto. Il rilievo é stato effettuato tramite un misto di mobile laser scanning interno ed esterno alle strutture, geoslam per i rilievi degli spazi interni non raggiungibili da mobile laser scanning e topografia per le misure più delicate, come le dimensioni del campo di gioco dello Stadio Olimpico, che servivano all'omologazione FIFA.(?)",
+                "text": "REVIEW_TODO: Rilievo dello Stadio Olimpico e del Foro Italico di Roma, inclusi [...campi famosi], tutti gli impanti di allenamento, gli uffici di supporto e le infrastrutture di supporto. Il rilievo é stato effettuato tramite un misto di mobile laser scanning interno ed esterno alle strutture, geoslam per i rilievi degli spazi interni non raggiungibili da mobile laser scanning e topografia per le misure più delicate, come le dimensioni del campo di gioco dello Stadio Olimpico, che servivano al rinnovo dell'omologazione. Stadio dei Marmi, Stadio della Farnesina, Tennis centrale, Tennis Nicola Pietrangeli, Tennis Gran stand Arena, Tennis altri 8 campi secondari, Piscina olimpionica scoperta + vasca tuffi, Scherma casa delle armi. Rilievi delle aree esterne per quasi 500.000 metri quadrati.",
                 "link": "",
-                "duration1": "(?) IMPIANTI RILEVATI",
-                "duration2": "(?)METRI x (?)METRI LE DIMENSIONI DEL CAMPO"
+                "duration1": "50 ETTARI RILEVATI",
+                "duration2": "68,01M x 105,09M IL CAMPO DELLO STADIO OLIMPICO"
             },
             {
                 "image": "/assets/projects/stadio-cortina.png",

@@ -226,7 +226,7 @@
                 "link": "",
                 "inverted": "true",
                 "duration1": "2 ANNI DI MONITORAGGIO CONTINUO",
-                "duration2": "100% DI ACCURATEZZA DELLE ANOMALIE REGISTRATE"
+                "duration2": "100% DELLE ANOMALIE VERIFICATE"
             },
             {
                 "image": "/assets/projects/stadio-olimpico-foro-italico.png",
@@ -234,7 +234,7 @@
                 "text": "REVIEW_TODO: Rilievo dello Stadio Olimpico e del Foro Italico di Roma, inclusi [...campi famosi], tutti gli impanti di allenamento, gli uffici di supporto e le infrastrutture di supporto. Il rilievo é stato effettuato tramite un misto di mobile laser scanning interno ed esterno alle strutture, geoslam per i rilievi degli spazi interni non raggiungibili da mobile laser scanning e topografia per le misure più delicate, come le dimensioni del campo di gioco dello Stadio Olimpico, che servivano al rinnovo dell'omologazione. Stadio dei Marmi, Stadio della Farnesina, Tennis centrale, Tennis Nicola Pietrangeli, Tennis Gran stand Arena, Tennis altri 8 campi secondari, Piscina olimpionica scoperta + vasca tuffi, Scherma casa delle armi. Rilievi delle aree esterne per quasi 500.000 metri quadrati.",
                 "link": "",
                 "duration1": "50 ETTARI RILEVATI",
-                "duration2": "68,01M x 105,09M IL CAMPO DELLO STADIO OLIMPICO"
+                "duration2": "68,01M x 105,09M LE DIMENSIONI DEL CAMPO"
             },
             {
                 "image": "/assets/projects/stadio-cortina.png",

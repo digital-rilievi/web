@@ -27,7 +27,7 @@ const Footer = () => {
 
         <div className={styles.rightColumn}>
           <ul>
-            <li><a className={styles.footerAddress} href="/assets/footer/tuv-cert.pdf" target="_blank">Certificazione ISO 9001</a></li>
+            <li><a className={styles.footerAddress} href="/assets/footer/tuv-cert.pdf" target="_blank">Certificazione ISO 9001:2015</a></li>
             <li><a className={styles.footerAddress} href={content.footer.privacyPolicyLink} target="_blank">{content.footer.cookiesPolicyLabel}</a></li>
             <li><a className={styles.footerAddress} href={content.footer.cookiesPolicyLink} target="_blank">{content.footer.privacyPolicyLabel}</a></li>
           </ul>

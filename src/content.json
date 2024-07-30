@@ -4,10 +4,10 @@
         "title": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
         "bannerImage":"/assets/projects/mose.png",
         "bannerQuote": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
-        "firstImage": "/assets/projects/project-home.png",
+        "firstImage": "/assets/projects/bim.jpg",
         "firstImageDesc": "Digital Rilievi s.r.l. nasce nel maggio del 2001 da un'idea di Adriano Facchin, Antonio De Marco e Addo Galasso.\n\nForti della loro passione e competenza, danno all’azienda fin da subito un’impronta innovativa e all’avanguardia, sfidando la topografia degli anni 2000. Grazie ai primi successi lavorativi e all’esperienza maturata sul campo, Digital Rilevi diventa una solida realtà in grado di ripondere alla clientela più esigente, offrendo soluzioni studiate e customizzate.\n\nDal 2003 parte il progetto più ambizioso e sperimentale: un primo sistema autocostruito di Mobile Laser Scanning, con cui viene rilevata la Città di Firenze. Dopo 10 anni, il primo prototipo fotografico verrá rimpiazzato da un nuovo sistema che acquisisce contemporaneamente immagini e dati laser scanner – primo prototipo di una tecnologia che ancora oggi copre gran parte delle attività di acquisizione dell’azienda.\n\nA supporto di queste tecnologie, Digital Rilievi ha deciso di investire in sistemi di visione tridimensionale e stereoscopica di terza generazione, che permettono una restituzione grafica 3D di fotogrammetria e nuvole di punti lidar.",
         "firstImageName": "GUARDANDO AL FUTURO\nVogliamo far crescere Digital Rilievi nel campo del mobile mapping e della geomatica, aprendo a soluzioni che sfruttino l'enorme potenziale dell'Intelligenza Artificiale.",
-        "secondImage": "/assets/projects/mose.png",
+        "secondImage": "/assets/projects/mose-slider.jpeg",
         "secondImageName": "MOSE__VENEZIA",
         "secondImageDesc": "LA NOSTRA AZIENDA\nE I NOSTRI PROGETTI",
         "secondImageButtonLabel": "SCOPRI DI PIÙ",
@@ -16,22 +16,22 @@
         "areYouInterestedLink": "/contatti",
         "weDealWith": [
             {
-                "img1": "/assets/projects/circuito-automibilistico.png",
-                "img2": "/assets/projects/mose.png",
+                "img1": "/assets/projects/venezia.jpeg",
+                "img2": "/assets/projects/ferrovia-2.jpeg",
                 "title": "_ENTI LOCALI",
                 "text": "Siamo un punto di riferimento per Comuni, Provincie e Regioni su tutto il territorio italiano, in particolare nel Nord Italia. Enti locali di varie dimensioni ci contattano regolarmente per l'acquisizione e l'elaborazione di dati geo-topografici, fotogrammetrici, cartografici, architettonici, infrastrutturali ed ambientali. Sistemi Informativi Geografici (GIS) complementano i nostri servizi, permettendo una gestione efficiente e accurata dei dati territoriali.",
                 "link": "/testimonials"
             },
             {
-                "img1": "/assets/projects/circuito-automibilistico.png",
-                "img2": "/assets/projects/mose.png",
+                "img1": "/assets/projects/grandi-opere-3.jpeg",
+                "img2": "/assets/projects/grandi-opere.jpeg",
                 "title": "_GRANDI OPERE",
                 "text": "I buyer delle maggiori società di progettazione ed ingegneria ci scelgono da oltre 20 anni per la nostra competenza e professionalitá. Ci occupiamo di collaudi, consulenza, assistenza tecnica in cantiere e assistenza alla progettazione. I nostri servizi sono richiesti per la realizzazione di infrastrutture stradali, ferroviarie, portuali, aeroportuali, idrauliche, di difesa del suolo e di opere di urbanizzazione.",
                 "link": "/progetti/mose"
             },
             {
-                "img1": "/assets/projects/circuito-automibilistico.png",
-                "img2": "/assets/projects/mose.png",
+                "img1": "/assets/projects/kyalami.jpeg",
+                "img2": "/assets/projects/gaming.jpeg",
                 "title": "_GAMING & TECH",
                 "text": "Negli ultimi anni abbiamo sviluppato numerosi servizi di reality captures per aziende di videogiochi e software di simulazione, per le quali realizziamo modelli 3D di alta qualità e precisione. I nostri servizi sono richiesti per la realizzazione di ambienti virtuali, simulazioni iper-realistiche, effetti speciali e realtà virtuale. La nostra esperienza e affidabilità nel campo della fotogrammetria e del laser scanning ci permettono di proporci come player di rilievo anche in questo settore in rapida espansione.",
                 "link": "/testimonials"
@@ -220,7 +220,7 @@
                 "duration2": "1CM DI RISOLUZIONE MEDIA"
             },
             {
-                "image": "/assets/projects/basilica-san-marco.png",
+                "image": "/assets/projects/tall-small-paratie.jpeg",
                 "title": "PARATIE DELLA BASILICA DI SAN MARCO__VENEZIA",
                 "text": "Durante l'installazione delle paratoie in cristallo all'entrata della Basilica di San Marco, siamo stati incaricati di monitorare l'impatto dei lavori sulle colonne della Basilica stessa e sui Pilastri Acritani, elemento di enorme rilievo architettonico poco distante. Incarico di precisione e molto delicato, in linea con i requisiti della sovrintendenza abbiamo sviluppato una soluzione che non danneggiasse i pilastri e le colonne con colla o fori.\n\nQuattro stazioni di monitoraggio con inclinometri ed accelerometri sono state legate solidalmente ai punti di riferimento, nel pieno rispetto del patrimonio architettonico.\n\nGrazie ad una piattaforma centralizzata consultabile online, abbiamo impiegato algoritmi di anomaly detection per osservare le serie storiche 24/7 da remoto, per un totale di due anni di registrazione continua. Tutte le anomalie registrate nel periodo di osservazione sono state prontamente confermate con la topografia a terra, a testimoniare l'affidabilità delle tecnologie impiegate.",
                 "link": "",

@@ -5,7 +5,7 @@
         "bannerImage":"/assets/projects/mose.png",
         "bannerQuote": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
         "firstImage": "/assets/projects/bim.jpg",
-        "firstImageDesc": "Digital Rilievi s.r.l. nasce nel maggio del 2001 da un'idea di Adriano Facchin, Antonio De Marco e Addo Galasso.\n\nForti della loro passione e competenza, danno all’azienda fin da subito un’impronta innovativa e all’avanguardia, sfidando la topografia degli anni 2000. Grazie ai primi successi lavorativi e all’esperienza maturata sul campo, Digital Rilevi diventa una solida realtà in grado di ripondere alla clientela più esigente, offrendo soluzioni studiate e customizzate.\n\nDal 2003 parte il progetto più ambizioso e sperimentale: un primo sistema autocostruito di Mobile Laser Scanning, con cui viene rilevata la Città di Firenze. Dopo 10 anni, il primo prototipo fotografico verrá rimpiazzato da un nuovo sistema che acquisisce contemporaneamente immagini e dati laser scanner – primo prototipo di una tecnologia che ancora oggi copre gran parte delle attività di acquisizione dell’azienda.\n\nA supporto di queste tecnologie, Digital Rilievi ha deciso di investire in sistemi di visione tridimensionale e stereoscopica di terza generazione, che permettono una restituzione grafica 3D di fotogrammetria e nuvole di punti lidar.",
+        "firstImageDesc": "Digital Rilievi s.r.l. nasce nel maggio del 2001 da un'idea di Adriano Facchin, Antonio De Marco e Addo Galasso.\n\nForti della loro passione e competenza, danno all’azienda fin da subito un’impronta innovativa e all’avanguardia, sfidando la topografia degli anni 2000. Grazie ai primi successi lavorativi e all’esperienza maturata sul campo, Digital Rilevi diventa una solida realtà in grado di rispondere alla clientela più esigente, offrendo soluzioni studiate e customizzate.\n\nDal 2003 parte il progetto più ambizioso e sperimentale: un primo sistema autocostruito di Mobile Laser Scanning, con cui viene rilevata la Città di Firenze. Dopo 10 anni, il primo prototipo fotografico verrá rimpiazzato da un nuovo sistema che acquisisce contemporaneamente immagini e dati laser scanner – primo prototipo di una tecnologia che ancora oggi copre gran parte delle attività di acquisizione dell’azienda.\n\nA supporto di queste tecnologie, Digital Rilievi ha deciso di investire in sistemi di visione tridimensionale e stereoscopica di terza generazione, che permettono una restituzione grafica 3D di fotogrammetria e nuvole di punti lidar.",
         "firstImageName": "GUARDANDO AL FUTURO\nVogliamo far crescere Digital Rilievi nel campo del mobile mapping e della geomatica, aprendo a soluzioni che sfruttino l'enorme potenziale dell'Intelligenza Artificiale.",
         "secondImage": "/assets/projects/mose-slider.jpeg",
         "secondImageName": "MOSE__VENEZIA",
@@ -208,7 +208,7 @@
                 "title": "MOBILE MAPPING OFFROAD__OVUNQUE",
                 "text": "Sfuggendo allo stereotipo del rilievo in Mobile Laser Scanning solo ed esclusivamente su strada asfaltada, da piú di 10 anni equipaggiamo quads con la strumentazione necessaria per rilevare le aree meno raggiungibili. Combinando un ingombro ed una tara molto inferiori ai veicoli stradali e le quattro ruote motrici, il nostro sistema di rilievi offroad ci permette di rilevare agevolmente greti dei fiumi, argini, pendii montuosi, centri storici e aree di campagna. Efficace fino a pendenze del 30%, il rilievo mobile laser scanning off-road viene talvolta integrato da attività di rilievo con droni e batimetria.",
                 "inverted": "true",
-                "duration1": "15'000KM DI RILIEVI",
+                "duration1": "15'000 KM DI RILIEVI",
                 "duration2": "4x4 SU TUTTI I TERRENI"
             },
             {
@@ -217,7 +217,7 @@
                 "text": "Il rilievo del circuito automobilistico di Kyalami in Sud Africa conferma la fiducia verso Digital Rilievi da parte di Kunos Simulazioni, azienda leader di mercato per gaming e simulazioni automobilistiche col brand Assetto Corsa.\n\nDopo 13 circuiti giá rilevati assieme, anche a Kyalami abbiamo offerto la massima flessibilità, data la difficoltà nel prenotare uno slot di lavoro nella densa pianificazione del circuito. L'intero lavoro ha impiegato la pista per sole due ore, in cui abbiamo condensato tre passate di Mobile Laser Scanning, garantendo ridondanza e massima copertura del tracciato. Nell'arco di una settimana, Kunos ha ricevuto l'intera nuvola di punti colorata, con una densitá di rilevazioni di circa 1 punto a centimetro quadro.",
                 "link": "",
                 "duration1": "2 ORE PER RILEVARE UN CIRCUITO",
-                "duration2": "1CM DI RISOLUZIONE MEDIA"
+                "duration2": "1 CM DI RISOLUZIONE MEDIA"
             },
             {
                 "image": "/assets/projects/tall-small-paratie.jpeg",

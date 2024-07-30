@@ -61,7 +61,6 @@ line-height: 24px; /* 133.333% */
 .socialButtonsWrapper {
   display: flex;
   gap: 15px;
-  margin-top: 10px;
 }
 
 .socialButtons {

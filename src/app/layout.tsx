@@ -35,9 +35,6 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
         <footer>
-          {/* <a href="https://www.iubenda.com/privacy-policy/24683312" className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><Script type="text/javascript" src="/iubenda-privacy.js"></Script>
-          <a href="https://www.iubenda.com/privacy-policy/24683312/cookie-policy" className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a><Script type="text/javascript" src="/iubenda-cookies.js"></Script>
-         */}
         </footer>
       </body>
     </html>

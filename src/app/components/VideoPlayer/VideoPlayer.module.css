@@ -1,7 +1,7 @@
 .title {
     position: absolute;
     z-index: 100;
-    top: 8%;
+    top: 12%;
     color: #F5F5F5;
     font-size: 90px;
     font-style: normal;
@@ -26,6 +26,7 @@
         line-height: 52px;
         margin-bottom: 1rem;
         padding-top: 4rem;
+        top: 10%;
     }
 }
 

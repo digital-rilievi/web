@@ -79,8 +79,8 @@
   .quoteWrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding: 2rem;
-    padding: 1rem;
     padding-top: 0rem;
     padding-bottom: 2rem;
   }

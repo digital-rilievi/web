@@ -1,3 +1,5 @@
+'use client'
+import { useState, useEffect } from 'react'
 import NextImage from 'next/image'
 import styles from './ImageWrapper.module.css'
 
@@ -14,24 +16,34 @@ interface ImageWrapperProps {
 }
 
 const ImageWrapper = (props: ImageWrapperProps) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [currentSrc, setCurrentSrc] = useState(props.src);
+
+  useEffect(() => {
+    if (props.src !== currentSrc) {
+      setIsLoading(true);
+      setCurrentSrc(props.src);
+    }
+  }, [props.src, currentSrc]);
 
   return (
-    <div
-      className={`${props.className}`}>
+    <div className={`${styles.imageContainer} ${props.className}`}>
+      {isLoading && <div className={styles.placeholder} style={{ backgroundColor: props.backgroundColor }}></div>}
       <NextImage
         className={`${styles.image} ${props.imagestyle}`}
         style={{
           ...(props.backgroundColor ? { backgroundColor: `${props.backgroundColor}`, backgroundSize: 'cover' } : {}),
         }}
-        src={props.src}
+        src={currentSrc}
         alt={props.alt ?? 'Image'}
-        loading={`${props.loading ? props.loading : "lazy"}`}
+        loading={props.loading ?? 'lazy'}
         width={props.width ?? 1}
         height={props.height ?? 1}
         unoptimized={!props.optimized}
+        onLoad={() => setIsLoading(false)}
       />
     </div>
-  )
-}
+  );
+};
 
-export default ImageWrapper
+export default ImageWrapper;

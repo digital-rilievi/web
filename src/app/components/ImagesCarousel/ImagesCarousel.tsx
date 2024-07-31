@@ -35,7 +35,7 @@ const ImagesCarousel = (props: ImagesCarouselProps) => {
 
     return (
         <div className={`${styles.container} ${props.className}`}>
-            <ImageWrapper className={styles.carouselImage} src={images[currentIndex]} backgroundColor={"#373737"} />
+            <ImageWrapper className={styles.carouselImage} src={images[currentIndex]} backgroundColor={"#373737"} loading="eager" />
             <div className={styles.controls}>
                 <button className={`${styles.arrow} ${styles.left}`} onClick={prevSlide} style={{ visibility: `${leftArrowStyle}` }}>
                     <Image src="/assets/extras/left-arrow.svg" alt={"&larr;"} width={46} height={46} />

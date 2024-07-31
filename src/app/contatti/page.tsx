@@ -1,3 +1,5 @@
+'use client'
+import { useState, useEffect } from "react"
 import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
@@ -8,6 +10,27 @@ import Space from 'app/components/Space/Space'
 import styles from './Contatti.module.css'
 
 const Contatti = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+
+  useEffect(() => {
+    const iframe = document.querySelector('iframe');
+    const handleLoad = () => {
+      setIsLoading(false);
+    };
+
+    if (iframe) {
+      iframe.addEventListener('load', handleLoad);
+    }
+
+    // Cleanup event listener
+    return () => {
+      if (iframe) {
+        iframe.removeEventListener('load', handleLoad);
+      }
+    };
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -47,9 +70,10 @@ const Contatti = () => {
           <iframe
             width="100%"
             height="100%"
+            className={isLoading ? styles.loading : ''}
             allowFullScreen
-            src="https://snazzymaps.com/embed/585095">
-          </iframe>
+            src="https://snazzymaps.com/embed/585095"
+          ></iframe>
         </div>
       </div>
       <Space size="big" />

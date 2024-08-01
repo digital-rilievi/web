@@ -38,7 +38,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                             <Image src={'/assets/extras/quotes.svg'} width={1} height={1} alt={''} className={styles.quoteInvisibleIcon} />
 
                             <div className={styles.buttonColumn}>
-                                <div className={styles.quote}>{props.quote}</div>
+                                <p className={styles.quote}>{props.quote}</p>
                                     <>
                                         <div className={`${styles.buttonWrapper} ${!props.link && styles.invisible}` }>
                                             <Link href={`${props.link ? props.link : ''}`}>

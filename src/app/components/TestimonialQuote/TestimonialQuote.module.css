@@ -132,13 +132,6 @@
     visibility: hidden;
 }
 
-.quote {
-  font-size: 26px;
-  font-weight: 200;
-  line-height: 38px;
-  letter-spacing: 0em;
-}
-
 .altAlign {
   text-align: end;
 }

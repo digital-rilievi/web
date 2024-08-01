@@ -21,7 +21,7 @@ const CustomTooltip = (props: TooltipProps) => {
         <div className={styles.tooltipContainer}>
             {props.img && (
                 <div className={styles.imageRowContainer}>
-                    <ImageWrapper className={styles.tooltipImage} imagestyle={styles.image} alt={''} src={props.img} />
+                    <ImageWrapper className={styles.tooltipImage} imagestyle={styles.image} alt={''} src={props.img} backgroundColor={"#F5F5F5"} />
                     <div className={styles.nameColumnContainer}>
                         {props.name && (
                             <h1 className={styles.nameForMobile}>{toPascalCase(props.name)}</h1>

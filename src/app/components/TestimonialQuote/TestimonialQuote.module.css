@@ -144,7 +144,7 @@
 @media (max-width: 1024px) {
 
 .invisible {
-  display: none;
+
 }
 
   .rowContainer,
@@ -198,7 +198,7 @@
   }
 
   .quoteInvisibleIcon {
-    display: none;
+
   }
 
   .buttonColumn {

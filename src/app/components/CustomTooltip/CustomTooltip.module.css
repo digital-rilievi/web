@@ -102,7 +102,7 @@
   }
 
   .tooltipQuoteInvisible {
-    
+    display: none;
   }
 
   .image {

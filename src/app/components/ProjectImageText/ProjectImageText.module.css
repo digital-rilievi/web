@@ -189,12 +189,12 @@
   }
 
   .visibleInMobile {
-  
+    display: none !important;
   }
 
  @media (max-width: 1024px) {
         .invisibleInMobile {
-     
+      display: none !important;
     }
 
     .visibleInMobile {

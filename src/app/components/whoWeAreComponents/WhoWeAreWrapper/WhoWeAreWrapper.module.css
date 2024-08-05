@@ -3,15 +3,27 @@
   }
 
   .visibleInMobile {
-    display: none !important;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
   }
   
 @media (max-width: 1024px) {
   .invisibleInMobile {
-    display: none !important;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+    position: relative;
+    top: 99999px;
+    right: 99999px;
+    padding: 0px;
+    margin: 0px;
   }
 
   .visibleInMobile {
     display: block !important;
+    visibility: visible !important;
+    height: auto;
+    width: auto;
   }
 }

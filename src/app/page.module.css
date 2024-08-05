@@ -20,7 +20,9 @@
 }
 
 .visibleInMobile {
-  display: none !important;
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
 }
 
   .appBarSpace {
@@ -30,17 +32,26 @@
   }
 
   .mobileAppbarSpacer {
-    display: none !important;
+    
+      height: 0px;
+      width: 0px;
+      visibility: hidden;
   }
 
 
 @media (max-width: 1000px) {
   .invisibleInMobile {
-    display: none !important;
+    
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
   }
 
   .visibleInMobile {
     display: block !important;
+    height: auto;
+    width: auto;
+    visibility: visible !important;
   }
   
     .appBarSpace {
@@ -50,6 +61,6 @@
 
   .mobileAppbarSpacer {
     display: block !important;
+    visibility: visible !important;
   }
-
 }

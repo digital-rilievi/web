@@ -74,10 +74,12 @@
   }
 
  @media (max-width: 1240px) {
-        .invisibleInMobile {
+    .invisibleInMobile {
       height: 0px;
       width: 0px;
       visibility: hidden;
+      right: 99999px;
+    position: relative;
     }
 
     .visibleInMobile {

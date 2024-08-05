@@ -153,6 +153,8 @@
   .visibleInMobile {
     display: block !important;
     visibility: visible !important;
+    height: auto;
+    width: auto;
   }
 
   .container,

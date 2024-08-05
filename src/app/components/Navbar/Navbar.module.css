@@ -162,7 +162,7 @@ position: fixed;
       display: flex;
       visibility: visible;
       height: auto;
-      width: auto;
+      width: 100%;
       flex-direction: column;
       align-items: center;
       justify-content: center;

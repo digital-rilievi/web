@@ -59,15 +59,17 @@
 
 @media(max-width: 1024px) {
 
-    .invisibleInMobile {
-      height: 0px;
-      width: 0px;
-      visibility: hidden;
+  .invisibleInMobile {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
   }
 
   .visibleInMobile {
     display: flex !important;
     visibility: visible !important;
+    height: auto;
+    width: auto;
   }
 
   .row {

@@ -344,29 +344,18 @@
 }
 
 .invisibleInMobile {
-  position: relative;
-  right: 99999px;
-  padding: 0px;
-  margin: 0px;
 }
 
 .visibleInMobile {
-  height: 0px;
-  width: 0px;
-  visibility: hidden;
+  display: none !important;
 }
 
 @media (max-width: 1240px) {
   .invisibleInMobile {
-    height: 0px;
-    width: 0px;
-    visibility: hidden;
+    display: none !important;
   }
 
   .visibleInMobile {
     display: block !important;
-    visibility: visible !important;
-    height: auto;
-    width: auto;
   }
 }

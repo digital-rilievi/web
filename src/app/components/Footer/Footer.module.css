@@ -95,9 +95,7 @@ line-height: 24px; /* 133.333% */
 
   .spaceColumn {
     flex: 0;
-    height: 0px;
-    width: 0px;
-    visibility: hidden;
+    display: none;
   }
 
   .rowContainer {

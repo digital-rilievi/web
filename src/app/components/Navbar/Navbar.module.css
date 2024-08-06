@@ -73,9 +73,7 @@
 }
 
 .mobileMenuIcon {
-  height: 0px;
-  width: 0px;
-  visibility: hidden;
+  display: none;
   cursor: pointer;
 }
 
@@ -146,9 +144,7 @@ position: fixed;
     }
 
     .navLinks {
-      height: 0px;
-      width: 0px;
-      visibility: hidden;
+      display: none;
       flex-direction: column;
       position: absolute;
       top: 60px; /* Position below the sticky navigation bar */
@@ -160,9 +156,6 @@ position: fixed;
 
     .navLinks.showMobileMenu {
       display: flex;
-      visibility: visible;
-      height: auto;
-      width: 100%;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -223,7 +216,6 @@ position: fixed;
   .mobileMenuIcon {
     width: 50px;
     height: 40px;
-    visibility: visible;
   }
 
     /* Animation for the logo */

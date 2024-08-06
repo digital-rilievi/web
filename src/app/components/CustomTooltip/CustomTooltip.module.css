@@ -102,9 +102,7 @@
   }
 
   .tooltipQuoteInvisible {
-    height: 0px;
-    width: 0px;
-    visibility: hidden;
+    display: none;
   }
 
   .image {

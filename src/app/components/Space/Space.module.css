@@ -14,12 +14,24 @@
 }
 
 .noSpaceForWeb {
-    display: none;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+    position: relative;
+    right: 99999px;
+    padding: 0px;
+    margin: 0px;
 }
 
 @media (max-width: 1000px) {
     .noSpaceForMobile {
-        display: none;
+        height: 0px !important;
+        width: 0px;
+        visibility: hidden;
+        position: relative;
+        right: 99999px;
+        padding: 0px;
+        margin: 0px;
     }
 
     .noSpaceForWeb {

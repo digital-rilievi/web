@@ -113,7 +113,6 @@ position: fixed;
 @media (max-width: 1000px) {
 
     .navbar {
-      background-color: rgba(19, 19, 19, 0.3);
       width: 100vw;
       padding: 1rem;
       }

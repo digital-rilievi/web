@@ -97,28 +97,10 @@ position: fixed;
 }
 
 .logoAnimated {
-  animation: logoAnimation 1.3s ease, hide 0.001s linear 1.3s 1 forwards; /* Add a transition for a smooth effect */
 }
 
-/* Animation for the logo */
-@keyframes logoAnimation {
-  0% {
-    width: 100vh; /* Initial size, full width */
-    max-width: 150rem;
 
-  }
-  100% {
-    width: 100px; /* Final size, adjust as needed */
-    visibility: visible;
-  }
-}
 
-@keyframes hide {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 
 @media (min-width: 1580px) {
   .selected,
@@ -191,18 +173,6 @@ position: fixed;
     .bigLogo {
       width: 100px;
     }
-
-    /* Animation for the logo */
-  @keyframes logoAnimation {
-    0% {
-      width: 100vh; /* Initial size, full width */
-      max-width: 150rem;
-      }
-    100% {
-      width: 100px; /* Final size, adjust as needed */
-      visibility: visible;
-    }
-  }
 }
 
   /* Media query for mobile small screen */
@@ -226,16 +196,5 @@ position: fixed;
     visibility: visible;
   }
 
-    /* Animation for the logo */
-@keyframes logoAnimation {
-  0% {
-    width: 100vh; /* Initial size, full width */
-    max-width: 150rem;
 
-  }
-  100% {
-    width: 80px; /* Final size, adjust as needed */
-    visibility: visible;
-  }
-}
 }

@@ -37,23 +37,6 @@
     animation-delay: calc(40s / -2);
 }
 
-@keyframes animate {
-  0% {
-    transform: translateX(0%)
-  }
-  100% {
-    transform: translateX(-100%)
-  }
-}
-
-@keyframes animate2 {
-  0% {
-    transform: translateX(0%)
-  }
-  100% {
-    transform: translateX(-200%)
-  }
-}
 
 .scroll div span {
   display: inline-flex;

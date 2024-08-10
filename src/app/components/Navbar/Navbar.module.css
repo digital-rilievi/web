@@ -8,7 +8,7 @@
   align-items: flex-start;
   padding: 1rem;
   color: #fff;
-  backdrop-filter: blur(8px);
+
   background-color: unset;
   z-index: 1000;
   max-width: 150rem;
@@ -27,7 +27,7 @@
   align-items: flex-start;
   padding: 1rem;
   color: #fff;
-  backdrop-filter: blur(8px);
+
   z-index: 1000;
   max-width: 150rem;
   margin-left: auto;

@@ -10,12 +10,6 @@ interface TooltipProps {
     role?: string
 }
 
-function toPascalCase(str: string) {
-    return str.replace(/\w+/g, function(w) {
-        return w[0].toUpperCase() + w.slice(1).toLowerCase()
-    });
-}
-
 const CustomTooltip = (props: TooltipProps) => {
     return (
         <div className={styles.tooltipContainer}>
@@ -24,7 +18,7 @@ const CustomTooltip = (props: TooltipProps) => {
                     <ImageWrapper className={styles.tooltipImage} imagestyle={styles.image} alt={''} src={props.img} backgroundColor={"#F5F5F5"} />
                     <div className={styles.nameColumnContainer}>
                         {props.name && (
-                            <h1 className={styles.nameForMobile}>{toPascalCase(props.name)}</h1>
+                            <h1 className={styles.nameForMobile}>{props.name}</h1>
                         )}
                         {props.role && (
                             <h1 className={styles.role}>{props.role}</h1>

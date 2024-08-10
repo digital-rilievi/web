@@ -1,5 +1,5 @@
 import WhoWeAre from "../WhoWeAre/WhoWeAre"
-import WhoWeAreMobile from "../WoWeAreMobile/WoWeAreMobile"
+import WhoWeAreMobile from "../WoWeAreMobile/WhoWeAreMobile"
 import styles from './WhoWeAreWrapper.module.css'
 
 interface Item {

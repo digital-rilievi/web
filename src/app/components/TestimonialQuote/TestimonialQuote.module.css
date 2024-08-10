@@ -54,7 +54,7 @@
   padding-left: 1rem;
   flex-direction: row;
   align-items: center;
-  align-self: end;
+  align-self: flex-end;
   margin-right: 20px;
 }
 

@@ -4,7 +4,7 @@
   display: flex;
   width: -webkit-fill-available;
   width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-start;
   padding: 1rem;
   color: #fff;
@@ -23,7 +23,7 @@
   display: flex;
   width: -webkit-fill-available;
   width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-start;
   padding: 1rem;
   color: #fff;

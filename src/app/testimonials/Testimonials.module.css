@@ -1,5 +1,7 @@
 .invisibleInWeb {
-    display: none;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
 }
 
 @media (max-width: 1000px) {

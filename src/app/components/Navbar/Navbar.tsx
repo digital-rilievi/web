@@ -44,7 +44,7 @@ const Navbar = (props: NavBarProps) => {
     <div style={{ position: "relative" }}>
       {!props.invisible && props.animateLogo &&
         <div>
-          <Link href="/">
+          <Link href="/" prefetch={false}>
             {/* <Image className={`${styles.bigLogo} ${animatedLogoNeeded ? styles.logoAnimated : ''}`} src="/assets/logo/letter_d.svg" alt="Logo" width="1" height="1" /> */}
             <Image className={`${styles.bigLogo} ${styles.logoAnimated}`} src="/assets/logo/letter_d.svg" alt="Logo" width="1" height="1" />
           </Link>
@@ -52,22 +52,22 @@ const Navbar = (props: NavBarProps) => {
       }
       <nav className={`${props.invisible ? styles.spacingNavBar : styles.navbar} ${isMobileMenuOpen ? styles.mobileMenuMaskDeactivated : ''}`}>
         <div>
-          <Link href="/">
+          <Link href="/" prefetch={false}>
             <Image className={styles.logo} src="/assets/logo/letter_d.svg" alt="Logo" width="1" height="1" />
           </Link>
         </div>
         <>
           <div className={`${styles.navLinks} ${isMobileMenuOpen ? styles.showMobileMenu : ''}`}>
-            <Link href="/chi-siamo" className={pathname === '/chi-siamo' ? styles.selected : styles.unselected}>
+            <Link prefetch={false} href="/chi-siamo" className={pathname === '/chi-siamo' ? styles.selected : styles.unselected}>
               CHI SIAMO
             </Link>
-            <Link href="/contatti" className={pathname === '/contatti' ? styles.selected : styles.unselected}>
+            <Link prefetch={false} href="/contatti" className={pathname === '/contatti' ? styles.selected : styles.unselected}>
               CONTATTI
             </Link>
-            <Link href="/progetti" className={pathname.includes('/progetti') ? styles.selected : styles.unselected}>
+            <Link prefetch={false} href="/progetti" className={pathname.includes('/progetti') ? styles.selected : styles.unselected}>
               I NOSTRI PROGETTI
             </Link>
-            <Link href="/testimonials" className={pathname === '/testimonials' ? styles.selected : styles.unselected}>
+            <Link prefetch={false} href="/testimonials" className={pathname === '/testimonials' ? styles.selected : styles.unselected}>
               DICONO DI NOI
             </Link>
           </div>

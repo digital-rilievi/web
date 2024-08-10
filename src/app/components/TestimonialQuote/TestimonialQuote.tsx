@@ -41,7 +41,7 @@ const TestimonialQuote = (props: TestimonialQuoteProps) => {
                                 <p className={styles.quote}>{props.quote}</p>
                                     <>
                                         <div className={`${styles.buttonWrapper} ${!props.link && styles.invisible}` }>
-                                            <Link href={`${props.link ? props.link : ''}`}>
+                                            <Link prefetch={false} href={`${props.link ? props.link : ''}`}>
                                                 <div className={styles.button}>{props.linkLabel}</div>
                                             </Link>
                                         </div>

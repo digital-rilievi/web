@@ -14,7 +14,7 @@ const CircularButton = (props: CircularButtonProps) => {
         <>
             {
                 props.remainsInPage ? (
-                    <Link href={props.link}>
+                    <Link href={props.link} prefetch={false}>
                         <button className={`${styles.circularButton} ${props.isSmallCircle ? styles.smallCircle : ''}`}>
                             <span>{props.label ? props.label : content.defaultButtonsValue}</span>
                         </button>

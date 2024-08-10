@@ -47,17 +47,17 @@ const DeviceDetector = () => {
 
   return (
     <>
-      {deviceInfo.isAndroid && <p>You're using an Android device.</p>}
+      {deviceInfo.isAndroid && <p>You are using an Android device.</p>}
       {deviceInfo.isIOS && (
         <div>
-          <p>You're using an iOS device.</p>
+          <p>You are using an iOS device.</p>
           {deviceInfo.iosVersion && <p>iOS Version: {deviceInfo.iosVersion}</p>}
         </div>
       )}
-      {deviceInfo.isChrome && <p>You're using Chrome.</p>}
-      {deviceInfo.isSafari && <p>You're using Safari.</p>}
-      {deviceInfo.isFirefox && <p>You're using Firefox.</p>}
-      {!deviceInfo.isChrome && !deviceInfo.isSafari && !deviceInfo.isFirefox && <p>You're using a different browser.</p>}
+      {deviceInfo.isChrome && <p>You are using Chrome.</p>}
+      {deviceInfo.isSafari && <p>You are using Safari.</p>}
+      {deviceInfo.isFirefox && <p>You are using Firefox.</p>}
+      {!deviceInfo.isChrome && !deviceInfo.isSafari && !deviceInfo.isFirefox && <p>You are using a different browser.</p>}
     </>
   );
 };

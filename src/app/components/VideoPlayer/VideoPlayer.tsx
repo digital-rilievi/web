@@ -36,8 +36,8 @@ const VideoPlayer = (props: VideoPlayerProps) => {
         style={props.videoStyle}
         poster="https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro_lowres.jpeg?alt=media&token=cbf28c19-b5d6-42d1-a2f3-39fbfc9dee5f"
       >
-        <source src="https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro_noaudio.webm?alt=media&token=5660bb0c-c389-4227-aad0-61e825abe9bf" type="video/webm" />
-        <source src="https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro.mp4?alt=media&token=1ea9086c-61b9-444e-b8c0-df2f8d518062" type="video/mp4" />
+        <source src="https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro_noaudio.webm?alt=media&token=c0b9afee-2823-4af5-a228-80e2908aa521" type="video/webm" />
+        <source src="https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro.mp4?alt=media&token=9344e094-3889-4ba4-9b2c-2115b7d431e3" type="video/mp4" />
       </video>
     </div>
   )

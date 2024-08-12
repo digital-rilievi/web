@@ -43,6 +43,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
           className="intro-video"
           id="myVideo"
           playsInline
+          autoPlay
           loop
           muted
           style={props.videoStyle}
@@ -55,7 +56,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
           className={styles.image}
           src={`https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro_lowres.jpeg?alt=media&token=cbf28c19-b5d6-42d1-a2f3-39fbfc9dee5f`}
           backgroundColor={"#4e4e4e"} />
-      }
+      )}
     </div>
   )
 }

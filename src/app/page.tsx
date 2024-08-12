@@ -58,6 +58,7 @@ export default function Home() {
 
         <div className={styles.visibleInMobile}>
           <VideoPlayer title={content.home.title} videoStyle={{ width: '100%', height: '133.33vw', objectFit: "cover" }} />
+          <div>{device}</div>
         </div>
         <div className={styles.invisibleInMobile}>
           <VideoPlayer

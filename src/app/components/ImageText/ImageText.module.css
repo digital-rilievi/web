@@ -98,13 +98,11 @@
 }
 
 .invisible {
-  height: 0px;
-  width: 0px;
-  visibility: hidden;
+  display: none !important;
 }
 
 .visibleInMobile {
-
+  display: none !important;
 }
 
   /* Media query for bigger layout */
@@ -145,16 +143,11 @@
   @media (max-width: 1024px) {
 
   .invisibleInMobile {
-    height: 0px;
-    width: 0px;
-    visibility: hidden;
+    display: none !important;
   }
 
   .visibleInMobile {
     display: block !important;
-    visibility: visible !important;
-    height: auto;
-    width: auto;
   }
 
   .container,

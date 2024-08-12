@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const useDeviceInfo = () => {
-  const [deviceInfo, setDeviceInfo] = useState({ device: '', os: '', iosVersion: '' })
+  const [deviceInfo, setDeviceInfo] = useState({ browser: '', device: '', iosVersion: '' })
 
   useEffect(() => {
     // Define the user-agent string and platform
@@ -10,6 +10,7 @@ const useDeviceInfo = () => {
     // Device detection
     const isAndroid = /Android/i.test(userAgent)
     const isIOS = /iPhone|iPad|iPod/i.test(userAgent)
+
     const isChrome = /Chrome/.test(userAgent) && !/Edge/.test(userAgent) && !/OPR/.test(userAgent)
     const isSafari = /Safari/.test(userAgent) && !/Chrome/.test(userAgent) && !/Edge/.test(userAgent) && !/OPR/.test(userAgent)
     const isFirefox = /Firefox/.test(userAgent) && !/Trident/.test(userAgent);
@@ -20,19 +21,19 @@ const useDeviceInfo = () => {
 
     // Determine device and os
     const device = isAndroid ? 'Android' : isIOS ? 'iOS' : 'Other'
-    let os = 'Other'
+    let browser = 'Other'
 
     if (isChrome) {
-      os = 'Chrome'
+      browser = 'Chrome'
     } else if (isSafari) {
-      os = 'Safari'
+      browser = 'Safari'
     } else if (isFirefox) {
-      os = 'Firefox'
+      browser = 'Firefox'
     } else if (isIOS) {
-      os = `iOS`
+      browser = `iOS`
     }
 
-    setDeviceInfo({ device, os, iosVersion })
+    setDeviceInfo({ browser, device, iosVersion })
 
   }, [])
 

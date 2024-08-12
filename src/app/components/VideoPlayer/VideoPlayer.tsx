@@ -12,7 +12,7 @@ interface VideoPlayerProps {
 
 const VideoPlayer = (props: VideoPlayerProps) => {
 
-  const { device, os, iosVersion } = useDeviceInfo()
+  const { browser, device, iosVersion } = useDeviceInfo()
 
   useEffect(() => {
     const startPlayback = () => {
@@ -29,8 +29,8 @@ const VideoPlayer = (props: VideoPlayerProps) => {
   const versionNumber = major + (minor / 10)
   var iosBiggerThan17 = versionNumber >= 17.0
 
+  if(browser) console.log("browser: " + browser)
   if(device) console.log("device: " + device)
-  if(os) console.log("os: " + os)
   if(iosVersion) console.log("iosVersion: " + iosVersion)
 
   return (
@@ -38,7 +38,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
       <h1 className={`${styles.title} ${styles.invisibleInMobile}`}>
         {props.title}
       </h1>
-      {(device !== "iOS" || device === "iOS" && !iosBiggerThan17) ?
+      {(device !== "iOS" || (device === "iOS" && browser === "Safari" && !iosBiggerThan17) ?
         <video
           className="intro-video"
           id="myVideo"

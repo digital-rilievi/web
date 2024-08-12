@@ -62,7 +62,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
             id="myVideo"
             ref={videoRef}
             playsInline
-            autoPlay={(device === "iOS" && browser === "Safari") ? true : false}
+            autoPlay={(device === "iOS" && browser === "Safari") ? false : true}
             loop
             controls={false}
             muted

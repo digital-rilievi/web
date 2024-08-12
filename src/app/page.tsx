@@ -14,10 +14,12 @@ import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
 import PartnersList from "./components/PartnersList/PartnersList"
 import WhoWeAreWrapper from "./components/whoWeAreComponents/WhoWeAreWrapper/WhoWeAreWrapper"
 import ManualSliderWrapper from "./components/manualSliderComponents/ManualSliderWrapper/ManualSliderWrapper"
+import useDeviceInfo from "./hooks/useDeviceInfo"
 
 export default function Home() {
   const [isVertical, setIsVertical] = useState(true)
-
+  const { browser, device, iosVersion } = useDeviceInfo()
+  
   // Your image array here
   const weDealWithList: React.ReactNode[] = content.home.weDealWith.map((deal, index) => (
     <WeDealWith
@@ -47,7 +49,7 @@ export default function Home() {
 
   return (
     <main>
-      <NavBar animateLogo />
+      <NavBar animateLogo={device === "iOS" ? false : true } />
       <ScrollIndicator />
       <div className={styles.content}>
         {/* <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>

@@ -4,8 +4,6 @@ import { useEffect, useRef, useState } from "react"
 import styles from './VideoPlayer.module.css'
 import useDeviceInfo from '../../hooks/useDeviceInfo'
 import ImageWrapper from "../ImageWrapper/ImageWrapper"
-import CircularButton from "../CircularButton/CircularButton"
-import { isUtf8 } from "buffer"
 
 interface VideoPlayerProps {
   title?: string,

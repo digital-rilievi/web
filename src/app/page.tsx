@@ -14,7 +14,6 @@ import ScrollIndicator from "./components/ScrollIndicator/ScrollIndicator"
 import PartnersList from "./components/PartnersList/PartnersList"
 import WhoWeAreWrapper from "./components/whoWeAreComponents/WhoWeAreWrapper/WhoWeAreWrapper"
 import ManualSliderWrapper from "./components/manualSliderComponents/ManualSliderWrapper/ManualSliderWrapper"
-import DeviceDetector from "./components/DeviceDetector"
 
 export default function Home() {
   const [isVertical, setIsVertical] = useState(true)

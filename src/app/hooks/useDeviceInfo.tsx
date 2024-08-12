@@ -29,8 +29,6 @@ const useDeviceInfo = () => {
       browser = 'Safari'
     } else if (isFirefox) {
       browser = 'Firefox'
-    } else if (isIOS) {
-      browser = `iOS`
     }
 
     setDeviceInfo({ browser, device, iosVersion })

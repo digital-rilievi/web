@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <main>
-      <NavBar animateLogo={device === "iOS" ? false : true } />
+      <NavBar animateLogo={(device !== "iOS") ? true : false } />
       <ScrollIndicator />
       <div className={styles.content}>
         {/* <div className={`${styles.appBarSpace} ${styles.mobileAppbarSpacer}`}>

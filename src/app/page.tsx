@@ -102,7 +102,6 @@ export default function Home() {
         <Space maintainInMobile />
         <Space size={"big"} hideInWeb />
         <Footer />
-        <DeviceDetector />
       </div>
     </main>
   )

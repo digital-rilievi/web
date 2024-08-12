@@ -2,7 +2,7 @@
 'use client'
 import { useEffect } from "react"
 import styles from './VideoPlayer.module.css'
-import useDeviceDetector from '../../hooks/getDeviceInfo'
+import useDeviceInfo from '../../hooks/useDeviceInfo'
 import ImageWrapper from "../ImageWrapper/ImageWrapper"
 
 interface VideoPlayerProps {
@@ -12,7 +12,7 @@ interface VideoPlayerProps {
 
 const VideoPlayer = (props: VideoPlayerProps) => {
 
-  const { device, os, iosVersion } = useDeviceDetector()
+  const { device, os, iosVersion } = useDeviceInfo()
 
   useEffect(() => {
     const startPlayback = () => {

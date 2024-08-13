@@ -57,7 +57,7 @@ export default function Home() {
         </div> */}
 
         <div className={styles.visibleInMobile}>
-          <VideoPlayer title={content.home.title.replaceAll("\n", " ")} videoStyle={{ width: '100%', height: '133.33vw', objectFit: "cover" }} />
+          <VideoPlayer title={content.home.title.replaceAll("\n", " ")} videoStyle={{ width: '100%', height: '133.33vw', objectFit: 'cover' }} />
         </div>
         <div className={styles.invisibleInMobile}>
           <VideoPlayer

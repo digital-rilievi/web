@@ -115,7 +115,7 @@
         flex: 0;
     }
 
-        .visibleInMobile {
+    .visibleInMobile {
       height: 0px;
       width: 0px;
     }

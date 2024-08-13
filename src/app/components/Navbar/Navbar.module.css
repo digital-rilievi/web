@@ -90,7 +90,7 @@
 .bigLogo {
 position: fixed;
   z-index: 1002;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
   width: 100vh; /* Initial size, full width */
   max-width: 150rem;
   visibility: hidden;

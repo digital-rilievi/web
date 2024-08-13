@@ -358,6 +358,8 @@
     height: 0px;
     width: 0px;
     visibility: hidden;
+    position: relative;
+    right: 99999px;
   }
 
   .visibleInMobile {

@@ -18,7 +18,7 @@ import useDeviceInfo from "./hooks/useDeviceInfo"
 
 export default function Home() {
   const [isVertical, setIsVertical] = useState(true)
-  const { browser, device, iosVersion } = useDeviceInfo()
+  const { device } = useDeviceInfo()
   
   // Your image array here
   const weDealWithList: React.ReactNode[] = content.home.weDealWith.map((deal, index) => (
@@ -57,7 +57,7 @@ export default function Home() {
         </div> */}
 
         <div className={styles.visibleInMobile}>
-          <VideoPlayer title={content.home.title} videoStyle={{ width: '100%', height: '133.33vw', objectFit: "cover" }} />
+          <VideoPlayer title={content.home.title.replaceAll("\n", " ")} videoStyle={{ width: '100%', height: '133.33vw', objectFit: "cover" }} />
         </div>
         <div className={styles.invisibleInMobile}>
           <VideoPlayer
@@ -65,8 +65,8 @@ export default function Home() {
             videoStyle={isVertical ? { width: '100%', height: 'auto' } : { width: '100%', height: '100vh', objectFit: 'cover' }}
           />
         </div>
-        <Space size={"big"} maintainInMobile />
-        <Space maintainInMobile />
+        <Space size={"big"} />
+        <Space />
         <Space size={"normal"} />
         <ImageText image={content.home.firstImage}
           text={content.home.firstImageDesc}

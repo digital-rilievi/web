@@ -73,7 +73,9 @@
 }
 
 .mobileMenuIcon {
-  display: none;
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
   cursor: pointer;
 }
 
@@ -144,7 +146,9 @@ position: fixed;
     }
 
     .navLinks {
-      display: none;
+      height: 0px;
+      width: 0px;
+      visibility: hidden;
       flex-direction: column;
       position: absolute;
       top: 60px; /* Position below the sticky navigation bar */
@@ -156,6 +160,9 @@ position: fixed;
 
     .navLinks.showMobileMenu {
       display: flex;
+      visibility: visible;
+      height: auto;
+      width: 100%;
       flex-direction: column;
       align-items: center;
       justify-content: center;

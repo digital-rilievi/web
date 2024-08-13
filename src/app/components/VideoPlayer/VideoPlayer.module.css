@@ -15,7 +15,9 @@
   }
 
   .visibleInMobile {
-    display: none !important;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
   }
 
 .videoAndCommandsWrapper {

@@ -57,7 +57,7 @@ const Navbar = (props: NavBarProps) => {
           </Link>
         </div>
         <>
-          <div className={`${styles.navLinks} ${isMobileMenuOpen ? styles.showMobileMenu : ''}`}>
+          <div className={`${props.invisible ? '' : styles.navLinks} ${isMobileMenuOpen ? styles.showMobileMenu : ''}`}>
             <Link prefetch={false} href="/chi-siamo" className={pathname === '/chi-siamo' ? styles.selected : styles.unselected}>
               CHI SIAMO
             </Link>
@@ -73,7 +73,7 @@ const Navbar = (props: NavBarProps) => {
           </div>
 
           <div onClick={toggleMobileMenu}>
-          <Image className={styles.mobileMenuIcon} src={'/assets/extras/menu.svg'} alt={''} height={1} width={1} />
+          <Image className={`${props.invisible ? styles.invisibleMenuIcon : styles.mobileMenuIcon}`} src={'/assets/extras/menu.svg'} alt={''} height={1} width={1} />
           </div>
         </>
       </nav>

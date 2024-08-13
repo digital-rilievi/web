@@ -80,6 +80,10 @@
   cursor: pointer;
 }
 
+.invisibleMenuIcon {
+  visibility: hidden;
+}
+
 .bar {
   width: 25px;
   height: 3px;

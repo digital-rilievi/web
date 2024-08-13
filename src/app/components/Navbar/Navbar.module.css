@@ -77,11 +77,10 @@
   height: 0px;
   width: 0px;
   visibility: hidden;
-  cursor: pointer;
 }
 
 .invisibleMenuIcon {
-  visibility: hidden;
+  visibility: hidden !important;
 }
 
 .bar {

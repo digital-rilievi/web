@@ -17,7 +17,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
   useEffect(() => {
     const startPlayback = () => {
       const video = document.getElementById('myVideo') as HTMLVideoElement | null
-      if (video) {
+      if (video && device && (device !== "iOS" || (device === "iOS" && browser === "Safari" && !iosBiggerThan17))) {
         video.play()
         setIsPlaying(!isPlaying)
       }
@@ -53,14 +53,14 @@ const VideoPlayer = (props: VideoPlayerProps) => {
       <h1 className={`${styles.title} ${styles.invisibleInMobile}`}>
         {props.title}
       </h1>
-      {(device !== "iOS" || (device === "iOS" && browser === "Safari" && !iosBiggerThan17) ?
+      {(device && (device !== "iOS" || (device === "iOS" && browser === "Safari" && !iosBiggerThan17)) ?
         <div className={styles.videoAndCommandsWrapper}>
           <video
             className="intro-video"
             id="myVideo"
             ref={videoRef}
             playsInline
-            autoPlay={(device === "iOS" && browser === "Safari") ? false : true}
+            autoPlay={(device && device === "iOS" && browser === "Safari") ? false : true}
             loop
             controls={false}
             muted

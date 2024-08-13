@@ -50,7 +50,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
 
   return (
     <div style={{ position: "relative" }}>
-      <h1 className={`${styles.title} ${styles.invisibleInMobile}`}>
+      <h1 className={`${styles.title}  ${(device && device !== "iOS") ? styles.androidTitle : ''}`}>
         {props.title}
       </h1>
       {(device && (device !== "iOS" || (device === "iOS" && browser === "Safari" && !iosBiggerThan17)) ?

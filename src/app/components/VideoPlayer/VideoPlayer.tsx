@@ -50,7 +50,7 @@ const VideoPlayer = (props: VideoPlayerProps) => {
 
   return (
     <div style={{ position: "relative" }}>
-      <h1 className={`${styles.title} ${styles.invisibleInMobile}`}>
+      <h1 className={`${styles.title}  ${(device && device !== "iOS") ? styles.androidTitle : ''}`}>
         {props.title}
       </h1>
       {(device && (device !== "iOS" || (device === "iOS" && browser === "Safari" && !iosBiggerThan17)) ?
@@ -72,14 +72,14 @@ const VideoPlayer = (props: VideoPlayerProps) => {
           </video>
           {((device === "iOS" && browser === "Safari") &&
             <div className={styles.commandsWrapper}>
-            <div className={styles.circularButton} onClick={handlePlayPause}>
-              {isPlaying ? "METTI IN PAUSA" : "RIPRODUCI"}
+              <div className={styles.circularButton} onClick={handlePlayPause}>
+                {isPlaying ? "METTI IN PAUSA" : "RIPRODUCI"}
+              </div>
             </div>
-          </div>
           )}
         </div> :
         <ImageWrapper
-          className={styles.image}
+          classStyle={props.videoStyle}
           src={`https://firebasestorage.googleapis.com/v0/b/digital-rilievi.appspot.com/o/intro_lowres.jpeg?alt=media&token=cbf28c19-b5d6-42d1-a2f3-39fbfc9dee5f`}
           backgroundColor={"#4e4e4e"} />
       )}

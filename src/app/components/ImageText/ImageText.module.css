@@ -114,6 +114,11 @@
     .containerHelper {
         flex: 0;
     }
+
+    .visibleInMobile {
+      height: 0px;
+      width: 0px;
+    }
   }
 
   /* Media query for bigger layout */
@@ -121,6 +126,11 @@
     .image {
         height: 50rem;
         width: auto;
+    }
+
+    .visibleInMobile {
+      height: 0px;
+      width: 0px;
     }
   }
 

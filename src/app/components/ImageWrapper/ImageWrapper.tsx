@@ -8,6 +8,7 @@ interface ImageWrapperProps {
   width?: `${number}` | number,
   height?: `${number}` | number,
   className?: string,
+  classStyle?: object,
   imagestyle?: string,
   optimized?: boolean,
   loading?: "lazy" | "eager" | undefined
@@ -17,7 +18,8 @@ const ImageWrapper = (props: ImageWrapperProps) => {
 
   return (
     <div
-      className={`${props.className}`}>
+      className={`${props.className}`}
+      style={props.classStyle}>
       <NextImage
         className={`${styles.image} ${props.imagestyle}`}
         style={{

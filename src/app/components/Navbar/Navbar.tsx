@@ -73,7 +73,7 @@ const Navbar = (props: NavBarProps) => {
           </div>
 
           <div onClick={toggleMobileMenu}>
-          <Image className={styles.mobileMenuIcon} src={'/assets/extras/menu.svg'} alt={''} height={1} width={1} />
+          <Image className={`${styles.mobileMenuIcon} ${props.invisible ? styles.invisibleMenuIcon : ''}`} src={'/assets/extras/menu.svg'} alt={''} height={1} width={1} />
           </div>
         </>
       </nav>

@@ -41,6 +41,7 @@
   left: 1rem;
   z-index: 1002;
   padding: 1rem;
+  padding-top: 0.8rem;
 }
 
 .navLinks {
@@ -76,7 +77,10 @@
   height: 0px;
   width: 0px;
   visibility: hidden;
-  cursor: pointer;
+}
+
+.invisibleMenuIcon {
+  visibility: hidden !important;
 }
 
 .bar {
@@ -89,7 +93,7 @@
 .bigLogo {
 position: fixed;
   z-index: 1002;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
   width: 100vh; /* Initial size, full width */
   max-width: 150rem;
   visibility: hidden;
@@ -151,11 +155,14 @@ position: fixed;
       visibility: hidden;
       flex-direction: column;
       position: absolute;
-      top: 60px; /* Position below the sticky navigation bar */
+      top: 100px; /* Position below the sticky navigation bar */
       right: 0;
       width: 100%;
       background-color: #131313;
       z-index: 1;
+      width: 100%;
+      text-align: center;
+      padding: 0.2rem;
     }
 
     .navLinks.showMobileMenu {
@@ -169,23 +176,19 @@ position: fixed;
       padding-bottom: 2rem;
     }
 
-    .navLinks {
-      width: 100%;
-      text-align: center;
-      padding: 0.2rem;
-    }
-
     .mobileMenuIcon {
       display: block;
-      padding-top: 0.5rem;
-      margin-bottom: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       padding-right: 1rem;
       width: 60px;
       height: 60px;
+      visibility: visible;
     }
 
-      .logo {
+    .logo {
       width: 100px;
+      margin-top: 0.8rem;
     }
 
     .bigLogo {
@@ -209,20 +212,25 @@ position: fixed;
 @media (max-width: 800px) {
   .navbar {
     padding: 0.5rem;
-    padding-bottom: 0;
   }
 
   .logo {
     width: 80px;
+    margin-top: 0;
   }
 
   .bigLogo {
     width: 80px;
   }
 
+  .navLinks {
+     top: 80px; /* Position below the sticky navigation bar */
+  }
+
   .mobileMenuIcon {
     width: 50px;
     height: 40px;
+    visibility: visible;
   }
 
     /* Animation for the logo */

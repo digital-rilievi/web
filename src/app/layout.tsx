@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Rilievi digitali, con le tecniche più recenti e all'avanguardia",
     type: "website",
     locale: "it_IT",
-    url: "https://digitalrilievi.it",
+    url: "https://www.digitalrilievi.it",
     siteName: "Digital Rilievi",
     images: [
       {

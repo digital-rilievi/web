@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Digital Rilievi",
     images: [
       {
-        url: "https://digitalrilievi.it/public/assets/logo/thumbnail.png",
+        url: "https://digitalrilievi.it/assets/logo/thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Digital Rilievi",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: "https://digitalrilievi.it/public/assets/logo/thumbnail.png",
+    images: "https://digitalrilievi.it/assets/logo/thumbnail.png",
     title: "Digital Rilievi",
     description:
       "Rilievi digitali, con le tecniche più recenti e all'avanguardia",

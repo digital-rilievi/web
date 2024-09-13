@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import { title } from "process";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -36,6 +37,9 @@ export const metadata: Metadata = {
     description:
       "Rilievi digitali, con le tecniche più recenti e all'avanguardia",
   },
+  other: {
+    "fb:app_id": "1291845595335171",
+  }
 };
 
 export default function RootLayout({

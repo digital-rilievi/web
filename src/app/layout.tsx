@@ -36,9 +36,6 @@ export const metadata: Metadata = {
     title: "Digital Rilievi",
     description:
       "Rilievi digitali, con le tecniche più recenti e all'avanguardia",
-  },
-  other: {
-    "fb:app_id": "1291845595335171",
   }
 };
 
@@ -54,7 +51,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head>
+      <head>        
+        <meta property="fb:app_id" content="1291845595335171" />
         <Script type="text/javascript" src="/iubenda.js"></Script>
         <Script
           type="text/javascript"

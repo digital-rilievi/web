@@ -1,7 +1,7 @@
 /* Footer.module.css */
 .div .p {
 color: #F5F5F5;
-font-family: "Helvetica Neue";
+font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -76,14 +76,14 @@ line-height: 24px; /* 133.333% */
 }
 
 .name {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 20px;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .footerAddress {
   font-size: 18px;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 1280px) {

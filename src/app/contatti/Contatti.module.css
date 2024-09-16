@@ -21,14 +21,14 @@
 }
 
 .name {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 26px;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .smallText {
     font-size: 16px;
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .hidden {

@@ -5,7 +5,7 @@
         "bannerImage":"/assets/projects/mose.png",
         "bannerQuote": "Rilievi digitali, con le\ntecniche più recenti e\nall'avanguardia",
         "firstImage": "/assets/projects/bim.jpg",
-        "firstImageDesc": "Digital Rilievi s.r.l. nasce nel maggio del 2001 da un'idea di Adriano Facchin, Antonio De Marco e Addo Galasso.\n\nForti della loro passione e competenza, danno all’azienda fin da subito un’impronta innovativa e all’avanguardia, sfidando la topografia degli anni 2000. Grazie ai primi successi lavorativi e all’esperienza maturata sul campo, Digital Rilevi diventa una solida realtà in grado di rispondere alla clientela più esigente, offrendo soluzioni studiate e customizzate.\n\nDal 2003 parte il progetto più ambizioso e sperimentale: un primo sistema autocostruito di Mobile Laser Scanning, con cui viene rilevata la Città di Firenze. Dopo 10 anni, il primo prototipo fotografico verrá rimpiazzato da un nuovo sistema che acquisisce contemporaneamente immagini e dati laser scanner – primo prototipo di una tecnologia che ancora oggi copre gran parte delle attività di acquisizione dell’azienda.\n\nA supporto di queste tecnologie, Digital Rilievi ha deciso di investire in sistemi di visione tridimensionale e stereoscopica di terza generazione, che permettono una restituzione grafica 3D di fotogrammetria e nuvole di punti lidar.",
+        "firstImageDesc": "Digital Rilievi s.r.l. nasce nel maggio del 2001 da un'idea di Adriano Facchin, Antonio De Marco e Addo Galasso.\n\nForti della loro passione e competenza, danno all’azienda fin da subito un’impronta innovativa e all’avanguardia, sfidando la topografia degli anni 2000. Grazie ai primi successi lavorativi e all’esperienza maturata sul campo, Digital Rilevi diventa una solida realtà in grado di rispondere alla clientela più esigente, offrendo soluzioni studiate e customizzate.\n\nDal 2003 parte il progetto più ambizioso e sperimentale: un primo sistema autocostruito di Mobile Mapping, con cui viene rilevata la Città di Firenze. Dopo 10 anni, il primo prototipo fotografico verrá rimpiazzato da un nuovo sistema che acquisisce contemporaneamente immagini e dati laser scanner – primo prototipo di una tecnologia che ancora oggi copre gran parte delle attività di acquisizione dell’azienda.\n\nA supporto di queste tecnologie, Digital Rilievi ha deciso di investire in sistemi di visione tridimensionale e stereoscopica di terza generazione, che permettono una restituzione grafica 3D di fotogrammetria e nuvole di punti lidar.",
         "firstImageName": "GUARDANDO AL FUTURO\nVogliamo far crescere Digital Rilievi nel campo del mobile mapping e della geomatica, aprendo a soluzioni che sfruttino l'enorme potenziale dell'Intelligenza Artificiale.",
         "secondImage": "/assets/projects/mose-slider.jpeg",
         "secondImageName": "MOSE__VENEZIA",
@@ -168,7 +168,7 @@
             }
         ],
         "carousel": [
-            "/assets/projects/mose/carousel/1.jpeg",
+            "/assets/whoWeAre/team.jpeg",
             "/assets/projects/mose/carousel/2.jpeg",
             "/assets/projects/mose/carousel/3.jpeg",
             "/assets/projects/mose/carousel/4.jpeg"

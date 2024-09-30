@@ -109,7 +109,7 @@ const WhoWeAre = () => {
 
     const itemsPerRow = 3
     const totalItems = content['chi-siamo'].whoWeAreList.length
-    const remainingItems = itemsPerRow - (totalItems % itemsPerRow)
+    const remainingItems = itemsPerRow - (totalItems - 1 % itemsPerRow)
 
     // Add invisible placeholder items to fill the last row
     const filledItems = remainingItems > 0 ? [...content['chi-siamo'].whoWeAreList, ...Array(remainingItems).fill(null)] : content['chi-siamo'].whoWeAreList

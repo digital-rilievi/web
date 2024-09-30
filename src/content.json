@@ -162,10 +162,9 @@
             }
         ],
         "carousel": [
-            "/assets/whoWeAre/team.jpeg",
-            "/assets/projects/mose/carousel/2.jpeg",
-            "/assets/projects/mose/carousel/3.jpeg",
-            "/assets/projects/mose/carousel/4.jpeg"
+            "/assets/whoWeAre/team-office.jpeg",
+            "/assets/whoWeAre/team-intergeo.jpeg",
+            "/assets/whoWeAre/listening-2.jpeg"
         ],
         "canWeHelp": "POSSIAMO ESSERTI\nD'AIUTO?",
         "canWeHelpCta": "CONTATTACI",

@@ -1,0 +1,5 @@
+# robots.txt – Digital Rilievi s.r.l. (www.digitalrilievi.it)
+# Permissive for search and AI discovery; personnel pages disallowed.
+
+User-agent: *
+Allow: /

@@ -1,3 +1,7 @@
+**Proprietary — All rights reserved.** This repository is the property of Digital Rilievi s.r.l. Copying, modification, distribution, and derivative use are prohibited. See [LICENSE](LICENSE) for full terms.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

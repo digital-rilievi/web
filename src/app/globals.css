@@ -3,22 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* Dark UI: match body text (components may use --foreground-rgb) */
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   background-color: #131313;
 }
 
-@media () {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #131313;
-  color: #fff;
   display: flex;
   min-height: 100vh;
   flex-direction: column;

@@ -190,27 +190,40 @@
         "linksLabel": "SCOPRI DI PIÙ",
         "projects": [
             {
+                "image": "/assets/projects/rilievi_digitali_automatizzati.jpeg",
+                "title": "RILIEVI DIGITALI AUTOMATIZZATI__FVG",
+                "text": "In campo, il nostro progetto Rilievi Digitali Automatizzati si traduce soprattutto in un nuovo sistema LiDAR mobile ad alta precisione, integrato con le nostre soluzioni di mobile mapping. La strumentazione è di CHC Navigation (CHCNAV), gruppo globale attivo in geomatica, GNSS e laser scanning e ci consente di raccogliere nuvole di punti più dense e dettagliate, con flussi di lavoro più rapidi tra acquisizione e consegna.\n\nLo stesso intervento agevolato copre anche, in sede, il potenziamento di gestionale, CRM e strumenti per la gestione e l'analisi delle commesse.",
+                "firstMetric": "CONTRIBUTO DI € 87'037,50",
+                "inverted": "true",
+                "secondMetric": "BANDO FVG A2.1.1",
+                "smallPrintBottomText": true,
+                "tinyLogos": [
+                    "/assets/projects/eu-funding/loghi-istituzionali-coesione-italia.png"
+                ],
+                "secondaryText": "Progetto cofinanziato con il FESR 2021-2027 (PR FESR, attività A2.1.1, DGR 94/2024). Pratica 2024/2146 · CUP C53D25000340007 · RNA COR 24652908. Aiuto concesso: € 87'037,50. Spesa ammessa: decreto dirigenziale n. 52645 del 09/10/2025 e scheda spese ammesse."
+            },
+            {
                 "image": "/assets/projects/mose.png",
                 "title": "MOSE__VENEZIA",
                 "text": "Il progetto più innovativo e al contempo il più discusso dell'Italia Contemporanea. Un insieme di sperimentazioni e soluzioni innovative, che ci vede impegnati alla Bocca di Chioggia da oltre 20 anni, portando donne, uomini, tecnologie, ma soprattutto competenze. Abbiamo seguito tutte le fasi costruttive dell'opera: la realizzazione dalla rete topografica iniziale, il tracciamento delle scogliere, la realizzazione dei cassoni, l'inghisaggio delle cerniere, l'affondamento dei cassoni stessi e la realizzazione delle gallerie subaquee.\n\nSiamo parte della squadra di lavoratori che ha contribuito alla salvaguardia di Venezia dalla forza dell'acqua, motivo di orgoglio ed emozione, come azienda e come lavoratori. Il 22 Novembre 2022, quando il MOSE ha bloccato una marea che sarebbe stata catastrofica, abbiamo visto il compimento di tutto il nostro lavoro ed i nostri sforzi.",
-                "duration1": "+20 ANNI DI LAVORO",
-                "duration2": "78 PARATIE CHE PROTEGGONO VENEZIA"
+                "firstMetric": "+20 ANNI DI LAVORO",
+                "secondMetric": "78 PARATIE CHE PROTEGGONO VENEZIA"
             },
             {
                 "image": "/assets/projects/off-road.jpg",
                 "title": "MOBILE MAPPING OFFROAD__OVUNQUE",
                 "text": "Sfuggendo allo stereotipo del rilievo in Mobile Laser Scanning solo ed esclusivamente su strada asfaltada, da piú di 10 anni equipaggiamo quads con la strumentazione necessaria per rilevare le aree meno raggiungibili. Combinando un ingombro ed un peso molto inferiori ai veicoli stradali e le quattro ruote motrici, il nostro sistema di rilievi offroad ci permette di rilevare agevolmente greti dei fiumi, argini, pendii montuosi, centri storici e aree di campagna. Efficace fino a pendenze del 30%, il rilievo mobile laser scanning off-road viene talvolta integrato da attività di rilievo con droni e batimetria.",
                 "inverted": "true",
-                "duration1": "15'000 KM DI RILIEVI",
-                "duration2": "4x4 SU TUTTI I TERRENI"
+                "firstMetric": "15'000 KM DI RILIEVI",
+                "secondMetric": "4x4 SU TUTTI I TERRENI"
             },
             {
                 "image": "/assets/projects/circuito-automibilistico.png",
                 "title": "CIRCUITO AUTOMOBILISTICO DI KYALAMI__SUD AFRICA",
                 "text": "Il rilievo del circuito automobilistico di Kyalami in Sud Africa conferma la fiducia verso Digital Rilievi da parte di Kunos Simulazioni, azienda leader di mercato per gaming e simulazioni automobilistiche col brand Assetto Corsa.\n\nDopo 13 circuiti giá rilevati assieme, anche a Kyalami abbiamo offerto la massima flessibilità, data la difficoltà nel prenotare uno slot di lavoro nella densa pianificazione del circuito. L'intero lavoro ha impiegato la pista per sole due ore, in cui abbiamo condensato tre passate di Mobile Laser Scanning, garantendo ridondanza e massima copertura del tracciato. Nell'arco di una settimana, Kunos ha ricevuto l'intera nuvola di punti colorata, con una densitá di rilevazioni di circa 1 punto a centimetro quadro.",
                 "link": "",
-                "duration1": "2 ORE PER RILEVARE UN CIRCUITO",
-                "duration2": "1 CM DI RISOLUZIONE MEDIA"
+                "firstMetric": "2 ORE PER RILEVARE UN CIRCUITO",
+                "secondMetric": "1 CM DI RISOLUZIONE MEDIA"
             },
             {
                 "image": "/assets/projects/tall-small-paratie.jpeg",
@@ -218,16 +231,16 @@
                 "text": "Durante l'installazione delle paratoie in cristallo all'entrata della Basilica di San Marco, siamo stati incaricati di monitorare l'impatto dei lavori sulle colonne della Basilica stessa e sui Pilastri Acritani, elemento di enorme rilievo architettonico poco distante. Incarico di precisione e molto delicato, in linea con i requisiti della sovrintendenza abbiamo sviluppato una soluzione che non danneggiasse i pilastri e le colonne con colla o fori.\n\nQuattro stazioni di monitoraggio con inclinometri ed accelerometri sono state legate solidalmente ai punti di riferimento, nel pieno rispetto del patrimonio architettonico.\n\nGrazie ad una piattaforma centralizzata consultabile online, abbiamo impiegato algoritmi di anomaly detection per osservare le serie storiche 24/7 da remoto, per un totale di due anni di registrazione continua. Tutte le anomalie registrate nel periodo di osservazione sono state prontamente confermate con la topografia a terra, a testimoniare l'affidabilità delle tecnologie impiegate.",
                 "link": "",
                 "inverted": "true",
-                "duration1": "2 ANNI DI MONITORAGGIO CONTINUO",
-                "duration2": "100% DELLE ANOMALIE CONFERMATE ON SITE"
+                "firstMetric": "2 ANNI DI MONITORAGGIO CONTINUO",
+                "secondMetric": "100% DELLE ANOMALIE CONFERMATE ON SITE"
             },
             {
                 "image": "/assets/projects/stadio-olimpico-foro-italico.png",
                 "title": "STADIO OLIMPICO E FORO ITALICO__ROMA",
                 "text": "Siamo onorati di aver lavorato ai rilievi dello Stadio Olimpico di Roma e del Foro Italico, icone dello sport Nazionale. I rilievi hanno coperto svariate strutture sportive, tra cui lo Stadio dei Marmi, lo Stadio della Farnesina, il Centrale del Tennis, lo Stadio Nicola Pietrangeli, la Grand Stand Arena, lo Stadio Olimpico del Nuoto, la Casa delle Armi e alemno altri 8 campi secondari, per un totale di 500'000 metri quadrati.\n\nIl rilievo in Mobile Laser Scanning dei campi da gioco e delle infrastrutture adiacenti é stato affiancato da alcuni rilievi con GeoSLAM per la mappatura degli interni e dalla topografia classica per le misure piú delicate, tra cui le dimensioni del campo di gioco dello Stadio Olimpico, necessarie al rinnovo dell'omologazione dello stesso.",
                 "link": "",
-                "duration1": "50 ETTARI RILEVATI",
-                "duration2": "68,01M x 105,09M LE DIMENSIONI DEL CAMPO"
+                "firstMetric": "50 ETTARI RILEVATI",
+                "secondMetric": "68,01M x 105,09M LE DIMENSIONI DEL CAMPO"
             },
             {
                 "image": "/assets/projects/stadio-cortina.png",
@@ -235,8 +248,8 @@
                 "text": "Infrastrutture Milano Cortina 2026, la società creata dal CONI per la preparazione delle Olimpiadi Invernali di Milano-Cortina 2026, ha incaricato Digital Rilievi dei rilievi dello Stadio del Ghiaccio di Cortina d'Ampezzo. Lo stadio fu originariamente costruito per le Olimpiadi Invernali di Cortina '56 e presenta storiche tribune in legno di abete, larice e cirmolo, di rilevanza architettonica. La successiva copertura con travi rivestite in rame si é aggiunta come tratto caratteristico. I leggeri lavori di adattamento per ospitare la specialità di curling e la cerimonia di chiusura di Milano Cortina 2026 puntano a mantenere il fascino dello stadio, senza alterarne le caratteristiche distintive.\n\nI rilievi sono stati condotti tramite Laser Scanning statico ad alta precisione, garantendo una densitá di punti media di circa 15 punti a cm quadro. Per facilitare l'accesso e la fruibilià del prodotto finito, i rilievi sono stati corredati da un modello BIM, in grado di evidenziare la stratificazione per piani, per materiali e per tipo di componenti (rete elettrica, elementi strutturali, rete di condizionamento, ecc.).",
                 "inverted": "true",
                 "link": "",
-                "duration1": "7000 SPETTATORI",
-                "duration2": "1956-2026 SETTANT'ANNI DI OLIMPIADI"
+                "firstMetric": "7000 SPETTATORI",
+                "secondMetric": "1956-2026 SETTANT'ANNI DI OLIMPIADI"
             }
         ],
         "projectsInterested": "SEI INTERSSATO AI\nNOSTRI SERVIZI?",

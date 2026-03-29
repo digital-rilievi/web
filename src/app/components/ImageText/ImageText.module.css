@@ -86,12 +86,69 @@
   flex: 1;
 }
 
+.flexGrowSpacer {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+}
+
 .circularButtonWrapper {
   padding-top: 2rem;
 }
 
 .secondaryText {
   white-space: pre-line;
+}
+
+.smallPrintBottomText {
+  font-size: 0.75rem;
+  line-height: 1.45;
+  margin-top: 0.75rem;
+  max-width: 52rem;
+}
+
+/* Bottom-aligned with small print: sits after flex spacer, above secondaryText */
+.tinyLogosBanner {
+  width: 100%;
+  max-width: 52rem;
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.tinyLogosRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  row-gap: 0.65rem;
+  max-width: 100%;
+}
+
+.tinyLogo {
+  height: clamp(38px, 4.8vw, 52px);
+  width: auto;
+  max-width: min(100%, 20rem);
+  object-fit: contain;
+  object-position: left center;
+  flex: 0 1 auto;
+}
+
+/* Single horizontal strip (e.g. official grey logo bar) */
+.tinyLogosRowStrip {
+  justify-content: stretch;
+}
+
+.tinyLogosRowStrip .tinyLogo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: left center;
+  display: block;
 }
 
 .invisibleInMobile {
@@ -104,58 +161,56 @@
 }
 
 .visibleInMobile {
-      visibility: hidden;
-      height: 0px;
-      width: 0px;
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
 }
 
-  /* Media query for bigger layout */
-  @media (max-width: 1920px) {
-    .containerHelper {
-        flex: 0;
-    }
-
-    .visibleInMobile {
-      height: 0px;
-      width: 0px;
-    }
+/* Media query for bigger layout */
+@media (max-width: 1920px) {
+  .containerHelper {
+    flex: 0;
   }
 
-  /* Media query for bigger layout */
-  @media (min-width: 1820px) {
-    .image {
-        height: 50rem;
-        width: auto;
-    }
+  .visibleInMobile {
+    height: 0px;
+    width: 0px;
+  }
+}
 
-    .visibleInMobile {
-      height: 0px;
-      width: 0px;
-    }
+/* Media query for bigger layout */
+@media (min-width: 1820px) {
+  .image {
+    height: 50rem;
+    width: auto;
   }
 
-    /* Media query for smaller layout */
-  @media (max-width: 1460px) {
+  .visibleInMobile {
+    height: 0px;
+    width: 0px;
+  }
+}
 
-    .blueCircleContainer {
-      left: 45%;
-      top: -15%;
-    }
-
-    .blueCircleWrapper {
-      height: 520px;
-      width: 520px;
-    }
-
-    .content {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
+/* Media query for smaller layout */
+@media (max-width: 1460px) {
+  .blueCircleContainer {
+    left: 45%;
+    top: -15%;
   }
 
-  /* Media query for mobile layout */
-  @media (max-width: 1024px) {
+  .blueCircleWrapper {
+    height: 520px;
+    width: 520px;
+  }
 
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Media query for mobile layout */
+@media (max-width: 1024px) {
   .invisibleInMobile {
     height: 0px;
     width: 0px;
@@ -167,6 +222,11 @@
     visibility: visible !important;
     height: auto;
     width: auto;
+  }
+
+  /* Beat .inverted row-reverse so layout is always a single column on small screens */
+  .container.inverted {
+    flex-direction: column;
   }
 
   .container,
@@ -182,11 +242,22 @@
 
   .content {
     flex-direction: column;
+    align-items: stretch;
     padding-left: 0rem;
     padding-right: 0rem;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .flexGrowSpacer {
+    flex: 0 0 auto;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .container {
+    flex-direction: column;
+    align-items: stretch;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 0;
@@ -208,8 +279,11 @@
   }
 
   .secondaryText {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .duration {
@@ -230,7 +304,12 @@
     margin: 0;
   }
 
-   .blueCircleWrapper {
+  /* Hero inside .content (secondaryText cards): gap before title, like outer hero on other cards */
+  .imageMobileLead {
+    margin-bottom: 1rem;
+  }
+
+  .blueCircleWrapper {
     top: 0px;
     height: 0px;
     width: 0px;
@@ -238,5 +317,52 @@
 
   .circularButtonWrapper {
     align-self: center;
+  }
+
+  .tinyLogosBanner {
+    max-width: 100%;
+    width: 100%;
+    align-self: stretch;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+
+  .tinyLogosRow {
+    justify-content: center;
+    gap: 0.75rem 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tinyLogosRowStrip {
+    justify-content: center;
+  }
+
+  .tinyLogo {
+    height: clamp(34px, 9vw, 46px);
+    max-width: min(100%, 18rem);
+  }
+
+  /* Full-width horizontal strip: do not inherit the 18rem cap from .tinyLogo */
+  .tinyLogosRowStrip .tinyLogo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center center;
+    flex: 0 0 auto;
+  }
+
+  .smallPrintBottomText {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* When banner sits above small print, avoid double vertical padding */
+  .tinyLogosBanner + .secondaryText {
+    padding-top: 0.75rem;
   }
 }

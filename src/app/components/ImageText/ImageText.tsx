@@ -18,6 +18,8 @@ interface ImageTextProps {
   tinyLogos?: string[];
   link?: string;
   linkLabel?: string;
+  /** false for PDFs and external URLs so the button uses a normal anchor (new tab). */
+  linkRemainsInPage?: boolean;
   inverted?: String | Boolean;
   blueCircle?: Boolean;
 }
@@ -81,7 +83,7 @@ const ImageText = (props: ImageTextProps) => {
             <CircularButton
               link={props.link}
               label={props.linkLabel}
-              remainsInPage
+              remainsInPage={props.linkRemainsInPage !== false}
             />
           </div>
         )}

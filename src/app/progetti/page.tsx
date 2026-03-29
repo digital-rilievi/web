@@ -23,6 +23,25 @@ export interface ProjectProps {
   blueCircle?: Boolean;
 }
 
+/** Slug → /progetti/slug; static assets and absolute URLs open as-is (typically in a new tab). */
+function projectCtaHref(info: ProjectProps): {
+  href: string;
+  linkRemainsInPage: boolean;
+} {
+  const raw = info.link?.trim();
+  if (!raw) {
+    return { href: "", linkRemainsInPage: true };
+  }
+  if (
+    raw.startsWith("/assets/") ||
+    raw.startsWith("http://") ||
+    raw.startsWith("https://")
+  ) {
+    return { href: raw, linkRemainsInPage: false };
+  }
+  return { href: `/progetti/${raw}`, linkRemainsInPage: true };
+}
+
 const Progetti = () => {
   var projects = content.progetti.projects as [];
   return (
@@ -34,10 +53,11 @@ const Progetti = () => {
       <ScrollingText text={content.progetti.title} />
       <Space size="big" maintainInMobile />
       <div>
-        {projects.map((info: ProjectProps, index) => (
-          <>
+        {projects.map((info: ProjectProps, index) => {
+          const { href, linkRemainsInPage } = projectCtaHref(info);
+          return (
+          <React.Fragment key={index}>
             <ImageText
-              key={index}
               image={info.image}
               title={info.title}
               text={info.text}
@@ -47,12 +67,16 @@ const Progetti = () => {
               secondaryText={info.secondaryText}
               smallPrintBottomText={info.smallPrintBottomText}
               tinyLogos={info.tinyLogos}
-              link={`${info.link || info.details ? "/progetti/" + info.link : ""}`}
-              linkLabel={`${content.progetti.linksLabel ? content.progetti.linksLabel : ""}`}
+              link={href}
+              linkLabel={
+                info.linkLabel ?? content.progetti.linksLabel ?? undefined
+              }
+              linkRemainsInPage={linkRemainsInPage}
             />
             <Space />
-          </>
-        ))}
+          </React.Fragment>
+          );
+        })}
       </div>
       <Space size={"big"} maintainInMobile />
       <Space size={"big"} />

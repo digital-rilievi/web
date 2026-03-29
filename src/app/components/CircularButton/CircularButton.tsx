@@ -20,7 +20,11 @@ const CircularButton = (props: CircularButtonProps) => {
                         </button>
                     </Link>
                 ) :
-                    <a href={props.link} target="_blank">
+                    <a
+                      href={props.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                         <button className={`${styles.circularButton} ${props.isSmallCircle ? styles.smallCircle : ''}`}>
                             <span>{props.label ? props.label : content.defaultButtonsValue}</span>
                         </button>

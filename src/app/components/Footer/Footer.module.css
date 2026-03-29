@@ -46,7 +46,7 @@ line-height: 24px; /* 133.333% */
 .rightColumn ul {
   list-style: none;
   padding: 0;
-  flex: 1; /* Ensure the ul takes up all available space */
+  margin: 0;
 }
 
 .rightColumn li {

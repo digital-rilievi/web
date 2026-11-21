@@ -11,6 +11,15 @@ const Footer = () => {
       <div className={styles.rowContainer}>
         <div className={styles.leftColumn}>
           <div>
+            <p className={styles.footerAddress}>P.IVA {content.contatti.vat}</p>
+            <p className={styles.footerAddress}>{content.contatti.legal}</p>
+            <p className={styles.footerAddress}>REA: {content.contatti.rea}</p>
+            <p className={styles.footerAddress}>
+              Cod. univoco: {content.contatti.fatturazione}
+            </p>
+          </div>
+          <br />
+          <div>
             <p className={styles.footerAddress}>
               {content.contatti.addressLine1}
             </p>
@@ -19,15 +28,6 @@ const Footer = () => {
             </p>
             <p className={styles.footerAddress}>
               {content.contatti.addressLine3}
-            </p>
-          </div>
-          <br />
-          <div>
-            <p className={styles.footerAddress}>P.IVA {content.contatti.vat}</p>
-            <p className={styles.footerAddress}>{content.contatti.legal}</p>
-            <p className={styles.footerAddress}>REA: {content.contatti.rea}</p>
-            <p className={styles.footerAddress}>
-              Cod. univoco: {content.contatti.fatturazione}
             </p>
           </div>
         </div>

@@ -13,6 +13,11 @@ const nextConfig = {
                 destination: "/rapporto-costruzioni-2026.pdf",
                 permanent: false,
             },
+            {
+                source: "/assets/footer/tuv-cert.pdf",
+                destination: "/assets/footer/iso-9001-cert.pdf",
+                permanent: true,
+            },
         ]
     },
 }

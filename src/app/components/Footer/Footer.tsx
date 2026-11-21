@@ -34,16 +34,18 @@ const Footer = () => {
 
         <div className={styles.rightColumn}>
           <ul>
-            <li>
-              <a
-                className={styles.footerAddress}
-                href="/assets/footer/tuv-cert.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Certificazione ISO 9001:2015
-              </a>
-            </li>
+            {content.footer.certifications.map((cert) => (
+              <li key={cert.link}>
+                <a
+                  className={styles.footerAddress}
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {cert.label}
+                </a>
+              </li>
+            ))}
             <li>
               <a
                 className={styles.footerAddress}
@@ -96,7 +98,25 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className={styles.spaceColumn} />
+        <div className={styles.certificationsColumn}>
+          {content.footer.certifications.map((cert) => (
+            <a
+              key={cert.link}
+              className={styles.certificationBadgeLink}
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className={styles.certificationBadge}
+                src={cert.badge}
+                alt={`Kiwa: ${cert.label}`}
+                width={227}
+                height={255}
+              />
+            </a>
+          ))}
+        </div>
       </div>
     </footer>
   );

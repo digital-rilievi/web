@@ -39,28 +39,8 @@ line-height: 24px; /* 133.333% */
     height: 100%;
   }
 
-.certificationsColumn {
+.spaceColumn {
   flex: 2;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 16px;
-  padding-right: 0.75rem;
-}
-
-.certificationBadgeLink {
-  display: block;
-  transition: transform 0.2s ease;
-}
-
-.certificationBadgeLink:hover {
-  transform: translateY(-3px);
-}
-
-.certificationBadge {
-  display: block;
-  width: auto;
-  height: 104px;
 }
 
 .rightColumn ul {
@@ -113,12 +93,11 @@ line-height: 24px; /* 133.333% */
     padding-left: 2rem;
   }
 
-  .certificationsColumn {
-    justify-content: flex-start;
-  }
-
-  .certificationBadge {
-    height: 88px;
+  .spaceColumn {
+    flex: 0;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
   }
 
   .rowContainer {

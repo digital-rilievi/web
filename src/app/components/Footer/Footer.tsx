@@ -98,25 +98,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className={styles.certificationsColumn}>
-          {content.footer.certifications.map((cert) => (
-            <a
-              key={cert.link}
-              className={styles.certificationBadgeLink}
-              href={cert.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className={styles.certificationBadge}
-                src={cert.badge}
-                alt={`Kiwa: ${cert.label}`}
-                width={227}
-                height={255}
-              />
-            </a>
-          ))}
-        </div>
+        <div className={styles.spaceColumn} />
       </div>
     </footer>
   );

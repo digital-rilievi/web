@@ -301,6 +301,16 @@
         ]
     },
     "footer": {
+        "certifications": [
+            {
+                "label": "Certificazione ISO 9001:2015",
+                "link": "/assets/footer/iso-9001-cert.pdf"
+            },
+            {
+                "label": "Certificazione ISO 14001:2015",
+                "link": "/assets/footer/iso-14001-cert.pdf"
+            }
+        ],
         "privacyPolicyLabel": "Informative sulla Privacy",
         "cookiesPolicyLabel": "Cookie Policy",
         "privacyPolicyLink": "https://www.iubenda.com/privacy-policy/24683312",

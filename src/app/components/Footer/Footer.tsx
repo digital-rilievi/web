@@ -11,6 +11,15 @@ const Footer = () => {
       <div className={styles.rowContainer}>
         <div className={styles.leftColumn}>
           <div>
+            <p className={styles.footerAddress}>P.IVA {content.contatti.vat}</p>
+            <p className={styles.footerAddress}>{content.contatti.legal}</p>
+            <p className={styles.footerAddress}>REA: {content.contatti.rea}</p>
+            <p className={styles.footerAddress}>
+              Cod. univoco: {content.contatti.fatturazione}
+            </p>
+          </div>
+          <br />
+          <div>
             <p className={styles.footerAddress}>
               {content.contatti.addressLine1}
             </p>
@@ -21,29 +30,22 @@ const Footer = () => {
               {content.contatti.addressLine3}
             </p>
           </div>
-          <br />
-          <div>
-            <p className={styles.footerAddress}>P.IVA {content.contatti.vat}</p>
-            <p className={styles.footerAddress}>{content.contatti.legal}</p>
-            <p className={styles.footerAddress}>REA: {content.contatti.rea}</p>
-            <p className={styles.footerAddress}>
-              Cod. univoco: {content.contatti.fatturazione}
-            </p>
-          </div>
         </div>
 
         <div className={styles.rightColumn}>
           <ul>
-            <li>
-              <a
-                className={styles.footerAddress}
-                href="/assets/footer/tuv-cert.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Certificazione ISO 9001:2015
-              </a>
-            </li>
+            {content.footer.certifications.map((cert) => (
+              <li key={cert.link}>
+                <a
+                  className={styles.footerAddress}
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {cert.label}
+                </a>
+              </li>
+            ))}
             <li>
               <a
                 className={styles.footerAddress}

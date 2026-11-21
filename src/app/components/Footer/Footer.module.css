@@ -49,10 +49,6 @@ line-height: 24px; /* 133.333% */
   margin: 0;
 }
 
-.rightColumn li {
-  margin-bottom: 2px;
-}
-
 /* Spacer to create empty space */
 .spacer {
   flex-grow: 0.5;

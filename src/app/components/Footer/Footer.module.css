@@ -22,8 +22,9 @@ line-height: 24px; /* 133.333% */
 .rowContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem 1rem;
   align-items: flex-start;
   height: 100%;
 }
@@ -31,6 +32,7 @@ line-height: 24px; /* 133.333% */
 .leftColumn,
 .rightColumn {
   flex: 1;
+  min-width: max-content;
   display: flex;
   flex-direction: column;
   }
@@ -90,14 +92,6 @@ line-height: 24px; /* 133.333% */
   }
 
   .spaceColumn {
-    flex: 0;
-    height: 0px;
-    width: 0px;
-    visibility: hidden;
-  }
-
-  .rowContainer {
-    flex-direction: column;
-    gap: 6rem;
+    display: none;
   }
 }
